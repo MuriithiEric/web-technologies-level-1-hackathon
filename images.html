@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Image Links</title>
+   <style>
+       .gallery {
+           display: grid;
+           grid-template-columns: repeat(3, 1fr);
+           grid-gap: 10px;
+       }
+       
+       .gallery img {
+           width: 100%;
+           height: auto;
+       }
+   </style>
+</head>
+<body>
+   <h1>Welcome to Image Links</h1>
+
+   <h2>Home</h2>
+   <p>Welcome to our website! Here, you can explore different topics through images.</p>
+       <a href="https://techcrunch.com/" target="_blank">
+       <img src="technology.jpg" alt="Technology Image" width="300">
+   </a>
+
+   <h2>Gallery</h2>
+   <div class="gallery">
+       <a href="https://nature.com/" target="_blank">
+           <img src="nature1.jpg" alt="Nature Image 1">
+       </a>
+       <a href="https://nature.org/" target="_blank">
+           <img src="nature2.jpg" alt="Nature Image 2">
+       </a>
+       <a href="https://inaturalist.org/" target="_blank">
+           <img src="nature3.jpg" alt="Nature Image 3">
+       </a>
+   </div>
+
+   <h2>Menu</h2>
+   <ul>
+       <li><a href="https://northmrpizza.com/" target="_blank">Pizza <img src="pizza.jpg" alt="Pizza Image" width="50"></a></li>
+       <li><a href="https://wisconsincheese.com/" target="_blank">Burger <img src="burger.jpg" alt="Burger Image" width="50"></a></li>
+       <li><a href="https://lovemysalad.com/" target="_blank">Salad <img src="salad.jpg" alt="Salad Image" width="50"></a></li>
+   </ul>
+</body>
+</html>
