@@ -1,1 +1,12 @@
+/* Blue heading */
+h1 {
+    color: blue;
+}
+
+/* Red paragraph with font size 15px */
+p {
+    color: red;
+    font-size: 15px;
+}
+
 
