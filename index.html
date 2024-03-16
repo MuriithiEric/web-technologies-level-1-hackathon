@@ -1,24 +1,96 @@
-<!-- 1. create the basic html structure. your structure should include a blue heading and a red paragragh with font size 15px -->
-
-
-<!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
-
-
-<!-- 3. create a section and add an image, using css; place a green border on the image, the image should be 500px wide and 500px high -->
-
-
-<!-- 4. create another section add a form that takes in the following input:
-  a. name
-  b. email address
-  c. phone number
-  d. age
-  e. radio checkbox for gender (use fieldset to group the gender input)
-  f. dropdown for multi-selection of subjects: English, Math, Science, Art and Craft, Agriculture, Geography and History
-  g. password
-  h. a hidden field to capture sessionId
-  i. cancel button that clears form inputs
-  j. submit button with text register
-  make sure to incorporate relevant labels in your form elements using the necessary and relevant input types and element attributes
--->
-
-<!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hackerthon Webdev</title>
+    <style>
+      img {
+        width: 500px;
+        border-radius: 5px;
+        height: 500px;
+        border: green solid;
+      }
+      fieldset {
+        background-color: gray;
+      }
+      .Heading {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="Heading" style="color: blue">MY FIRST HACKERTHON PROJECT</h1>
+    <p style="color: red" , style="font-size: 15px">
+      I'm thrilled to be diving headfirst into the PLP Academy's first ever
+      hackerthon!This is an incredible opportunity to push my coding skills to
+      the limit, collaborate with creative minds, and bring innovative ideas to
+      life. I'm buzzing with excitement to learn from experienced mentors,
+      tackle challenging problems, and be part of a community that fosters
+      growth and exploration in the world of technology. Here's to an
+      unforgettable hacking experience – let's get coding!
+    </p>
+    <a href="https://www.google.com/">website link</a>
+    <br />
+    <br />
+    <h1>IMAGES</h1>
+    <img src="Chiken_image.jpg.jpg" alt="Chicken image" />
+    <br />
+    <form action="" method="post" enctype="multipart/form-data">
+      <label for="name">Name</label>
+      <input type="text" name="" id="Name" required />
+      <br />
+      <br />
+      <label for="email adress">Email</label>
+      <input
+        type="email"
+        name=""
+        id="Email adress"
+        placeholder="abc@gmail.com"
+        required
+      />
+      <br />
+      <br />
+      <label for="number">Number</label>
+      <input type="number" name="" id="Number" required />
+      <br />
+      <br />
+      <label for="age">Age</label>
+      <input type="number" name="" id="number" required />
+      <br />
+      <br />
+      <fieldset>
+        <input type="radio" id="gender" name="gender" value="Male" />
+        <label for="Male">Male</label>
+        <br />
+        <input type="radio" id="gender" name="gender" value="Female" />
+        <label for="Female">Female</label>
+      </fieldset>
+      <br />
+      <label for="Subjects">Subject:</label>
+      <select name="Subjects" id="Subject">
+        <option value="English">English</option>
+        <option value="Math">Math</option>
+        <option value="Science">Science</option>
+        <option value="Art and craft">Art and craft</option>
+        <option value="Agriculture">Agriculture</option>
+        <option value="Geography">Geography</option>
+        <option value="History">History</option>
+      </select>
+      <br />
+      <br />
+      <label for="password">Password</label>
+      <input
+        type="password"
+        name="password"
+        id=""
+        placeholder="*****************"
+      />
+      <br />
+      <input type="hidden" id="Session id" name="session id" />
+      <br />
+      <textarea name="" id="" cols="30" rows="5"></textarea>
+      <br />
+      <button type="reset">Cancel</button>
+      <input type="submit" value="submit" />
+    </form>
+  </body>
+</html>

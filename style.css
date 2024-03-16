@@ -1,1 +1,12 @@
-
+img {
+    width: 500px;
+    border-radius: 5px;
+    height: 500px;
+    border: green solid;
+  }
+  fieldset {
+    background-color: gray;
+  }
+  .Heading {
+    font-weight: bold;
+  }
