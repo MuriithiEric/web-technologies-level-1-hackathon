@@ -1,12 +1,6 @@
-<!-- 1. create the basic html structure. your structure should include a blue heading and a red paragragh with font size 15px -->
-
-
+<!-- 1. create the basic html structure. your structure should include a blue heading and a red paragraph with font size 15px -->
 <!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
-
-
 <!-- 3. create a section and add an image, using css; place a green border on the image, the image should be 500px wide and 500px high -->
-
-
 <!-- 4. create another section add a form that takes in the following input:
   a. name
   b. email address
@@ -20,5 +14,96 @@
   j. submit button with text register
   make sure to incorporate relevant labels in your form elements using the necessary and relevant input types and element attributes
 -->
-
 <!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Power of Renewable Energy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1 class="h1">Harnessing Nature's Potential: A Sustainable Energy Revolution</h1>
+  </header>
+    <p class="p">In a world facing environmental challenges and energy crises, the quest for sustainable solutions has never been more pressing. Renewable energy, derived from natural resources such as sunlight, wind, and water, offers a beacon of hope in the fight against climate change and fossil fuel dependency. As nations unite in their commitment to reduce carbon emissions and transition towards a greener future, the power of renewable energy stands poised to reshape the global energy landscape.</p>
+    <nav>
+      <ul>
+        <li><a href="#Gallery">Renewable Energy Visualization Center</a></li>
+        <li><a href="#United-Nation-Organization">UN.Org</a></li>
+        <li><a href="#renewable-energy-community">Join the Renewable Energy Community</a></li>
+      </ul>
+    </nav>
+  <section id="Gallery">
+    <h2>Renewable Energy Visualization Center</h2>
+<figure>
+  <img src="C:\Users\hp\Desktop\PLP HACKATHON 3_16_2024\WEB DEVELOPMENT\web-technologies-level-1-hackathon\Images\pexels-pixabay-433308.jpg" alt="Renewable Energy landscape" class="image">
+  <figcaption>
+    Beyond its environmental benefits, renewable energy holds the promise of empowering communities and fostering economic growth. Solar panels and wind farms offer not only a source of clean electricity but also opportunities for job creation and local investment. As communities harness the abundance of natural resources at their disposal, they take control of their energy future, paving the way for a more resilient and equitable society.
+  </figcaption>
+</figure>
+  </section>
+  <section id="United-Nation-Organization">
+    <h2>Learn More About Renewable Energy Initiatives - From UN.org</h2>
+    <a href="https://www.un.org/en/climatechange/raising-ambition/renewable-energy" target="_blank">Explore UN's Initiatives on Renewable Energy</a>
+  </section>
+  <section id="renewable-energy-community">
+    <h2>Join the Renewable Energy Community</h2>
+    <p>Join our Renewable Energy Community by filling out the form below. Your email address allows us to keep you informed about upcoming events and opportunities, while your phone number enables direct communication for project updates and volunteer activities. Understanding your age demographic and gender helps tailor our efforts to diverse audiences, ensuring inclusive programming. Additionally, the dropdown menu allows you to express broader academic interests alongside renewable energy topics, fostering a dynamic learning environment.</p>
+    <form action="" method="post">
+      <label for="name">Name*:</label>
+      <input type="text" id="name" name="name" placeholder="Enter Your Name" required pattern="[A-Za-z ]+" title="Please enter a valid name (letters and spaces only)"><br><br>
+<!-- pattern="[A-Za-z ]+": This regular expression pattern ensures that only letters (uppercase and lowercase) and spaces are allowed in the input field. If the user enters anything else, the form will not be submitted.
+title="Please enter a valid name (letters and spaces only)": This attribute provides a tooltip or additional information to the user when they hover over the input field, informing them of the required input format.+: This is the quantifier that indicates that the preceding character class (or character) must occur one or more times. So, [A-Za-z ]+ matches one or more occurrences of uppercase letters, lowercase letters, or spaces in succession.-->
+      <label for="Email">Email Address*:</label>
+      <input type="email" id="Email" name="Email" placeholder="e.g. XYZ@gmail.com" required><br><br>
+      <label for="phone">Phone Number*:</label>
+      <input type="tel" id="phone" name="phone" placeholder=" e.g. +254701234567" required><br><br>
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" required><br><br>
+      <fieldset> <!--groups related fields-->
+          <legend>Gender*:</legend> <!--legend enables you to provide a title for the group-->
+          <label for="male">Male</label>
+          <input type="radio" id="male" name="Gender" value="Male" required> 
+          <label for="female">Female</label>
+          <input type="radio" id="female" name="Gender" value="Female" required>
+      </fieldset><br><br> <!--Using the same name attribute for both radio buttons groups them together, allowing users to select one option-->
+      <label for="subject">Subject*:</label>
+      <select id="subject" name="subject" required> <!--The "id", uniquely identifies the dropdown list, which can be referenced by JavaScript or CSS. The name is used as an identifier when submitting the form.-->
+          <option value="" disabled selected>Select Subject</option> <!--an initial option with an empty value, which is disabled and selected by default-->
+          <option value="English">English</option>
+          <option value="Math">Math</option>
+          <option value="Science">Science</option>
+          <option value="Art and Craft">Art and Craft</option>
+          <option value="Agriculture">Agriculture</option>
+          <option value="Geography">Geography</option>
+          <option value="History">History</option>
+  <!--The value attribute represents the value that will be submitted when the form is submitted, and the text between the opening and closing <option> tags represents the visible text in the dropdown.-->
+      </select><br><br>
+      <label for="password">Password*:</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password" aria-describedby="password-hint"><div id="password-hint">Password must be at least 8 characters long</div><br><br>
+      <input type="hidden" id="sessionId" name="sessionId" value=""><!-- This input field stores a session ID that will be sent with the form data but is not visible to the user.This allows the server to associate the form data with the specific user's session when the form is submitted -->
+      <input type="button" id="cancel" name="cancel" value="Cancel" onclick="clearForm()"> <!--This button allows the user to cancel the form submission.-->
+      <input type="submit" id="submit" name="submit" value="Register">
+    </form>
+  </section>
+  <script>
+    //  This line declares a function intended to clear the form inputs.
+  function clearForm() {   
+            document.getElementById("name").value = "";  
+            // This line selects the HTML element with the ID "name" using the getElementById method. It then sets the value property of the selected element to an empty string (""). This effectively clears the input field with the ID "name".
+            document.getElementById("Email").value = "";
+            document.getElementById("phone").value = "";
+            document.getElementById("age").value = "";
+            document.getElementById("male").checked = false;
+            // This line sets the checked property to false, unchecking the radio button.
+            document.getElementById("female").checked = false;
+            document.getElementById("subject").selectedIndex = -1;
+            // This line selects the dropdown list element with the ID "subjects". It sets the selectedIndex property to -1, which deselects all options in the dropdown list.
+            document.getElementById("password").value = "";
+        }
+  </script>
+
+</body>
+</html>
