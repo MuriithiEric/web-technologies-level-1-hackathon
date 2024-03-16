@@ -7,28 +7,95 @@
 
 /* Body styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   background-color: #edeaea;
   color: #fff5f5;
   line-height: 1;
 }
+.big-container {
+  position: absolute;
+  top: 210px;
+  left: 9px;
+}
+/* Positioning for big  and pic */
+.container {
+  display: flex;
+}
 
+.big {
+  flex: 1;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+}
+
+.pic {
+  flex: 1;
+}
+
+.big-words {
+  color: #007bff;
+  font-size: 1cm;
+  margin-left: 40px;
+}
+.bigger-words {
+  color: #007bff;
+  font-size: 1.3cm;
+  margin-top: 50px;
+  margin-left: 200px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.pic {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-left: 1000px;
+  margin-top: 100px;
+  border-radius: 200px;
+}
 /* Styling for blue heading */
 .blue-heading {
-  color: blue;
+  color: #0bf4f0;
+  font-size: 0.7cm;
+  margin-right: 900px;
+  letter-spacing: 1px;
   border: 3px solid rgb(27, 35, 35);
   border-radius: 10px;
-  width: 400px;
-  padding: 10px;
-  margin: 20px 0;
-  margin-left: 620px;
-  background-color: rgb(238, 255, 224);
+  width: 280px;
+  padding: 3px;
+  background-color: rgb(57, 68, 67);
+}
+.blue-word {
+  color: #0bf4f0;
+  background-color: #333;
+  padding: 4px;
+  border-radius: 4px;
+  transition: background-color 0.5s ease;
+}
+.blue-word:hover {
+  background-color: #0bf4f0;
+  color: #070606;
+  transition: background-color 0.5s ease;
+}
+.major {
+  color: #0bf4f0;
+  background-color: #333;
+  padding: 4px;
+  border-radius: 10px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  transition: background-color 0.5s ease;
+}
+.major:hover {
+  background-color: #0bf4f0;
+  color: #070606;
+  transition: background-color 0.5s ease;
 }
 
 /* Styling for red paragraph with font size 15px */
 .red-paragraph {
   color: red;
-  font-size: 15px;
+  font-size: 0.5cm;
+  font-weight: 500;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   letter-spacing: 1px;
@@ -37,26 +104,26 @@ body {
   padding: 10px;
   margin-bottom: 30px;
   margin-left: 25px;
+  margin-top: 60px;
 }
 
 /* Styling for links */
-a {
+.rass {
   color: #0d0e0e;
   text-decoration: none;
   transition: color 0.3s ease;
-  right: 2px;
   padding: 10px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   border-radius: 4px;
   border: 2px solid rgb(32, 48, 48);
-  margin-left: 20px;
-  margin-bottom: 30px;
-  background-color: #0bb2f4;
+  background-color: #0bf4f0;
+  margin-left: 1100px;
+  margin-top: 300px;
   transition: background-color 0.4s ease;
 }
 
-a:hover {
-  color: #1babf9;
+.rass:hover {
+  color: #0bf4f0;
   background-color: #333;
 }
 
@@ -109,7 +176,8 @@ section {
 
 section h2 {
   color: #f00f0f;
-  margin-bottom: 10px;
+  margin-top: 40px;
+  margin-bottom: 60px;
   font-size: 0.8cm;
 }
 
@@ -143,8 +211,8 @@ section h2 {
   border-radius: 20px;
   letter-spacing: 1px;
   word-spacing: 2px;
-  margin-top: 43px;
-  margin-left: 120px;
+  margin-top: 200px;
+  margin-left: 100px;
 }
 /* Form styles */
 form {
