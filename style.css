@@ -1,1 +1,65 @@
+h1 {
+    color: blue;
+    text-align: center;
+}
+p {
+    color: red;
+    font-size: 15px;
+    text-align: center;
+}
+
+a{
+    color: #007be0;
+    text-decoration: dotted;
+    font-weight: bold;
+    font-style: oblique;
+    margin-left: 530px;
+}
+
+a:hover{
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.image-section{
+    border: 3px solid green;
+    width: 500px;
+    height: 500px;
+}
+.image-section img {
+    width: 100%; 
+    height: 100%; 
+}
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: bisque;
+}
+
+.form-section{
+    background-color: whitesmoke;
+    padding: 20px;
+    margin: 30px;
+    width: 80% ;
+    border-radius: 15px;
+}
+
+h2{
+    color: #333;
+}
+
+label{
+    display: block;
+    margin-bottom: 10px;
+}
+
+button{
+    padding: 10px 20px;
+    border-radius: 5px ;
+    background-color: rgb(162, 162, 253) ;
+}
+
+button:hover{
+    color: white;
+}
 
