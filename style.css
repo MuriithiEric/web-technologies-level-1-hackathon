@@ -8,5 +8,11 @@ p {
     color: red;
     font-size: 15px;
 }
+img {
+    width: 500px;
+    height: 500px;
+    border: 2px solid green;
+}
+
 
 
