@@ -1,5 +1,110 @@
-<!-- 1. create the basic html structure. your structure should include a blue heading and a red paragragh with font size 15px -->
+<!DOCTYPE html>
+<html lang="English">
+<head>
+  <title>Pet Adoption Welfare Service</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <ul>
+    <li><a href="#home" onclick="document.getElementById('home').style.display = 'block'; document.getElementById('featured').style.display='none'; document.getElementById('fur_ever').style.display='none';">HOME</a></li>
+    <li><a href="#featured" onclick="document.getElementById('home').style.display='none'; document.getElementById('featured').style.display='block'; document.getElementById('fur_ever').style.display='none';">FEATURED PETS</a></li>
+    <li><a href="#fur_ever" onclick="document.getElementById('home').style.display='none'; document.getElementById('featured').style.display='none'; document.getElementById('fur_ever').style.display='block';">FUR-EVER FORM</a></li>
+  </ul>
 
+  <div id="home">
+    <h2>Welcome to PAWS!</h2>
+    <a href="https://unsplash.com/photos/tabby-cat-touching-persons-palm-xulIYVIbYIc"><img src="https://unsplash.com/photos/xulIYVIbYIc/download?ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzEwNTg3MDc4fA&force=true" alt="Tabby cat touching person's palm" class="green-border"></a>
+    <p>Welcome to our pet adoption service! We are dedicated to helping pets find loving homes and connecting them with caring individuals and families..you just could be one of them.</p>
+    <p>Our mission is to provide a safe and nuturing environment for pets in need, and to promote responsible pet ownership through adoption, education, and community outreach.</p>
+    <p>In collaboration with the Kenya Society for Protection and Care of Animals (KSPCA). Click<a href="https://kspca-kenya.org" target="_blank"> HERE</a> to find out more.</p>
+    <p>Let's have fun in the process, shall we? Visit our Featured pets page to get to know our current residents!</p>
+  </div>
+
+  <div id="featured">
+    <h1>PETS OF THE WEEK</h1>
+    <a href="https://images.unsplash.com/photo-1664654714399-2a3dc72d75a6?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"><img src="https://unsplash.com/photos/ZPR0Epg7Kis/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MTV8fHNlcmlvdXMlMjBkb2d8ZW58MHx8fHwxNzEwNjA0ODExfDA&force=true"></a>
+    <a href="https://images.unsplash.com/photo-1583090758875-4dc2d02c6c12?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"><img src="https://unsplash.com/photos/l6T57sS4NSg/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MTB8fHBldCUyMHBlcnNvbmFsaXR5fGVufDB8fHx8MTcxMDYwNTkyOHww&force=true"></a>
+    <a href="https://images.unsplash.com/photo-1509205477838-a534e43a849f?q=80&w=1778&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"><img src="https://unsplash.com/photos/ppKcYi1CXcI/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8Mzd8fHBldCUyMHBlcnNvbmFsaXR5fGVufDB8fHx8MTcxMDYwNjA5OHww&force=true"></a>
+
+    <div id="indiv">
+    <h3>Bobby:</h3>
+    <p1>Age: 3 years</p1>
+    <h3>Marlie: </h3>
+    <p2>Age: 2 years</p2>
+    <h3>Brant and Rocco: </h3>
+    <p3>Age: 1 year, 4 years. Come as an inseparable duo.</p3>
+    </div>
+  </div>
+
+  <div id="fur_ever">
+    <h1>The fur-ever form: A bond that counts.</h1>
+    <p>Make a committment today. Register with us to begin this unforgettable process. </p>
+    <hr>
+    <form action=" ">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Input name:" aria-label="name"/>
+      <br/>
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" placeholder="Enter email:"/>
+      <br/>
+      <label for="telephone">Tel:</label>
+      <input type="tel" id="phone" name="phone" placeholder="Enter Your Tel:"/>
+      <br/>
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age"/>
+      <fieldset>
+        <legend>Gender</legend>
+        <label for="gender">Gender:</label>
+        <input type="radio" id="female" name="gender"/>
+        <label for="female">Female</label><br/>
+        <input type="radio" id="male" name="gender"/>
+        <label for="male">Male</label>
+        <br/>
+      </fieldset>
+      <label for="skills">Skills or Interests Relevant to Pet Care:</label>
+      <select id="skills" name="skills">
+        <option value="english">English</option>
+        <option value="math">Math</option>
+        <option value="science">Science</option>
+        <option value="art_craft">Art and Craft</option>
+        <option value="agriculture">Agriculture</option>
+        <option value="geography">Geography</option>
+        <option value="history">History</option>
+      </select>
+      <br/>
+      <label for="preference">Pet Preference:</label>
+      <input type="checkbox" id="cat" name="cat"/>
+      <label for="cat">Cat</label>
+      <input type="checkbox" id="dog" name="dog"/>
+      <label for="dog">Dog</label><br/>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password"/>
+      <br/>
+      <input type="hidden" name="sessionId" value="your_session_id_here"/>
+      <br/>
+      <hr>
+      <button type="reset">Cancel</button>
+      <button type="submit">Register</button>
+      
+    </form><br/>
+    <p>Contact us today on: paws@gmail.com</p>
+
+  </div>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+<!-- 1. create the basic html structure. your structure should include a blue heading and a red paragragh with font size 15px -->
 
 <!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
 
