@@ -24,6 +24,7 @@ body {
 
 .big {
   flex: 1;
+  clear: ;
   letter-spacing: 1px;
   word-spacing: 2px;
 }
@@ -250,6 +251,7 @@ section h2 {
   color: #0d0e0e;
   padding: 20px;
   width: 800px;
+  font-size: 0.5cm;
   border-radius: 20px;
   letter-spacing: 1px;
   word-spacing: 2px;
