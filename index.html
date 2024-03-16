@@ -15,7 +15,8 @@
 <a href="index.html" target="_blank">Website</a>
 <!-- 3. create a section and add an image, using css; place a green border on the image, the image should be 500px wide and 500px high -->
 <section class="image">
-  <img src="flow.avif" alt="" srcset="">
+  <img src="flow.avif" alt="flower">
+
 </section>
 <!-- 4. create another section add a form that takes in the following input:
   a. name
@@ -31,23 +32,23 @@
   make sure to incorporate relevant labels in your form elements using the necessary and relevant input types and element attributes
 -->
 <section class="form">
-  <form action="" method="post"></form>
-  <p>
+  <form action="index.html" method="post"></form>
+  <div>
     <label for="name">Full Name:</label>
-    <input type="text" required>
-  </p>
-  <p>
+    <input type="email" id="email" name="name">
+  </div>
+  <div>
     <label for="email">Email Address:</label>
-    <input type="email" required>
-  </p>
-  <p>
-    <label for="phone number">Phone Number:</label>
-    <input type="tel">
-  </p>
-  <p>
-    <label for="age">Age:</label>
-    <input type="number" min="18" max="45">
-  </p>
+    <input type="email" id="email" name="email">
+  </div>
+  <div>
+    <label for="number">Phone Number:</label>
+    <input type="number" id="number" name="number">
+  </div>
+  <div>
+    <label for="age" >Age:</label>
+    <input type="number" id="age" name="age">
+    </div>
   <fieldset>
     <legend>Gender</legend>
     <input type="radio" id="male" name="gender" value="male">
