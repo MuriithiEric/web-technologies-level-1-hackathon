@@ -1,24 +1,76 @@
-<!-- 1. create the basic html structure. your structure should include a blue heading and a red paragragh with font size 15px -->
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karume</title>
 
-<!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
+  <link rel="stylesheet" href="style.css">
 
+</head>
 
-<!-- 3. create a section and add an image, using css; place a green border on the image, the image should be 500px wide and 500px high -->
+<body>
+  <a href="https://github.com/Karume-lab" target="_blank">See more exciting stuff in my GitHub!</a>
+  <section>
+    <img src="./assets/img/Giorno_Giovanna.png" alt="Image" class="green-border">
+  </section>
 
+  <h1>Welcome to my site</h1>
+  <p>Let us see some magic!</p>
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <br>
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" required>
+    <br>
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" required>
+    <br>
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" required>
+    <br>
+    <fieldset>
+      <legend>Gender:</legend>
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label>
+    </fieldset>
+    <br>
+    <label for="subjects">Subjects:</label>
+    <select id="subjects" name="subjects" multiple>
+      <option value="English">English</option>
+      <option value="Math">Math</option>
+      <option value="Science">Science</option>
+      <option value="Art and Craft">Art and Craft</option>
+      <option value="Agriculture">Agriculture</option>
+      <option value="Geography">Geography</option>
+      <option value="History">History</option>
+    </select>
+    <br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+    <br>
+    <input type="hidden" id="sessionId" name="sessionId" value="12345">
+    <br>
+    <button type="button" onclick="clearForm()">Cancel</button>
+    <button type="submit">Register</button>
+  </form>
+  <script>
+    function clearForm() {
+      document.getElementById("name").value = "";
+      document.getElementById("email").value = "";
+      document.getElementById("phone").value = "";
+      document.getElementById("age").value = "";
+      document.getElementById("male").checked = false;
+      document.getElementById("female").checked = false;
+      document.getElementById("subjects").selectedIndex = -1;
+      document.getElementById("password").value = "";
+    }
 
-<!-- 4. create another section add a form that takes in the following input:
-  a. name
-  b. email address
-  c. phone number
-  d. age
-  e. radio checkbox for gender (use fieldset to group the gender input)
-  f. dropdown for multi-selection of subjects: English, Math, Science, Art and Craft, Agriculture, Geography and History
-  g. password
-  h. a hidden field to capture sessionId
-  i. cancel button that clears form inputs
-  j. submit button with text register
-  make sure to incorporate relevant labels in your form elements using the necessary and relevant input types and element attributes
--->
+  </script>
+</body>
 
-<!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+</html>
