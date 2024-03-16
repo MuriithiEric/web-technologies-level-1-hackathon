@@ -1,11 +1,8 @@
 <!-- 1. create the basic html structure. your structure should include a blue heading and a red paragragh with font size 15px -->
 
-
 <!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
 
-
 <!-- 3. create a section and add an image, using css; place a green border on the image, the image should be 500px wide and 500px high -->
-
 
 <!-- 4. create another section add a form that takes in the following input:
   a. name
@@ -22,3 +19,82 @@
 -->
 
 <!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bernice Nkirote</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1 class="title">Hi,my name is Bernice</h1>
+      <p class="info">
+        I am a developer with 2 years of experience. My skills include front-end
+        and back-end technolgies.
+      </p>
+      <ul class="social-media">
+        <li><a href="www.instagram.com" target="_blank"> Instagram </a></li>
+        <li><a href="www.twitter.com" target="_blank"> Twitter </a></li>
+        <li><a href="www.github.com" target="blank"> Github </a></li>
+      </ul>
+    </div>
+    <section class="img-portfolio">
+      <img src="./images/coder.jpg" class="coder-img" alt="coder" />
+    </section>
+    <section class="contacts">
+      <form action="submit.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email Adress:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required />
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required />
+
+        <!-- gender -->
+        <fieldset>
+          <legend>Gender:</legend>
+          <label> <input type="radio" name="gender" value="male" />Male</label>
+          <label>
+            <input type="radio" name="gender" value="female" />Female</label
+          >
+          <label>
+            <input type="radio" name="gender" value="other" />Other</label
+          >
+        </fieldset>
+
+        <!-- subjects -->
+        <label for="subjects">Subjects:</label>
+        <select name="subjects" id="subjects">
+          <option value="English">English</option>
+          <option value="Math">Math</option>
+          <option value="Science">Science</option>
+          <option value="Art and Craft">Art and Craft</option>
+          <option value="Agriculture">Agriculture</option>
+          <option value="Geography">Geography</option>
+          <option value="History">History</option>
+        </select>
+
+        <!-- password -->
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required />
+
+        <!-- hidden sessionId -->
+        <input type="hidden" name="sessionId" value="123456789" />
+
+        <!-- buttons -->
+        <div class="buttons">
+          <input class="cancel" type="reset" value="Cancel" />
+          <input class="submit" type="submit" value="Register" />
+        </div>
+      </form>
+    </section>
+  </body>
+</html>
