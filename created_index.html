@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathon Basic HTML Page</title>
+    <link rel="stylesheet" href="style.css">
+     <a href="https://www.example.com" target="_blank">Visit External Resource</a>
+</head>
+<body>
+    <h1>Welcome to My Student Registration Hackathon Page</h1>
+    <p>This is my red paragraph with font size 15px.</p>
+    <section>
+        <img src="pexelimage.jpg" alt="Green-bordered image">
+    </section>
+    <br>
+    <section>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" name="name" placeholder="Jane Doe"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" placeholder="jdoe@gmail.com"><br><br>
+            <label for="tel">Phone:</label>
+            <input type="tel" name="phone" placeholder="0977654680"><br><br>
+            <label for="number">Age:</label>
+            <input type="number" name="age" placeholder="18"><br><br>
+            
+            <fieldset>
+                <legend>Gender:</legend>
+                <input type="radio" name="gender" value="male" id="male">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" value="female" id="female">
+                <label for="female">Female</label>
+            </fieldset>
+            <br>
+            <label for="subjects">Select Subject:</label><br>
+            <select id="subjects" name="subjects" multiple>
+                <option value="english">English</option>
+                <option value="math">Math</option>
+                <option value="science">Science</option>
+                <option value="art_craft">Art and Craft</option>
+                <option value="agriculture">Agriculture</option>
+                <option value="geography">Geography</option>
+                <option value="history">History</option>
+            </select>
+            <br><br>
+            <label for="password">Create Password:</label>
+            <input type="password" name="password" placeholder="Password"><br>
+            <input type="hidden" name="sessionId" value="12345">
+            <br>
+            <button type="button" onclick="this.form.reset()">Cancel</button>
+            <button type="submit">Register</button>
+        </form>
+
+    </section>
+       
+   
+</body>
+</html>
