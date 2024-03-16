@@ -1,1 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+
+}
+
+h1 {
+    padding: 20px;
+    color: blue;
+    text-align: center;
+}
+p {
+    color: red;
+    font-size: 15px;
+}
+
+img{
+    border: 10px solid green;
+
+}
+
+.section{
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(161, 161, 161);
+}
+
+.image{
+    background-color: gainsboro;
+    border: 3px solid #333;
+}
+
+.details{
+    background-color: gainsboro;
+    border: 3px solid #333;
+
+}
+
+form{
+    margin: 15px;
+}
+
+form label{
+    margin-bottom: 5px;
+}
+
+form fieldset{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #333;
+}
+
+form input{
+    margin-bottom: 15px;
+}
+
+form button {
+   background-color: green;
+   width: 100px;
+   height: 30px;
+   font-size: medium;
+   font-weight: 300;
+}
+
 
