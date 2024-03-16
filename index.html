@@ -1,24 +1,67 @@
-<!-- 1. create the basic html structure. your structure should include a blue heading and a red paragragh with font size 15px -->
-
-
-<!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
-
-
-<!-- 3. create a section and add an image, using css; place a green border on the image, the image should be 500px wide and 500px high -->
-
-
-<!-- 4. create another section add a form that takes in the following input:
-  a. name
-  b. email address
-  c. phone number
-  d. age
-  e. radio checkbox for gender (use fieldset to group the gender input)
-  f. dropdown for multi-selection of subjects: English, Math, Science, Art and Craft, Agriculture, Geography and History
-  g. password
-  h. a hidden field to capture sessionId
-  i. cancel button that clears form inputs
-  j. submit button with text register
-  make sure to incorporate relevant labels in your form elements using the necessary and relevant input types and element attributes
--->
-
-<!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Technologies Hackathon</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <!-- Blue heading -->
+      <h1>HTML and CSS</h1>
+    
+      <!-- Red paragraph with font size 15px -->
+      <p >HTML and CSS are fundamental technologies for building web pages.</p>
+      
+      <!-- Link to an external resource -->
+      <a href="https://learn.shayhowe.com/html-css/" target="_blank">Learn more about HTML and CSS</a>
+      
+      <!-- Section with an image -->
+      <section class="image-section">
+          <img src="https://plus.unsplash.com/premium_photo-1670274606895-f2dc713f8a90?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29tcHV0ZXJ8ZW58MHx8MHx8fDA%3D" alt="Green border image" class="border-image">
+      </section>
+      
+      <!-- Section with a form -->
+      <section class="form-section">
+          <form action="#" method="post">
+              <label for="name">Name:</label><br>
+              <input type="text" id="name" name="name" required><br>
+              
+              <label for="email">Email:</label><br>
+              <input type="email" id="email" name="email" required><br>
+              
+              <label for="phone">Phone:</label><br>
+              <input type="tel" id="phone" name="phone" required><br>
+              
+              <label for="age">Age:</label><br>
+              <input type="number" id="age" name="age" required><br>
+              
+              <fieldset>
+                  <legend>Gender:</legend>
+                  <label><input type="radio" name="gender" value="male"> Male</label><br>
+                  <label><input type="radio" name="gender" value="female"> Female</label><br>
+                  <label><input type="radio" name="gender" value="other"> Other</label><br>
+              </fieldset>
+              
+              <label for="subjects">Subjects:</label><br>
+              <select id="subjects" name="subjects" multiple required>
+                  <option value="English">English</option>
+                  <option value="Math">Math</option>
+                  <option value="Science">Science</option>
+                  <option value="Art and Craft">Art and Craft</option>
+                  <option value="Agriculture">Agriculture</option>
+                  <option value="Geography">Geography</option>
+                  <option value="History">History</option>
+              </select><br>
+              
+              <label for="password">Password:</label><br>
+              <input type="password" id="password" name="password" required><br>
+              
+              <input type="hidden" id="sessionId" name="sessionId" value="12345">
+              
+              <button type="button" onclick="clearForm()">Cancel</button>
+              <button type="submit">Register</button>
+          </form>
+      </section>
+</body>
+</html>

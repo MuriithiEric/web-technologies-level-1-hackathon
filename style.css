@@ -1,1 +1,114 @@
+/* Style for the body */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-image: url('images/background.jpeg');
+    background-size: cover;
+    background-position: center;
+}
 
+/* Styles for the h1 and paragraph */
+h1 {
+    color: blue;
+}
+
+p {
+    color: red;
+    font-size: 15px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+/* Styles for the form section */
+.form-section {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.form-section, .image-section {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Style for the form */
+form {
+    width: 100%;
+    max-width: 400px; /* Limit the form width for readability */
+}
+
+/* Styles for form labels */
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Styles for form inputs */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Styles for radio buttons and checkboxes */
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Style for the cancel button */
+button[type="button"] {
+    background-color: #ccc;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+/* Style for the submit button */
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Style for the image section */
+.image-section {
+    margin-top: 20px;
+}
+
+/* Style for the image with a green border */
+.border-image {
+    width: 500px;
+    height: 500px;
+    border: 5px solid #28a745;
+    border-radius: 5px;
+}
+
+section {
+    margin-bottom: 20px;
+}
