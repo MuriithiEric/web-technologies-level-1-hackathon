@@ -1,24 +1,59 @@
-<!-- 1. create the basic html structure. your structure should include a blue heading and a red paragragh with font size 15px -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Hackathon</title>
+</head>
+<body>
+    <section id="main-header-section">
+        <h1 id="main-header">
+            Welcome to Africa!
+        </h1>
+        <p id="main-header-paragraph">
+            Welcome to the vibrant heart of Africa! Our website is your gateway to the rich cultures, stunning landscapes, and warm hospitality that define this diverse continent. Whether you're planning a safari adventure, exploring ancient civilizations, or simply seeking a taste of African life, we're here to guide you on an unforgettable journey. Join us as we celebrate the beauty and wonder of Africa, where every moment is an opportunity for discovery and inspiration.
+        </p>
+        <a href="https://en.wikipedia.org/wiki/Kenya" id="link" target="_blank" rel="noopener noreferrer">Checkout the Best African Country</a>
+    </section>
+    <section id="image-section">
+        <img id="giraffe-image" src="pic.jpg" alt="Girrafes in the African savannah.">
+    </section>
 
-
-<!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
-
-
-<!-- 3. create a section and add an image, using css; place a green border on the image, the image should be 500px wide and 500px high -->
-
-
-<!-- 4. create another section add a form that takes in the following input:
-  a. name
-  b. email address
-  c. phone number
-  d. age
-  e. radio checkbox for gender (use fieldset to group the gender input)
-  f. dropdown for multi-selection of subjects: English, Math, Science, Art and Craft, Agriculture, Geography and History
-  g. password
-  h. a hidden field to capture sessionId
-  i. cancel button that clears form inputs
-  j. submit button with text register
-  make sure to incorporate relevant labels in your form elements using the necessary and relevant input types and element attributes
--->
-
-<!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+    <section id="form-section">
+        <form action="">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="number">Phone Number:</label>
+            <input type="number" id="number" minlength="10" name="number" required>
+            <label for="age">Age:</label>
+            <input type="age" id="age" name="age" required>
+            <fieldset>
+                <legend>Gender</legend>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="male">
+                <label for="male">Female</label>
+                <input type="radio" name="gender" id="female">
+            </fieldset>
+            <label for="subject">Subject:</label>
+            <select name="subject" id="subject">
+                <option disabled selected value="">Select a subject</option>
+                <option value="english">English</option>
+                <option value="math">Math</option>
+                <option value="science">Science</option>
+                <option value="a&c">Art & Craft</option>
+                <option value="agriculture">Agriculture</option>
+                <option value="geography">Geography</option>
+                <option value="history">History</option>
+            </select>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <input type="number" hidden name="session-id">
+            <input type="reset" value="reset" name="reset" id="reset">
+            <input type="submit" value="submit" name="submit" id="submit">
+        </form>
+    </section>
+</body>
+</html>
