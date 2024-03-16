@@ -24,7 +24,6 @@ body {
 
 .big {
   flex: 1;
-  clear: ;
   letter-spacing: 1px;
   word-spacing: 2px;
 }
