@@ -1,6 +1,31 @@
 <!-- 1. create the basic html structure. your structure should include a blue heading and a red paragragh with font size 15px -->
 
-<!-- 4. create another section add a form that takes in the following input:
+<!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Queen of hope academy Website</title>
+</head>
+<body>
+  <section id="first">
+    <h1>QUEEN OF HOPE ACADEMY </h1>
+    <p>Welcome to our website</p>
+    <!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
+    <a href="http://www.example.com" target="_blank" >visit this page for more information about our curricullum</a>
+  </section>
+  <section id="second">
+    <!-- 3. create a section and add an image, using css; place a green border on the image, the image should be 500px wide and 500px high -->
+    <figure id="img1">
+      <img src="image1.jpg" alt="this is my image">
+      <figcaption>this is my image</figcaption>
+     </figure>
+
+
+  </section>
+  <section id="third">
+    <!-- 4. create another section add a form that takes in the following input:
   a. name
   b. email address
   c. phone number
@@ -13,29 +38,56 @@
   j. submit button with text register
   make sure to incorporate relevant labels in your form elements using the necessary and relevant input types and element attributes
 -->
+<form action="#" method="post">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" placeholder="enter your name" required> <br>
+  <label for="email">Email Address:</label>
+  <input type="email" id="email" name="email" placeholder="enter your email address" required> <br>
+  <label for="telephone">Telephone:</label>
+  <input type="tel" id="telephone" name="telephone" placeholder="enter your phone number" required>
+  <small>Format: [+123]456780</small> <br>
+  <label for="age">How old are you?:</label>
+  <input type="" id="age" name="age" placeholder="enter your age"required> <br>
+  <!--gender selection-->
+  <fieldset>
+    <legend>Gender</legend>
+    <label>
+      <input type="radio" name="gender" value="male">
+      Male
+    </label><br>
+    <label>
+      <input type="radio" name="gender" value="female">
+      Female
+    </label><br>
+    <label>
+      <input type="radio" name="gender" value="other">
+      Other
+    </label><br>
+  </fieldset> <br><br>
 
-<!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Teresiah's Website</title>
-</head>
-<body>
-  <section id="first">
-    <h1>QUEEN OF HOPE ACADEMY WEBSITE</h1>
-    <p>Welcome to our website</p>
-    <!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
-    <a href="http://www.example.com" target="_blank" >visit this page for more information about this course</a>
-  </section>
-  <section id="second">
-    <!-- 3. create a section and add an image, using css; place a green border on the image, the image should be 500px wide and 500px high -->
-    <figure>
-      <img src="image1.jpg" alt="this is my image">
-      <figcaption>this is my image</figcaption>
-     </figure>
+  <!--subject selection -->
+  <label for="subjects">Select Subjects:</label><br>
+  <select name="subjects" id="subjects" multiple>
+    <option value="english">English</option>
+    <option value="math">Math</option>
+    <option value="science">Science</option>
+    <option value="art_craft">Art and Craft</option>
+    <option value="agriculture">Agriculture</option>
+    <option value="geography">Geography</option>
+    <option value="history">History</option>
+  </select><br><br>
 
+  <label for="password">Password:</label><br>
+  <input type="password" id="password" name="password"><br><br>
+  
+  <!-- Hidden field for sessionId -->
+  <input type="hidden" id="sessionId" name="sessionId" value="your_session_id_here">
+
+ 
+
+  <button type="submit">Register</button>
+  <button type="button" class="cancel" onclick="window.location.href='index.html'">Cancel</button>
+</form>
 
   </section>
 </body>
