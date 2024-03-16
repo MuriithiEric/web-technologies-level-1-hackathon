@@ -1,1 +1,70 @@
+body {
+    background-color: bisque;
+}
 
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: maroon;
+    overflow: hidden;
+    
+}
+
+li{
+    padding: 120px;
+    display: inline;
+}
+li a{
+    text-decoration: none;
+    color: black;
+    font-size: large;
+}
+li a:hover {
+    color: white;
+}
+
+#home h2 {
+    font-size: 15px;
+    font-style: italic;
+    color: blue;
+}
+#home img{
+    width: 500px;
+    height: 500px;
+    margin: 2px;
+    
+}
+#home .green-border{
+    border-width: 5px;
+    border-style: dotted;
+    border-color: green;
+}
+#home p{
+    font-size: 15px;
+    color: red;
+}
+#featured {
+    display:none;
+}
+#featured img{
+    width: 400px;
+    height: 400px;
+}
+#indiv {
+    display:flex;
+    
+}
+#indiv p1{
+    margin-right: 300px;
+}
+#indiv p2{
+    margin-right: 300px;
+}
+#fur_ever{
+    display: none;
+}
+form label,
+form input{
+    margin: 20px;
+}
