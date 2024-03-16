@@ -1,24 +1,71 @@
-<!-- 1. create the basic html structure. your structure should include a blue heading and a red paragragh with font size 15px -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Webpage</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="blue-heading">Web Assignment</h1>
+    </header>
 
+    <p class="red-paragraph">This is an assignment</p>
 
-<!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
+    <a href="https://www.example.com" target="_blank"
+      >Link to External Resource</a
+    >
 
+    <section>
+      <img
+        src="https://codeop.tech/wp-content/uploads/2022/09/coding-black-females.jpg"
+        alt="Green Border Image"
+        class="green-border-image"
+      />
+    </section>
 
-<!-- 3. create a section and add an image, using css; place a green border on the image, the image should be 500px wide and 500px high -->
+    <section>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
 
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required />
 
-<!-- 4. create another section add a form that takes in the following input:
-  a. name
-  b. email address
-  c. phone number
-  d. age
-  e. radio checkbox for gender (use fieldset to group the gender input)
-  f. dropdown for multi-selection of subjects: English, Math, Science, Art and Craft, Agriculture, Geography and History
-  g. password
-  h. a hidden field to capture sessionId
-  i. cancel button that clears form inputs
-  j. submit button with text register
-  make sure to incorporate relevant labels in your form elements using the necessary and relevant input types and element attributes
--->
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required />
 
-<!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required />
+
+        <fieldset>
+          <legend>Gender:</legend>
+          <label><input type="radio" name="gender" value="male" /> Male</label>
+          <label
+            ><input type="radio" name="gender" value="female" /> Female</label
+          >
+        </fieldset>
+
+        <label for="subjects">Subjects:</label>
+        <select id="subjects" name="subjects[]" multiple>
+          <option value="english">English</option>
+          <option value="math">Math</option>
+          <option value="science">Science</option>
+          <option value="art">Art and Craft</option>
+          <option value="agriculture">Agriculture</option>
+          <option value="geography">Geography</option>
+          <option value="history">History</option>
+        </select>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+
+        <input type="hidden" id="sessionId" name="sessionId" value="123456" />
+
+        <button type="button" id="cancel-button">Cancel</button>
+        <button type="submit" id="register-button">Register</button>
+      </form>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
