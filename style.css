@@ -1,1 +1,42 @@
-
+body{
+    padding: 24px 12px 12px 12px;
+}
+.heading{
+    color:blue;
+    font-size:15px;
+}
+.paragraph{
+    font-size:15px;
+    color:red;
+}
+.form{
+    display: block;
+    padding: 24px 16px 16px 16px;
+    height: fit-content;
+    width:500px;
+}
+.form input{
+    padding: 6px 6px 6px 6px;
+   
+}
+.imgsect img{
+    width: 500px;
+    height: 500px;
+    border: 5px solid green;
+}
+fieldset{
+    width:230px;
+    height: 50px;
+}
+select{
+    width:300px;
+    height:60px;
+    border-radius: 4px;
+}
+.buttons{
+    display: flex;
+    width:200px;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 6px 6px 6px 6px;
+}
