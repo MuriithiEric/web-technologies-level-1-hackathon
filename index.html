@@ -1,11 +1,8 @@
 <!-- 1. create the basic html structure. your structure should include a blue heading and a red paragragh with font size 15px -->
 
-
 <!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
 
-
 <!-- 3. create a section and add an image, using css; place a green border on the image, the image should be 500px wide and 500px high -->
-
 
 <!-- 4. create another section add a form that takes in the following input:
   a. name
@@ -22,3 +19,64 @@
 -->
 
 <!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Flutter</title>
+</head>
+
+<body>
+    <h3>Flutter Framework</h3>
+    <p>Flutter is an open-source UI software development kit created by Google, used to develop applications for mobile, web, and desktop platforms from a single codebase. It uses the Dart programming language, also developed by Google, known for its fast
+        performance and ease of learning. Flutter's hot reload feature allows developers to quickly see changes in their application code without losing the application state, streamlining the development process.</p>
+    <div class="link"><a href="https://flutter.dev/" target="_blank">View Flutter Documentation:</a></div>
+    <section class="image">
+        <img src="flutter-dart.jpg" alt="Git Logo">
+    </section>
+    <section class="form">
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone" required><br><br>
+
+            <label for="age">Age:</label><br>
+            <input type="number" id="age" name="age" required><br><br>
+
+            <fieldset>
+                <legend>Gender:</legend>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br>
+            </fieldset><br>
+
+            <label for="subjects">Subjects:</label><br>
+            <select id="subjects" name="subjects">
+            <option value="English">English</option>
+            <option value="Math">Math</option>
+            <option value="Science">Science</option>
+            <option value="Art and Craft">Art and Craft</option>
+            <option value="Agriculture">Agriculture</option>
+            <option value="Geography">Geography</option>
+            <option value="History">History</option>
+        </select><br><br>
+
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required><br><br>
+            <input type="hidden" id="sessionId" name="sessionId" value="session-id"><br>
+            <input type="button" value="Cancel"><br><br>
+            <input type="submit" value="Register">
+        </form>
+    </section>
+</body>
+
+</html>
