@@ -1,1 +1,170 @@
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+    #registrationForm {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+}
+
+/* Media query for even smaller screens */
+@media only screen and (max-width: 480px) {
+    body {
+        font-size: 12px; /* Adjust font size for even smaller screens */
+    }
+    #registrationForm {
+        width: 95%; /* Adjust width for even smaller screens */
+    }
+}
+
+/* Incorporate the provided color palette */
+:root {
+    --primary-100: #d4eaf7;
+    --primary-200: #b6ccd8;
+    --primary-300: #3b3c3d;
+    --accent-100: #71c4ef;
+    --accent-200: #00668c;
+    --text-100: #1d1c1c;
+    --text-200: #313d44;
+    --bg-100: #fffefb;
+    --bg-200: #f5f4f1;
+    --bg-300: #cccbc8;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+h1 {
+    color: blue;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+p {
+    color: red;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+a {
+    font-size: 1.2rem;
+    margin: 10px;
+    text-decoration: none;
+}
+
+/* Style for the image */
+.image {
+    border: 5px solid green;
+    border-radius: 20px;
+    width: 500px;
+    height: 500px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+/* Style for the form */
+#registrationForm {
+    margin: 0 auto;
+    width: 75%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--primary-200);
+}
+
+/* Style for the fieldset */
+#registrationForm fieldset {
+    border: 1px solid var(--primary-200);
+    padding: 20px;
+    margin: 0;
+}
+
+/* Style for the legend */
+#registrationForm legend {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: var(--primary-300);
+}
+
+/* Style for the labels */
+#registrationForm label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--text-100);
+}
+
+/* Style for the input elements */
+#registrationForm input[type="text"],
+#registrationForm input[type="email"],
+#registrationForm input[type="tel"],
+#registrationForm input[type="number"],
+#registrationForm select {
+    width: 50%;
+    padding: 8px;
+    border: 1px solid var(--primary-200);
+    border-radius: 3px;
+    background-color: var(--bg-200);
+    color: var(--text-100);
+}
+
+/* Style for the radio buttons */
+fieldset[name="gender"] {
+    display: flex;
+    align-items: center;
+}
+  
+fieldset[name="gender"] label {
+    margin-right: 10px;
+    margin-bottom: 0;
+}
+
+
+/* Style for the input fields on focus */
+#registrationForm input[type="text"]:focus,
+#registrationForm input[type="email"]:focus,
+#registrationForm input[type="tel"]:focus,
+#registrationForm input[type="number"]:focus,
+#registrationForm select:focus {
+    border-color: var(--accent-100);
+    outline: none;
+}
+
+/* Style for the submit button */
+#registrationForm button[type="submit"] {
+    background-color: var(--accent-100);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Style for the submit button hover */
+#registrationForm button[type="submit"]:hover {
+    background-color: var(--accent-200);
+}
+
+/* Style for the cancel button */
+#registrationForm button[type="button"] {
+    background-color: #dc3545;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Style for the cancel button hover */
+#registrationForm button[type="button"]:hover {
+    background-color: #c82333;
+}
 
