@@ -2,6 +2,20 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-size: 15px;
+}
+
+body {
+    width: 100%;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
 }
 
 nav {
@@ -9,5 +23,14 @@ nav {
     top: 0;
     left: 0;
     right: 0;
-    box-shadow: 0 2 0 rgb(0, 0, 0);
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 100%;
+    padding: .5em 2em;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+
 }
