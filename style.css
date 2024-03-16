@@ -1,1 +1,15 @@
+.image {
+    background: url('C:\Users\ADMIN\Desktop\Object oriented programs\web-technologies-level-1-hackathon.jpg') 0 0 / cover no-repeat green;
+    width: 500px;
+    height: 500px;
+  }
+
+body {
+    background-color: rgb(100, 89, 89);
+  }
+  
+  h1 {
+    color: black;
+    margin-right: 30px;
+  }
 

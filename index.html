@@ -7,7 +7,7 @@
 <!-- 3. create a section and add an image, using css; place a green border on the image, the image should be 500px wide and 500px high -->
 
 
-<!-- 4. create another section add a form that takes in the following input:
+ <!-- 4. create another section add a form that takes in the following input:
   a. name
   b. email address
   c. phone number
@@ -18,7 +18,56 @@
   h. a hidden field to capture sessionId
   i. cancel button that clears form inputs
   j. submit button with text register
-  make sure to incorporate relevant labels in your form elements using the necessary and relevant input types and element attributes
--->
+  make sure to incorporate relevant labels in your form elements using the necessary and relevant input types and element attributes -->
 
 <!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Example Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 style="color: blue;">Hackathon document</h1>
+    <p style="color: red; font-size: 15px;">This is a purple paragraph with font size 15px.</p>
+    <a href="https://www.google.com" target="_blank">Open an external resource in a new tab</a>
+    <section>
+      <img src="tech.jpg" alt="Technology " style="width: 500px; height: 500px; border: 2px solid green;" />
+    </section>
+    <section>
+        <form>
+          <label for="name">Name:</label><br>
+          <input type="text" id="name" name="name" required><br>
+          <label for="email">Email Address:</label><br>
+          <input type="email" id="email" name="email" required><br>
+          <label for="phone">Phone Number:</label><br>
+          <input type="tel" id="phone" name="phone" required><br>
+          <label for="age">Age:</label><br>
+          <input type="number" id="age" name="age" required><br>
+          <fieldset>
+            <legend>Gender:</legend>
+            <label for="male">Male:</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="female">Female:</label>
+            <input type="radio" id="female" name="gender" value="female" required><br>
+          </fieldset><br>
+          <label for="subjects">Subjects:</label><br>
+          <select id="subjects" name="subjects" multiple required>
+            <option value="English">English</option>
+            <option value="Math">Math</option>
+            <option value="Science">Science</option>
+            <option value="Art and Craft">Art and Craft</option>
+            <option value="Agriculture">Agriculture</option>
+            <option value="Geography and History">Geography and History</option>
+          </select><br>
+          <label for="password">Password:</label><br>
+          <input type="password" id="password" name="password" required><br>
+          <input type="hidden" id="sessionId" name="sessionId" value="123456">
+          <button type="reset">Cancel</button>
+          <button type="submit">Register</button>
+        </form>
+      </section>
+     
