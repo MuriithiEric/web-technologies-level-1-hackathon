@@ -1,1 +1,116 @@
+#main-header-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 100px;
+    margin-right: 50px;
+}
+
+#main-header {
+    color: blue;
+    display: block;
+}
+
+#main-header-paragraph {
+    color: red;
+    font-size: 15px;
+}
+
+#link {
+    color: blue;
+    text-decoration: none;
+}
+
+#link:hover {
+    color: orange;
+}
+
+#image-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#giraffe-image {
+    width: 500px;
+    height: 500px;
+    border: 2px dotted green;
+    border-radius: 50px;
+}
+
+form {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: column;
+    background-color: #e0dfd5;
+    border-radius: 50px;
+}
+
+form > label {
+    margin-bottom: 5px;
+}
+
+form > input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 2px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: 1px solid black;
+    border-radius: 50px;
+    width: 50%;
+    background-color: white;
+}
+
+form > input:focus {
+    background-color: whitesmoke;
+}
+
+form > input:hover {
+    border-bottom: none;
+    border-right: none;
+}
+
+form > select {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    width: 50%;
+}
+
+form > fieldset {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    width: 50%;
+}
+
+#reset {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 50px;
+    border: 1px solid black;
+    width: 25%;
+    color: white;
+    background-color: red;
+    font-size: 15px;
+}
+
+#submit {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 50px;
+    border: 1px solid black;
+    width: 25%;
+    color: white;
+    background-color: blue;
+    font-size: 15px;
+}
+
 
