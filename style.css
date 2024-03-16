@@ -1,1 +1,109 @@
+<<<<<<< HEAD
 
+=======
+/* style.css */
+
+body {
+    background-color: #000020;
+    color: #c0c0ff;
+    font-family: 'Courier New', monospace;
+}
+
+h1 {
+    color: #80b0ff;
+    text-align: center;
+    text-shadow: 0 0 10px #4080ff;
+}
+
+.red-paragraph {
+    color: #ff8080;
+    font-size: 15px;
+    text-align: center;
+    text-shadow: 0 0 5px #ff4040;
+}
+
+a {
+    color: #c0ffc0;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #80ff80;
+    text-shadow: 0 0 10px #40ff40;
+}
+
+img {
+    width: 500px;
+    height: 500px;
+    border: 5px solid #80ff80;
+    display: block;
+    margin: 20px auto;
+    box-shadow: 0 0 20px rgba(128, 255, 128, 0.5);
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 32, 0.8);
+    border: 1px solid #4080ff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(64, 128, 255, 0.5);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #c0c0ff;
+    text-shadow: 0 0 5px #8080ff;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid #8080ff;
+    border-radius: 5px;
+    color: #c0c0ff;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+fieldset {
+    border: 1px solid #8080ff;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+legend {
+    color: #c0c0ff;
+    text-shadow: 0 0 5px #8080ff;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4080ff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #80b0ff;
+}
+>>>>>>> 4c33869 (Update index.html and style.css)
