@@ -22,3 +22,77 @@
 -->
 
 <!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Structure</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1 class="blue-heading">WEB HACKATHON LEVEL 1</h1>
+    <p class="red-paragraph">A web hackathon is an event where individuals or teams come together to collaboratively work on projects related to web development within a limited timeframe,
+       typically ranging from a few hours to a few days. Participants, often including programmers, designers, and project managers, gather to brainstorm ideas, build prototypes,
+      and ultimately create functional web applications or websites. These events foster creativity, innovation, and teamwork, 
+      as participants are encouraged to push the boundaries of their technical skills while tackling real-world challenges or exploring new technologies. 
+      Hackathons often feature workshops, mentorship sessions, and networking opportunities, providing participants with a supportive environment to learn, grow, and showcase their talents.
+      At the end of the hackathon, projects are usually presented to a panel of judges or the broader community, with prizes awarded to standout creations. Overall, web hackathons serve as exciting platforms for skill development, 
+      community engagement, and the rapid iteration of web-based solutions.</p>
+
+    
+    <a href="https://plpacademy.powerlearnproject.org/available-courses" target="_blank">External Resource</a>
+
+    
+    <section>
+        <img src="image/plp.webp" alt="PLP Image" class="border-green" width="500" height="500">
+    </section>
+
+    
+    <section>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required><br>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required><br>
+
+            <fieldset>
+                <legend>Gender:</legend>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Female</label>
+            </fieldset>
+
+            <label for="subjects">Subjects:</label>
+            <select id="subjects" name="subjects[]" multiple>
+                <option value="English">English</option>
+                <option value="Math">Math</option>
+                <option value="Science">Science</option>
+                <option value="Art and Craft">Art and Craft</option>
+                <option value="Agriculture">Agriculture</option>
+                <option value="Geography">Geography</option>
+                <option value="History">History</option>
+            </select><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br>
+
+            <input type="hidden" id="sessionId" name="sessionId" value="123456"><br>
+
+            <button type="button" onclick="clearForm()">Cancel</button>
+            <input type="submit" value="Register">
+        </form>
+    </section>
+
+    
+</body>
+</html>
