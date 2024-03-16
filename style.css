@@ -1,1 +1,16 @@
+.img {
+    width: 500px;
+    height: 500px;
+    border: 5px solid green;
+}
+
+.paragraph{
+    color: red;
+    font-size: 15px;
+}
+
+.heading{
+    color: blue;
+}
+
 
