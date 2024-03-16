@@ -1,44 +1,42 @@
-img{
-    border: green 12px;
-    width: 500px;
-    height: 500px;
-}
-form {
-    width: 300px;
+/* Style the blue heading */
+h1 {
+    color: #007bff; /* Blue color */
+  }
+  
+  /* Style the red paragraph */
+  p {
+    color: rgb(37, 33, 33); /* Red color */
+    font-size: 15px; /* Font size 15px */
+  }
+  
+  body{
+    align-items: center;
+  }
+  /* Style the image */
+  .image img {
+    width: 500px; /* Set width to 500px */
+    height: 500px; /* Set height to 500px */
+    border: 2px solid green; /* Green border */
+  }
+  
+  /* Style the form section */
+  .form {
+    margin-top: 20px;
+  }
+  
+  
+  .form {
+    width: 50%; 
     margin: 0 auto;
-    font-family: Arial, sans-serif;
-  }
-  
-  /* Style the fieldset for gender */
-  fieldset {
-    margin-bottom: 20px;
-  }
-  
-  legend {
-    font-weight: bold;
   }
   
   /* Style radio buttons */
-  input[type="radio"] {
+  .form input[type="radio"] {
     margin-right: 10px;
   }
   
-  /* Style the dropdown for subjects */
-  select {
-    width: 100%;
-    padding: 5px;
-    margin-bottom: 20px;
-  }
-  
-  /* Style the password input */
-  input[type="password"] {
-    width: 100%;
-    padding: 5px;
-    margin-bottom: 20px;
-  }
-  
-  /* Style the buttons */
-  button {
+  /* Style buttons */
+  .form button {
     padding: 10px 20px;
     background-color: #007bff;
     color: white;
@@ -47,15 +45,16 @@ form {
     margin-right: 10px;
   }
   
-  button:hover {
+  .form button:hover {
     background-color: #0056b3;
   }
   
-  /* Clear button */
-  button[type="button"] {
+  /* Cancel button */
+  .form button[type="button"] {
     background-color: #dc3545;
   }
   
-  button[type="button"]:hover {
+  .form button[type="button"]:hover {
     background-color: #bd2130;
   }
+  
