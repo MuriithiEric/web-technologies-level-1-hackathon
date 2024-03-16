@@ -1,15 +1,19 @@
 /* Style for the body */
 body {
-    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 0;
     padding: 0;
-    background-color: #f8f9fa;
+    background-image: url('images/background.jpeg');
+    background-size: cover;
+    background-position: center;
 }
 
 /* Styles for the h1 and paragraph */
 h1 {
     color: blue;
-    margin-top: 0;
 }
 
 p {
@@ -30,6 +34,19 @@ a {
     border: 1px solid #ccc;
     border-radius: 5px;
     width: 300px;
+}
+
+.form-section, .image-section {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Style for the form */
+form {
+    width: 100%;
+    max-width: 400px; /* Limit the form width for readability */
 }
 
 /* Styles for form labels */
