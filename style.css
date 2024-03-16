@@ -1,19 +1,61 @@
 /* Blue heading */
+
 h1 {
     color: blue;
+    font-weight: bold; 
+    text-align: center; 
+    margin-bottom: 20px; /*  margin below the heading for spacing */
 }
 
-/* Red paragraph with font size 15px */
+/* red paragraph */
 p {
     color: red;
     font-size: 15px;
+    line-height: 1.5; 
+    margin: 0; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
 }
+
 img {
     width: 500px;
     height: 500px;
     border: 2px solid green;
 }
+#img1 {
+    text-align: center;
+}
 
+
+
+/* Styling for the first section */
+.first {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+/* Styling for the link within the first section */
+.first a {
+    color: blue; 
+    text-decoration: none; /* Remove underline */
+}
+
+.first a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* Styling for the second section */
+.second {
+    margin-top: 20px;
+}
+
+
+/* Styling for the caption */
+#img1 figcaption {
+    font-style: italic;
+    margin-top: 10px;
+}
 
 
 /* Form container */
@@ -38,7 +80,6 @@ input[type="email"],
 input[type="tel"],
 input[type="password"],
 select {
-    width: calc(100% - 10px);
     padding: 8px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
@@ -72,6 +113,4 @@ button[type="submit"]:hover,
 button.cancel:hover {
     background-color: #0056b3;
 }
-
-
 
