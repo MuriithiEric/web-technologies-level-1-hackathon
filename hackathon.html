@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Production Factory</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- HTML Structure -->
+    <header>
+        <h1>Welcome to the Production Factory</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#departments">Departments</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Paragraphs & Headings -->
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We are a leading production factory specializing in manufacturing high-quality products.</p>
+            <p>Our mission is to deliver excellence through innovation and efficiency.</p>
+        </section>
+
+        <!-- Links -->
+        <section id="departments">
+            <h2>Our Departments</h2>
+            <ul>
+                <li><a href="#production">Production</a></li>
+                <li><a href="#quality">Quality Control</a></li>
+                <li><a href="#maintenance">Maintenance</a></li>
+            </ul>
+        </section>
+
+        <!-- Images -->
+        <section id="production">
+            <h2>Production Department</h2>
+            <img src="./images.png" alt="Production Department">
+            <p>We utilize state-of-the-art machinery for efficient production processes.</p>
+        </section>
+
+        <section id="quality">
+            <h2>Quality Control Department</h2>
+            <img class="quality" src="./quality.png" alt="Quality Control Department">
+            <p>Our dedicated team ensures that every product meets our stringent quality standards.</p>
+        </section>
+
+        <section id="maintenance">
+            <h2>Maintenance Department</h2>
+            <img src="./maintain.png" alt="Maintenance Department">
+            <p>Our maintenance team ensures smooth operations by keeping equipment in optimal condition.</p>
+        </section>
+
+        <!-- Forms -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form action="submit.php" method="post">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required><br>
+                <label for="message">Your Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br>
+                <button type="submit" value="Submit" class="submit-button">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Production Factory</p>
+    </footer>
+</body>
+</html>
