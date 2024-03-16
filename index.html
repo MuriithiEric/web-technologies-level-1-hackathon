@@ -1,11 +1,8 @@
 <!-- 1. create the basic html structure. your structure should include a blue heading and a red paragragh with font size 15px -->
 
-
 <!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
 
-
 <!-- 3. create a section and add an image, using css; place a green border on the image, the image should be 500px wide and 500px high -->
-
 
 <!-- 4. create another section add a form that takes in the following input:
   a. name
@@ -22,3 +19,94 @@
 -->
 
 <!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <header>
+    <h1>Heading</h1>
+    <p>Paragraph</p>
+  </header>
+
+  <a href="http://google.com" target="_blank">Google</a>
+
+  <section class="image">
+    <img class="the-image" src="Heart.png" alt="Purple Heart" />
+  </section>
+
+  <section>
+
+    <form id="plp-form" action="">
+
+      <div class="details">
+        <label for="name">Name:</label>
+        <input type="text" placeholder="Enter your name" name="name" id="name" />
+      </div>
+
+      <div class="details">
+        <label for="email">Email Address:</label>
+        <input type="email" placeholder="Enter your Email Address" name="email" id="email" />
+      </div>
+
+      <div class="details">
+        <label for="phone">Phone Number:</label>
+        <input type="tel" placeholder="Enter your phone number" name="phone" id="phone" />
+      </div>
+
+      <fieldset class="excluded">
+        <legend>Gender</legend>
+        <input type="radio" name="gender" id="male">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female">
+        <label for="female">Female</label>
+      </fieldset>
+
+      <div class="details">
+        <label for="course">Subject:</label>
+        <select name="subject" id="course">
+          <option selected disabled value="selected">Select your subject</option>
+          <option value="s1">English</option>
+          <option value="s2">Math</option>
+          <option value="s3">Science</option>
+          <option value="s4">Arts and Crafts</option>
+          <option value="s5">Agriculture</option>
+          <option value="s6">Geography</option>
+          <option value="s7">History</option>
+        </select>
+      </div>
+
+      <div class="details">
+        <label for="password">Password:</label>
+        <input type="password" placeholder="Enter your password" name="password" id="password">
+      </div>
+
+      <div class="details">
+        <input type="hidden" name="sessionId" id="sessionId" value="123456">
+      </div>
+
+    </form>
+
+    <div class="buttons">
+      <button type="button" class="button">Submit</button>
+      <button type="button" class="button" onclick="clearForm()">Cancel</button>
+    </div>
+  </section>
+
+
+  <script>
+    function clearForm() {
+      document.getElementById("plp-form").reset();
+    }
+  </script>
+</body>
+
+</html>

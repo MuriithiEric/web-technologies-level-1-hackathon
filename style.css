@@ -1,1 +1,73 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
 
+h1 {
+  color: blue;
+}
+
+p {
+  color: red;
+  font-size: 15px;
+}
+
+.image {
+  text-align: center;
+}
+
+.the-image {
+  height: 500px;
+  width: 500px;
+  border: 5px solid rgb(8, 196, 8);
+  border-radius: 5px;
+}
+
+form {
+  width: 55%;
+  margin: 6px auto;
+}
+
+.details {
+  margin: 10px 0;
+  padding: 5px 5px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 50%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+select {
+  width: 53%;
+  padding: 5px;
+}
+
+.buttons {
+  text-align: center;
+  width: 70%;
+  margin: 5 auto;
+}
+
+.button {
+  margin: 5px 25px;
+  padding: 5px 20px;
+  background-color: lightcyan;
+  border: 1px solid lightpink;
+  border-radius: 8px;
+}
+
+.excluded {
+  all: initial;
+}
+
+fieldset>label {
+  display: inline;
+}
