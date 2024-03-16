@@ -1,24 +1,613 @@
-<!-- 1. create the basic html structure. your structure should include a blue heading and a red paragragh with font size 15px -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- title -->
+    <title>DemaBase</title>
 
-<!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo_2.ico"
+      type="image/x-icon"
+    />
 
+    <!-- custom css link -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
-<!-- 3. create a section and add an image, using css; place a green border on the image, the image should be 500px wide and 500px high -->
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
+  <body>
+    <!--
+    - #Sidebar
+  -->
 
-<!-- 4. create another section add a form that takes in the following input:
-  a. name
-  b. email address
-  c. phone number
-  d. age
-  e. radio checkbox for gender (use fieldset to group the gender input)
-  f. dropdown for multi-selection of subjects: English, Math, Science, Art and Craft, Agriculture, Geography and History
-  g. password
-  h. a hidden field to capture sessionId
-  i. cancel button that clears form inputs
-  j. submit button with text register
-  make sure to incorporate relevant labels in your form elements using the necessary and relevant input types and element attributes
--->
+    <main>
+      <aside class="sidebar">
+        <div class="sidebar-info_more">
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <button data-nav-link="Home" class="icon-box">
+                <ion-icon name="home"></ion-icon>
+              </button>
+              <div>
+                <button class="navbar-link active" data-nav-link="Home">
+                  Home
+                </button>
+              </div>
+            </li>
+            <div class="separator"></div>
+            <li class="contact-item">
+              <button data-nav-link="Cart" class="icon-box">
+                <ion-icon name="cart"></ion-icon>
+              </button>
+              <div class="contact-info">
+                <button class="navbar-link" data-nav-link="Cart">Cart</button>
+              </div>
+            </li>
+            <div class="separator"></div>
+            <li class="contact-item">
+              <button data-nav-link="Contact" class="icon-box">
+                <ion-icon name="call"></ion-icon>
+              </button>
+              <div class="contact-info">
+                <button class="navbar-link" data-nav-link="Contact">
+                  Contact
+                </button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </aside>
 
-<!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+      <!--
+      - #main-content
+    -->
+
+      <div class="main-content">
+        <!--
+        - #Home
+      -->
+
+        <article class="home active" data-page="Home">
+          <header>
+            <h2 class="h2 article-title">Home</h2>
+          </header>
+
+          <section class="section-hero">
+            <div class="hero">
+              <div>
+                <h1 class="heading-primary">
+                  A healthy meal delivered to your door, every single day
+                </h1>
+                <p class="hero-description">
+                  The smart 365-days-per-year food subscription that will make
+                  you eat healthy again. Tailored to your personal tastes and
+                  nutritional needs.
+                </p>
+
+                <div>
+                  <picture>
+                    <source srcset="assets/images/gallery/eat.jfif" type="image/webp" />
+                    <source
+                      srcset="assets/images/hero-min.png"
+                      type="image/png"
+                    />
+
+                    <img
+                      src="assets/images/hero-min.png"
+                      class="hero-img"
+                      alt="Woman enjoying food, meals in storage container, and food bowls on a table"
+                    />
+                  </picture>
+                </div>
+
+                <div class="delivered-meals">
+                  <div class="delivered-imgs">
+                    <img
+                      src="assets/images/customers/tyui.jfif"
+                      alt="Customer photo"
+                    />
+                    <img
+                      src="assets/images/customers/rio.jfif"
+                      alt="Customer photo"
+                    />
+                    <img
+                      src="assets/images/customers/2e.jfif"
+                      alt="Customer photo"
+                    />
+                    <img
+                      src="assets/images/customers/ara.jfif"
+                      alt="Customer photo"
+                    />
+                    <img
+                      src="assets/images/customers/customer-6.jpg"
+                      alt="Customer photo"
+                    />
+                  </div>
+                  <p class="delivered-text">
+                    <span>250,000+</span> meals delivered last year!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!--
+            Control Pages
+        -->
+          <div data-overlay data-modal-close-btn></div>
+        </article>
+
+        <!--
+        - #Cart
+      -->
+
+        <article class="cart" data-page="Cart">
+          <header>
+            <h2 class="h2 article-title">Cart</h2>
+          </header>
+
+          <section class="section-cart">
+            <h2 class="card-title">Our Most Ordered Foods</h2>
+
+            <div class="grid-cols">
+              <!-- Column 1  -->
+              <figure class="chair">
+                <img
+                  src="assets/images/gallery/nyamachoma.jfif"
+                  class="chair-img"
+                  alt="Chair"
+                />
+                <div class="chair-box">
+                  <h3 class="chair-title">Nyama choma</h3>
+                  <ul class="chair-details">
+                    <!-- Row 1  -->
+                    <li>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        class="chair-icon w-6 h-6"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M9 4.5a.75.75 0 01.721.544l.813 2.846a3.75 3.75 0 002.576 2.576l2.846.813a.75.75 0 010 1.442l-2.846.813a3.75 3.75 0 00-2.576 2.576l-.813 2.846a.75.75 0 01-1.442 0l-.813-2.846a3.75 3.75 0 00-2.576-2.576l-2.846-.813a.75.75 0 010-1.442l2.846-.813A3.75 3.75 0 007.466 7.89l.813-2.846A.75.75 0 019 4.5zM18 1.5a.75.75 0 01.728.568l.258 1.036c.236.94.97 1.674 1.91 1.91l1.036.258a.75.75 0 010 1.456l-1.036.258c-.94.236-1.674.97-1.91 1.91l-.258 1.036a.75.75 0 01-1.456 0l-.258-1.036a2.625 2.625 0 00-1.91-1.91l-1.036-.258a.75.75 0 010-1.456l1.036-.258a2.625 2.625 0 001.91-1.91l.258-1.036A.75.75 0 0118 1.5zM16.5 15a.75.75 0 01.712.513l.394 1.183c.15.447.5.799.948.948l1.183.395a.75.75 0 010 1.422l-1.183.395c-.447.15-.799.5-.948.948l-.395 1.183a.75.75 0 01-1.422 0l-.395-1.183a1.5 1.5 0 00-.948-.948l-1.183-.395a.75.75 0 010-1.422l1.183-.395c.447-.15.799-.5.948-.948l.395-1.183A.75.75 0 0116.5 15z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                      <span>Delectable and Flavorful</span>
+                    </li>
+                    <!-- Row 2  -->
+                    <li>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        class="chair-icon w-6 h-6"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 6a.75.75 0 00-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 000-1.5h-3.75V6z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                      <span>Afternoon Lunch</span>
+                    </li>
+                    <!-- Row 3  -->
+                    <li>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        class="chair-icon w-6 h-6"
+                      >
+                        <path
+                          d="M15.75 8.25a.75.75 0 01.75.75c0 1.12-.492 2.126-1.27 2.812a.75.75 0 11-.992-1.124A2.243 2.243 0 0015 9a.75.75 0 01.75-.75z"
+                        />
+                        <path
+                          fill-rule="evenodd"
+                          d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM4.575 15.6a8.25 8.25 0 009.348 4.425 1.966 1.966 0 00-1.84-1.275.983.983 0 01-.97-.822l-.073-.437c-.094-.565.25-1.11.8-1.267l.99-.282c.427-.123.783-.418.982-.816l.036-.073a1.453 1.453 0 012.328-.377L16.5 15h.628a2.25 2.25 0 011.983 1.186 8.25 8.25 0 00-6.345-12.4c.044.262.18.503.389.676l1.068.89c.442.369.535 1.01.216 1.49l-.51.766a2.25 2.25 0 01-1.161.886l-.143.048a1.107 1.107 0 00-.57 1.664c.369.555.169 1.307-.427 1.605L9 13.125l.423 1.059a.956.956 0 01-1.652.928l-.679-.906a1.125 1.125 0 00-1.906.172L4.575 15.6z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                      <span>Italy Food</span>
+                    </li>
+                    <!-- Row 4  -->
+                    <li>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        class="chair-icon w-6 h-6"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M12 2.25a.75.75 0 01.75.75v.756a49.106 49.106 0 019.152 1 .75.75 0 01-.152 1.485h-1.918l2.474 10.124a.75.75 0 01-.375.84A6.723 6.723 0 0118.75 18a6.723 6.723 0 01-3.181-.795.75.75 0 01-.375-.84l2.474-10.124H12.75v13.28c1.293.076 2.534.343 3.697.776a.75.75 0 01-.262 1.453h-8.37a.75.75 0 01-.262-1.453c1.162-.433 2.404-.7 3.697-.775V6.24H6.332l2.474 10.124a.75.75 0 01-.375.84A6.723 6.723 0 015.25 18a6.723 6.723 0 01-3.181-.795.75.75 0 01-.375-.84L4.168 6.241H2.25a.75.75 0 01-.152-1.485 49.105 49.105 0 019.152-1V3a.75.75 0 01.75-.75zm4.878 13.543l1.872-7.662 1.872 7.662h-3.744zm-9.756 0L5.25 8.131l-1.872 7.662h3.744z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+
+                      <span>Available 1 kg</span>
+                    </li>
+                  </ul>
+                  <!-- Price  -->
+                  <div class="chair-price">
+                    <strong>ksh250</strong>
+                    <a href="#" class="btn btn--small">Add to cart</a>
+                  </div>
+                </div>
+              </figure>
+
+              <!-- Column 2  -->
+              <figure class="chair">
+                <img
+                  src="assets/images/gallery/omena.jfif"
+                  class="chair-img"
+                  alt="Chair"
+                />
+                <div class="chair-box">
+                  <h3 class="chair-title">Omena Ugali</h3>
+                  <ul class="chair-details">
+                    <!-- Row 1  -->
+                    <li>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        class="chair-icon w-6 h-6"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M9 4.5a.75.75 0 01.721.544l.813 2.846a3.75 3.75 0 002.576 2.576l2.846.813a.75.75 0 010 1.442l-2.846.813a3.75 3.75 0 00-2.576 2.576l-.813 2.846a.75.75 0 01-1.442 0l-.813-2.846a3.75 3.75 0 00-2.576-2.576l-2.846-.813a.75.75 0 010-1.442l2.846-.813A3.75 3.75 0 007.466 7.89l.813-2.846A.75.75 0 019 4.5zM18 1.5a.75.75 0 01.728.568l.258 1.036c.236.94.97 1.674 1.91 1.91l1.036.258a.75.75 0 010 1.456l-1.036.258c-.94.236-1.674.97-1.91 1.91l-.258 1.036a.75.75 0 01-1.456 0l-.258-1.036a2.625 2.625 0 00-1.91-1.91l-1.036-.258a.75.75 0 010-1.456l1.036-.258a2.625 2.625 0 001.91-1.91l.258-1.036A.75.75 0 0118 1.5zM16.5 15a.75.75 0 01.712.513l.394 1.183c.15.447.5.799.948.948l1.183.395a.75.75 0 010 1.422l-1.183.395c-.447.15-.799.5-.948.948l-.395 1.183a.75.75 0 01-1.422 0l-.395-1.183a1.5 1.5 0 00-.948-.948l-1.183-.395a.75.75 0 010-1.422l1.183-.395c.447-.15.799-.5.948-.948l.395-1.183A.75.75 0 0116.5 15z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                      <span>Scrumptious and Aromatic</span>
+                    </li>
+                    <!-- Row 2  -->
+                    <li>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        class="chair-icon w-6 h-6"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 6a.75.75 0 00-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 000-1.5h-3.75V6z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                      <span>Night Dinner</span>
+                    </li>
+                    <!-- Row 3  -->
+                    <li>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        class="chair-icon w-6 h-6"
+                      >
+                        <path
+                          d="M15.75 8.25a.75.75 0 01.75.75c0 1.12-.492 2.126-1.27 2.812a.75.75 0 11-.992-1.124A2.243 2.243 0 0015 9a.75.75 0 01.75-.75z"
+                        />
+                        <path
+                          fill-rule="evenodd"
+                          d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM4.575 15.6a8.25 8.25 0 009.348 4.425 1.966 1.966 0 00-1.84-1.275.983.983 0 01-.97-.822l-.073-.437c-.094-.565.25-1.11.8-1.267l.99-.282c.427-.123.783-.418.982-.816l.036-.073a1.453 1.453 0 012.328-.377L16.5 15h.628a2.25 2.25 0 011.983 1.186 8.25 8.25 0 00-6.345-12.4c.044.262.18.503.389.676l1.068.89c.442.369.535 1.01.216 1.49l-.51.766a2.25 2.25 0 01-1.161.886l-.143.048a1.107 1.107 0 00-.57 1.664c.369.555.169 1.307-.427 1.605L9 13.125l.423 1.059a.956.956 0 01-1.652.928l-.679-.906a1.125 1.125 0 00-1.906.172L4.575 15.6z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                      <span>British Food</span>
+                    </li>
+                    <!-- Row 4  -->
+                    <li>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        class="chair-icon w-6 h-6"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M12 2.25a.75.75 0 01.75.75v.756a49.106 49.106 0 019.152 1 .75.75 0 01-.152 1.485h-1.918l2.474 10.124a.75.75 0 01-.375.84A6.723 6.723 0 0118.75 18a6.723 6.723 0 01-3.181-.795.75.75 0 01-.375-.84l2.474-10.124H12.75v13.28c1.293.076 2.534.343 3.697.776a.75.75 0 01-.262 1.453h-8.37a.75.75 0 01-.262-1.453c1.162-.433 2.404-.7 3.697-.775V6.24H6.332l2.474 10.124a.75.75 0 01-.375.84A6.723 6.723 0 015.25 18a6.723 6.723 0 01-3.181-.795.75.75 0 01-.375-.84L4.168 6.241H2.25a.75.75 0 01-.152-1.485 49.105 49.105 0 019.152-1V3a.75.75 0 01.75-.75zm4.878 13.543l1.872-7.662 1.872 7.662h-3.744zm-9.756 0L5.25 8.131l-1.872 7.662h3.744z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                      <span>Available 6 kg</span>
+                    </li>
+                  </ul>
+                  <!-- Chair price  -->
+                  <div class="chair-price">
+                    <strong>Ksh525</strong>
+                    <a href="#" class="btn btn--small">Add to cart</a>
+                  </div>
+                </div>
+              </figure>
+
+              <!-- Column 3  -->
+              <figure class="chair grid-2-cols">
+                <img
+                  src="assets/images/gallery/gallery-3.jpg"
+                  class="chair-img"
+                  alt="Chair"
+                />
+                <div class="chair-box">
+                  <h3 class="chair-title">Fruit Salad</h3>
+                  <ul class="chair-details">
+                    <!-- Row 1  -->
+                    <li>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        class="chair-icon w-6 h-6"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M9 4.5a.75.75 0 01.721.544l.813 2.846a3.75 3.75 0 002.576 2.576l2.846.813a.75.75 0 010 1.442l-2.846.813a3.75 3.75 0 00-2.576 2.576l-.813 2.846a.75.75 0 01-1.442 0l-.813-2.846a3.75 3.75 0 00-2.576-2.576l-2.846-.813a.75.75 0 010-1.442l2.846-.813A3.75 3.75 0 007.466 7.89l.813-2.846A.75.75 0 019 4.5zM18 1.5a.75.75 0 01.728.568l.258 1.036c.236.94.97 1.674 1.91 1.91l1.036.258a.75.75 0 010 1.456l-1.036.258c-.94.236-1.674.97-1.91 1.91l-.258 1.036a.75.75 0 01-1.456 0l-.258-1.036a2.625 2.625 0 00-1.91-1.91l-1.036-.258a.75.75 0 010-1.456l1.036-.258a2.625 2.625 0 001.91-1.91l.258-1.036A.75.75 0 0118 1.5zM16.5 15a.75.75 0 01.712.513l.394 1.183c.15.447.5.799.948.948l1.183.395a.75.75 0 010 1.422l-1.183.395c-.447.15-.799.5-.948.948l-.395 1.183a.75.75 0 01-1.422 0l-.395-1.183a1.5 1.5 0 00-.948-.948l-1.183-.395a.75.75 0 010-1.422l1.183-.395c.447-.15.799-.5.948-.948l.395-1.183A.75.75 0 0116.5 15z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                      <span>Bursting with flavor</span>
+                    </li>
+                    <!-- Row 2  -->
+                    <li>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        class="chair-icon w-6 h-6"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 6a.75.75 0 00-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 000-1.5h-3.75V6z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                      <span>Morning Tiffin</span>
+                    </li>
+                    <!-- Row 3  -->
+                    <li>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        class="chair-icon w-6 h-6"
+                      >
+                        <path
+                          d="M15.75 8.25a.75.75 0 01.75.75c0 1.12-.492 2.126-1.27 2.812a.75.75 0 11-.992-1.124A2.243 2.243 0 0015 9a.75.75 0 01.75-.75z"
+                        />
+                        <path
+                          fill-rule="evenodd"
+                          d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM4.575 15.6a8.25 8.25 0 009.348 4.425 1.966 1.966 0 00-1.84-1.275.983.983 0 01-.97-.822l-.073-.437c-.094-.565.25-1.11.8-1.267l.99-.282c.427-.123.783-.418.982-.816l.036-.073a1.453 1.453 0 012.328-.377L16.5 15h.628a2.25 2.25 0 011.983 1.186 8.25 8.25 0 00-6.345-12.4c.044.262.18.503.389.676l1.068.89c.442.369.535 1.01.216 1.49l-.51.766a2.25 2.25 0 01-1.161.886l-.143.048a1.107 1.107 0 00-.57 1.664c.369.555.169 1.307-.427 1.605L9 13.125l.423 1.059a.956.956 0 01-1.652.928l-.679-.906a1.125 1.125 0 00-1.906.172L4.575 15.6z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                      <span>Indian Food</span>
+                    </li>
+                    <!-- Row 4  -->
+                    <li>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        class="chair-icon w-6 h-6"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M12 2.25a.75.75 0 01.75.75v.756a49.106 49.106 0 019.152 1 .75.75 0 01-.152 1.485h-1.918l2.474 10.124a.75.75 0 01-.375.84A6.723 6.723 0 0118.75 18a6.723 6.723 0 01-3.181-.795.75.75 0 01-.375-.84l2.474-10.124H12.75v13.28c1.293.076 2.534.343 3.697.776a.75.75 0 01-.262 1.453h-8.37a.75.75 0 01-.262-1.453c1.162-.433 2.404-.7 3.697-.775V6.24H6.332l2.474 10.124a.75.75 0 01-.375.84A6.723 6.723 0 015.25 18a6.723 6.723 0 01-3.181-.795.75.75 0 01-.375-.84L4.168 6.241H2.25a.75.75 0 01-.152-1.485 49.105 49.105 0 019.152-1V3a.75.75 0 01.75-.75zm4.878 13.543l1.872-7.662 1.872 7.662h-3.744zm-9.756 0L5.25 8.131l-1.872 7.662h3.744z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                      <span>Available 4 kg</span>
+                    </li>
+                  </ul>
+                  <!-- Chair price  -->
+                  <div class="chair-price">
+                    <strong>Ksh1450</strong>
+                    <a href="#" class="btn btn--small">Add to cart</a>
+                  </div>
+                </div>
+              </figure>
+
+              <!-- Column 4  -->
+              <figure class="chair">
+                <img
+                  src="assets/images/gallery/gallery-4.jpg"
+                  class="chair-img"
+                  alt="Chair"
+                />
+                <div class="chair-box">
+                  <h3 class="chair-title">Sunday Icecream</h3>
+                  <ul class="chair-details">
+                    <!-- Row 1  -->
+                    <li>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        class="chair-icon w-6 h-6"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M9 4.5a.75.75 0 01.721.544l.813 2.846a3.75 3.75 0 002.576 2.576l2.846.813a.75.75 0 010 1.442l-2.846.813a3.75 3.75 0 00-2.576 2.576l-.813 2.846a.75.75 0 01-1.442 0l-.813-2.846a3.75 3.75 0 00-2.576-2.576l-2.846-.813a.75.75 0 010-1.442l2.846-.813A3.75 3.75 0 007.466 7.89l.813-2.846A.75.75 0 019 4.5zM18 1.5a.75.75 0 01.728.568l.258 1.036c.236.94.97 1.674 1.91 1.91l1.036.258a.75.75 0 010 1.456l-1.036.258c-.94.236-1.674.97-1.91 1.91l-.258 1.036a.75.75 0 01-1.456 0l-.258-1.036a2.625 2.625 0 00-1.91-1.91l-1.036-.258a.75.75 0 010-1.456l1.036-.258a2.625 2.625 0 001.91-1.91l.258-1.036A.75.75 0 0118 1.5zM16.5 15a.75.75 0 01.712.513l.394 1.183c.15.447.5.799.948.948l1.183.395a.75.75 0 010 1.422l-1.183.395c-.447.15-.799.5-.948.948l-.395 1.183a.75.75 0 01-1.422 0l-.395-1.183a1.5 1.5 0 00-.948-.948l-1.183-.395a.75.75 0 010-1.422l1.183-.395c.447-.15.799-.5.948-.948l.395-1.183A.75.75 0 0116.5 15z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                      <span>Seasonal specials</span>
+                    </li>
+                    <!-- Row 2  -->
+                    <li>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        class="chair-icon w-6 h-6"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 6a.75.75 0 00-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 000-1.5h-3.75V6z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                      <span>Evening Snack</span>
+                    </li>
+                    <!-- Row 3  -->
+                    <li>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        class="chair-icon w-6 h-6"
+                      >
+                        <path
+                          d="M15.75 8.25a.75.75 0 01.75.75c0 1.12-.492 2.126-1.27 2.812a.75.75 0 11-.992-1.124A2.243 2.243 0 0015 9a.75.75 0 01.75-.75z"
+                        />
+                        <path
+                          fill-rule="evenodd"
+                          d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM4.575 15.6a8.25 8.25 0 009.348 4.425 1.966 1.966 0 00-1.84-1.275.983.983 0 01-.97-.822l-.073-.437c-.094-.565.25-1.11.8-1.267l.99-.282c.427-.123.783-.418.982-.816l.036-.073a1.453 1.453 0 012.328-.377L16.5 15h.628a2.25 2.25 0 011.983 1.186 8.25 8.25 0 00-6.345-12.4c.044.262.18.503.389.676l1.068.89c.442.369.535 1.01.216 1.49l-.51.766a2.25 2.25 0 01-1.161.886l-.143.048a1.107 1.107 0 00-.57 1.664c.369.555.169 1.307-.427 1.605L9 13.125l.423 1.059a.956.956 0 01-1.652.928l-.679-.906a1.125 1.125 0 00-1.906.172L4.575 15.6z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                      <span>Chineese Food</span>
+                    </li>
+                    <!-- Row 4  -->
+                    <li>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        class="chair-icon w-6 h-6"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M12 2.25a.75.75 0 01.75.75v.756a49.106 49.106 0 019.152 1 .75.75 0 01-.152 1.485h-1.918l2.474 10.124a.75.75 0 01-.375.84A6.723 6.723 0 0118.75 18a6.723 6.723 0 01-3.181-.795.75.75 0 01-.375-.84l2.474-10.124H12.75v13.28c1.293.076 2.534.343 3.697.776a.75.75 0 01-.262 1.453h-8.37a.75.75 0 01-.262-1.453c1.162-.433 2.404-.7 3.697-.775V6.24H6.332l2.474 10.124a.75.75 0 01-.375.84A6.723 6.723 0 015.25 18a6.723 6.723 0 01-3.181-.795.75.75 0 01-.375-.84L4.168 6.241H2.25a.75.75 0 01-.152-1.485 49.105 49.105 0 019.152-1V3a.75.75 0 01.75-.75zm4.878 13.543l1.872-7.662 1.872 7.662h-3.744zm-9.756 0L5.25 8.131l-1.872 7.662h3.744z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                      <span>Available 2 kg</span>
+                    </li>
+                  </ul>
+                  <!-- Chair price  -->
+                  <div class="chair-price">
+                    <strong>Ksh525</strong>
+                    <a href="#" class="btn btn--small">Add to cart</a>
+                  </div>
+                </div>
+              </figure>
+            </div>
+          </section>
+        </article>
+
+        <!--
+        - #CONTACT  CONTACT
+      -->
+
+        <article class="contact" data-page="Contact">
+          <header>
+            <h2 class="h2 article-title">Contact</h2>
+          </header>
+          <br />
+          <section class="section-contact">
+            <!-- Map Section  -->
+            <section class="mapbox" data-mapbox>
+              <div class="gmap_canvas">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d63820.72233988102!2d36.89021439999999!3d-1.2976127999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2ske!4v1710600131580!5m2!1sen!2ske"
+                  width="600"
+                  height="450"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+                <a href="https://embedgooglemap.net/153/"></a>
+                <br />
+                <a href="https://www.embedgooglemap.net">
+                  embedgooglemap.net
+                </a>
+              </div>
+            </section>
+
+            <!-- Contact Section  -->
+            <section class="contact-form">
+              <h3 class="h3 form-title">Contact Form</h3>
+              <form
+                action="mailto:megafood@gmail.com"
+                class="form"
+                data-form
+                method="post"
+              >
+                <div class="input-wrapper">
+                  <input
+                    type="text"
+                    name="fullname"
+                    class="form-input"
+                    placeholder="Full Name"
+                    required
+                    data-form-input
+                  />
+                  <input
+                    type="email"
+                    name="email"
+                    class="form-input"
+                    placeholder="Email Address"
+                    required
+                    data-form-input
+                  />
+                </div>
+
+                <textarea
+                  name="message"
+                  class="form-input"
+                  placeholder="Your Message"
+                  required
+                  data-form-input
+                ></textarea>
+
+                <button class="form-btn" type="submit" disabled data-form-btn>
+                  <ion-icon name="paper-plane-sharp"></ion-icon>
+                  <span>Send Message</span>
+                </button>
+              </form>
+            </section>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <!--
+    - #FOOTER
+  -->
+
+    <footer>Made with ❤️ by ERIC KYANIA</footer>
+
+    <!--
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+
+    <!--
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
