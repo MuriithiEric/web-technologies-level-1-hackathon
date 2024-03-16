@@ -14,5 +14,71 @@
     <section class="image-section">
       <img src="nat1.jpg">
     </section>
+    <br>
+    <section class="form-section">
+      <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <br>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+        <br>
+        <br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+        <br>
+        <br>
+
+      <label for="gender">Gender:</label>
+          <label><input type="radio" name="gender" value="male"> Male</label>
+          <label><input type="radio" name="gender" value="female"> Female</label>
+          <label><input type="radio" name="gender" value="other"> Other</label>
+
+      <br>
+
+      <label for="subjects">Subjects:</label>
+        <select id="subjects" name="subjects">
+            <option value=""></option>
+            <option value="English">English</option>
+            <option value="Math">Math</option>
+            <option value="Science">Science</option>
+            <option value="Art and Craft">Art and Craft</option>
+            <option value="Agriculture">Agriculture</option>
+            <option value="Geography">Geography</option>
+            <option value="History">History</option>
+        </select> 
+        <br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+        <br>
+        <input type="hidden" name="sessionId" value="your_session_id_here">
+
+        <button type="button" onclick="clearForm()">Cancel</button>
+        <button type="submit" value="submit">Register</button> 
+      </form>
+    </section>
+
+    <script>
+      function clearForm() {
+          document.getElementById("name").value = "";
+          document.getElementById("email").value = "";
+          document.getElementById("phone").value = "";
+          document.getElementById("age").value = "";
+          document.querySelectorAll('input[type="radio"]').forEach(radio => radio.checked = false);
+          document.getElementById("subjects").selectedIndex = -1;
+          document.getElementById("password").value = "";
+      }
+  </script>
+  
   </body>
 </html>
