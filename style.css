@@ -1,1 +1,83 @@
+.blue_heading{
+   color: blue;
+   font-size: 15px;
+}
+.red_paragraph{
+   color: red;
+   font-size: 15px;
+}
+.container{
+   width: 500px;
+   height: 500px;
+   border: 3px solid green;
+   padding: 40px;
+   margin: 40px;
+   display: flex;
+}
+.item{
+   padding: 5px;
 
+}
+.container img{
+   width: auto;
+   height: auto;
+   display: flex;
+}
+font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            margin-top: 50px;
+        }
+        h1 {
+            text-align: center;
+            color: #333333;
+        }
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="number"],
+        select,
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        fieldset {
+            border: none;
+            margin-bottom: 10px;
+        }
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+button.cancel {
+   background-color: red;
+   margin-right: 10px;
+}
