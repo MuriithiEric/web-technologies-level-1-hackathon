@@ -1,1 +1,58 @@
+.body{
+    align-content: center;
+    margin: 20px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
 
+
+.blueh{
+    color: blue;
+}
+
+.redp{
+    color: red;
+    font-size: 23px;
+}
+.imgContainer img {
+    width: 500px;
+    height: 500px;
+    border: 2px solid green;
+}
+
+.form-section {
+    margin-top: 20px;
+}
+
+.form-section form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.form-section label {
+    margin-bottom: 5px;
+}
+
+.form-section input,
+.form-section select {
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.form-section fieldset {
+    margin-bottom: 10px;
+}
+
+.form-section button {
+    padding: 8px 15px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.form-section button:hover {
+    background-color: #0056b3;
+}
