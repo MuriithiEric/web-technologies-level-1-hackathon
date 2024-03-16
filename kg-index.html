@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML and CSS Exercise</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>THE AFRICAN LION</h1>
+  <header>
+    <nav><div>
+  <a href="https://www.twitter.com/vokey-078" target="_blank">Twitter(X)</a>
+  <a href="https://github.git/Kevhoh" target="_blank">Github</a>
+</div>
+</nav>
+</header>
+<figure>
+    <img src="lion.jpg" alt="Image">
+ <figcaption>The African lion.</figcaption>
+ </figure>
+<p> To get a free chance to visit Kenya and other African countries to enjoy the 
+    amazing natures and landscape. Kindly Submit your details here:
+</p>
+  <section>
+    <form>
+      <label for="name">First Name:</label>&nbsp;&nbsp;
+      <input type="text" id="name" name="name" placeholder=" First Name" required>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     <label for="name"> MiddleName:</label>&nbsp;&nbsp;
+      <input type="text" id="name" name="name" placeholder="Middle Name" required>
+      <br>
+      <br>
+      <label for="email">Email Address:</label>&nbsp;&nbsp;
+      <input type="email" id="email" name="email"  placeholder="Email" required>
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+      <label for="phone">Phone Number:</label>&nbsp;&nbsp;
+      <input type="tel" id="phone" name="phone"  placeholder="Phone Number" required>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <br>
+    <br>
+      <label for="age">Age:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="number" id="age" name="age" placeholder="Age" required>
+
+      <fieldset>
+        <legend>Gender</legend>
+        <label>
+          <input type="radio" name="gender" value="male" required>
+          Male
+        </label>
+        <label>
+          <input type="radio" name="gender" value="female" required>
+          Female
+        </label>
+      </fieldset>
+        <label for="subjects">Subjects:</label>
+        <select id="subjects" name="subjects"  >
+            <option value="English">English</option>
+            <option value="Maths">Maths</option>
+            <option value="Science">Science</option>
+            <option value="Art and Craft">Art and Craft</option>
+            <option value="Agriculture">Agriculture</option>
+            <option value="Geography">Geography</option>
+            <option value="History">History</option>
+        </select>
+        <br>
+        <br>
+      <label for="password">Password:</label>&nbsp;&nbsp;
+      <input type="password" id="password" name="password" required>
+
+      <input type="hidden" name="sessionId" value="1234567890">
+<br>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <center><button type="reset">Cancel</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   
+      <button type="submit">Register</button></center>
+    </form>
+  </section>
+
+  <script>
+    // JavaScript code to set the sessionId value dynamically
+    const sessionIdInput = document.querySelector('input[name="sessionId"]');
+    sessionIdInput.value = generateSessionId();
+
+    function generateSessionId() {
+      // Generate a random session ID (e.g., a simple implementation using timestamp)
+      return Date.now().toString();
+    }
+  </script>
+</body>
+</html>
