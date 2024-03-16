@@ -1,1 +1,61 @@
-
+img{
+    border: green 12px;
+    width: 500px;
+    height: 500px;
+}
+form {
+    width: 300px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Style the fieldset for gender */
+  fieldset {
+    margin-bottom: 20px;
+  }
+  
+  legend {
+    font-weight: bold;
+  }
+  
+  /* Style radio buttons */
+  input[type="radio"] {
+    margin-right: 10px;
+  }
+  
+  /* Style the dropdown for subjects */
+  select {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 20px;
+  }
+  
+  /* Style the password input */
+  input[type="password"] {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 20px;
+  }
+  
+  /* Style the buttons */
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Clear button */
+  button[type="button"] {
+    background-color: #dc3545;
+  }
+  
+  button[type="button"]:hover {
+    background-color: #bd2130;
+  }
