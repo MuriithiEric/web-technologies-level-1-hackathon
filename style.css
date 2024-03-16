@@ -2,35 +2,170 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 body {
     width: 100%;
-}
-
-.container {
-    width: 90%;
-    margin: 0 auto;
+    position: relative;
 }
 
 a {
     text-decoration: none;
+    color: red;
+}
+
+h1,h2,h3,h4,h5 {
+    color: blue;
+    font-size: 2rem;
+}
+
+p {
+    color: red;
+    font-size: 15px;
 }
 
 nav {
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: white;
+    width: 100%;
+    padding: .5em 2em;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
-    width: 100%;
-    padding: .5em 2em;
+    z-index: 100;
+    
 }
 
 nav ul {
     display: flex;
     justify-content: space-between;
     list-style: none;
+    z-index: 1000;
 
+}
+
+nav a svg {
+    fill: red;
+}
+
+.container {
+    width: 90%;
+    margin: 3em auto;
+    background-color: rgb(215, 250, 249);
+}
+
+
+header h1 {
+    text-align: center;
+    padding: .5em;
+}
+
+.hero {
+    padding: .5em;
+    line-height: 1.5rem;
+}
+
+.hero img {
+    margin-left: 30%;
+    border: 2px solid green;
+    padding: 2em;
+}
+
+.hero h3, .hero h4 {
+    padding-bottom: .5em;
+}
+
+.hero p{
+    padding-bottom: 1em;
+}
+
+section form {
+    background-color: rgb(207, 201, 201);
+    width: 90%;
+    margin: 0 auto;
+    padding: .5em;
+    
+    border-radius: .4em;
+}
+
+section h2 {
+    padding: .5em;
+}
+
+form h5 {
+    text-align: center;
+    padding: .5em .5em 1em .5em;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: red;
+}
+
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="number"],
+form select,
+form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: blue;
+}
+
+form fieldset {
+    border: none;
+    margin-bottom: 10px;
+}
+
+form legend {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+
+form input[type="radio"] {
+    margin-right: 10px;
+}
+
+form button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+form button[type="button"] {
+    background-color: #dc3545;
+}
+
+form button[type="submit"] {
+    background-color: blue;
+}
+
+form input[type="hidden"] {
+    display: none;
+}
+
+footer {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1em;
+    background-color: black;
+}
+
+footer a {
+    color: orange;
 }

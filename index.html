@@ -7,16 +7,85 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Our Programs</a></li>
-        <li><a href="#">Our Comunity</a></li>
-        <li><a href="#apply">Apply</a></li>
-      </ul>
-    </nav>
+  
+  <nav>
+    <ul>
+      <li><a href="https://powerlearnproject.org/"><img src="logo.webp" alt="PLP" width="15%"></a></li>
+      <li><a href="https://powerlearnproject.org/">Home</a></li>
+      <li><a href="https://powerlearnproject.org/about">About Us<svg xmlns="http://www.w3.org/2000/svg" height="15" viewBox="0 -960 960 960" width="15"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"/></svg></a></li>
+      <li><a href="https://powerlearnproject.org/courses">Our Programs<svg xmlns="http://www.w3.org/2000/svg" height="15" viewBox="0 -960 960 960" width="15"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"/></svg></a></li>
+      <li><a href="https://powerlearnproject.org/community">Our Comunity<svg xmlns="http://www.w3.org/2000/svg" height="15" viewBox="0 -960 960 960" width="15"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"/></svg></a></li>
+      <li><a href="#apply">Apply</a></li>
+    </ul>
+  </nav>
+<div class="container">
+<header>
+  <h1>Power Learn Project</h1>
+</header>
+    <section class="hero">
+      <img src="f1.png" alt="PLP Home" width="500px" height="500px">
+
+      <h3>Who We Are</h3>
+      <p>The Power Learn Project (PLP) is a Pan-African social impact organization committed to empowering young Africans with essential tech skills and fostering comprehensive talent development. Our mission encompasses training, skill acquisition, talent management, and mobility, all aimed at enabling young Africans to secure meaningful livelihoods. We catalyze transformative change among African youth by providing high-quality, decentralized tech training, equipping them with the skills they need for the future.</p>
+
+      <h4>Our Journey</h4>
+      <p>The Power Learn Initiative launched the #1Milliondevs4Africa program in April 2022 to make tech skills accessible and affordable to young Africans.
+
+        We set out to scale the impact of the program to 5 counties in Kenya, Siaya, Nakuru, Eldoret, & Kiambu. By June 2022, the program had already attracted 863 applicants from across Kenya who were ready to take advantage of this unique opportunity.
+        
+        By the end of the year, the program had expanded its reach to include South Africa, Zambia, Tanzania, and Nigeria, in pursuit of its goal to make tech skills available throughout the continent.
+        
+        Currently, we have graduated 1000 students from Kenya, with over 7,000 learners from across our pilot countries enrolled in our unique learning platform.</p>
+    </section>
+
+    <section id="apply">
+      <h2>Join Us</h2>
+
+      <form>
+        <h5>Fill this form to Register for one of our Programs</h5>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+
+        <fieldset>
+            <legend>Gender:</legend>
+            <label><input type="radio" name="gender" value="male"> Male</label>
+            <label><input type="radio" name="gender" value="female"> Female</label>
+            <label><input type="radio" name="gender" value="other"> Other</label>
+        </fieldset>
+
+        <label for="subjects">Subjects:</label>
+        <select id="subjects" name="subjects" multiple>
+            <option value="english">English</option>
+            <option value="math">Math</option>
+            <option value="science">Science</option>
+            <option value="art">Art and Craft</option>
+            <option value="agriculture">Agriculture</option>
+            <option value="geography">Geography</option>
+            <option value="history">History</option>
+        </select>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <input type="hidden" id="sessionId" name="sessionId">
+
+        <button type="button">Cancel</button>
+        <button type="submit">Register</button>
+    </form>
+    </section>
   </div>
+
+  <footer>
+    <a href="https://github.com/Sqmagadi">&copy; SQCODES | 2024 | All Rights Reserved</a>
+  </footer>
 </body>
 </html>
