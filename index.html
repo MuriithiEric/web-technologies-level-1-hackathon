@@ -1,24 +1,79 @@
-<!-- 1. create the basic html structure. your structure should include a blue heading and a red paragragh with font size 15px -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Havenwood Academy</title>
+    <link rel="icon" href="./School-logo.png">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+  </head>
+
+  <body>
 
 
-<!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
+    <div>
+      <h1 class="title">Havenwood Academy</h1>
+    </div>
+
+    <div>
+      <p class="introduction">Welcome to the illustrious halls of Havenwood Academy, nestled in the quaint town of Evergreen Springs, founded in 1892. This esteemed institution has been a beacon of academic excellence and character development for over a century. Countless luminaries have passed through its doors, shaping the course of history with their intellect and ambition. Among its distinguished alumni is Clara Montgomery, the renowned scientist whose groundbreaking research in renewable energy revolutionized the field. Not to be forgotten is Marcus Thompson, the celebrated author whose literary works have inspired generations. Havenwood Academy's commitment to nurturing talent and fostering innovation continues to draw the brightest minds from across the globe, ensuring its legacy as a bastion of learning and achievement for years to come.</p>
+    </div>
+    
+    <div>
+      <img src="./School-yard.png" class="school-yard">
+    </div>
+
+    <div>
+      <a href="https://pixlr.com/image-generator/">Image source</a>
+    </div>
 
 
-<!-- 3. create a section and add an image, using css; place a green border on the image, the image should be 500px wide and 500px high -->
+    
+      <div>
+        <h1 class="title">Registration Form</h1>
+      </div>
+  
+    <div class="div-form"> 
+      <form style="margin-bottom: 30px;">
+        <label>Name</label><br>
+        <input type="text" placeholder="Enter Your full Name" required value="Name"><br>
+        <label>Email Address</label><br>
+        <input type="text" placeholder="example@gmail.com" required value="Email"><br>
+        <label>Phone Number</label><br>
+        <input type="tel" placeholder="+254..." required  value="Number"><br>
+        <input type="hidden" id="sessionId" name="sessionId" value="">
+        <label>Age</label><br>
+        <input type="number" value="Age" class="input-age"><br>
+        <label>Gender: </label><br>
+        Male
+        <input type="checkbox" value="Male">
+        Female
+        <input type="checkbox" value="Female"><br>
 
+        <label>Choose a subject</label><br>
+        <select required>
+          <option></option>
+          <option value="English">English</option>
+          <option value="Math">Math</option>
+          <option value="Science">Science</option>
+          <option value="Art and craft">Art and craft</option>
+          <option value="Agriculture">Agriculture</option>
+          <option value="Geography">Geography</option>
+          <option value="History">History</option>
+        </select><br>
+        <label>Password</label><br>
+        <input type="password" placeholder="Enter Your password" required value="Password"><br>
+        <input type="reset" >
+        <input type="submit" >
+      </form>
+    </div>
 
-<!-- 4. create another section add a form that takes in the following input:
-  a. name
-  b. email address
-  c. phone number
-  d. age
-  e. radio checkbox for gender (use fieldset to group the gender input)
-  f. dropdown for multi-selection of subjects: English, Math, Science, Art and Craft, Agriculture, Geography and History
-  g. password
-  h. a hidden field to capture sessionId
-  i. cancel button that clears form inputs
-  j. submit button with text register
-  make sure to incorporate relevant labels in your form elements using the necessary and relevant input types and element attributes
--->
+    <div style="position: fixed; bottom: 10px; left: 10px;" class="socials">
+      <a href="https://twitter.com/bx2lee" style="padding-right: 10px;"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/X_logo_2023_original.svg/450px-X_logo_2023_original.svg.png" class="image-icon"></a>
 
-<!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+      <a href="https://github.com/ordo-chao" style="padding-right: 10px;"><img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png"class="image-icon"></a>
+
+      <a href="https://www.linkedin.com/in/prince-benedict-491776299/"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScrE5XmI-QyeeToHYfmJ67mAu6DNGN21V-kzMwCaosaQ&s" class="image-icon"></a>
+    </div>
+  </body>
+</html>

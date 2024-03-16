@@ -1,1 +1,49 @@
-
+body
+{
+  background-color: rgb(173, 216, 230);
+}
+.title{
+  color: blue;
+}
+.introduction{
+  color: red;
+}
+.school-yard{
+  width: 500px; 
+  height: 500px; 
+  border-width: 5px; 
+  border-color: green;
+}
+.div-school-yard{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+div{
+  display: flex; 
+  justify-content: center;
+}
+.div-form{
+  display: flex;
+ justify-content: center; 
+ margin-top: 20px; 
+ background-color: rgb(220, 220, 220); 
+ position: absolute; 
+ left: 450px;  
+ right: 450px;
+}
+input,
+select{
+  margin-top: 10px;
+}
+.input-age{
+  width: 30px; 
+  border-radius: 20px;
+}
+a{
+  padding-right: 10px;
+}
+.image-icon
+{
+  width: 25px;
+}
