@@ -38,3 +38,6 @@ Submit a pull request to the main repository for review.
 
 
 Happy hacking! 🚀
+ ## Project: Simple Webpage
+ ![Screenshot](screen1.png)
+![Sceenshot](sceen2.png)
