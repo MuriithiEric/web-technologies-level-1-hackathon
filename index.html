@@ -1,24 +1,56 @@
-<!-- 1. create the basic html structure. your structure should include a blue heading and a red paragragh with font size 15px -->
-
-
-<!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
-
-
-<!-- 3. create a section and add an image, using css; place a green border on the image, the image should be 500px wide and 500px high -->
-
-
-<!-- 4. create another section add a form that takes in the following input:
-  a. name
-  b. email address
-  c. phone number
-  d. age
-  e. radio checkbox for gender (use fieldset to group the gender input)
-  f. dropdown for multi-selection of subjects: English, Math, Science, Art and Craft, Agriculture, Geography and History
-  g. password
-  h. a hidden field to capture sessionId
-  i. cancel button that clears form inputs
-  j. submit button with text register
-  make sure to incorporate relevant labels in your form elements using the necessary and relevant input types and element attributes
--->
-
-<!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SCHOOL LIBRARY</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1 class="heading">SCHOOL LIBRARY</h1>
+    <h2>Welcome to the School Library!</h2>
+    <p class="paragraph">This is a website that allows you to search for books in the library. You can also add new books to the Library.</p>
+    <a class="link" href="https://bibliolifestyle.com/importance-of-libraries-10-reasons/" target="_blank">Importance of Libraries</a>
+    <section>
+      <img class="image" src="images/Library.jpg" alt="Library">
+    </section>
+    <section>
+      <form action="processing.php" method="post" enctype="multipart/form-data">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" required>
+        <br>
+        <Label for="email">Email</Label>
+        <input type="email" name="email" id="email" placeholder="eileen@gmail.com" required>
+        <br>
+        <label for="phone_number">Phone number</label>
+        <input type="number" name="phone_number" id="phone_number" placeholder="+254726955590" required>
+        <br>
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age">
+        <br>
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <br>
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <br>
+        <label for="subjects">Select Subject:</label>
+            <select id="subject" name="subject">
+                <option value=""></option>
+                <option value="English">English</option>
+                <option value="Math">Math</option>
+                <option value="Art & Craft">Art & Craft</option>
+                <option value="Agriculture">Agriculture</option>
+                <option value="Geography">Geography</option>
+                <option value="History">History</option>     
+            </select>
+        <br>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+        <input type="hidden" name="session_id" value="<?php echo session_id(); ?>">
+        <br>
+        <button type="submit" class="register-button">Register</button>
+        <button type="reset" class="cancel">Cancel</button> 
+      </form>
+    </section>
+  </body>
+</html>
