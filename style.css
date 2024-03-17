@@ -1,1 +1,72 @@
+*{
+    text-align: center;
+}
 
+body{
+    background-color: #fcfcfc;
+}
+
+h2 {
+    color: darkblue;
+}
+
+p{
+    font-size: 15px;
+    color: red;
+}
+
+a{
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+#img-section{
+    background-image: url("https://cdn.pixabay.com/photo/2021/04/26/01/39/trees-6207925_1280.jpg");
+    width: 500px;
+    height: 500px;
+    border: 2px solid green;
+    margin: auto;
+}
+
+form{
+    margin: auto;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+form label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input, form select{
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #eee;
+    border-radius: 3px;
+}
+
+form fieldset {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: darkblue;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.4s;
+}
+
+form button:hover{
+    background-color: white;
+    color: darkblue;
+    border: 1px solid darkblue;
+}

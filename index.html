@@ -1,24 +1,67 @@
-<!-- 1. create the basic html structure. your structure should include a blue heading and a red paragragh with font size 15px -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h2>Blue Heading</h2>
+  </header>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto sunt non veniam dolorum placeat illum voluptatibus rerum quaerat sequi similique! Itaque nulla vel repellat consectetur doloremque nisi rem quasi cumque.</p>
+  <a href="https://pixabay.com/illustrations/trees-lake-forest-river-sky-beach-6207925/" target="_blank">Click to view</a>
+  <section id="img-section"></section>
 
 
-<!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
+  <form action="#" method="post">
+    <h2> Registration Form</h2>
+    <div>
+      <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
 
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+    </div>
 
-<!-- 3. create a section and add an image, using css; place a green border on the image, the image should be 500px wide and 500px high -->
+    <div>
+      <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required><br><br>
 
+      <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required><br><br>
+    </div>
+    <fieldset>
+      <legend>Gender:</legend>
+      <input type="radio" id="male" name="gender">
+      <label for="male">Male</label>
+      <input type="radio" id="male" name="gender">
+      <label for="male">Female</label>
+    </fieldset><br><br>
 
-<!-- 4. create another section add a form that takes in the following input:
-  a. name
-  b. email address
-  c. phone number
-  d. age
-  e. radio checkbox for gender (use fieldset to group the gender input)
-  f. dropdown for multi-selection of subjects: English, Math, Science, Art and Craft, Agriculture, Geography and History
-  g. password
-  h. a hidden field to capture sessionId
-  i. cancel button that clears form inputs
-  j. submit button with text register
-  make sure to incorporate relevant labels in your form elements using the necessary and relevant input types and element attributes
--->
+    <label for="subjects">Subjects:</label>
+    <select id="subjects" name="subjects" multiple>
+      <option value="English">English</option>
+      <option value="math">Math</option>
+      <option value="science">Science</option>
+      <option value="art">Art and Craft</option>
+      <option vlaue="agric">Agriculture</option>
+      <option value="geography"> Geography</option>
+      <option value="history"> History</option>
+    </select><br><br>
 
-<!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+    <div>
+      <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+      </div>
+    <input type="hidden" id="sessionId" name="sessionId" value="101010"><br><br>
+
+    <div>
+      <button type="submit">Register</button>
+      <button type="reset">Cancel</button>
+    </div>
+  </form>
+</body>
+</html>
