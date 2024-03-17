@@ -26,6 +26,12 @@ section {
     border-bottom: 1px solid #ccc;
 }
 
+/* Adding media query for smaller screens */
+@media only screen and (max-width: 600px) {
+    section {
+        margin: 5% auto; /* Adjust margin percentage for better centering on smaller screens */
+    }
+}
 .section-img {
     text-align: center;
 }
