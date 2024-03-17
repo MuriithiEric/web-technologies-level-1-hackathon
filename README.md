@@ -38,3 +38,6 @@ Submit a pull request to the main repository for review.
 
 
 Happy hacking! 🚀
+
+# AUTHOR
+- Simanga Mchunu
