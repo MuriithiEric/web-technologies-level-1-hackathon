@@ -1,1 +1,78 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
 
+.title{
+    color: blue;
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
+    
+}
+a {
+    display: block;
+    margin-bottom: 20px;
+}
+a.button{
+    display:inline-block;
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+
+p{
+    color: red;
+    font-size: 30px;
+}
+.image-section img{
+    border: 5px solid green;
+    width: 500px;
+    height: 500px;
+    margin-bottom: 20px;
+
+}
+.vertical-form .form-group{
+    margin-bottom: 10px;
+}
+.label{
+
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+
+}
+.form-group{
+    margin-bottom: 30px;
+}
+button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+.form{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.form-group select{
+    width: calc(100% - 12px);
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+}
+
+.contact-form{
+    margin-top: 20px;
+}
