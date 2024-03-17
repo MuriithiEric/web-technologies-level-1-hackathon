@@ -22,3 +22,76 @@
 -->
 
 <!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tasks</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="blue-heading">Registration</h1>
+        <p class="red-paragraph">Please provide the following details</p>
+    </header>
+<div class="link">
+  <a href="https://github.com/MoShaab/web-technologies-level-1-hackathon" target="_blank">Visit My web-hackathon</a>
+</div>
+    
+
+    <section class="image-section">
+      <div class="image">
+        <img src="code.jpg" alt="Code Image">
+      </div>
+    </section>
+
+    <section class="form-section">
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required><br><br>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required><br><br>
+
+            <fieldset>
+                <legend>Gender:</legend>
+                <label><input type="radio" name="gender" value="male"> Male</label>
+                <label><input type="radio" name="gender" value="female"> Female</label>
+                <label><input type="radio" name="gender" value="other"> Other</label>
+            </fieldset><br>
+
+            <label for="subjects">Subjects:</label>
+            <select id="subjects" name="subjects[]" multiple required>
+                <option value="English">English</option>
+                <option value="Math">Math</option>
+                <option value="Science">Science</option>
+                <option value="Art and Craft">Art and Craft</option>
+                <option value="Agriculture">Agriculture</option>
+                <option value="Geography">Geography</option>
+                <option value="History">History</option>
+            </select><br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+
+            <input type="hidden" name="sessionId" value="123456"><br>
+
+            <button class = "btn1" type="reset">Cancel</button>
+            <button class = "btn2" type="submit">Register</button>
+            
+        </form>
+    </section>
+</body>
+</html>
