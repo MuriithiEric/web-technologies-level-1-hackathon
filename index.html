@@ -22,3 +22,59 @@
 -->
 
 <!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>a HTML webpage</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <h1>Welcome,new students!</h1>
+    <p> If you are new student, please review our <a href="https://sciencetechnology.uonbi.ac.ke/index.php/latest-news/online-registration-process-first-years-academic-year-20212022" target="_blank"> registeration information</a> before proceeding with the registeration process.</p><br>
+    <section>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtYRgmj9ushqnplweZEY4JunnYx_2az8Mxug&usqp=CAU/images/institution_logo.png" alt="Institution logo" class="custome-image">
+  </section><br>
+  <section>
+    <form action="submit.php" method="post">
+      <label for= "name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name"><br>
+      <label for="email address">Email Address:</label>
+      <input type="text" id="email address" email address="email address" placeholder="adan@gmail.com"><br>
+      <label for="phone number">Phone Number:</label>
+      <input type="text" id="phone number" phone number="phone number" placeholder="Enter phone number"><br>
+      <label for="age">Age:</label>
+      <input type="text" id="age" age="age" placeholder="Enter age"><br>
+      <fieldset>
+        <legend>select your gender:</legend>
+        <label>
+        <input type="radio"name="gender" value="Male">
+        Male
+        </label><br>
+        <label>
+        <input type="radio"name="gender" value="Female">
+        Female
+        </label><br>
+        <label>
+        <input type="radio" name="gender" value="other"> 
+        other
+        </label>
+      </fieldset><br>
+      <label for="subjects">Select sections:</label><br>
+      <select id="subjects" name="subjects" multiple>
+        <option value="english">English</option>
+        <option value="math">Math</option>
+        <option value="science">Science</option>
+        <option value="art_craft">Art_Craft</option>
+        <option value="agriculture">Agriculture</option>
+        <option value="geography">Geography</option>
+        <option value="history">History</option>
+        </select><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password"><br>
+        <input type="hidden" id="sessionId" name="sessionId" value="your_session_id_here"><br>
+        <button type="button" onclick="clearform()">Cancel</button><br>
+       <input type="submit" value="Register">
+       </form>
+  </section>
+  </body>
+</html>
