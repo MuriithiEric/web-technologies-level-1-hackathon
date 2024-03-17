@@ -1,1 +1,19 @@
+/* 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag*/
 
+h1{
+    color: blue;
+}
+p{
+    color: red;
+    font-size: 15px;
+}
+h2{
+    color: blueviolet;
+    text-decoration: none;
+}
+img{
+    width: 500px;
+    height: 500px;
+    border: 5px solid green;
+    
+}
