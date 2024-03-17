@@ -1,1 +1,140 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+body{
+  height: 100vh;
+  background-color: blueviolet;
+}
+/* for the first section  */
+#first-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#first-section h1 {
+  color: blue;
+  font-size: 15px;
+  font-weight: 900;
+  /* text-align: center; */
+  padding: 28px;
+}
+#first-section p {
+  color: red;
+  font-size: 15px;
+  text-align: center;
+  padding: 8px;
+  width: 550px;
+}
+
+/* for the second section where the image is */
+#second-section {
+  display: flex;
+}
+
+.image {
+  /* margin-left: 440px; */
+  margin: 0 auto;
+
+  padding: 16px;
+}
+
+.image img {
+  width: 500px;
+  height: 500px;
+  border: 4px groove rgb(87, 237, 87);
+  border-radius: 8px;
+}
+
+/* styles for the Third section on forms */
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 32px;
+}
+/* label{
+    text-align: left;
+} */
+form p {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: -100px;
+
+}
+
+input {
+  border: 2px solid;
+  border-width: 0 0 2px 0;
+  outline: none;
+  padding:4px 0;
+}
+
+::placeholder{
+  font-size: 17px;
+  margin-bottom: 4px;
+  color: black;
+  
+}
+
+.field {
+  padding: 28px;
+  width: 500px;
+}
+
+.field legend{
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.field2{
+  padding: 8px;
+}
+
+fieldset{
+  border: 2px solid ;
+}
+
+legend{
+  padding:0 4px;
+}
+
+.field2 > legend{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.course{
+  font-size: 18px;
+  color: black;
+  font-weight: bold;
+}
+
+
+.padforps {
+  padding: 12px 0;
+}
+
+
+
+.buttons{
+  /* display: flex;
+  flex-direction: row;
+  margin-top: 12px; */
+  display: inline-block;
+  margin-top: 18px;
+}
+
+.buttons button{
+  padding: 8px 18px;
+  background-color: rgb(25, 94, 205);
+  color: white;
+  border: none;
+  border-radius: 6px;
+}
