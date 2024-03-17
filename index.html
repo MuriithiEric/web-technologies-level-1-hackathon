@@ -1,24 +1,117 @@
-<!-- 1. create the basic html structure. your structure should include a blue heading and a red paragragh with font size 15px -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="Author" content="alchemy-Q">
+  <meta name="descreption" content="web-technologies-level-1-hackathon">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico">
+  <title>Web-technologies-level-1-hackathon</title>
+</head>
+<body>
+  <header>
+    <h1>LITTLE KIBANDASKI HOTEL & RESTURANT.</h1>
+    <p class="intro">This is the official website of little Kibandaski Hotel. Here we cook and serve in a way that pleases the lord. This page contains our meals Images, check them out and make orders. For reservation click the link "Make Reservations" <br>
+    Jibambe!&#x1F60E;&#x1F90F;</p>
+    <nav>
+      <ul>
+        <li><a href="https://www.google.com/search?q=reservations+for+hotels&oq=reservations+for+hotels">Make Reservations!</a></li>
+        <li > <a href="#images">Meal Images</a></li>
+        <li><a href="#forms">Forms</a></li>
+      </ul>
+    </nav>
+  </header>
 
+  <main>
+    <section id="images">
+      <img src="salad-2756467_1280.jpg" alt="Photo of salad" width="500px" height="500px">
+      <figcaption>Salad</figcaption>
+    </section>
 
-<!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
+    <section id="forms">
+      <h2>Forms</h2>
+      <form action="https://binget/get" method="get">
+        <fieldset>
+          <legend>Order Here!</legend>
+          <p>
+            <!-- label for Name -->
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="Your Name" required>
+            <br> <br>
 
+            <!-- label for Email -->
+            <label for="email">Email Adress:</label>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <br> <br>
 
-<!-- 3. create a section and add an image, using css; place a green border on the image, the image should be 500px wide and 500px high -->
+            <!-- label for phone -->
+            <label for="phone">Phone Number:</label>
+            <input type="phone" id="phone" placeholder="Phone Number" required>
+            <br> <br>
 
+            <!-- label for Age -->
+            <label for="age">Age:</label>
+            <input type="number" id="age" placeholder="Your Age" required>
+            <br> <br>
 
-<!-- 4. create another section add a form that takes in the following input:
-  a. name
-  b. email address
-  c. phone number
-  d. age
-  e. radio checkbox for gender (use fieldset to group the gender input)
-  f. dropdown for multi-selection of subjects: English, Math, Science, Art and Craft, Agriculture, Geography and History
-  g. password
-  h. a hidden field to capture sessionId
-  i. cancel button that clears form inputs
-  j. submit button with text register
-  make sure to incorporate relevant labels in your form elements using the necessary and relevant input types and element attributes
--->
+            <!-- label for gender-->
+              <label>
+                  <input type="radio" name="gender" value="male">
+                  Male
+              </label>
+              <label>
+                  <input type="radio" name="gender" value="female">
+                  Female
+              </label>
+              <label>
+                  <input type="radio" name="gender" value="other">
+                  Other
+              </label>
+              <br><br>
 
-<!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+              <!-- label for meals -->
+              <label for="meals">Select Meals:</label>
+           <select id="meals" name="meals" multiple>
+            <option value="beef">Beef</option>
+            <option value="rice">Rice</option>
+            <option value="ugali">Ugali</option>
+            <option value="kales">Kales</option>
+            <option value="pizza">Pizza</option>
+            <option value="tacos">Tacos</option>
+            <option value="coffee">Coffee</option>
+            <option value="bread">Bread</option>
+            <option value="chips">Chips</option>
+            <option value="burger">Burger</option>
+        </select>
+        <br><br>
+
+        <!-- label for password -->
+            <label for="password">Password:</label>
+            <input type="password" required placeholder="Your Password">
+            <br> <br>
+          </p>
+
+          <!-- sessionId -->
+          <p>
+            <input type="hidden" id="sessionId" name="sessionId" value="your-session-id">
+          </p>
+          
+          <p>
+            <!-- label for submit -->
+            <button type="submit">Register</button>
+            <!-- label for cancel -->
+            <button type="reset">Cancel</button>
+          </p>
+        </fieldset>
+      </form>
+    </section>
+
+    <a href="#">Back To The Top.</a>
+  </main>
+  <hr>
+  <footer>
+    <p>Copyright &copy; The little Kibandaski Hotel</p>
+  </footer>
+</body>
+</html>
