@@ -1,1 +1,14 @@
+h1 {
+    color: blue;
+    font-size:15px;
+}
 
+p {
+    color: red;
+    font-size:15px;
+}
+.custome-image {
+    border:2px solid green;
+    width:500px;
+    height:500px;
+}
