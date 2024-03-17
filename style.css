@@ -1,1 +1,33 @@
+h1 {
+    color: blue;
+}
+
+p {
+    color: red;
+    font-size: 15px;
+}
+
+.image-section img {
+    width: 500px;
+    height: 500px;
+    border: 2px solid green;
+}
+
+form {
+    /* Add your form styling here */
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+select {
+    /* Add your input styling here */
+}
+fieldset {
+    /* Add your fieldset styling here */
+}
+input[type="submit"],
+input[type="button"] {
+    /* Add your button styling here */
+}
 
