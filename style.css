@@ -1,1 +1,36 @@
-
+h1{
+   color: blue; 
+}
+p{
+     color: red;
+     font-size: 15px;
+}
+section img{
+    border-color: green;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 20px;
+    box-shadow: 10px;
+    width: 500px;
+    height: 500px;
+}
+section form{
+    width: 750px;
+    justify-content: center;
+    background-color:rgb(140, 1, 1)
+    
+}
+section form input{
+    background-color:rgb(0, 255, 247);
+}
+button{
+    border-radius: 10px;
+    background-color: aqua;
+    color: rgb(140, 1, 1);
+}
+label{
+    color: aqua;
+}
+::placeholder{
+    color: rgb(140, 1, 1);
+}
