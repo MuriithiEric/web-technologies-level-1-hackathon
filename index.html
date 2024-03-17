@@ -1,6 +1,5 @@
 <!-- 1. create the basic html structure. your structure should include a blue heading and a red paragragh with font size 15px -->
 
-
 <!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
 
 
@@ -22,3 +21,115 @@
 -->
 
 <!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hackathon Web Development</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+  <body>
+    <div class="nav-bar">
+      <h1>CHESHA'S INQUIRY</h1>
+    </div>
+    <div class="hero">
+      <h1>Empower Your Learning Journey with Our Academic Inquiry System</h1>
+      <p>Welcome to our academic inquiry system, where curiosity meets knowledge. Explore a world of endless learning possibilities as you delve into a wide array of academic subjects tailored to your interests and aspirations. Whether you're a student, educator, or lifelong learner, our platform provides the tools and resources you need to inquire, discover, and grow.
+  
+      </p>
+     
+      <p>Follow us on our community to get all latest updates <a href="https://www.instagram.com" target="_blank">Explore</a> </p>
+      </div>
+  
+      <section id="about">
+        <div class="about_content">
+        <div class="image ">
+        <img src="./images2/secret.jpg" alt="Stationary">
+        </div>
+      
+        <div class="why_choose_us_content " >
+        <h3>Why Choose Us</h3>
+        <h6>At CHESHA'S, we're more than just an inquiry system. Here's why we stand out:</h6>
+        
+     
+      <div class="why_choose_us_divs">
+        <div class="quality">
+          <h6>Comprehensive Subject Coverage:</h6>
+        <p>Our academic inquiry system offers a comprehensive range of subjects spanning from mathematics and science to humanities and arts. No matter your academic interest or level, you'll find a wealth of resources and materials to fuel your curiosity and expand your understanding.</p>
+      </div>
+      <div class="quality">
+        <h6> Personalized Learning Experience:</h6>
+        <p>We believe that every learner is unique. That's why our platform is designed to adapt to your individual learning preferences and goals. Explore topics at your own pace, access tailored recommendations, and engage with interactive learning materials that cater to your needs.</p>
+      </div>
+     
+      </div>
+  
+    </div>
+    </div>
+      </section>
+      <section id="form">
+        <h4>Register with Us</h4>
+  
+        <form id="registrationForm" action="" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required class="name"><br>
+  
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required class="email"><br>
+  
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" required class="phone"><br>
+  
+          <label for="age">Age:</label>
+          <input type="number" id="age" name="age" required class="age"><br>
+  
+          <fieldset>
+              <legend>Gender:</legend>
+              <label for="male">Male</label>
+              <input type="radio" id="male" name="gender" value="male">
+              <label for="female">Female</label>
+              <input type="radio" id="female" name="gender" value="female">
+              <label for="other">Other</label>
+              <input type="radio" id="other" name="gender" value="other">
+          </fieldset><br>
+  
+          <label for="subjects">Subjects:</label>
+          <select id="subjects" name="subjects[]" multiple>
+              <option value="English">English</option>
+              <option value="Math">Math</option>
+              <option value="Science">Science</option>
+              <option value="Art and Craft">Art and Craft</option>
+              <option value="Agriculture">Agriculture</option>
+              <option value="Geography">Geography</option>
+              <option value="History">History</option>
+          </select><br>
+  
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required><br>
+  
+          <input type="hidden" name="sessionId" value="123456789"><br>
+  
+          <input type="submit" value="Register" class="register">
+          <input type="button" value="Cancel" class="cancel">
+      </form>
+      <div class="gratitude">
+        <h3>Embark on your quest for knowledge with confidence. Join our academic inquiry system today and unlock the door to endless opportunities for growth and discovery.</h3>
+        <p>Follow Us</p>
+        <a href="https://www.telegram.com"><img src="images2/telegram.png"></a>
+        <a href="https://www.instagram.com"><img src="images2/ig.png"></a>
+        <a href="https://www.twitter.com"><img src="images2/twitter.jpg"></a>
+
+        <a href="https://www.linkedIn.com"><img src="images2/linkedIn.png"></a>
+
+
+
+        </div>
+      </div>
+  
+      </section>
+      
+  </body>
+</html>
