@@ -22,3 +22,66 @@
 -->
 
 <!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>hackathon1</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- create a box div -->
+    <div class ="box-container">
+    <!-- creating an image section -->
+    <section class="image">
+      <img src="Emile Perron Unsplash.jpg" alt="an image of a laptop">
+    </section>
+    <!-- creating the form section -->
+    <section class="info">
+      <h1>Hello there!</h1>
+      <p>My name is Christian Machira and I am a Web Developer.</p>
+      <a href="https://github.com/christianmachira" target="_blank">My Github link</a>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+        <!-- using a fieldset for gender information -->
+        <fieldset>
+          <legend>Gender:</legend>
+          <label><input type="radio" name="gender" value="male"> Male</label>
+          <label><input type="radio" name="gender" value="female"> Female</label>
+          <label><input type="radio" name="gender" value="other"> Other</label>
+        </fieldset>
+        <label for="subjects">Subjects:</label>
+          <select id="subjects" name="subjects[]" multiple required>
+          <option value="English">English</option>
+          <option value="Math">Math</option>
+          <option value="Science">Science</option>
+          <option value="Art and Craft">Art and Craft</option>
+          <option value="Agriculture">Agriculture</option>
+          <option value="Geography">Geography</option>
+          <option value="History">History</option>
+        </select><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br>
+        <input type="hidden" id="sessionId" name="sessionId" value="YOUR_SESSION_ID">
+        <button type="button" onclick="clearForm()">Cancel</button>
+        <button type="submit">Register</button>
+      </form> 
+      <!-- creating the cancel button JavaScript function -->
+      <script>
+        function clearForm() {
+            document.querySelector("form").reset();
+        }
+    </script>
+    </section>
+    </div>
+  </body>
+</html>
