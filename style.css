@@ -26,8 +26,10 @@ body{
 
 .link a{
     text-decoration: none;
+    color: #fff;
     font-size: 20px;
-    font-weight: 600;
+    margin-top: 20px;
+    display: inline-block;
     color: tan;
 }
 
@@ -45,17 +47,36 @@ body{
 }
 
 button.btn2{
-    padding: 14px 60px;
-    font-size: 18px;
-    margin-top: 20px;
+    
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: black;
+    transition: background 0.5s;
     cursor: pointer;
-}
+    
+     }
 
 button.btn1{
-    padding: 14px 60px;
-    font-size: 18px;
-    margin-top: 20px;
+    
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: black;
+    transition: background 0.5s;
     cursor: pointer;
 }
 
+.btn1:hover:hover{
+    background: #00eeff;
+    }
+    .btn2:hover:hover{
+        background: #00eeff;
+        }
 
