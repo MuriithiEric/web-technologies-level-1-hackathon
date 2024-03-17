@@ -1,1 +1,25 @@
+.blue-heading {
+    color: blue;
+}
 
+.red-paragraph {
+    color: red;
+    font-size: 15px;
+}
+
+.green-bordered-image {
+    border: 2px solid green;
+    width: 500px;
+    height: 500px;
+}
+.red-paragraph{
+    width: 100%;
+    font-size: medium;
+
+}
+.blue-heading{
+    position: center;
+    background-size: cover;
+    width: 100%;
+
+}
