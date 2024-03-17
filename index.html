@@ -1,24 +1,91 @@
-<!-- 1. create the basic html structure. your structure should include a blue heading and a red paragragh with font size 15px -->
+<!DOCTYPE html>
+<html>
 
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Coding Journey</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
 
-<!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
+<body>
+   <?php include "session.php" ;?>
+  <h1 class="h1-style">Where Coding meets Passion!</h1>
+  <p class="p-style"> Ever wondered what it takes to be a good programmer? Well, look no further click the link below to access all the resources you will need regardless of your current mastery of programming. P.S. It's FREE!!!</p>
 
+  <a href="https://www.freecodecamp.org/" target="_blank" class="link-style"">Freecodecamp.com</a>
 
-<!-- 3. create a section and add an image, using css; place a green border on the image, the image should be 500px wide and 500px high -->
+<section>
+  <div >
+    <img src="sign.jpg" alt="A sign that says this is the sign you've been waiting for" class="img-style">
+  </div>
+</section>
+  <section >
+    
+    <h4>Register below to get more programming content. </h4>
+    <form action="#" method="post">
+      <fieldset class="form-style">
+        <legend>Personal Information</legend>
+        <label for="name">Name:
+        <input class="input-style" type="text" id="name" name="name" required>
+          </label>
+        <label for="email">Email:
+        <input class="input-style" type="email" id="email" name="email" required>
+          </label>
+        <label for="phonenumber">Phone Number:
+          <input  class="input-style" type="text" id="phonenumber" name="phonenumber" required>
+        </label>
+        <label for="age">Age:
+          <input class="input-style" type="number" id="age" name="age" min="18" max="100" required">
+        </label>
+        <label for="password">Password:
+          <input class="input-style" type="password" id="password" name="password" required">
+        </label>
+        
+      </fieldset>
+      <fieldset>
+        <legend>Gender</legend>
+        <label for="male">Male
+          <input type="radio" id="male" name="gender" value="male">
+          
+        </label>
+        <label for="female">Female
+          <input type="radio" id="female" name="gender" value="female">
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Select the Languages you want to study</legend>
+        <label for="languages">Languages:
+        
+        <select id="languages" name="languages[]" multiple>
+          <option value="html">Html</option>
+          <option value="css">Css</option>
+          <option value="javascript">Javascript</option>
+          <option value="php">Php</option>
+          <option value="python">Python</option>
+          <option value="java">Java</option>
+          <option value="c">C</option>
+          <option value="c++">C++</option>
+          <option value="dart">Dart</option>
+        </select>  
+        
+        </label>
+      </fieldset>
+      <label for="Session" class="hidden">Session ID:
+        <input type="hidden" id="session" value="<?php echo $sessionID; ?>">
+      </label>
+      
+      <div class="container">
+        
+      <label  for='cancel'>
+        <input class="cancel" type="button" id="cancel" value="Cancel" onclick="if(confirm('Are you SURE you wish to cancel?')) location.reload();">
+      </label>
+      <button type="submit" name="submit" class="btn">Register</button>
+      </div>
+      
+    </form>
+  </section>
+  
+</body>
 
-
-<!-- 4. create another section add a form that takes in the following input:
-  a. name
-  b. email address
-  c. phone number
-  d. age
-  e. radio checkbox for gender (use fieldset to group the gender input)
-  f. dropdown for multi-selection of subjects: English, Math, Science, Art and Craft, Agriculture, Geography and History
-  g. password
-  h. a hidden field to capture sessionId
-  i. cancel button that clears form inputs
-  j. submit button with text register
-  make sure to incorporate relevant labels in your form elements using the necessary and relevant input types and element attributes
--->
-
-<!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+</html>
