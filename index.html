@@ -1,24 +1,103 @@
-<!-- 1. create the basic html structure. your structure should include a blue heading and a red paragragh with font size 15px -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>March Hackathon</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="heading text-center">Welcome to Our Hackathon where you Learn by Challenge</h1>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <section>
+                        <p class="mission">Our Mission is to bring together the African mind in terms of Technological advancement to solve the problems affecting Africans</p>
+                        <a href="https://powerlearnproject.org/" class="btn btn-primary" target="_blank">Our Website</a>
+                    </section>
+                </div>
+                <div class="col-md-6">
+                    <section>
+                        <img src="about.jpg" alt="Image" class="img-fluid green-bordered-image">
+                    </section>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    <section>
+                        <form>
+                            <div>
+                                <H2>Registration Form</H2>
+                            </div>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required><br><br>
+            
+                            <label for="email">Email Address:</label>
+                            <input type="email" id="email" name="email" required><br><br>
+            
+                            <label for="phone">Phone Number:</label>
+                            <input type="tel" id="phone" name="phone" required><br><br>
+            
+                            <label for="age">Age:</label>
+                            <input type="number" id="age" name="age" required><br><br>
+            
+                            <fieldset>
+                                <legend>Gender:</legend>
+                                <input type="radio" id="male" name="gender" value="male">
+                                <label for="male">Male</label>
+                                <input type="radio" id="female" name="gender" value="female">
+                                <label for="female">Female</label>
+                            </fieldset><br>
+            
+                            <label for="subjects">Subjects:</label>
+                            <input type="text" id="subjects" name="subjects" onclick="toggleDropdown()" readonly required><br><br>
+            
+                            <select id="subjectsDropdown" name="subjectsDropdown" multiple style="display: none;">
+                                <option value="english">English</option>
+                                <option value="math">Math</option>
+                                <option value="science">Science</option>
+                                <option value="art">Art and Craft</option>
+                                <option value="agriculture">Agriculture</option>
+                                <option value="geography">Geography</option>
+                                <option value="history">History</option>
+                            </select><br><br>
+            
+                            <label for="password">Password:</label>
+                            <input type="password" id="password" name="password" required><br><br>
+            
+                            <input type="hidden" id="sessionId" name="sessionId" value="123456789"><br>
+            
+                            <input type="button" value="Cancel" onclick="clearForm()">
+                            <input type="submit" value="Register">
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
 
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
 
-<!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
-
-
-<!-- 3. create a section and add an image, using css; place a green border on the image, the image should be 500px wide and 500px high -->
-
-
-<!-- 4. create another section add a form that takes in the following input:
-  a. name
-  b. email address
-  c. phone number
-  d. age
-  e. radio checkbox for gender (use fieldset to group the gender input)
-  f. dropdown for multi-selection of subjects: English, Math, Science, Art and Craft, Agriculture, Geography and History
-  g. password
-  h. a hidden field to capture sessionId
-  i. cancel button that clears form inputs
-  j. submit button with text register
-  make sure to incorporate relevant labels in your form elements using the necessary and relevant input types and element attributes
--->
-
-<!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+    <script>
+        function toggleDropdown() {
+            var dropdown = document.getElementById("subjectsDropdown");
+            if (dropdown.style.display === "none") {
+                dropdown.style.display = "block";
+            } else {
+                dropdown.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
