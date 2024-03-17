@@ -1,1 +1,62 @@
 
+/* heading */
+h1 {
+    color: blue;
+  }
+  
+  /* paragraph */
+  p {
+    color: red;
+    font-size: 15px;
+  }
+  
+  /* link */
+  .link {
+    color: teal; 
+    text-decoration: none;
+  }
+  
+  /* image */
+  .image img {
+    border: 2px solid green;
+    width: 500px;
+    height: 500px; 
+  }
+  
+  /* form */
+  .form {
+    margin-top: 20px;
+  }
+  
+  /* form labels */
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  /* form inputs */
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="date"],
+  select,
+  input[type="password"] {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  /* fieldset */
+  fieldset {
+    margin-bottom: 10px;
+  }
+  
+  /* submit and reset buttons */
+  button[type="submit"],
+  button[type="reset"] {
+    margin-top: 10px;
+  }
+  
+  /* hidden field */
+  input[type="hidden"] {
+    display: none;
+  }
