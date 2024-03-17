@@ -1,4 +1,10 @@
-
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: linear-gradient(to right, white, lightblue ); 
+}
 h1{
     color: #1367C6 ; /* picked a diff shade of blue that doesnt hurt the eye */
     font-size: 500%;
