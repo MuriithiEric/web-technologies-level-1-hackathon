@@ -7,7 +7,7 @@ body{
 form{
     background-image: url('wallpaper3.jpeg');
     width: 630px;
-    height: 580px;
+    height: 1000px;
     margin-left: 28%;
     padding: 50px 80px;
     margin-top: -20px;
@@ -55,6 +55,7 @@ form label{
     font-size: 30px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: white;
+    padding-bottom: 16px;
     
 }
 
