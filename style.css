@@ -1,1 +1,18 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: papayawhip;
+}
 
+h1 {color: blue;}
+.intro{
+    color: red;
+    font-size: 15px;
+    margin: 10px 150px 10px 150px ;
+}
+
+img {
+    border: 4px solid green;
+}
