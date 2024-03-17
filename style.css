@@ -1,1 +1,82 @@
 
+.blue-heading {
+    color: blue;
+    
+}
+
+.red-paragraph {
+    color: red;
+    font-size: 15px;
+    
+}
+
+.image-section img {
+    width: 500px;
+    height: 500px;
+    border: 2px solid green;
+    margin: 20px;
+}
+
+body{
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(rgb(0,0,0,0.6), #ff004f );
+    
+}
+
+.link a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    margin-top: 20px;
+    display: inline-block;
+    color: tan;
+}
+
+.form-section{
+    display: flex;
+    justify-content: center;
+    font-size: 26px;
+
+}
+.form-section input{
+   
+    border-width: 3px;
+    margin: 10px;
+   
+}
+
+button.btn2{
+    
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: black;
+    transition: background 0.5s;
+    cursor: pointer;
+    
+     }
+
+button.btn1{
+    
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: black;
+    transition: background 0.5s;
+    cursor: pointer;
+}
+
+.btn1:hover:hover{
+    background: #00eeff;
+    }
+    .btn2:hover:hover{
+        background: #00eeff;
+        }
+
