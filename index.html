@@ -22,3 +22,61 @@
 -->
 
 <!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Dev Hackathon</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1 class="blue-heading">Welcome to Pinchez Graphics!</h1>
+        <p class="red-paragraph">We offer quality services at affordable prices and promote all types of businesses by branding them to stand out from other businesses.</p>
+        <a href="http://www.pinchez.epizy.com/" target="_blank">More Info</a>
+    </header>
+    
+    <section class="image-section">
+        <img src="./TECH BG 1.jpg" alt="Beautiful Image">
+    </section>
+    
+    <section class="form-section">
+        <form action="#" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+            <fieldset>
+                <legend>Gender:</legend>
+                <label><input type="radio" name="gender" value="male"> Male</label>
+                <label><input type="radio" name="gender" value="female"> Female</label>
+                <label><input type="radio" name="gender" value="other"> Other</label>
+            </fieldset>
+            <label for="subjects">Subjects:</label>
+            <select id="subjects" name="subjects" multiple required>
+                <option value="English">English</option>
+                <option value="Math">Math</option>
+                <option value="Science">Science</option>
+                <option value="Art and Craft">Art and Craft</option>
+                <option value="Agriculture">Agriculture</option>
+                <option value="Geography">Geography</option>
+                <option value="History">History</option>
+            </select>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <input type="hidden" id="sessionId" name="sessionId">
+            <button type="button" id="cancel-btn" onclick="clearForm()">Cancel</button>
+            <button type="submit" id="register-btn">Register</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
