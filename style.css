@@ -71,7 +71,7 @@ form .flex{
   width: 100%;
 }
 .input-group{   
-    margin: 10px 0;
+    margin: 2px 0;
     padding: 5px;
     position: relative;
   }
@@ -86,6 +86,13 @@ input[type="number"] {
   border: 1px solid #ccc;
   border-radius: 2px;
 }
+fieldset {
+    width: 100%;
+    padding: 5px; 
+    outline: none;
+    border: none;
+    border-radius: 2px;
+  }
 /* Dropdown */
 .dropdown {
 position: relative;

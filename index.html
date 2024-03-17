@@ -69,18 +69,18 @@
                     <input type="number" id="age" name="age" required>
                 </div>
           <!-- e. radio checkbox for gender (use fieldset to group the gender input) -->
-                <div>
+                <div class="input-group">
                     <legend>Gender:</legend>
-                    <div class="flex">
+                    <fieldset class="flex">
                         <label><input type="radio" name="gender" value="male"> Male</label>
                         <label><input type="radio" name="gender" value="female"> Female</label>
-                    </div>
+                    </fieldset>
                 </div>
           <!-- f. dropdown for multi-selection of subjects: English, Math, Science, Art and Craft, Agriculture, Geography and History -->
             <div class="dropdown">
               <label class="selection-header"> Select your Subjects: <span>▼</span> </label>
               <div id="selection-dropdown" class="selection-dropdown">
-                <label class=""> 
+                <label class="item"> 
                   <input type="checkbox" name="subject" value="English"> English
                 </label><br>
                 <label>
