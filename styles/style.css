@@ -1,0 +1,104 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: whitesmoke;
+  margin: 0;
+  padding: 0;
+}
+
+.blue-heading{
+  color: blue;
+}
+
+.red-paragraph{
+  color: red;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav a {
+  color: blue; /* Change color of links */
+  text-decoration: none;
+  font-family: Arial, sans-serif; 
+  font-size: 20px; /* Change font size */
+}
+
+nav a:hover {
+  color: #555; /* Change color of links on hover */
+}
+
+a {
+  text-decoration:lightblue;
+}
+
+main {
+  padding: 20px;
+}
+
+.intro-section {
+  margin-bottom: 20px;
+}
+
+.image-section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.image-section img {
+  width: 500px;
+  height: 500px;
+  border: 6px solid green;
+  border-radius: 20px;
+}
+
+.form-section {
+  background-color: lightblue;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.form-section h2 {
+  margin-top: 0;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="number"],
+form select,
+form input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button-group button:first-child {
+  margin-right: 10px;
+}
