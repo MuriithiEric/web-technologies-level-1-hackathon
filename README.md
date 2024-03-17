@@ -9,6 +9,7 @@ This repository contains the code for a website titled "WEBMASTERS," focusing on
 - [About the School](#about-the-school)
 - [Registration](#registration)
 - [Contact](#contact)
+- [Author](#author)
 
 ## Introduction
 
@@ -38,4 +39,4 @@ The "Contact" section provides users with the school's contact information, incl
 
 ## Author
 
-This document was prepared by Neville James.
+Neville James.

@@ -51,7 +51,13 @@ body {
   margin-left: 1000px;
   margin-top: 100px;
   border-radius: 200px;
+  transition: transform 0.3s ease;
 }
+
+.pic:hover {
+  transform: scale(1.03) translateY(-3px);
+}
+
 /* Styling for blue heading */
 .blue-heading {
   color: #0bf4f0;
@@ -81,7 +87,7 @@ body {
 .major {
   color: #0bf4f0;
   background-color: #333;
-  padding: 4px; /* You can remove padding */
+  padding: 4px;
   border-radius: 10px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
@@ -114,6 +120,7 @@ body {
 
 .apply_now:hover {
   background-color: #11171e;
+  transform: scale(1.01) translateY(-1px);
 }
 .apply_magic {
   padding: 17px 40px;
@@ -130,6 +137,7 @@ body {
 .apply_magic:hover {
   background-color: orangered;
   color: #edeaea;
+  transform: scale(1.01) translateY(-1px);
 }
 /* Styling for red paragraph with font size 15px */
 .red-paragraph {
@@ -167,6 +175,7 @@ body {
 .rass:hover {
   color: #0bf4f0;
   background-color: #333;
+  transform: scale(1.02);
 }
 
 /* Navbar styles */
@@ -236,6 +245,10 @@ section h2 {
   border-radius: 6px;
   border: 2px solid rgb(36, 241, 8);
   margin-left: 20px;
+}
+.image-container img:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  transform: scale(1) translateY(-2px);
 }
 
 /* Styling for text description */
