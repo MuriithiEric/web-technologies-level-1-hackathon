@@ -1,1 +1,38 @@
 
+ img {
+  border: 5px solid green;
+  width: 500px;
+  height: 500px;
+} 
+h1 {
+  color: blue;
+  text-align: center;
+}
+
+p{
+    color: red;
+    text-align: center;
+    font-size: 15px;
+}
+a{
+    color: green;
+    text-align: center;
+    font-size: 15px;
+    
+}
+form{
+    font-size: 15px;
+    color: green    ;
+}
+form input{
+    font-size: 15px;
+    color: green;
+}
+form button{
+    font-size: 15px;
+    color: rgb(128, 9, 0);
+}
+fieldset{
+    font-size: 15px;
+    color: green;
+}
