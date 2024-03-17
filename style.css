@@ -1,1 +1,48 @@
+/* CSS styles */
+h1 {
+    color: blue;
+}
+
+p {
+    color: red;
+    font-size: 15px;
+}
+
+.border-green {
+    border: 2px solid green;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+.fieldset {
+    max-width: 300px; 
+    margin: 0 auto; 
+}
+
+.clear-checkbox {
+    display: none; /* Hide the checkbox */
+}
+
+.clear-label {
+    display: inline-block;
+    background-color: #ccc;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* When the checkbox is checked, reset the form */
+.clear-checkbox:checked + .clear-label + #registration-form {
+    animation: clearFormAnimation 0.01s; /* Trigger animation */
+}
+
+@keyframes clearFormAnimation {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(0);
+    }
+}
+
 
