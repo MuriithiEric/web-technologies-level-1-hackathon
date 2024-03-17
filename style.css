@@ -1,1 +1,24 @@
+.heading{
+    color:blue;
+    font-size: 30px;
+}
 
+.paragraph{
+    color:red;
+    font-size: 20px;
+}
+
+.link{
+    color:blue;
+    font-size: 20px;
+}
+
+.image{
+    width: 500px;
+    height: 500px;
+    border: 2px solid green;
+}
+
+body{
+    background-image: url("images/background.jpg");
+}
