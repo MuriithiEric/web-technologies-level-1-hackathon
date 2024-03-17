@@ -1,11 +1,30 @@
-<!-- 1. create the basic html structure. your structure should include a blue heading and a red paragragh with font size 15px -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="style.css">
+    <title>Blue Heading and Red Paragraph</title>
+     
+</head>
+<body>
+  
+<main>
+
+  <!-- 1. create the basic html structure. your structure should include a blue heading and a red paragragh with font size 15px -->
+
+  <h1>REGISTRATION PORTAL</h1>
+  <p>Kindly fill this form below</p>
 
 
 <!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
 
+<!-- <a href="https://www.example.com" target="_blank">Visit Example.com</a> -->
 
 <!-- 3. create a section and add an image, using css; place a green border on the image, the image should be 500px wide and 500px high -->
-
+<section class="image-section">
+  <img src="image.jpg" alt="Placeholder Image">
+</section>
 
 <!-- 4. create another section add a form that takes in the following input:
   a. name
@@ -19,6 +38,73 @@
   i. cancel button that clears form inputs
   j. submit button with text register
   make sure to incorporate relevant labels in your form elements using the necessary and relevant input types and element attributes
--->
 
+-->
+<section class="form-section">
+  <h2>Registration Form</h2>
+  <form action="#" method="post">
+    
+      <input type="text" id="name" name="name" required placeholder="Name">
+
+     
+      <input type="email" id="email" name="email" required placeholder="Email Address">
+
+     
+      <input type="tel" id="phone" name="phone" required placeholder="Phone Number">
+      
+      <input type="password" id="password" name="password" required placeholder="Password">
+    
+      <input type="number" id="age" name="age" required placeholder="Age">
+
+<div class="fildset-dropdown">
+  
+      <fieldset>
+        <legend>Gender:</legend>
+          <div>
+        
+             <label for="male"><input type="radio" id="male" name="gender" value="male" required> Male</label>
+          <label for="female"><input type="radio" id="female" name="gender" value="female" required> Female</label>
+          <label for="other"><input type="radio" id="other" name="gender" value="other" required> Other</label>
+          </div>
+         
+      </fieldset>
+
+      <div class="dropdown-container">
+        <label for="subjects"   >Subjects: </label>
+        <div class="dropdown">
+          <button class="dropbtn">Select Subjects <img src="arrow-down.svg"></button>
+          <div class="dropdown-content">
+              <label><input type="checkbox" name="subjects[]" value="English"> English</label>
+              <label><input type="checkbox" name="subjects[]" value="Math"> Math</label>
+              <label><input type="checkbox" name="subjects[]" value="Science"> Science</label>
+              <label><input type="checkbox" name="subjects[]" value="Art and Craft"> Art and Craft</label>
+              <label><input type="checkbox" name="subjects[]" value="Agriculture"> Agriculture</label>
+              <label><input type="checkbox" name="subjects[]" value="Geography"> Geography</label>
+              <label><input type="checkbox" name="subjects[]" value="History"> History</label>
+          </div>
+      </div>
+      </div>
+
+</div>
+
+     
+
+      <input type="hidden" name="sessionId" value="YourSessionID">
+        
+      <div class="btn-container">
+      <button type="button" >Cancel</button>
+      <button type="submit">Register</button>
+        </div>
+   
+  </form>
+</section>
 <!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+
+
+
+</main>
+
+
+
+</body>
+</html>
