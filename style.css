@@ -27,7 +27,7 @@
 }
 /* 3. added an image, using css; placed a green border on the image, the image is 500px wide and 500px high */
 .image{
-    border: 2px solid #008000;
+    border: 2px solid green;/* green border on the image */
     border-radius: 2px;
     width: 500px;/* 500px wide  */
     height: 500px; /* 500px high  */   
@@ -67,9 +67,14 @@ form {
   flex-direction: column;
 }
 form .flex{
-  gap: 30px;
+  gap: 40px;
   width: 100%;
 }
+.input-group{   
+    margin: 10px 0;
+    padding: 5px;
+    position: relative;
+  }
 input[type="text"],
 input[type="email"],
 input[type="tel"],
@@ -81,21 +86,31 @@ input[type="number"] {
   border: 1px solid #ccc;
   border-radius: 2px;
 }
-select {
-  width: 100%;
-  padding: 5px; 
-  outline: none;
-  border: 1px solid #ccc;
-  border-radius: 2px;
+/* Dropdown */
+.dropdown {
+position: relative;
+display: inline-block;
+margin: 10px 0;
 }
-.input-group{   
-  margin: 5px 0;
-  padding: 5px;
-  position: relative;
+.selection-dropdown {
+display: none;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
 }
+.dropdown:hover .selection-dropdown {
+display: block;
+}
+.selection-header {
+cursor: pointer;
+font-size: 17px;
+background-color: #ccc;
+padding: 5px;
+}
+
 label{
-  display: block;
-  margin-bottom: 5px;
+margin-bottom: 5px;
 }  
 button{
   width: 100%;

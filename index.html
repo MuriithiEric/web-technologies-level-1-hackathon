@@ -77,17 +77,31 @@
                     </div>
                 </div>
           <!-- f. dropdown for multi-selection of subjects: English, Math, Science, Art and Craft, Agriculture, Geography and History -->
-            <div class="input-group">
-                <label for="subjects">Subjects:</label>
-                <select id="subjects" name="subjects" multiple>
-                    <option value="english">English</option>
-                    <option value="math">Math</option>
-                    <option value="science">Science</option>
-                    <option value="art_and_craft">Art and Craft</option>
-                    <option value="agriculture">Agriculture</option>
-                    <option value="geography">Geography</option>
-                    <option value="history">History</option>
-                </select>
+            <div class="dropdown">
+              <label class="selection-header"> Select your Subjects: <span>▼</span> </label>
+              <div id="selection-dropdown" class="selection-dropdown">
+                <label class=""> 
+                  <input type="checkbox" name="subject" value="English"> English
+                </label><br>
+                <label>
+                  <input type="checkbox" name="subject" value="Math"> Math
+                </label><br>
+                <label>
+                  <input type="checkbox" name="subject" value="Science"> Science
+                </label><br>
+                <label>
+                  <input type="checkbox" name="subject" value="Art and Craft"> Art and Craft
+                </label><br>
+                <label>
+                  <input type="checkbox" name="subject" value="Agriculture"> Agriculture
+                </label><br>
+                <label>
+                  <input type="checkbox" name="subject" value="Geography"> Geography
+                </label><br>
+                <label>
+                  <input type="checkbox" name="subject" value="History"> History
+                </label><br>
+              </div>
             </div>
           <!-- g. password -->
             <div class="input-group">
