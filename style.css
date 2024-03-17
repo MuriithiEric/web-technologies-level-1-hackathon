@@ -1,1 +1,93 @@
-
+html {
+    height: 100%;
+    width: 100%;
+  }
+  .h1-style, h4{
+    text-align: center;
+    font-family: "Verdana", Courier, monospace;
+    font-size: 15px;
+    color: blue;
+    letter-spacing:2px;
+    
+  }
+  .p-style{
+    text-align: center;
+    font-family: "Verdana", Courier, monospace;
+    font-size: 15px;
+    color: red;
+    letter-spacing:2px;
+  }
+  .link-style{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#6ea4bf;
+  }
+  .img-style{
+    display:block;
+    width: 500px;
+    height: 500px;
+    margin-left:auto;
+    margin-right:auto;
+    border:10px solid green;
+    border-radius:10px;
+  }
+  .hidden{
+    display:none;
+  }
+  .form-style{
+    display:flex;
+    flex-direction:column;
+    
+    
+  }
+  fieldset{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:10px;
+    flex-direction:column;
+    border-radius:10px;
+    color:#6ea4bf;
+    font-weight: bolder;
+    letter-spacing:2px;
+    font-size:20px;
+  }
+  .input-style{
+    border:1px solid whitesmoke;
+    border-radius: 5px;
+    padding:10px;
+    margin: 10px;
+    border-radius:4px;
+    width:200px;
+    
+  }
+  legend{
+    margin:0px;
+    padding:0px;
+    font-size: 1em;
+  }
+  .container {
+    display: flex; 
+    justify-content: space-between; 
+  }
+  
+  .cancel,.btn {
+    padding: 10px 20px;
+    font-size:15px;
+    font-weight:bold;
+    color: #fff; 
+    border: none; 
+    cursor: pointer; 
+  }
+  
+  .btn{
+    
+    background-color: #007bff;
+    
+  }
+  .cancel{
+    
+    background-color: red;
+  
+  }
