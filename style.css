@@ -1,1 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
 
+* {
+    box-sizing: border-box;
+    font-family: Courgette;
+}
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+.main-header{
+    text-align: center;
+    background-color: mediumaquamarine;
+    padding: 30px;
+}
+.nav a{
+    margin: 0;
+}
+
+.nav a{
+    display: inline-block;
+    padding: .5em;
+    color: black;
+    text-decoration: none;
+}
+
+.nav a:hover{
+    background-color: rgba(239, 162, 162, 0.3);
+}
+
+.main-nav{
+    text-align: center;
+    font-size: 1.1em;
+}
+.content-section p{
+    color: red;
+    font-style: italic;
+}
+#Intro-header{
+    color: blue;
+    background: none;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image img{
+    border: 2px solid green;
+    width: 500px;
+    height: 500px;
+    align-items: center;
+}
+
+.Registration-form h2{
+    text-align: center;
+}
+
+form {
+    background-color: #fff;
+    width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: start;
+    color: black;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: black;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid gainsboro;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: green;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: green;
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 20px;
+}
+
+legend {
+    color: #333;
+    font-weight: bold;
+}
+
+.gender input[type="radio"] {
+    margin-right: 10px;
+}
+p{
+    padding: 5px;
+    margin: 50px;
+    font-size: 20px;
+    color: black;
+}
+
+.button-container {
+    margin-right: 0.5em;
+    margin-bottom: 0.5em;
+    padding: 0.5em;
+}
+
+@media screen and (max-width: 767px) {
+    * {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 14px; 
+    }
+}

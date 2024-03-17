@@ -1,10 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TreeVista Hub</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <nav class="nav main-nav">
+      <a href="#Intro-header">Introduction</a>
+      <a href="#contact">Contact</a>
+  </nav>
+
+  <header class="main-header">
+    <h1>TreeVista Hub</h1>
+  </header>
+  
+  <section class="content-section">
+    <h2 id="Intro-header">Introduction</h2>
+    <p class="Intro-paragraph">Welcome to TreeVista Hub, your premier destination for all things related to sustainable agriculture 
+      and environmental conservation. At TreeVista, we're passionate about fostering a greener future by 
+      connecting fruit and tree nursery vendors with eco-conscious consumers like you.
+    </p>
+
+    <br>
+
+    <a href="nurseries.html" target="_blank" rel="noopener"><!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
+      Follow this link to learn more
+    </a>
+
+  </section>
+
+  <!-- 3. create a section and add an image, using css; place a green border on the image, the image should be 500px wide and 500px high -->
+  <section class="image">
+    <p class="p1">Powered By</p>
+    <img src="Images/Jezreel Ventures Logo 1.png" alt="Jezreel Logo">
+  </section>
+
+  <section class="Registration-form">
+    <h2>New Registration</h2>
+    <form action="" method="post">
+      <label for="name">Name: </label>
+      <input type="text" id="name" name="name" placeholder="Enter your name">
+
+      <br>
+      <br>
+
+      <label for="email_address">Email Address: </label>
+      <input type="email" id="email_address" name="email_address" placeholder="example@email.com">
+
+      <br>
+      <br>
+
+      <label for="phoneNumber">Phone Number: </label>
+      <select id="phoneNumber" name="phoneNumber">
+          <option value="+254">Kenya (+254)</option>
+          <option value="+255">Tanzania (+255)</option>
+          <option value="+256">Uganda (+256)</option>
+      </select>
+      <input type="text" id="phoneNumber" name="phoneNumber" placeholder="712345678">
+
+      <br>
+      <br>
+
+      <label for="date_of_birth">Date of Birth: </label>
+      <input type="date" id="date_of_birth" name="date_of_birth">
+
+      <br>
+      <br>
+
+      <fieldset>
+        <legend>Gender: </legend>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+      </fieldset>
+
+      <br>
+      <br>
+
+      <div>
+        <span>Interests: </span>
+        <input type="checkbox" id="english" name="interests" value="english">
+        <label for="english">English</label>
+
+        <input type="checkbox" id="math" name="interests" value="math">
+        <label for="math">Math</label>
+
+        <input type="checkbox" id="science" name="interests" value="science">
+        <label for="science">Science</label>
+
+        <input type="checkbox" id="art and craft" name="interests" value="art and craft">
+        <label for="art and craft">Art and Craft</label>
+
+        <input type="checkbox" id="agriculture" name="interests" value="agriculture">
+        <label for="agriculture">Agriculture</label>
+
+        <input type="checkbox" id="geography" name="interests" value="geography">
+        <label for="geography">Geography</label>
+
+        <input type="checkbox" id="history" name="interests" value="history">
+        <label for="history">History</label>
+      </div>
+
+      <br>
+      <br>
+
+      <label for="password">Password: </label>
+      <input type="password" id="password" name="password" placeholder="">
+  
+      <input type="hidden" name="sessionId" value="20230317">
+
+      <br> <br> <br> <br> 
+
+      <div class="button-container">
+        <button type="submit">Register</button>
+        <button type="reset">Reset</button>
+        <button type="button" onclick="cancelRegistration()">Cancel</button>
+      </div>
+
+      <script>
+          function cancelRegistration() {
+              alert('Registration canceled.');
+          }
+      </script>
+    </form>
+  </section>
+
+  <br> <br> <br>
+
+  <section class="contact-section" id="contact">
+    <h2>Contact Us</h2>
+    <p>Reach out for more inquiries. We look forward to hearing from you!</p>
+    <p><strong><em>Phone:</em></strong> +254 (070) 381-2941</p>
+
+
+  </body>
+</html>
 <!-- 1. create the basic html structure. your structure should include a blue heading and a red paragragh with font size 15px -->
 
 
-<!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
 
 
-<!-- 3. create a section and add an image, using css; place a green border on the image, the image should be 500px wide and 500px high -->
+
+
 
 
 <!-- 4. create another section add a form that takes in the following input:
