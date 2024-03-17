@@ -1,1 +1,21 @@
 
+h1{
+    color: #1367C6 ; /* picked a diff shade of blue that doesnt hurt the eye */
+    font-size: 500%;
+}
+#paragraph-1{
+    color:#C70039 ; /* different shade of red */
+    font-size: 15px;
+}
+.part2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 500px;
+    height: 500px;
+    border: 2px solid green;
+    border-radius: 6px;
+}
+img{ /* will adjust the image dimensions for appealing to the eye */
+    width: 100%;
+    height: 100%;
+}
