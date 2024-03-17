@@ -48,12 +48,8 @@ form {
     background-color: whitesmoke;
 }
 
-form h1 {
+form h4 {
     text-align: center;
-}
-
-label {
-    font-weight: bold;
 }
 
 input[type="text"],
@@ -74,11 +70,6 @@ fieldset {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
-
-legend {
-    font-weight: bold;
-}
-
 
 input[type="radio"],
 input[type="checkbox"] {
