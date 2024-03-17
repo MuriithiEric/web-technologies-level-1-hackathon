@@ -1,1 +1,240 @@
 
+
+
+body{
+    background-color:rgb(236, 232, 232);
+    width:100%;
+    height:100vh;
+   
+}
+.nav-bar{
+    width:100%;
+    height:15%;
+    background-color:rgb(74, 74, 189);
+    padding:20px 2px;
+}
+.nav-bar h1{
+    color:white;
+    font-size:45px;
+    font-family:sans-serif;
+    text-align:center;
+    margin-left:30px;
+}
+.hero{
+    width:80%;
+    height:40%;
+  margin-top:15%;
+  margin:auto;
+}
+.hero h1{
+    color:rgb(74, 74, 189);
+    text-align:left;
+    font-size:40px;
+    font-family:sans-serif;
+    margin-bottom:30px;
+
+
+}
+.hero a{
+    border-width:9px 40px;
+    background-color:rgb(74, 74, 189);
+    padding:9px 50px;
+    border-radius:7.5px;
+    color:white;
+    text-decoration:none;
+    transition:0.5s;
+}
+.hero a:hover{
+    background-color:rgb(236, 232, 232);
+    border:1px solid rgb(74, 74, 189);
+    color:black;
+}
+body p{
+    color:rgb(223, 3, 3);
+    font-size:15px;
+    font-family:'poppins';
+    text-align:left;
+}
+#about{
+    width:90%;
+    margin:auto;
+    padding:10px 5px;
+    height:100%;
+}
+
+
+
+
+.about_content{
+    display:flex;
+    flex-direction:row;
+    width:100%;
+    height:100%;
+    justify-content:space-between;
+    gap:1rem;
+}
+
+.image{
+    width:500px;
+    height:500px;
+    transition: all 0.3s ease;
+}
+.image:hover{
+    transform: scale(0.9);
+}
+.image img{
+    width:100%;
+    height:100%;
+    border:1px solid rgb(74, 74, 189);
+    border-radius:9px;
+    filter:brightness(50%);
+}
+
+.why_choose_us_content{
+ text-align:center;
+ width:55%;
+ height:60%;
+}
+.why_choose_us_content h3{
+    font-family:sans-serif;
+    font-size:28px;
+    color:rgb(74, 74, 189);
+
+}
+.why_choose_us_content h6{
+    font-family:sans-serif;
+    font-size:20px;
+    text-align:left;
+    
+}
+.why_choose_us_divs{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    margin-top:0;
+}
+.quality{
+    width:45%;
+    height:30%;
+    text-align:left;
+    transition:all 0.5 ease;
+   
+    transition:0.5s;
+}
+.quality:hover{
+    transform:scale(0.9);
+}
+.quality h6{
+    color:black;
+    font-family:18px;
+    font-family:sans-serif;
+}
+#form{
+    width:100%;
+    height:100%;
+    background-color:rgb(74, 74, 189);
+    padding:55px 2px;
+    text-align:center;
+    position:relative;
+
+}
+#form h4{
+    color:white;
+    font-family:sans-serif;
+    font-size:30px;
+}
+#registrationForm{
+    width:60%;
+    height:80%;
+    text-align:left;
+    margin-left:5%;
+    background-color:rgb(74, 74, 189);
+    padding:10px 2px;
+}
+label{
+    font-size:18px;
+    font-family:'poppins';
+    color:white;
+
+}
+input{
+    padding:10px 40px;
+    border-radius:7.5px;
+    margin-bottom:30px;
+    background-color:white;
+    border:1px solid white;
+    color:rgb(223, 3, 3);
+}
+.register{
+    color:green;
+    transition:0.5s;
+}
+.register:hover{
+    background-color:green;
+    color:white;
+    border:1px solid green;
+
+}
+.cancel{
+    transition:0.5s;
+}
+.cancel:hover{
+
+    border:1px solid rgb(223, 3, 3);
+    color:rgb(74, 74, 189);
+}
+.name{
+    margin-left:60px;
+}
+.age{
+    margin-left:75px;
+}
+fieldset{
+    text-align:left;
+    width:31%;
+    border:1px solid rgb(223, 3, 3);
+}
+
+legend{
+    color:white;
+    font-size:18px;
+}
+.gratitude{
+    position:absolute;
+    width:40%;
+    height:60%;
+    background-color:rgb(236, 232, 232);
+    top:30%;
+    left:50%;
+    text-align:center;
+    background-image:linear-gradient(rgb(0,0,0,0.6),rgb(0,0,0,0.5)),url('images2/download\ \(8\).jpg');
+    background-size:cover;
+    color:white;
+    font-size:18px;
+    border-radius:50%;
+    padding:20px 2px;
+    transition:all 0.5 ease;
+   
+   transition:0.5s;
+}
+.gratitude:hover{
+    transform:scale(0.9);
+}
+.gratitude h3{
+    text-align:center;
+    margin-top:30%;
+}
+.gratitude img{
+    width:40px;
+    height:50px;
+    border-radius:50%;
+    margin-left:30px;
+}
+.gratitude p{
+    font-size:18px;
+    text-align:center;
+    margin-top:20px;
+    margin-bottom:12px;
+    font-family:'poppins';
+    color:white;
+}
