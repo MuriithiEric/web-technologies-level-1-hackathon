@@ -1,4 +1,92 @@
 <!-- 1. create the basic html structure. your structure should include a blue heading and a red paragragh with font size 15px -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <section id="first-section">
+    <!--For the Header Text-->
+    <h1> PLP Website
+
+    </h1>
+    <!-- for the paragraph text -->
+    <p> PLP is a Tech community creating over 1 million devs for free and wants to 
+        help build enterpreneur's for this generation.Checkout our main <a href="https://powerlearnproject.org/">Website</a>
+    </p>
+  </section>
+  <!-- Second Section starts below -->
+  <section id="second-section">
+     <div class="image">
+        <img src="https://images.unsplash.com/photo-1584930652097-e9ca753f4e03?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Mike Von picture">
+     </div>
+  </section>
+  <!-- Third section is on forms -->
+  
+  <section id="third-section">
+
+       <form action="#" method="post">
+        <fieldset class="field">
+           <legend>Fill out this information</legend>
+           <p class="padforps">
+            <!-- <label for="fullName">FullName :</label> -->
+            <input type="text" name="fullName"  id="fullName" placeholder="FullName :">
+          </p>
+          <p class="padforps">
+            <!-- <label for="Email">Email Address :</label> -->
+            <input type="email" name="Email" id="Email" placeholder="Email Address :">
+          </p>
+          <p class="padforps">
+            <!-- <label for="Age">Age :</label> -->
+            <input type="number" name="Age" id="Age" placeholder="Age :">
+          </p>
+          <p class="padforps">
+            <fieldset class="field2">
+                   <legend> Gender</legend>
+                    <input type="radio" name="gender" id="male" value="male">
+                    <label for="male">Male</label> 
+                    <input type="radio" name="gender" id="female" value="female">
+                    <label for="female">Female</label>
+                   
+            </fieldset>
+
+          </p>
+          <p class="padforps">
+            <Label for="subjects" class="course">Courses</Label> 
+            <select name="subjects" id="subjects"> 
+              <option value="English">English</option>
+              <option value="Math">Math</option>
+              <option value="Science">Science</option>
+              <option value="Art">Art</option>
+              <option value="Agriculture">Agriculture</option>
+              <option value="Geography">Geography</option>
+            </select>
+          </p>
+          <!-- passsword line -->
+          <p>
+             <!-- <label for="password">Password</label> -->
+             <input type="password" name="password" id="password" placeholder="Password :">
+          </p>
+          <!-- a hidden field to capture sessionId -->
+         <p>
+            <label for=""></label>
+             <input type="hidden" name="sessionId" id="sessionId" value="your_session_id_here">
+         </p>
+         <!-- buttons for cancelling and submitting -->
+         <p class="buttons">
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+         </p>
+        </fieldset>
+       
+
+       </form>
+  </section>
+</body>
+</html>
 
 
 <!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
