@@ -117,7 +117,7 @@ header .navigation a:hover{
 .image img {
     width: 500px;
     height: 500px;
-    object-fit: fit; /* Fit image to container */
+    object-fit: fill; /* Fit image to container */
 }
 
 #user-form {
