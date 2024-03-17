@@ -104,6 +104,7 @@ button{
   border: 0;
   border-radius: 20px;
   color: white;
+  cursor: pointer;
 }
 .cancel{
 background-color: rgb(20, 6, 6);
