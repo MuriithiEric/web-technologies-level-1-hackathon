@@ -1,5 +1,61 @@
 <!-- 1. create the basic html structure. your structure should include a blue heading and a red paragragh with font size 15px -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <h1>STUDENT REGISTRATION FORM</h1>
+    <p>Please fill all the details below in order to get enrolled at our Prestigious school</p>
+    <link rel="stylesheet" href="style.css">
+  </head>
+    <body>
+      <a href="https://ai.google/" target="_blank">Google AI</a>
+      <section>
+        <img src="Images\ai.jpg" alt="This is an ai image" id="ai_image">
+      </section>
+      <section>
+          <title>REGISTRATION FORM</title>
+            <form>
+              <label for="name">Name:</label><br>
+              <input type="text" id="name" name="name"><br>
 
+              <label for="email">Email:</label><br>
+              <input type="email" id="email" name="email"><br>
+
+              <label for="phone">Phone Number:</label><br>
+              <input type="tel" id="phone" name="phone"><br>
+
+              <label for="age">Age:</label><br>
+              <input type="number" id="age" name="age"><br>
+
+              <fieldset>
+                <legend>Gender:</legend>
+                <label for="male"><input type="radio" id="male" name="gender" value="male">Male</label><br>
+                <label for="female"><input type="radio" id="female" name="gender" value="female">Female</label><br>
+                <label for="other"><input type="radio" id="other" name="gender" value="Other">Other</label><br>
+              </fieldset>
+
+              <label for="subjects">Subjects:</label><br>
+              <select name="subjects" id="subjects" multiple>
+                <option value="english">English</option>
+                <option value="math">Math</option>
+                <option value="science">Science</option>
+                <option value="art and craft">Art and Craft</option>
+                <option value="agrculture">Agriculture</option>
+                <option value="geography">Geography</option>
+                <option value="history">History</option>
+              </select><br>
+
+              <label for="password">Password:</label><br>
+              <input type="password" id="password" name="password"><br><br>
+
+              <input type="hidden" id="sessionId" name="sessionId" value="your_session_id">
+
+              <input type="submit" value="Submit">
+              <input type="button" value="Cancel">
+            </form>
+      </section>
+    </body>
+
+</html>
 
 <!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
 
