@@ -1,1 +1,45 @@
-
+body {
+  padding: 0 5%;
+  font-family: Arial, sans-serif;
+}
+.heading {
+  color: blue;
+  font-size: 15px;
+  text-align: center;
+}
+p {
+  color: #ff0000;
+  font-size: 15px;
+  text-indent: 2%;
+}
+.img {
+  border: 3px solid #008000;
+  width: 500px;
+  height: 500px;
+}
+input {
+  border-radius: 5px;
+  margin-top: 15px;
+}
+.button {
+  margin: 0 20%;
+}
+.btn {
+  background-color: #ff0000;
+  color: #ffffff;
+  margin: 0 10%;
+}
+.btn1 {
+  background-color: #ff0000;
+  color: #ffffff;
+}
+.btn2 {
+  background-color: #008000;
+  color: #ffffff;
+}
+@media (max-width: 450) {
+  .img {
+    width: 100%;
+    height: auto;
+  }
+}
