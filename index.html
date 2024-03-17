@@ -22,3 +22,92 @@
 -->
 
 <!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>plpHackathon</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-links">
+                <a href="#" target="_blank" rel="noopener noreferrer">Home</a>
+                <a href="#" target="_blank" rel="noopener noreferrer">About us</a> 
+            </div>
+        </nav>
+    </header>
+    <section>
+        <h1>Welcome to <br>St. Luis tech Highschool</h1>
+        <p>ST. Louis Tech High School is where we do <br> provide a comprehensive
+             and an educational experience that is very <br> engaging
+            to our students.Visit us to discover more exciting 
+            opportunities and engage with our programs.  
+        </p>
+        <div class="contact-btn">
+            <a href="contactUs.html" target="_blank">
+                <button >Contact Us</button>
+            </a>
+        </div>
+    </section>
+
+    <section>
+        <div class="img">
+
+        </div>
+    </section>
+    <section>  
+        <div class="main">
+            <form action="#" method="post">
+                <label for="name">Enter your name</label>
+                <input type="text"> <br>
+                <label for="email">Enter your email</label>
+                <input type="email"> <br>
+                <label for="email">Enter your phone no.</label>
+                <input type="number"> <br>
+                <label for="age">Enter your age </label>
+                <input type="number" name="" id="">
+    
+                <fieldset>
+                    <legend>Select your gender</legend>
+                    <label for="gender">Male</label>
+                    <input type="radio" name="gender" id="">
+                    <label for="gender">Female</label>
+                    <input type="radio" name="gender" id="">
+                </fieldset>
+    
+                <label for="subjects">Select Your subjects</label>
+                <select name="subjects" id="subjects" required>
+                    <option value="English">English</option>
+                    <option value="Mathematics">Mathematics</option>
+                    <option value="Science">Science</option>
+                    <option value="Art and craft">Art and craft</option>
+                    <option value="Agriculture">Agriculture</option>
+                    <option value="Geography">Geoography</option>
+                    <option value="History">History</option>
+                </select> <br>
+                <label for="password">Enter Your password</label>
+                <input type="password" required> <br>
+    
+                <label for="password">Confirm Your password</label>
+                <input type="password" required> <br>
+                <!-- <label for="reset">Reset form</label> -->
+                
+                <button   type="reset">Reset</button>
+    
+                <button id="Register" type="submit">Register</button>
+                
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p id="copyright">&copy;2024 All Rights reverved made by danteh</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>

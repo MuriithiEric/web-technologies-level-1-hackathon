@@ -1,0 +1,31 @@
+button{
+    padding: 15px 25px 15px 25px;
+    border: 2px solid black;
+    border-radius: 18px ;
+    font-weight: bolder;
+    width: 10rem;
+}
+button:hover{
+    background-color: red;
+}
+h1{
+    text-align: center;
+}
+
+body{
+    background: wheat;
+}
+
+input{
+    margin: 1.2rem;
+    padding: .8rem;
+    border: 2px solid black;
+    border-radius: 18px;
+}
+.contact-btn{
+    margin-top: 2.5rem;
+   
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
