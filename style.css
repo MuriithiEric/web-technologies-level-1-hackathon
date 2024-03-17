@@ -1,1 +1,48 @@
-
+/* Styles heading */
+.heading {
+    color: blue;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  /* Styles for paragraph */
+  .paragraph {
+    color: red;
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  /* Styles for the image */
+  .image {
+    border: 2px solid green;
+    width: 500px;
+    height: 500px;
+  }
+  
+  /* Styles for the registration form */
+  .registration-form {
+    margin-top: 20px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  /* Styles labels*/
+  .registration-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  .registration-form input,
+  .registration-form select {
+    margin-bottom: 10px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  /* Styles button*/
+  .registration-form button {
+    margin-top: 10px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  /*styling heading h3*/
+  .h3 {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: lighter;
+    color: green;
+  }
+  
