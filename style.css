@@ -1,1 +1,128 @@
 
+
+*{
+    margin:0;
+    padding: 0;
+}
+/*1. a blue heading */
+.blue-heading {
+    color: blue;
+}
+/*1. a red paragragh with font size 15px */
+.red-paragraph {
+    color: red;
+    font-size: 15px;
+}
+.paragraph {
+    background-color: white;
+    opacity: .5;
+    color: red;
+    font-size: 15px;
+    padding:5px ;
+    margin:5px 0;
+}
+/* 3. added an image, using css; placed a green border on the image, the image is 500px wide and 500px high */
+.image{
+    border: 2px solid #008000;
+    border-radius: 2px;
+    width: 500px;/* 500px wide  */
+    height: 500px; /* 500px high  */   
+    background-image: linear-gradient(rgba(0,0,0,0.5), #14a114), url(image.png);
+    background-size: cover;
+    background-position: center;
+}
+.image-container{
+  border: none; 
+  padding: 10px;
+  transform: scale(.3);
+}
+.logo-image {
+    width:100%;
+    height: 100%;    
+    object-fit: cover;
+}
+/*2. link that opens a new tab to an external resource */
+.link{
+    color:white;
+}
+
+/* Form */
+.form-section{
+  width: 500px;
+  height: 500px;
+}
+.form-section h1{
+  text-align: center;
+}
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+form .flex{
+  gap: 30px;
+  width: 100%;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+input[type="number"] {
+  width: 100%;
+  padding: 5px; 
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+}
+select {
+  width: 100%;
+  padding: 5px; 
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+}
+.input-group{   
+  margin: 5px 0;
+  padding: 5px;
+  position: relative;
+}
+label{
+  display: block;
+  margin-bottom: 5px;
+}  
+button{
+  width: 100%;
+  margin:5px;
+  padding: 5px;
+  border: 0;
+  border-radius: 20px;
+  color: white;
+}
+.cancel{
+background-color: rgb(20, 6, 6);
+}
+.register{ 
+  background-color: #14a114;
+}
+/*  */
+.flex{
+  display: flex;
+  width:100%;
+}
+.centered-element {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  width: 100%;
+  height: 100%; 
+  margin-top: 20px;
+}
+section {
+  padding: 10px;
+}
+.text{
+  padding-left:20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

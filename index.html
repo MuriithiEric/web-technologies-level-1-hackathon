@@ -1,4 +1,117 @@
-<!-- 1. create the basic html structure. your structure should include a blue heading and a red paragragh with font size 15px -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Hackathon Exercise</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+       
+
+    <div class="flex centered-element">
+    <!-- 3. Section with image and green border -->
+    <div class="form-section">
+    <div class="image"> <!-- background image here 500px wide and 500px high -->
+        <div class="image-container">
+            <img src="logo.png" alt="Sample Image" class="logo-image">
+        </div>
+        <div class="text">          
+      <!-- a blue heading--> 
+            <h1 class="blue-heading">Building African Realities</h1>
+
+            <p class="paragraph">Empowering youth through education, fostering tech skills, cultivating entrepreneurship, enabling digital transformation, and driving economic development in Africa.</p>
+
+    <!-- 2. Link to open external resource in a new tab -->
+        <a href="https://powerlearnproject.org/" target="_blank"class="link">Open External Resource</a>
+        </div>        
+    </div>
+  </div>
+    <!-- 4. Form with various input fields -->
+    <section class="form-section">
+      <!-- a blue heading--> 
+        <header>
+            <h1 class="blue-heading">Register</h1>
+        </header>           
+
+        <!-- a red paragraph with font size 15px -->
+        <p class="red-paragraph">All the fields are required</p>
+
+        <form action="#" method="POST">
+          <!-- a. name --> 
+                <div class="input-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+          <!-- b. email address -->               
+                <div class="input-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+           <!-- c. phone number -->                
+                <div class="input-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+          <!-- d. age -->
+                <div class="input-group">
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" required>
+                </div>
+          <!-- e. radio checkbox for gender (use fieldset to group the gender input) -->
+                <div>
+                    <legend>Gender:</legend>
+                    <div class="flex">
+                        <label><input type="radio" name="gender" value="male"> Male</label>
+                        <label><input type="radio" name="gender" value="female"> Female</label>
+                    </div>
+                </div>
+          <!-- f. dropdown for multi-selection of subjects: English, Math, Science, Art and Craft, Agriculture, Geography and History -->
+            <div class="input-group">
+                <label for="subjects">Subjects:</label>
+                <select id="subjects" name="subjects" multiple>
+                    <option value="english">English</option>
+                    <option value="math">Math</option>
+                    <option value="science">Science</option>
+                    <option value="art_and_craft">Art and Craft</option>
+                    <option value="agriculture">Agriculture</option>
+                    <option value="geography">Geography</option>
+                    <option value="history">History</option>
+                </select>
+            </div>
+          <!-- g. password -->
+            <div class="input-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>      
+            <!-- h. a hidden field to capture sessionId -->
+            <input type="hidden" id="sessionId" name="sessionId" value="123456">
+
+            <div class="flex ">
+              <!-- i. cancel button that clears form inputs -->
+                <button type="button" class="cancel">Cancel</button>
+              <!-- j. submit button with text register -->
+                <button type="submit" class="register">Register</button>
+            </div>
+        </form>
+    </section>
+    </div>
+</body>
+</html>
+
+</body>
+</html>
+<!-- 1. create the basic html structure. your structure should include a blue heading and a red paragraph with font size 15px -->
 
 
 <!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
