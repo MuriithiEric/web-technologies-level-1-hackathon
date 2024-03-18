@@ -1,1 +1,16 @@
+.blue_heading{
+    color: blue;
+    font-size: 18px;
+}
+
+.red_paragraph{
+    color: red;
+    font-size: 15px;
+}
+
+.image {
+    width: 500px;
+    height: 500px;
+    border: 1px solid green;
+}
 
