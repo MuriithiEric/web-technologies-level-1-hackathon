@@ -22,3 +22,65 @@
 -->
 
 <!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cambridgecollege</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>About us</h1>
+  <p>Cambridge International College has been providing professional study, training and education to men and women in Kenya - and worldwide - for many generations. Men and women in Kenya are able to study with Cambridge International College (CIC) by professional distance-learning, and through classroom/lecture systems at approved training centres across Kenya. </p>
+  <p>Additionally, Cambridge International College has Pan Africa Skills and Consulting Ltd as an Exclusive Affiliate organization in Kenya with offices in Nairobi and Kisumu.  Applicants, potential Members/students and current CIC Members and Graduates in Kenya (and neighbouring countries) are welcome to contact the CIC Affiliate in Kenya for assistance, information and advice.</p>
+  <div id="image">
+  <img src="https://img.freepik.com/premium-photo/portrait-african-girl-student-graduation-day_1429-10979.jpg?w=900" alt="Graduate">
+  </div>
+  <p> For <a href="https://www.cambridgecollege.co.uk/affiliates/kenya/" target="_blank">More information</a> on our success stories and the courses offered see the link </p> 
+  <h2>Registration Form</h2>
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="Name">
+    <br>
+    <label for="email">Email:</label>
+    <input type="email" id="email">
+    <br>
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone">
+    <br>
+    <label for="age">Age:</label>
+    <input type="number" id="age">
+    <br>
+    
+    
+      <legend>Gender:</legend>
+      <label for="male">Male:</label>
+      <input type="radio" id="male" name="gender" value="male" required>
+      <label for="female">Female:</label>
+      <input type="radio" id="female" name="gender" value="female" required>
+    
+    <br>
+    
+      <label for="subjects">Subjects (select multiple):</label>
+      <select name="subjects[]" multiple id="subjects">
+        <option value="English">English</option>
+        <option value="Math">Math</option>
+        <option value="Science">Science</option>
+        <option value="Art and craft">Art and craft</option>
+        <option value="Agriculture">Agriculture</option>
+        <option value="Geography AND History">Geography and history</option>
+      </select><br>
+    
+      <label for="password">Password (at least 6 characters):</label>
+      <input type="password" id="password" name="password" required minlength="6" title="At least 6 characters long">
+     
+      <br>
+      <button type="submit">Register</button>
+       <button type="reset">Reset</button>
+      <br>
+      
+
+  </form>
+</body>
+</html>
