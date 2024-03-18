@@ -1,1 +1,18 @@
-
+/* Style for blue heading */
+.blue-heading {
+    color: blue;
+  }
+  
+  /* Style for red paragraph */
+  .red-paragraph {
+    color: red;
+    font-size: 15px;
+  }
+  
+  /* Style for image with green border */
+  .border-green {
+    border: 2px solid green;
+    width: 500px;
+    height: 500px;
+  }
+  
