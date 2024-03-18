@@ -8,6 +8,7 @@ body{
 h1{
     color: #1367C6 ; /* picked a diff shade of blue that doesnt hurt the eye */
     font-size: 500%;
+    margin-bottom: 2px;
 }
 #paragraph-1{
     color:#C70039 ; /* different shade of red */
