@@ -1,1 +1,25 @@
+.heading{
+    background-color: blue;
+    height: 50px;
+    width: 1700px;
+    text-align: center;
+    padding: auto;
+}
+
+.p{
+    color: red;
+    font-size: 15px;
+}
+
+.image{
+    border-color: darkgreen;
+    width: 500px;
+    height: 500px;
+    
+}
+
+.forms{
+    background-color: skyblue;
+    padding: 20px;
+}
 

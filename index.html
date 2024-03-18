@@ -1,5 +1,77 @@
 <!-- 1. create the basic html structure. your structure should include a blue heading and a red paragragh with font size 15px -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>first web hackathon</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="heading">
+      <h1>ONE MILLION DEVS FOR AFRICA</h1>
+    </div>
 
+    <div class="p">
+      <p>Become a computer freak with the PLP software development schoarship</p>
+    </div>
+
+    <a href="https://plpacademy.powerlearnproject.org/" target="_blank">Visit here</a>
+
+    <div class="image">
+      <img src="images/plplogo.png" alt="logo">
+    </div>
+
+    <div class="forms">
+      <form action="process.php" method="post" enctype="multipart/form-data">
+
+        <label for="name">Name:</label>
+        <input type="text" name="Name" value="">
+        <br>
+        
+        <label for="email">Email address:</label>
+        <input type="email" name="Email" value="">
+        <br>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" name="phone" value="">
+        <br>
+
+        <label for="age">Age:</label>
+        <input type="number" name="age" value="">
+        <br>
+
+        <label for="gender">Male:</label>
+        <input type="radio" name="gender" id="male" value="">
+        <br>
+
+        <label for="gender">Female:</label>
+        <input type="radio" name="gender" id="female" value="">
+        <br>
+
+        <select name="subjects" multiple>
+          <option value="English">English</option>
+          <option value="Math">Math</option>
+          <option value="Science">Science</option>
+          <option value="Art and Craft">Art and Craft</option>
+          <option value="Agriculture">Agriculture</option>
+          <option value="Geography">Geography</option>
+          <option value="History">History</option>
+        </select>
+        <br>
+
+        <input type="hidden" name="sessionId" value="">
+        <br>
+
+        <input type="button"  value="cancel">
+        <input type="button"  value="Submit">
+
+        
+
+      </form>
+    </div>
+
+
+  </body>
+</html>
 
 <!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
 
