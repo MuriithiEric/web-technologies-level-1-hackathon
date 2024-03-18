@@ -1,1 +1,17 @@
+/* Blue Heading */
+.blue-heading {
+  color: blue;
+}
 
+/*Red Paragraph */
+.red-paragraph {
+  color: red;
+  font-size: 15px;
+}
+
+/*Image with Green Border */
+.image-section img {
+  width: 500px;
+  height: 500px;
+  border: 2px solid green;
+}
