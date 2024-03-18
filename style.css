@@ -1,1 +1,124 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('03.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
 
+header {
+  background-color: rgba(64, 156, 148, 0.7); 
+  text-align: center;
+  padding: 0.01px; 
+}
+
+.main {
+  margin: 20px;
+}
+
+.blue-heading {
+  color: #008080; 
+}
+
+.red-paragraph {
+  color: #800000; 
+  font-size: 18px;
+  text-align: center;
+}
+
+
+a {
+  color: darkgreen;
+  text-decoration: none; 
+  display: block; 
+  margin: 0 auto; 
+  width: fit-content; 
+}
+
+a:hover {
+  text-decoration: underline; 
+}
+
+
+
+.image-section {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 500px; 
+  margin: 0 auto; 
+  max-width: 100%; 
+  margin: 0 auto 20px; 
+}
+
+.image-section img {
+  border: 5px solid #32a89d; 
+  max-width: 100%; 
+  max-height: 100%;
+}
+
+
+form {
+  background-color: rgba(0, 128, 128, 0.5); 
+  padding: 20px; 
+  border-radius: 10px;
+  margin: 20px auto; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  width: 80%; 
+  max-width: 1000px; 
+}
+
+
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="password"],
+select {
+  width: calc(100% - 20px); 
+  padding: 10px; 
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white; 
+}
+
+fieldset {
+  border: none;
+}
+
+.cancel-button,
+.register-button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cancel-button {
+  background-color:#800000;  
+}
+
+.register-button {
+  background-color: #32a89d; 
+  color: white;
+}
+
+footer {
+  background-color: rgba(64, 156, 148, 0.7); 
+  color: #008080;
+  text-align: center;
+  padding: 0.01px; 
+  font-weight: bold;
+}
