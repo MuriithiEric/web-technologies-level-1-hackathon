@@ -1,24 +1,116 @@
-<!-- 1. create the basic html structure. your structure should include a blue heading and a red paragragh with font size 15px -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Structure</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 style="color:blue;">STUDENT ONLINE REGISTRATION FORM</h1>
+        <p style="color: red; font-size: 15px;">Welcome to the student online registration form.Kindy fill all the correct information inorder to apply for the course that you are interested in.Incase you have challenges feel free to email customercare@powerlearnproject.Regards,Registrar powerlearnproject.</p>
+    </header> 
+     <a href="https://powerlearnproject.org" target="_blank"> Visit powerlearnproject </a>
+      
+    <section class="image-section">
+        <img src="" alt="Sample Image">
+    </section>
 
+    </section>
 
-<!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
+    <form action="#" method="post">
+        <label for="fullName">Full Name:</label><br>
+    
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required>
+    
+        <label for="middleName">Middle Name:</label>
+        <input type="text" id="middleName" name="middleName">
+    
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required><br>
+    
+        <label for="studentNumber">Student Number:</label>
+        <input type="text" id="studentNumber" name="studentNumber" pattern="\d{8}" title="Please enter 8-digit student number" required><br>
+    
+        <label for="yearLevel">Year Level:</label>
+        <select id="yearLevel" name="yearLevel" required>
+            <option value="">--Please Select--</option>
+            <option value="year 1">year 1</option>
+            <option value="year 2">year 2</option>
+            <option value="year 3">year 3</option>
+            <option value="year 4">year 4</option>
+        </select>
+    <br>
+        <label for="degreeProgram">Degree Program:</label>
+        <select id="degreeProgram" name="degreeProgram" required>
+            <option value=  "">--Please Select--</option>
+            <option value="marketing">Marketing</option>
+            <option value="mathematics and computer science">Mathematics and computer science</option>
+            <option value="statistics">Statistics</option>
+            <option value="actuarial science">Actuarial Science</option>
+            <option value="applied statistics">Applied Statistics</option>
+            <option value="analytical chemistry">Analytical Chemistry</option>
+            <option value="economics">Economics</option>
+            <option value="computer science">Computer Science</option>
+            <option value="information technology">Information Technology</option>
+            <option value="accounting">Accounting</option>
+            <option value="finance">Finance</option>
+            </select>
+    <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" title="Please enter a valid email address" required>
+        <br>
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="tel" id="phoneNumber" name="phoneNumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Please enter a valid phone number (e.g., 123-456-7890)" required>
+        <br>
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+        <br> 
+        <label for="presentAddress">Present Address:</label>
+        <textarea id="presentAddress" name="presentAddress"required></textarea>
+        <br>
+        <label for="emergencyContact">Emergency Contact:</label>
+        <input type="text" id="emergencyContactFirstName" name="emergencyContactFirstName" placeholder="First Name" required>
+        <input type="text" id="emergencyContactLastName" name="emergencyContactLastName" placeholder="Last Name" required>
+        <input type="text" id="emergencyContactRelationship" name="emergencyContactRelationship" placeholder="Relationship" required>
+        <input type="tel" id="emergencyContactPhoneNumber" name="emergencyContactPhoneNumber" placeholder="phone number" required>
+        <input type="email" id="emergencyContactEmail" name="emergencyContactEmail" placeholder="Email" required>
+        <br>
+        <label for="highSchoolName">High School Name:</label>
+        <input type="text" id="highSchoolName" name="highSchoolName" required>
+        <br>
+       <label for="skillsTalents">Skills/Talents:</label>
+        <select id="skillsTalents" name="skillsTalents" required>
+            <option value=  "">--Please Select--</option>
+            <option value="acting">Acting</option>
+            <option value="playingGuitar">Playing Guitar</option>
+            <option value="photography">Photography</option>
+            <option value="writing">Writing</option>
+            <option value="programming">Programming</option>
+            <option value="debating">Debating</option>
+            <option value="dancing">Dancing</option>
+            <option value="drawing">Drawing</option>
+            <option value="fashion">Fashion</option>
+            <option value="playingDrums">Playing Drums</option>
+            <option value="singing">Singing</option>
+            <option value="eating">Eating</option>
+            <option value="artsAndCrafts">Arts/Crafts</option>
+        </select>
+        <br>
 
+        <label for="curriculumVitae">Curriculum Vitae or List of Achievements:</label>
+        <input type="file" id="curriculumVitae" name="curriculumVitae" accept=".pdf,.doc,.docx" required>
+        <br>
+        <input type="hidden" name="sessionId" value="your_session_id">
 
-<!-- 3. create a section and add an image, using css; place a green border on the image, the image should be 500px wide and 500px high -->
-
-
-<!-- 4. create another section add a form that takes in the following input:
-  a. name
-  b. email address
-  c. phone number
-  d. age
-  e. radio checkbox for gender (use fieldset to group the gender input)
-  f. dropdown for multi-selection of subjects: English, Math, Science, Art and Craft, Agriculture, Geography and History
-  g. password
-  h. a hidden field to capture sessionId
-  i. cancel button that clears form inputs
-  j. submit button with text register
-  make sure to incorporate relevant labels in your form elements using the necessary and relevant input types and element attributes
--->
-
-<!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+        <input type="reset" value="Cancel">
+        <input type="submit" value="Register">
+    </form>
+    <footer>
+        <p style="color:blue; text-align: center;">Copyright & copy; 2024 <Student online registration form></p>
+    </footer>
+</section>
+</body>
+</html>

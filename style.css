@@ -1,1 +1,31 @@
+.image-section img {
+    width: 500px;
+    height: 500px;
+    border: 5px solid green;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  background-color: aquamarine;
+}
 
+header {
+    background-color:rgb(51, 43, 43);
+    color: #fff;
+    padding: 10px;
+    text-align: center;}
+
+a {
+    display: block;
+    width: 200px;
+    height: 50px;
+    margin: 10px auto;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+    font-weight: bold;
+}
