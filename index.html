@@ -22,3 +22,83 @@
 -->
 
 <!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taifa Sacco</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="blue-heading">Taifa Sacco Registration</h1>
+        <p class="red-paragraph">Welcome to Taifasacco</p>
+    </header>
+
+    <a href="https://developer-fullstack.netlify.app/" target="_blank">Check out our programs</a>
+
+    <section>
+        <img src="logoadmin.PNG" alt="Sample Image" class="green-border">
+    </section>
+
+    <section>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required><br><br>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required><br><br>
+
+            <fieldset>
+                <legend>Gender:</legend>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+            </fieldset><br>
+
+            <label for="subjects">Subjects:</label>
+            <select id="subjects" name="subjects" multiple>
+                <option value="english">English</option>
+                <option value="math">Math</option>
+                <option value="science">Science</option>
+                <option value="art">Art and Craft</option>
+                <option value="agriculture">Agriculture</option>
+                <option value="geography">Geography</option>
+                <option value="history">History</option>
+            </select><br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+
+            <input type="hidden" id="sessionId" name="sessionId" value="123456"><br>
+
+            <button type="button" onclick="clearForm()">Cancel</button>
+            <input type="submit" value="Register">
+        </form>
+    </section>
+
+    <script>
+        function clearForm() {
+            document.getElementById("name").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("phone").value = "";
+            document.getElementById("age").value = "";
+            document.getElementById("male").checked = false;
+            document.getElementById("female").checked = false;
+            document.getElementById("other").checked = false;
+            document.getElementById("subjects").selectedIndex = -1;
+            document.getElementById("password").value = "";
+        }
+    </script>
+</body>
+</html>
