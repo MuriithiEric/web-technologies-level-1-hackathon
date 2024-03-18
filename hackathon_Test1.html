@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HACKATHON TEST 1</title>
+    <link rel="stylesheet" href="hackathon_style.css">
+</head>
+<body>
+    <div><h1>HACKATHOM HTML CSS, IMAGES,FORMS</h1></div>
+    <div>
+    <p id="P1">This is a html assignment that was issued during the weekend of 17th March. I have done everything from scratch.
+       I am soo happy and I have gained so much fulfilment from doing this work. I can see I am getting better.
+       I definitely love Web development.
+    </p>
+    </div>
+    <a href="wwww.emptylink" target="_blank">Visit Eternal site</a>
+    <section>
+        <div>
+        <img id="img" src="IMAGES/technology3.jpg" alt="an image of how technology works">
+        </div>
+    </section>
+
+    <section class="form">
+        <form action="/Submit_form.php" method="POST">
+            <label for="name">Enter your Name</label>
+            <input type="text" id="name", name="name" required><br>
+            <label for="email">Enter your email address</label>
+            <input type="text" id="email", name="email"  placeholder="abc@gmail.com" required><br>
+            <label for="phone_number">Enter your phone number</label>
+            <input type="tel" name="number"  required><br>
+            <label for="age">Year of Birth</label>
+            <input type="date" id="age" value="age" name="number" required><br>
+        
+            <fieldset required>
+                <legend>Gender:</legend>
+                <input type="radio" id="Male", name="male" value="male">
+                <label for="Male">Male</label><br>
+                <input type="radio" id="Female" value="female" name="female">
+                <label for="Female">Female</label><br>
+                <input type="radio" id="Transgender" name="Trans" value="Trans">
+                <label for Transgender>Transgender</label><br>
+                <input type="radio" id="not saying" name="notsaying" value="not saying">
+                <label for="not saying">Prefer Not to Say</label><br>
+            </fieldset>
+
+            <label for="subjects">Subject Options</label>
+            <select id="Subjects" name="Subjects">
+                <option value="English">English</option>
+                <option value="math">Math</option>
+                <option value="science">Science</option>
+                <option value="Art and Craft">Art and Craft</option>
+                <option value="Agric">Agriculture</option>
+                <option value="geo">Geography</option>
+                <option value="hist">History</option>
+            </select><br>
+            <label for="password">Password</label>
+            <input type="password" name="password"><br>
+            <input type="hidden" id="sessionId" name="sessionId">
+            <input type="button" value="Cancel"><br>
+            <input type="button" value="Submit">
+        </form>
+    </section>
+    </body>
+</html>
