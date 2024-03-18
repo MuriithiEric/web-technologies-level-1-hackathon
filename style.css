@@ -1,6 +1,8 @@
 
 body {
     max-width: 100%;
+    font-family: Helvetica;
+
   }
   .blue-heading {
       color: blue;
