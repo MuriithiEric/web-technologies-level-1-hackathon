@@ -1,1 +1,28 @@
 
+
+h1, h3, h2 {
+    color: blue;
+
+}
+
+p {
+    color: red;
+    font-size: 15px;
+}
+
+#img-learn {
+    width: 500px;
+    height: 500px;
+    border: solid 2px;
+    border-color: green;
+    margin-bottom: 20px;
+}
+
+fieldset {
+    width:50%;
+    margin-bottom: 20px;
+}
+
+.subj {
+    margin-bottom: 20px;
+}

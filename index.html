@@ -1,12 +1,6 @@
 <!-- 1. create the basic html structure. your structure should include a blue heading and a red paragragh with font size 15px -->
-
-
 <!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
-
-
 <!-- 3. create a section and add an image, using css; place a green border on the image, the image should be 500px wide and 500px high -->
-
-
 <!-- 4. create another section add a form that takes in the following input:
   a. name
   b. email address
@@ -20,5 +14,63 @@
   j. submit button with text register
   make sure to incorporate relevant labels in your form elements using the necessary and relevant input types and element attributes
 -->
-
 <!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <h1 >Knowledge Hub</h1>
+  <p>Welcome to our portal, discover your intellectual bandwidth. Glad to have you here!</p>
+  <a href="about.html">About Us</a>
+
+  <h3>Fill in the form to apply for one of our subjects</h3>
+  <div>
+    <img src="learn.jpg" alt="learn photo"  id="img-learn">
+    </div>
+  <div class="form">
+    <form action="submit" method="submit">
+      <input type="hidden" name="session_id" value="your_session_id_here">
+      <label for="name">Username</label>
+      <input type="text" name="uname" required><br><br>
+      <label for="emai">Email Address</label>
+      <input type="email" name="e-mail" required><br><br>
+      <label for="phonenumber">Phone Number</label>
+      <input type="tel" name="phone-number" id="tel"><br><br>
+      <label for="yob">Date of birth</label>
+      <input type="date" name="yob" id="yob"><br><br>
+      
+      <fieldset>
+        <h5>Choose gender</h5>
+        <label for="male">male</label>
+        <input type="radio" name="male" id="option1">
+        <label for="female">Female</label>
+        <input type="radio" name="female" id="option2">
+        <label for="non-binary">non-binary</label>
+        <input type="radio" name="non-binary" id="option3">
+      </fieldset>
+
+      <div class="subj">
+        <label for="subjects">Choose a Subject</label>
+        <select name="Subjects" id="subj">
+          <option value="Eng">English</option>
+          <option value="Maths">Mathematics</option>
+          <option value="Chem">Chemistry</option>
+          <option value="Geo">Geography</option>
+          <option value="Phy">Physics</option>
+          <option value="Art">Art & Music</option>
+        </select>
+      </div>
+      <label for="passwd">Password</label>
+      <input type="password" name="psswd" id="passwd"><br><br>
+      <input type="reset" value="cancel">
+      <input type="button" value="submit">
+    </form>
+  </div>
+</body>
+</html>
