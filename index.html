@@ -22,3 +22,76 @@
 -->
 
 <!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>web-dev-hark-1</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/styles.css">
+  </head>
+  <body>
+    <header>
+      <h1>Harambee</h1>
+      <p>Engage your community, raise funds with ease</p>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Pricing</a>
+      </nav>
+    </header>
+    <main>
+      <section id="image-sec">
+        <div class="img-div">
+          <img src="static/images/img-1.jpg">
+        </div>
+      </section>
+      <section id="form-sec">
+        <div class="form-div">
+          <form action="" method="post" enctype="application/x-www-form-urlencoded">
+            <label for="fname">Name: </label>
+            <input type="text" id="fname" placeholder="Enter your name . . .">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Your email ...">
+            <label for="phone-number"></label>
+            <input type="number" id="phone-number" placeholder="+254722334455">
+            <label for="age" >Age: </label>
+            <input type="number" id="age" placeholder="33">
+            <fieldset>
+              <legend>Gender</legend>
+              <label for="male-gen">Male: </label>
+              <input type="radio" value="Male">
+              <label for="female-gen">Female: </label>
+              <input type="radio" value="Female">
+            </fieldset>
+            <label for="subject-s">Subjects: </label>
+            <select type="multi-selection" id="subject-s">
+              <option value="Math">Math</option>
+              <option value="English">English</option>
+              <option value="Kiswahili">Kiswahili</option>
+              <option value="Art and Craft">Art and Craft</option>
+              <option value="Science">Science</option>
+              <option value="Agriculture">Agriculture</option>
+              <option value="Geography and History">Geography and History</option>
+            </select>
+            <label for="password-1">Password: </label>
+            <input type="password" id="password-1" placeholder="***************">
+            <input type="hidden" value="sessionId">
+            <div>
+              <button type="reset">Clear</button>
+              <button type="submit">Submit</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div>
+        &copy; &nbsp;2024
+      </div>
+    </footer>
+  </body>
+</html>
+
+
