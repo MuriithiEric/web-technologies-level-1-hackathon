@@ -1,1 +1,73 @@
+body{
+    overflow-x: hidden;
+}
+/* main div */
+.hackathon-container{
+    margin-top: 2px;
+    margin-bottom: 10px;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
 
+}
+/* introution style */
+.hackathon-tittle {
+    color: blue;
+}
+.hackathon-paragraph{
+    color: red;
+    font-size: 15px;
+}
+/* image styling */
+
+.hackathon-image, img {
+    width: 500px;
+    background-color: green;
+}
+
+/* form styling */
+.hackathon-form {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 30px;
+    background-color: #fff;
+
+    
+}
+.hackathon-form, input{
+    width: 500px;
+    padding-top: 15px;
+}
+.hackathon-form, label {
+    padding-top: 20px;
+}
+.hackathon-select {
+    padding-top: 6px;
+}
+
+/* style buttons */
+#submit {
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+#cancel {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
