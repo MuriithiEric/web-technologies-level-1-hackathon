@@ -22,3 +22,86 @@
 -->
 
 <!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>KMTC Registration System</title>
+</head>
+<body>
+  <nav>
+    <div class="profile__">
+      <img id="user_prof"  src="user.jpg" alt="user profile icon"/>
+    </div>
+    <ul>
+      <li>Home</li>
+      <li><a href="#form__">Register</a></li>
+      <li>Login</li>
+    </ul>
+  </nav>
+  <section id="heading">
+    <h1>E-REGISTER SYSTEM</h1>
+  </section>
+  <section id="body_text">
+    <p>This is a system that will enable an institution to register their students.To learn more about to design a similar system navigate to <a href="https://www.w3schools.com/html/html_css.asp" target="_blank">w3 Schools Website</a></p>
+  </section>
+
+  <section id="form__">
+    <form action="#" method="post" id="form_det">
+      <label id="pers_det">Personal Details</label>
+      <div id="text_fields">
+        <label for="username">Name:</label>
+        <input type="text" name="username" id="username" placeholder="Enter your name">
+        <label for="useremail">Email:</label>
+        <input type="email" name="useremail" id="useremail" placeholder="example@mail.com">
+        <label for="userphone">Phone</label>
+        <input type="tel" name="userphone" id="userphone" placeholder="2547XXXXXXXX">
+        <label for="age">Age: </label>
+        <input type="number" name="age" id="age" placeholder="0">
+      </div>
+      <div id="drop_downs">
+        <div id="gender_div">
+          <fieldset>
+            <legend>Gender: </legend>
+            <input type="radio" id="male" name="gender" value=male>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+          </fieldset>
+        </div>
+        <div id="subjects_div">
+          <label id="subject_label">
+            Select Subject(s)
+          </label>
+          <label for="subjects" style="display: none;">Subjects:</label>
+          <select id="subjects" name="subjects" multiple>
+            <option value="english">English</option>
+            <option value="math">Math</option>
+            <option value="science">Science</option>
+            <option value="art">Art and Craft</option>
+            <option value="agriculture">Agriculture</option>
+            <option value="geography">Geography</option>
+            <option value="history">History</option>
+          </select>
+        </div>
+      </div>
+      <div id="password_sec">
+        <label id="password_label">Password</label>
+        <br>
+        <input type="password" id="password" name="password" placeholder="Password">
+        <input type="hidden" name="sessionId" id="sessionId">
+      </div>
+
+    <div id="btns">
+      <button type="submit" id="submit" name="submit">Register</button>
+      <button type="reset" id="clearbtn">Clear</button>
+    </div>
+    </form>
+  </section>
+
+  </form>
+
+</body>
+</html>
