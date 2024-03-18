@@ -22,3 +22,88 @@
 -->
 
 <!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta
+        <title>PLP Website Hackathon</title>
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    <body>
+        <header>
+        <h1>Explore the website</h1>
+        <p>Feel free to navigate through.</p>
+        </header>
+
+        <!--task-->
+        <a href="https://www.google.com" target="_blank"></a>
+        <section>
+            <div class="car">
+            <img src="images/pexels-photo-10358234.jpeg" alt="This is a car">
+            </div>
+
+        </section>
+        <br>
+
+        <div class="formclass">
+
+        <section>
+                <form>
+                <h1>Welcome</h1>
+                <p>Please fill in the required details</p>       
+                <!--create name-->
+                <label for="name">NAME</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name">
+                <br>
+
+                <!--create an email address-->
+                <label for="email">EMAIL</label>
+                <input type="email" id="email" name="email" placeholder="linetnyambura27">
+                <br>
+
+                <!--create a phone number-->
+                <label for="number">PHONE NUMBER</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+                <br>
+                 <!--create age-->
+                 <label for="age">Age</label>
+                 <input type="number" id="age" name="age" placeholder="Enter your age">
+                 <br>
+                 <!--create a radio-->
+                 <fieldset>
+                    <legend>Gender</legend>
+                    <input type="radio" id="male" name="gender" value="male"><br>
+                    <label for="male">Male</label><br>
+                    <input type="radio" id="female" name="gender" value="female"><br>
+                    <label for="female">Female</label><br>
+                 </fieldset>
+                 <!--create a dropdown-->
+                 <label for="subjects">Below is the available subjects</label>
+                 <select id="subjects" name="subjects">
+                    <option value=""></option>
+                    <option value="English">English</option>
+                    <option value="Math">Math</option>
+                    <option value="Science">Science</option>
+                    <option value="Art and Craft">Art and Craft</option>
+                    <option value="Agriculture">Agriculture</option>
+                    <option value="Geography">Geography</option>
+                    <option value="History">History</option>
+                </select>
+                <!--create a passoword-->
+                <label for="password"></label>
+                <input type="password" id="password" name="password" placeholder="password">
+                <!--hidden field to capture sessionId-->
+                <input type="hidden" id="sessionId" name="sessionId" value="The sessionId">
+                <!--cancel button that clears for inputs-->
+                <input type="reset" value="Clear form">
+                <!--submit button-->
+                <button type="submit">Submit</button>
+
+
+            </form>
+        </section>
+        </div>
+    </body>
+</html>
