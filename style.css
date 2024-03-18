@@ -1,1 +1,63 @@
+/* CSS styling */
+
+/* Blue heading */
+.blue-heading {
+    color: blue;
+    text-align: center;
+}
+
+/* Red paragraph */
+.red-paragraph {
+    color: red;
+    font-size: 15px;
+    text-align: center;
+}
+
+/* Section with Image and Green Border */
+.image-section {
+    border: 5px solid green;
+    width: 500px;
+    height: 500px;
+    /* Use background-image property to add the image */
+    background-image: url('https://images.unsplash.com/photo-1610563166150-b34df4f3bcd6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c29mdHdhcmUlMjBkZXZlbG9wbWVudHxlbnwwfHwwfHx8MA%3D%3D');
+    background-size: cover;
+}
+
+/* Section with Form */
+.form-section {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Form input fields */
+.form-section input,
+.form-section select {
+    display: block;
+    margin-bottom: 10px;
+    margin: 0 auto; /* Center align */
+}
+
+/* Cancel button */
+.form-section input[type="button"] {
+    background-color: #ccc;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Submit button */
+.form-section input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Clearfix to prevent collapsing margins */
+.form-section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
 

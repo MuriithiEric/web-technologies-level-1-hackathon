@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tasks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. Basic HTML Structure -->
+    <header>
+        <h1 class="blue-heading">WEB TECHNOLOGIES HACKATHON TASK</h1>
+    </header>
+
+    <main>
+        <!-- 2. Link Opening in New Tab -->
+        <a href="https://images.unsplash.com/photo-1610563166150-b34df4f3bcd6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c29mdHdhcmUlMjBkZXZlbG9wbWVudHxlbnwwfHwwfHx8MA%3D%3D" target="_blank">Open To View Image in New Link</a>
+
+        <!-- 3. Section with Image and Green Border -->
+        <section class="image-section">
+            <!-- Image is added using CSS background-image -->
+        </section>
+
+        <!-- 4. Section with Form -->
+        <section class="form-section">
+            <form action="#">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required><br>
+
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required><br>
+
+                <fieldset>
+                    <legend>Gender:</legend>
+                    <label><input type="radio" name="gender" value="male"> Male</label>
+                    <label><input type="radio" name="gender" value="female"> Female</label>
+                    <label><input type="radio" name="gender" value="other"> Other</label>
+                </fieldset>
+
+                <label for="subjects">Subjects:</label>
+                <select id="subjects" name="subjects" multiple required>
+                    <option value="english">English</option>
+                    <option value="math">Math</option>
+                    <option value="science">Science</option>
+                    <option value="art">Art and Craft</option>
+                    <option value="agriculture">Agriculture</option>
+                    <option value="geography">Geography</option>
+                    <option value="history">History</option>
+                </select><br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br>
+
+                <input type="hidden" id="sessionId" name="sessionId" value="123456789"><br>
+
+                <input type="button" value="Cancel" onclick="clearForm()">
+                <input type="submit" value="Register">
+            </form>
+        </section>
+
+        <!-- 5. Red Paragraph -->
+        <p class="red-paragraph">Summary: Throughout the hackathon, I engaged in tasks spanning Git version control, web development challenges, and the application of web technologies. These included crafting a red paragraph with precise font specifications, reflecting the multifaceted skills and aptitudes demonstrated during the event.</p>
+    </main>
+
+    <script>
+        function clearForm() {
+            document.getElementById("name").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("phone").value = "";
+            document.getElementById("age").value = "";
+            document.querySelector('input[name="gender"]:checked').checked = false;
+            document.getElementById("subjects").selectedIndex = -1;
+            document.getElementById("password").value = "";
+            // You can add additional fields to clear if needed
+        }
+    </script>
+
+</body>
+</html>
