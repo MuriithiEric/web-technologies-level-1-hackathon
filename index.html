@@ -1,24 +1,64 @@
-<!-- 1. create the basic html structure. your structure should include a blue heading and a red paragragh with font size 15px -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Student Registration Form</title>
+</head>
+<body>
+    <h1 class="blue-heading">Student Registration Form</h1>
+    <p class="red-paragraph">Welcome! Please fill out the form below:</p>
 
+    <!-- Section with an image -->
+    <section class="image-section">
+        <img src="images/image2.jpg" alt="Green Border Image">
+    </section>
 
-<!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
+    <!-- Section with the registration form -->
+    <section class="registration-form">
+        <form action="#" method="post">
+            <fieldset>
+            <legend>Personal Information: </legend> 
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
 
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
 
-<!-- 3. create a section and add an image, using css; place a green border on the image, the image should be 500px wide and 500px high -->
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
 
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+</fieldset>
 
-<!-- 4. create another section add a form that takes in the following input:
-  a. name
-  b. email address
-  c. phone number
-  d. age
-  e. radio checkbox for gender (use fieldset to group the gender input)
-  f. dropdown for multi-selection of subjects: English, Math, Science, Art and Craft, Agriculture, Geography and History
-  g. password
-  h. a hidden field to capture sessionId
-  i. cancel button that clears form inputs
-  j. submit button with text register
-  make sure to incorporate relevant labels in your form elements using the necessary and relevant input types and element attributes
--->
+            <fieldset>
+                <legend>Gender:</legend>
+                <label><input type="radio" name="gender" value="male"> Male</label>
+                <label><input type="radio" name="gender" value="female"> Female</label>
+                <label><input type="radio" name="gender" value="other"> Other</label>
+            </fieldset>
+<hr>
+            <label for="dropdown">Choose a Subject:</label>
+<select id="dropdown">
+  <option value="option1">English</option>
+  <option value="option2">Math</option>
+  <option value="option3">Science</option>
+  <option value="option5">Art and Craft</option>
+  <option value="option6">Agriculture</option>
+  <option value="option7">Geography</option>
+  <option value="option8">History</option>
+</select>
 
-<!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <input type="hidden" name="sessionId" value="your-session-id">
+
+            <button type="reset">Cancel</button>
+            <button type="submit">Register</button>
+        </form>
+    </section>
+</body>
+</html>

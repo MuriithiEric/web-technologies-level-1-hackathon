@@ -1,1 +1,67 @@
 
+/* Style for the blue heading */
+.blue-heading {
+    color: blue;
+    margin: auto;
+}
+
+/* Style for the red paragraph */
+.red-paragraph {
+    color: red;
+    font-size: 15px;
+    margin: auto;
+}
+
+/* Style for the image section */
+.image-section img {
+    border: 2px solid green;
+    width: 500px;
+    height: 500px;
+    margin: auto 0;
+    
+}
+body{
+    background-color: #200c09;
+    color: #b5b07f;
+}
+
+
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-color: #200c09;;
+    color: #b5b07f;
+    font-family: Tahoma;
+    font-size: 16px;
+  }
+  
+  
+  form {
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+  }
+  
+  fieldset {
+    border: none;
+    padding: 2rem 0;
+    border-bottom: 3px solid #3b3b4f;
+  }
+  
+  fieldset:last-of-type {
+    border-bottom: none;
+  }
+  
+  label {
+    display: block;
+    margin: 0.5rem 0;
+  }
+  
+
+  
+  
+  
+  
