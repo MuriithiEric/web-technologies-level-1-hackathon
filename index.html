@@ -22,3 +22,70 @@
 -->
 
 <!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hackathon page</title>
+    <link rel="stylesheet" href="./CSS/style.css"> 
+</head>
+<body>
+    <header>
+        <h1>Welcome to Manchester United FC Homepage</h1>
+        <nav>
+            <a href="https://www.skysports.com/manchester-united">Headlines</a>
+        </nav>
+    </header>
+
+    <section class="content">
+        <p>This is a club that doesn't give up until the final minute.</p>
+        <img src="./The winning Goal.png" alt="The Last minute Drama">
+        <img src="./Glory Glory Man Utd.png" alt="Oldtrafford is boiling">
+    </section>
+    
+    <section class="registration">
+        <h2>Registration form</h2>
+        <form action="submit.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+    
+            <label for="Dob">Date of Birth:</label>
+            <input type="date" name="Dob" id="Date of Birth" required><br><br>
+    
+            <label for="gender">Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="prefer_not_to_say" name="gender" value="prefer not to say">
+            <label for="prefer_not_to_say">Prefer not to say</label><br><br>
+
+            <label for="telephone">Phone number:</label>
+            <input type="tel" id="telephone" name="telephone" required><br><br>
+
+            <label for="country">Country:</label>
+            <select id="country" name="country">
+                <option value="china">China</option>
+                <option value="france">France</option>
+                <option value="ghana">Ghana</option>
+                <option value="morocco">Morocco</option>
+                <option value="nigeria">Nigeria</option>
+                <option value="portugal">Portugal</option>
+                <option value="singapore">Singapore</option>
+                <option value="spain">Spain</option>
+                <option value="uk">UK</option>
+                <option value="usa">USA</option>
+            </select><br><br>
+            
+            <label for="message">Bio:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+    
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+</body>
+</html>
