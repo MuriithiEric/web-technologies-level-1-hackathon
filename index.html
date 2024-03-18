@@ -1,24 +1,65 @@
-<!-- 1. create the basic html structure. your structure should include a blue heading and a red paragragh with font size 15px -->
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Webpage</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 style="color: blue;">Blue Heading</h1>
+  <p style="color: red; font-size: 15px;">Red Paragraph with Font Size 15px</p>
 
-<!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
+  <a href="https://github.com" target="_blank">Link to External Resource</a>
 
+  <!-- Image Section -->
+  <section>
+    <img src="c:\Users\John Kennedy\OneDrive\Pictures\Camera Roll\institution.jpg" alt="Institution Image">
+  </section>
 
-<!-- 3. create a section and add an image, using css; place a green border on the image, the image should be 500px wide and 500px high -->
+  <!-- Form Section -->
+  <section>
+    <form action="#" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name"><br><br>
 
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
 
-<!-- 4. create another section add a form that takes in the following input:
-  a. name
-  b. email address
-  c. phone number
-  d. age
-  e. radio checkbox for gender (use fieldset to group the gender input)
-  f. dropdown for multi-selection of subjects: English, Math, Science, Art and Craft, Agriculture, Geography and History
-  g. password
-  h. a hidden field to capture sessionId
-  i. cancel button that clears form inputs
-  j. submit button with text register
-  make sure to incorporate relevant labels in your form elements using the necessary and relevant input types and element attributes
--->
+      <label for="phone">Phonbe Number:</label>
+      <input type="tel" id="phone" name="phone" required><br><br>
 
-<!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" required><br><br>
+
+      <fieldset>
+        <legend>Gender:</legend>
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="Gender" required>
+        <label for="feamle">Female</label>
+        <input type="radio" id="female" name="Gender" required>
+      </fieldset><br>
+
+      <label for="subjects">Subjects:</label>
+      <select id="subjects" name="subjects[]" multiple>
+        <option value="english">English</option>
+        <option value="math">Math</option>
+        <option value="science">Science</option>
+        <option value="art">Art and Craft</option>
+        <option value="agriculture">Agriculture</option>
+        <option value="geography">Geography</option>
+        <option value="history">History</option>
+       </select><br><br>
+
+       <label for="password">Password:</label>
+       <input type="password" id="password" name="password" required><br><br>
+
+       <input type="hidden" id="sessionId" name="sessionId" value="238381">
+
+       <buttton type="reset">Cancel</buttton>
+       <button type="submit">Register</button>
+    </form>
+  </section>
+</body>
+</html>
