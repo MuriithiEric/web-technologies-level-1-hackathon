@@ -1,1 +1,91 @@
 
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+h1.blue-heading {
+    color: blue;
+    text-align: center;
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+}
+
+p.red-paragraph {
+    color: red;
+    font-size: 16px;
+}
+
+/* Form styles */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #45a049;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+select {
+    height: 100px;
+}
+
+legend {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.green-bordered-image {
+    border: 5px solid green;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
