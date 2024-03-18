@@ -4,6 +4,9 @@ body {
     font-family: Helvetica;
 
   }
+  section, head{
+    text-align: center;
+  }
   .blue-heading {
       color: blue;
   }
