@@ -1,1 +1,90 @@
+.heading {
+    color: blue;
+    font-size: 15;
+}
+.start{
+    max-width: 100%;
+    margin: 0 25px;
+}
+.paragraph {
+    color: red;
+    font-size: 15;
+}
+.links{
+    text-decoration: none;
+}
+.btn{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: greenyellow;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+}
+.btn:hover{
+    background-color: gainsboro; 
+}
+.image{
+    width: 500px;
+    height: 500px;
+    border:2px solid green;
+}
+.gallery{
+    margin: 0 25px;
+}
 
+#registrationForm {
+    max-width: 400px;
+    margin: 0 25px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+select,
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; 
+}
+
+
+fieldset {
+    margin-bottom: 10px;
+}
+fieldset label {
+    margin-right: 10px;
+}
+
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

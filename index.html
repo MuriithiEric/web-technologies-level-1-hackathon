@@ -22,3 +22,80 @@
 -->
 
 <!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hackathone</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <section class="start">
+      <h2 class="heading">Innovate, Collaborate, Create: Join Our Hackathon Today</h2>
+      <p class="paragraph">Welcome to PLP, where creativity meets innovation! <br> Get ready to dive into a weekend of coding, problem-solving, and collaboration with like-minded individuals.</p>
+      <p class="paragraph">To make our program success <button class="btn"><a href="https://powerlearnproject.org/wall-of-champions" target="_blank" class="links">Donate</a></button></p>
+    </section>
+
+    <section class="gallery">
+      <img src="https://ideafoster.com/wp-content/uploads/2023/03/hackaton-concepto-funciona-922.jpeg" alt="hackathone" class="image"> 
+    </section>
+
+    <section>
+      <form id="registrationForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+    
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required><br><br>
+    
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required><br><br>
+    
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required><br><br>
+    
+        <fieldset>
+            <legend>Gender:</legend>
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="other">Other</label>
+            <input type="radio" id="other" name="gender" value="other">
+        </fieldset><br><br>
+    
+        <label for="subjects">Subjects:</label>
+        <select id="subjects" name="subjects[]" required>
+            <option value="English">English</option>
+            <option value="Math">Math</option>
+            <option value="Science">Science</option>
+            <option value="Art and Craft">Art and Craft</option>
+            <option value="Agriculture">Agriculture</option>
+            <option value="Geography and History">Geography and History</option>
+        </select><br><br>
+    
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+    
+        <input type="hidden" id="sessionId" name="sessionId" value="session_id_placeholder"><br><br>
+    
+        <button type="button" onclick="clearForm()">Cancel</button>
+        <button type="submit">Register</button>
+    </form>
+    
+    <script>
+        function clearForm() {
+            document.getElementById("registrationForm").reset();
+        }
+    </script>
+    
+    </section>
+
+    <script src="" async defer></script>
+  </body>
+</html>
