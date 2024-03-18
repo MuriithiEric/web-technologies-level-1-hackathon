@@ -1,1 +1,96 @@
+/* Grid container */
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto; /* Adding an extra row for the form */
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Blue heading */
+.blue-heading {
+    color: blue;
+}
+
+/* Red paragraph with font size 15px */
+.red-paragraph {
+    color: red;
+    font-size: 15px;
+}
+
+/* External link */
+.external-link {
+    grid-column: 1 / span 2; /* Span across both columns */
+}
+
+/* Image section */
+.image-section {
+    display: flex;
+    margin-left: 50px;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid green;
+    height: 100vh; /* Adjusting height to fill viewport */
+}
+
+/* Bordered image */
+.bordered-image {
+    width: 500px;
+    height: 500px;
+    border: 2px solid green;
+}
+
+
+
+/* Form section */
+.form{
+    background-color: rgb(195, 231, 195);
+}
+.form-section {
+    margin-top: 20px;
+    background-color: #9c9c9c;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding box shadow */
+    border-radius: 15px; /* Adding border radius */
+    padding: 30px;
+    max-width: 500px; /* Limiting the width of the form */
+    margin: 0 auto; /* Centering the form horizontally */
+}
+
+/* Form input styling */
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='tel'],
+input[type='number'],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+button[type='button'],
+input[type='submit'] {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type='button']:hover,
+input[type='submit']:hover {
+    background-color: #0056b3;
+}
 
