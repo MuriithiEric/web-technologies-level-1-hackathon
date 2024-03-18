@@ -1,12 +1,6 @@
 <!-- 1. create the basic html structure. your structure should include a blue heading and a red paragragh with font size 15px -->
-
-
 <!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
-
-
 <!-- 3. create a section and add an image, using css; place a green border on the image, the image should be 500px wide and 500px high -->
-
-
 <!-- 4. create another section add a form that takes in the following input:
   a. name
   b. email address
@@ -20,5 +14,79 @@
   j. submit button with text register
   make sure to incorporate relevant labels in your form elements using the necessary and relevant input types and element attributes
 -->
-
 <!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hackathon Level 1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="hackathon-container">
+    <h1 class="hackathon-tittle">Hackathon Level 1 2024 </h1>
+    <p class="hackathon-paragraph">
+      This is Hackathon, Organised by PowerLearningProject, is the first one that I have ever attended. <br>
+      The aim is to practice in realtime the concepts of Web-dev that we have leraned overtime. <br>
+      From the onset, I can attest to the fact that, there are alot of skills that I have gained already,
+      and I cannot wait to learn even more. Let's go!!. 
+    </p>
+
+    <!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
+    <div>
+      <h3>what-is-a-hackathon</h3>
+      <p>
+         An event that brings together experts and creates a collaborative environment for solving a certain problem.
+        <a href="https://tips.hackathon.com/article/what-is-a-hackathon" target="_blank">READ MORE</a>
+      </p> 
+    </div>
+
+    <!-- 3. create a section and add an image, using css; place a green border on the image, -->
+    <section class="hackathon-image">
+      <img src="./images/tech.jpg" alt="person">
+      
+    </section>
+
+    <!-- 4. create another section add a form that takes in the following input:--> 
+    <section class="hackathon-form">
+      <h1> Registration Form</h1>
+      <p> Fill in the sections below: </p>
+      <form action="" method="get" class="hackathon-form-input">      
+          <fieldset >
+              <legend> Personal Info: </legend> 
+              <label> Name:  <input type="text" name="Name" placeholder="name" required="required"></label> <br />
+              <label> Email:  <input type="email" name="email" placeholder="Enter email.." required="required"></label> <br />
+              <label> Phone: <input type=" text" name="phone" placeholder=" +254 .." required="required"></label> <br />
+              <label> Age: <input type="number" name="age" placeholder="Enter your age" required="required"></label> <br />
+              <fieldset>
+                <legend> Gender: </legend>
+                <input type="radio" name="gender" value="male" required="required">Male
+                <input type="radio" name="gender" value="female" required="required">Female
+              </fieldset> 
+              <div class="hackathon-select">
+                <label> Select Your Subject: </label>
+                <select name="course" id="course">
+                    <option value="english"> English</option>
+                    <option value="math"> Math </option>
+                    <option value="science"> Science</option>
+                    <option value="craft">  Art and Craft </option>
+                    <option value="science"> Agriculture </option>
+                    <option value="science"> Geography </option>
+                    <option value="science"> SHistory </option>
+                </select> <br/>
+              </div>        
+          </fieldset>
+          <div class="hackathon-select">
+            <button type="submit" name="cancel" value="cancel" id="cancel"> Cancel </button>
+            <button type="submit" name="submit" value="submit" id="submit"> Submit </button>
+          </div>
+  
+          
+      </form>
+    </section>
+  </div>
+</body>
+</html>
