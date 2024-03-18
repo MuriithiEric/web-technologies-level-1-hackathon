@@ -1,24 +1,82 @@
-<!-- 1. create the basic html structure. your structure should include a blue heading and a red paragragh with font size 15px -->
+<!DOCTYPE html>
 
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <title>ONLINE TUTORS</title>
+      <!--linking the css file-->
+      <link href="style.css" rel="stylesheet" type="text/css">
+    </head>
+    <h2> ONLINE TUTORS</h2>
 
-<!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
+    <body>
+        <!--link section-->
+       
+        <nav>
+            <a href="index.html" target="_self">Home</a>
+            <a href="https://www.findtutors.co.uk/mision-vision/mision-vision.aspx" target="_blank">About</a>
+            <a href="https://www.findtutors.co.uk/online-lessons/" target="_blanl">Pick a class</a>
+        </nav>
 
+        <!--photo section-->
+        <section id="introductionphoto">
+            <img src="data:image/jpeg;base64,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" alt="students learning using computer">
+        </section>
 
-<!-- 3. create a section and add an image, using css; place a green border on the image, the image should be 500px wide and 500px high -->
-
-
-<!-- 4. create another section add a form that takes in the following input:
-  a. name
-  b. email address
-  c. phone number
-  d. age
-  e. radio checkbox for gender (use fieldset to group the gender input)
-  f. dropdown for multi-selection of subjects: English, Math, Science, Art and Craft, Agriculture, Geography and History
-  g. password
-  h. a hidden field to capture sessionId
-  i. cancel button that clears form inputs
-  j. submit button with text register
-  make sure to incorporate relevant labels in your form elements using the necessary and relevant input types and element attributes
--->
-
-<!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+        <!--login sectiom-->
+        <section id="login">
+           <form name="loginform" >
+              <!--name-->
+             <label for="name">Name :</label> 
+             <input  name="name" type="text" placeholder="name" required>
+             <br><br>
+              <!--email address-->
+             <label for="emailaddress">Email :</label>
+             <input  name="emailaddress" type="text" placeholder="email" required>
+             <br><br>
+              <!--phone number-->
+             <label for="phonenumber">Number :</label>
+             <input name="phonenumber" type="text" placeholder="number" required>
+             <br><br>
+              <!--age-->
+             <label for="age">Age :</label>
+             <input name="age" type="text" placeholder="age" required>
+             <br><br>
+              <!--gender-->
+              <label for="gender">Gender</label>
+              <fieldset>
+                  <input type="radio" id="male" name="gender" value="male" required>
+                  <label for="male">Male</label>
+                  <br>
+                  <input type="radio" id="female" name="gender" value="female" required>
+                  <label for="female">Female</label>
+                  <br>
+                  <input type="radio" id="other" name="gender" value="Prefer not to say" required>
+                  <label for="other">Prefer not say</label>
+              </fieldset>
+              <!--subject select-->
+              <label for="subjects">Subjects:</label>
+                 <select id="subjects" name="subjects[]" multiple required>
+                 <option value="English">English</option>
+                 <option value="Math">Math</option>
+                 <option value="Science">Science</option>
+                 <option value="Art and Craft">Art and Craft</option>
+                 <option value="Agriculture">Agriculture</option>
+                 <option value="Geography">Geography</option>
+                 <option value="History">History</option>
+                  </select><br><br>
+                  <!--password-->
+             <label for="password">Password:</label>
+                 <input type="password" id="password" name="password" required><br><br>
+             <!--hidden capture for session-->
+              <input type="hidden" id="sessionId" name="sessionId" value=""><br>
+              <!--clear form button-->
+             <button type="button" onclick="clearForm()">Cancel</button>
+             <!--register button-->
+             <button type="submit">Register</button>
+           </form>
+        </section>
+    </body>
+  </html>
