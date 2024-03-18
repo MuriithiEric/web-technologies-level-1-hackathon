@@ -1,1 +1,53 @@
+h1{
+    color: blue;
+}
+
+p{
+    color: red;
+    font-size: 15px;
+}
+
+
+.image1 {
+    width: 500px;
+    height: 500px;
+    background-image: url("images/githubprofile.PNG");
+    background-size: cover;
+    border-style: solid;
+    border-width: 3px;
+    border-color: green;
+
+}
+
+h2{
+    color: brown;
+}
+
+label{
+    color: brown;
+}
+
+.para1{
+    color: rgb(158, 65, 65);
+    font-style: italic;
+}
+
+.pass1{
+    color: #000;
+    font-weight: 400;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 30;
+    outline: navajowhite;
+    border-radius: 5px;
+}
+
+.butt{
+    width: 25%;
+    color: gray;
+    margin-top: 5px;
+    padding: 12px;
+    
+}
+
 

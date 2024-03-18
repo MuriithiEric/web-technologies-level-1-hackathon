@@ -1,24 +1,84 @@
-<!-- 1. create the basic html structure. your structure should include a blue heading and a red paragragh with font size 15px -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Basic Website</title>
+
+        <link rel="stylesheet" href="style.css">
+       
+    </head>
+
+    <body>
+        <h1>Welcome to my website</h1>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis dolores laborum harum quibusdam tempora nesciunt, quisquam voluptates! Praesentium ipsa ex, dolore ea recusandae id cupiditate beatae hic tempora sequi iure?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis dolores laborum harum quibusdam tempora nesciunt, quisquam voluptates! Praesentium ipsa ex, dolore ea recusandae id cupiditate beatae hic tempora sequi iure?</p>
+
+        <a id = "mylink" href="https://github.com/dashboard" target="_blank">
+        This link will take you to my github dashboard
+        </a>
+
+        <br>
+
+        <section class="image1"></section>
+
+        <br>
+        <section>
+            <h2>My Form</h2>
+            <form action="" method="get" enctype="multipart/form-data"></form>
+            <br>
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="johndoe" required>
+            <br>
+            <br>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="johndoe@gmail.com" required>
+            <br>
+            <br>
+            <label for="Mobile">Mobile Number:</label>
+            <input type="tel" id="Mobile" name="Mobile" placeholder="0712345789" maxlength="10" required>
+            <br>
+            <br>
+            <label for="DOB">Date Of Birth:</label>
+            <input type="date" id="DOB" name="DOB" required>
+            <br>
+            <br>
+            <fieldset>
+                <input type="radio" id="Gender" name="Gender" value="Male">
+                <label for="Male">Male</label>
+                <input type="radio" name="Gender" id="Gender" value="Female">
+                <label for="Female">Female</label>
+            </fieldset>
+            <br>
+            <p class="para1">Press CTRL on your keyboard to select multiple subjects.</p>
+            <label for="Subjects">Select Subjects:</label>
+            <select name="Subjects" id="Subjects" multiple size="3">
+                <option value="English">English</option>
+                <option value="Math">Math</option>
+                <option value="Science">Science</option>
+                <option value="Art & Crafts">Art & Crafts</option>
+                <option value="Agriculture">Agriculture</option>
+                <option value="Geography">Geography</option>
+                <option value="History">History</option>
+            </select>
+            <br>
+            <br>
+            <label class="pass1" for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password here">
+            <label class="pass1" for="cnfm password">Confirm Password:</label>
+            <input type="password" id="cnfm password" name="cnfm password" placeholder="Confirm your password">
+            <br>
+            
+            <input type="hidden" name="sessionId" id="sessionId" value="Generated_Session_ID_Goes_Here">
+            <br>
+
+            <input class="butt" type="button" id="Register" name="Register" value="Register">
+            <input class="butt" type="reset" id="Cancel" name="Cancel" value="Cancel">
 
 
-<!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
+        </section>
 
 
-<!-- 3. create a section and add an image, using css; place a green border on the image, the image should be 500px wide and 500px high -->
-
-
-<!-- 4. create another section add a form that takes in the following input:
-  a. name
-  b. email address
-  c. phone number
-  d. age
-  e. radio checkbox for gender (use fieldset to group the gender input)
-  f. dropdown for multi-selection of subjects: English, Math, Science, Art and Craft, Agriculture, Geography and History
-  g. password
-  h. a hidden field to capture sessionId
-  i. cancel button that clears form inputs
-  j. submit button with text register
-  make sure to incorporate relevant labels in your form elements using the necessary and relevant input types and element attributes
--->
-
-<!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+    </body>
+</html>
