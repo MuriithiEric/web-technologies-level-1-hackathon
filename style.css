@@ -1,1 +1,19 @@
 
+
+/* Heading */
+#heading {
+    color: blue;
+}
+
+/* Introduction */
+#introduction {
+    color: red;
+    font-size: 15px;
+}
+
+/* Image Section */
+#image1 {
+    width: 500px;
+    height: 500px;
+    border: 2px solid green;
+}
