@@ -4,7 +4,7 @@ body {
     font-family: Helvetica;
 
   }
-  section, head{
+  section, head, option{
     text-align: center;
   }
   .blue-heading {
