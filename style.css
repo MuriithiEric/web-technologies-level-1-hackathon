@@ -1,1 +1,68 @@
-
+.custom-body {
+    display: block;
+    font-size: 16px;
+    font-family: 'Young Serif', sans-serif;
+    background-color: #f5f5f5;
+  }
+  .custom-html{
+    background-color: #f0f0f0;
+  }
+  .photo {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid green;
+    border-radius: 16px;
+    padding: 9px;
+    display: block;
+    margin: 0 auto;
+    max-height: 400px;
+  }
+  
+  .container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+   background-image: url('background.jpeg');
+  }
+  
+  fieldset {
+    border: none;
+  }
+  
+  fieldset label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="number"],
+  input[type="password"],
+  textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  input[type="submit"],
+  input[type="reset"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover,
+  input[type="reset"]:hover {
+    background-color: #0056b3;
+  }
+  
