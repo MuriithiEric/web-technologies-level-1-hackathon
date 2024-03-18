@@ -22,3 +22,42 @@
 -->
 
 <!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Page</title>
+    
+</head>
+<body>
+  <link rel="stylesheet" href="style.css">
+    <header>
+        <h1>Welcome to My Web Page</h1>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>This is a paragraph gives a brief description about us.</p>
+    </section>
+    <section id="services">
+        <h2>Our Services</h2>
+        <p>This is a paragraph about the services we provide.</p>
+        <img src="Product.JPG.jpg" alt="Service Image">
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="/submit-form" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+</body>
+</html>
