@@ -72,6 +72,17 @@ body {
   padding: 3px;
   background-color: rgb(57, 68, 67);
 }
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 30px;
+  border-radius: 10px;
+  height: 30px;
+}
+
 .blue-word {
   color: #0bf4f0;
   background-color: #070707;
