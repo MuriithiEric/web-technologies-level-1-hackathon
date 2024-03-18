@@ -1,1 +1,105 @@
+/* Head Style */
+h1 {
+    color: blue;
+}
 
+/* Paragrph Styling */
+p {
+    color: red;
+    font-size: 15px;
+}
+
+/* external link */
+a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007bff; /* Bootstrap default link color for reference */
+    text-decoration: none; /* Optional: removes underline from links */
+}
+
+a:hover {
+    text-decoration: underline; /*adding underline on hover*/
+}
+
+/* My image styling */
+section img.green-border {
+    border: 5px solid green;
+    width: 500px;
+    height: 500px;
+    display: block;
+    margin: 20px 0; /*adding space around the image*/
+}
+
+/*Style for the form*/
+#registrationForm {
+    margin-top: 20px;
+}
+
+#registrationForm div {
+    margin-bottom: 15px;
+}
+
+#registrationForm label {
+    display: block; /*creating the labels such that they appear above the inputs*/
+    margin-bottom: 5px;
+}
+
+/*inpu fields style*/
+#registrationForm input[type="text"],
+#registrationForm input[type="email"],
+#registrationForm input[type="tel"],
+#registrationForm input[type="number"],
+#registrationForm input[type="password"],
+#registrationForm select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /*Make padding  not to  affect the entire width*/
+}
+
+#registrationForm fieldset {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+#registrationForm legend {
+    padding: 0 5px;
+    color: #333;
+}
+
+/* Radio buttons styling*/
+#registrationForm input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* style for the dropdown */
+#registrationForm select[multiple] {
+    height: auto; 
+}
+
+
+#registrationForm button[type="reset"],
+#registrationForm button[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#registrationForm button[type="reset"] {
+    background-color: #f44336; 
+    color: white;
+}
+
+#registrationForm button[type="submit"] {
+    background-color: #4CAF50; 
+    color: white;
+}
+
+
+#registrationForm button:hover {
+    opacity: 0.9;
+}
