@@ -1,11 +1,8 @@
 <!-- 1. create the basic html structure. your structure should include a blue heading and a red paragragh with font size 15px -->
 
-
 <!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
 
-
 <!-- 3. create a section and add an image, using css; place a green border on the image, the image should be 500px wide and 500px high -->
-
 
 <!-- 4. create another section add a form that takes in the following input:
   a. name
@@ -22,3 +19,77 @@
 -->
 
 <!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character set and viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the document -->
+    <title>HTML Structure</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header section -->
+    <header>
+        <!-- Blue heading with class for styling -->
+        <h1 class="blue-heading">Blue Heading</h1>
+    </header>
+    <!-- Main content section -->
+    <main>
+        <!-- red paragraph and link section -->
+        <section>
+            <p class="red-paragraph">Red paragraph with font size 15px. To continue click <a href="https://www.allrecipes.com/" target="_blank">here</a></p>
+        </section>
+
+        <!-- image section -->
+        <section>
+            <img src="technolory.png" alt="Green Border Image" class="green-border">
+        </section>
+        <!-- registration form section -->
+        <section>
+            <!-- Form for user registration -->
+            <form action="#" method="post" class="registration-form">
+                <!-- Input fields for name, email, phone, age, gender, subjects, password, and hidden sessionId -->
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required><br>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required><br>
+                <label for="age">Age:</label>
+                <input type="date" id="age" name="age" required><br>
+                <fieldset>
+                    <legend>Gender:</legend>
+                    <label for="male">Male:</label>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="female">Female:</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                </fieldset>
+                <!-- Dropdown menu for selecting subjects -->
+                <section>
+                  <label for="subjects">Subjects:</label>
+                  <select id="dropdown">
+                    <option value="english">English</option>
+                    <option value="math">Math</option>
+                    <option value="science">Science</option>
+                    <option value="art">Art and Craft</option>
+                    <option value="agriculture">Agriculture</option>
+                    <option value="geography">Geography</option>
+                    <option value="history">History</option>
+                  </select>
+              </section>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br>
+                <input type="hidden" id="sessionId" name="sessionId" value="12345">
+                <!-- Button to clear form inputs -->
+                <button type="button" onclick="clearForm()">Cancel</button>
+                <!-- Button to submit registration -->
+                <button type="submit">Register</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
