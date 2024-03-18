@@ -1,1 +1,62 @@
+body {
+   font-family: Arial, sans-serif;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   background-color: beige;
+}
 
+header {
+   padding: 15px;
+   text-align: center;
+}
+h1{
+   color: blue;
+}
+p{
+   color: red;
+   font-size: 15px;
+}
+
+.grid-container{
+   display: grid;
+   grid-template-columns: 45% 65%;
+}
+section {
+
+   padding: 20px;
+   margin: 10px;
+}
+
+input {
+   margin:10px
+}
+
+#profile_pic{
+   border: solid green;
+   width: 500px;
+   height: 500px;
+
+}
+fieldset{
+   width: 600px;
+   margin-bottom: 20px;
+}
+.user-form{
+   margin-top: 60px;
+   width: 600px;
+}
+#submit{
+   background-color: blue;
+   color:white;
+}
+#reset{
+   background-color: red;
+   color:white;
+
+}
+@media screen and (max-width: 600px) {
+    .grid-container {
+       display: block;
+      }
+   }
