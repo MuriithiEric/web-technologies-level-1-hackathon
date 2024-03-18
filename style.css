@@ -1,1 +1,47 @@
+.blue-heading {
+    color: blue;
+}
 
+.red-paragraph {
+    color: red;
+    font-size: 15px;
+}
+
+a{
+    color: tan;
+}
+
+.green-border {
+    border: 2px solid green;
+    width: 500px;
+    height: 500px;
+}
+
+.registration-form {
+    margin-top: 20px;
+}
+
+.registration-form label {
+    display: inline-block;
+    width: 150px;
+}
+
+.registration-form input[type="text"],
+.registration-form input[type="email"],
+.registration-form input[type="tel"],
+.registration-form input[type="number"],
+.registration-form input[type="password"],
+.registration-form select {
+    width: 250px;
+    margin-bottom: 10px;
+}
+
+.registration-form button {
+    margin-top: 10px;
+}
+
+/* External link */
+a.external-link {
+    color: blue;
+    text-decoration: none;
+}
