@@ -1,24 +1,91 @@
-<!-- 1. create the basic html structure. your structure should include a blue heading and a red paragragh with font size 15px -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <title>WEB DEVELOPMENT HACKATHON</title>
+        <style>
+            h1{
+                color : blue;
+            }
+            p{
+                color: red;
+                font: size 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>HACKATHON</h1>
+        <p>I like web development.</p>
+        <a href="https://www.pexels.com/photo/close-up-photo-of-programming-of-codes-546819/" target="_blank">Visit Pexels.com</a>
+
+        <div class="container">
+            <img src="images/German-Shepherd-puppies.jpg">
+        </div>
+
+        <form>
+            <label for="name">Name:</label>
+            <input type="name" id="name" name="name" placeholder="Enter your name">
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" placeholder="Enter your email">
+
+            <label for="telephone">Telephone:</label>
+            <input type="text" id="telephone" name="telephone" placeholder="Enter your telephone">
+        
+            <label for="age">Date of Birth:</label>
+            <input type="text" id="Age" name="Age" placeholder="Enter your Age">
+
+            <fieldset>
+                <legend>Gender:</legend>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+        
+                <legend>Gender:</legend>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+            </fieldset>
+    <fieldset>
+        <label>Subject:</label>
+        <input type="checkbox" id="English" name="subjects" value="English">
+        <label for="English">English</label>
+
+        <label>Subject:</label>
+        <input type="checkbox" id="math" name="subjects" value="math">
+        <label for="math">Math</label>
+
+        <label>Subject:</label>
+        <input type="checkbox" id="science" name="subjects" value="science">
+        <label for="science">Science</label>
+
+        <label>Subject:</label>
+        <input type="checkbox" id="art and craft" name="subject" value="art and craft">
+        <label for="art and craft">Art and Craft</label>
+
+        <label>Subject:</label>
+        <input type="checkbox" id="Agriculture" name="subject" value="agriculture">
+        <label for="agriculture">Agriculture</label>
+        
+        <label>Subject:</label>
+        <input type="checkbox" id="geography" name="subject" value="geography">
+        <label for="geography">Geography</label>
+
+        <label>Subject:</label>
+        <input type="checkbox" id="history" name="subject" value="history">
+        <label for="history">History</label>
+    </fieldset>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" placeholder="Enter your password">
+
+    <id="sessionId" action="submit_session.php" method="post">
+    <input type="hidden" id="sessionId" name="sessionId" value="your_session_id_here">
+
+    <button type="button" onclick="clearForm()">Cancel</button>
+    <button type="submit">Register</button>
+
+        </form>
+    </body>
 
 
-<!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
-
-
-<!-- 3. create a section and add an image, using css; place a green border on the image, the image should be 500px wide and 500px high -->
-
-
-<!-- 4. create another section add a form that takes in the following input:
-  a. name
-  b. email address
-  c. phone number
-  d. age
-  e. radio checkbox for gender (use fieldset to group the gender input)
-  f. dropdown for multi-selection of subjects: English, Math, Science, Art and Craft, Agriculture, Geography and History
-  g. password
-  h. a hidden field to capture sessionId
-  i. cancel button that clears form inputs
-  j. submit button with text register
-  make sure to incorporate relevant labels in your form elements using the necessary and relevant input types and element attributes
--->
-
-<!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+</html>
