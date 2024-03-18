@@ -50,6 +50,8 @@ img{ /* will adjust the image dimensions for appealing to the eye */
     text-align:center;
     font-size: 24px;
     margin-bottom: 10px;
+    font-weight: 700;
+    position:relative;
 }
 
 input[type="text"],
@@ -63,8 +65,15 @@ select{
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
+    border-bottom-width: 2px;
     border-radius: 5px;
     box-sizing: border-box;
+    height: auto;
+}
+#password-help{
+    margin-top: auto;
+    font-size: 15px;
+    color: grey;
 }
 .buttons{
     display: flex;
