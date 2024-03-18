@@ -1,1 +1,73 @@
+/* Blue heading */
+.blue-heading {
+    color: #007bff; /* Blue */
+}
+
+/* Red paragraph */
+.red-paragraph {
+    color: #dc3545; /* Red */
+    font-size: 15px;
+}
+
+/* Image styling */
+.image-section {
+    margin-top: 20px;
+}
+
+.green-bordered-image {
+    width: 500px;
+    height: 500px;
+    border: 2px solid #28a745; /* Green */
+}
+
+/* Form styling */
+.form-section {
+    margin-top: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+select,
+button {
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #6c757d; /* Dark Gray */
+    border-radius: 3px;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+#cancel-button,
+#register-button {
+    width: 100px;
+    padding: 8px;
+    background-color: #ffc107; /* Yellow */
+    color: #000; /* Black */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#cancel-button {
+    background-color: #dc3545; /* Red */
+}
+
+#cancel-button:hover,
+#register-button:hover {
+    opacity: 0.8;
+}
 
