@@ -1,1 +1,20 @@
-
+body{
+    background-color: azure;
+}
+.Subjects{
+display: inline-block;
+}
+.background{
+    width: 500px;
+    height: 500px;
+    border:solid green;
+    border-color:  solid green;
+}
+h1{
+    text-align: center;
+    color: rgb(37, 37, 135);
+}
+.p1{
+    color: rgb(171, 71, 71);
+    font-size: 15px;
+}

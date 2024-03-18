@@ -1,11 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>First-Hackathon</title>
+  </head>
+  <link rel="stylesheet" href="style.css">
+  <body>
 <!-- 1. create the basic html structure. your structure should include a blue heading and a red paragragh with font size 15px -->
-
-
+    <h1>SALAM INSTITUTE</h1>
+    <p class="p1">
+      Hello guys!<br>
+      We are pleased to inform you that Salam institute is once again enrolling elementary school students.<br>
+      Welcome all!
+    </p>
 <!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
-
-
+      <div class="Subjects">
+        <p class="p1">
+          In our great institution, we offer the following subjects:
+        </p>
+        <ul>
+          <li>
+            <a href="./English.jpg" target="blank">English</a><br>
+          </li>
+          <li>
+            <a href="./Math.jpg" target="blank">Math</a><br>
+          </li>
+          <li>
+            <a href="./Science.jpg" target="blank">Science</a><br>
+          </li>
+          <li>
+            <a href="./Art and craft.jpg" target="blank">Art and Craft</a><br>
+          </li>
+          <li>
+            <a href="./Agriculture.jpg" target="blank">Agriculture</a><br>
+          </li>
+          <li>
+            <a href="./Geography.jpg" target="blank">Geography</a><br>
+          </li>
+          <li>
+            <a href="./History.jpg" target="blank">History</a><br>
+          </li>
+        </ul>
+      </div>
 <!-- 3. create a section and add an image, using css; place a green border on the image, the image should be 500px wide and 500px high -->
-
+      <div>
+        <img class= "background" src="./school.avif">
+      </div>
 
 <!-- 4. create another section add a form that takes in the following input:
   a. name
@@ -20,5 +59,104 @@
   j. submit button with text register
   make sure to incorporate relevant labels in your form elements using the necessary and relevant input types and element attributes
 -->
-
+<div>
+  <form>
+    <h2 class="p1">
+        Registration form
+    </h2>
+    <p class="p1">
+        Please enter your details in the form below.
+    </p>
+    <table>
+        <tr>
+            <td>
+                Name:
+            </td>
+            <td>
+                <input type="text" name="name" placeholder="Name">
+            </td>
+        </tr>
+        <tr>
+          <td>
+              Email Address:
+          </td>
+          <td>
+              <input type="text" name="Email Address" placeholder="Email address">
+          </td>
+      </tr>
+      <tr>
+        <td>
+            Telephone no:
+        </td>
+        <td>
+            <select>
+                <option>250</option>
+                <option>251</option>
+                <option>252</option>
+                <option>253</option>
+                <option>254</option>
+                <option>255</option>
+                <option>256</option>
+                <option>257</option>
+            </select>
+            <input type="phone" name="Telephone" placeholder="0123456789">
+        </td>
+    </tr>
+    <tr>
+        <td>
+                Age:
+        </td>
+        <td>
+                <input type="number" name="age" placeholder="Age">
+        </td>
+    </tr>
+    <tr>
+         <td>
+                Gender:
+        </td>
+        <td>
+                <input type="radio" name="Gender">Male
+                <input type="radio" name="Gender">Female
+        </td>
+    </tr>
+    <tr>
+        <td>
+                Subjects:
+        </td>
+        <td>
+          <select>
+            <option>English</option>
+            <option>Math</option>
+            <option>Science</option>
+            <option>Art and Craft</option>
+            <option>Agriculture</option>
+            <option>Geography</option>
+            <option>History</option>
+        </select>
+        <input type="text" name="Subjects" placeholder="Subjects" >
+        </td>
+    </tr>
+    <tr>
+      <td>
+        Password:
+      </td>
+      <td>
+        <input type="Varchar" name="Password" placeholder="Password">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        SessionId:
+      </td>
+      <td>
+        <input type="hidden" id="sessionId" name="sessionId" value="your_session_id">
+      </td>
+    </tr>
+    </table>
+    <button>Cancel</button>
+    <button>Register</button>
+</form>
+</div>
 <!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+  </body>
+</html>
