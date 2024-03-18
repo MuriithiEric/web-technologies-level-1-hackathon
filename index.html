@@ -1,24 +1,99 @@
-<!-- 1. create the basic html structure. your structure should include a blue heading and a red paragragh with font size 15px -->
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>REGISTRATION FORM</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
-<!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs
+    /font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c
+    9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="home">
+        <h1 class="home"> DATA MASTERY BOOTCAMP REGISTRATION</h1>
+    </header>
+    <section>
+        <h2>DATA MASTERY BOOTCAMP</h2>
+        <p>Welcome to the Data Mastery Bootcamp!<br>
+        Unlock your potential and join us on a journey to master the world of data.</p>
+    </section>
 
+    <!-- Link to External Resource -->
+    <p>Explore the website using the link below to get a detailed overview of data-related careers.<br>
+    Dive deeper into the world of data mastery and discover how our BootCamp can help you unlock your potential in the field of data science, analysis, and beyond.</p>
+    
+    <a href="https://graduate.northeastern.edu/resources/data-science-careers-shaping-our-future/" target="_blank">link: Data Science Careers Shaping Our Future</a><br>
+    
+    <!-- Image Section with Green Border -->
+   
+    <section class="about">
+        <div class="main">
+            <img src="C:\Users\user\OneDrive\Documents\web hackathon\web-technologies-level-1-hackathon\da.jpg" class="green-border">
+            <div class="bootcamp-info">
+            <h2>About the Bootcamp</h2>
+            <p>The Data Mastery Bootcamp equips participants with essential skills and knowledge in the field of data science.</p>
+            <p>Our curriculum covers a wide range of topics, including:</p>
+            <ul>
+                <li>Data analysis and visualization</li>
+                <li>Machine learning algorithms</li>
+                <li>Big data processing</li>
+                <li>Statistical modeling</li>
+                <li>Deep learning techniques</li>
+            </ul>
+            <p>Join us and take the first step towards a rewarding career in data science!</p>
+            </div>
+        </div>
 
-<!-- 3. create a section and add an image, using css; place a green border on the image, the image should be 500px wide and 500px high -->
+    </section>
 
+    <h2> Please register below to secure your spot: </h2>
 
-<!-- 4. create another section add a form that takes in the following input:
-  a. name
-  b. email address
-  c. phone number
-  d. age
-  e. radio checkbox for gender (use fieldset to group the gender input)
-  f. dropdown for multi-selection of subjects: English, Math, Science, Art and Craft, Agriculture, Geography and History
-  g. password
-  h. a hidden field to capture sessionId
-  i. cancel button that clears form inputs
-  j. submit button with text register
-  make sure to incorporate relevant labels in your form elements using the necessary and relevant input types and element attributes
--->
+    <!-- Form Section -->
+    <section>
+        <form action="#" method="POST">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
 
-<!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br>
+            <input type="hidden" name="sessionId" value="123456789"><br>
+
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone" required><br><br>
+
+            <label for="age">Age:</label><br>
+            <input type="number" id="age" name="age" required><br><br>
+
+            <fieldset>
+                <legend>Gender:</legend><br>
+                <label><input type="radio" name="gender" value="male"> Male</label><br>
+                <label><input type="radio" name="gender" value="female"> Female</label><br>
+                <label><input type="radio" name="gender" value="non-binary"> Non-Binary</label><br>
+                <label><input type="radio" name="gender" value="prefer not to say">Prefer not to Say</label><br>
+                <label><input type="radio" name="gender" value="other">Other</label><br>
+            </fieldset><br><br>
+           
+            <label for="subjects">Courses:</label>
+            <select id="courses" name="courses" multiple class="courses-dropdown">
+                <option value="Data Science">Data Science</option>
+                <option value="Data Analysis">Data Analysis</option>
+                <option value="Machine Learning & AI">Machine Learning & AI</option>
+                <option value="Data Engineering">Data Engineering</option>
+                <option value="Data Architecture">Data Architecture</option>
+            </select><br><br>
+
+        <!-- Register Button -->    
+            <button type="reset">Cancel</button>
+            <button type="submit">Register</button>
+
+        </form>
+    </section>
+</body>
+</html>
+

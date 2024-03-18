@@ -1,40 +1,28 @@
-# web-technologies-level-1-hackathon
+# web tech Hack1
 
-This event is designed to test your skills in HTML elements, including HTML structure, paragraphs, links, images, forms, and CSS. 
-Whether you're a total beginner or looking to brush up on your skills, this hackathon will provide you with an opportunity to practice and showcase your abilities.
+**Hello Friend, Welcome to my Web Hackathon Repository**
 
-Activities
-# 1. HTML Structure
+This repository contains a html and stylesheet file that creates a website that people can register for
+a Bootcamp in the field of Data Science.
 
-Objective: Create the basic structure of an HTML document.
+## Data Mastery Bootcamp
 
-# 2. Paragraphs & Headings
+**Overview**
 
-Objective: Understand how to structure and format text using paragraph tags.
+This HTML file serves as the landing page for the Data Mastery Bootcamp. It provides essential information about the bootcamp, including details about the courses offered, registration process, and an invitation to explore the official website for more information.
 
-# 3. Links
+**Structure**
 
-Objective: Learn how to create hyperlinks to navigate between pages.
+The HTML file is structured as follows:
 
-# 4. Images
+*Header Section:* Contains the title of the bootcamp and a brief introduction welcoming visitors.
 
-Objective: Incorporate images into your web page.
+*Bootcamp Information:* A brief overview of the courses offered.
 
-# 5. Forms
+*Course Information:* Provides a list of courses offered at the bootcamp, covering various aspects of data science, analysis, machine learning & AI, data engineering, and data architecture.
 
-Objective: Understand how to create forms for user input.
+*Registration Prompt:* Encourages visitors to register for the bootcamp by providing a link a website where they can find more details on data-related careers and complete the registration process.
 
-# 6. CSS Styling
+**Purpose**
 
-Objective: Apply styles to your HTML elements using CSS.
-
-# Submission Guidelines
-
-Fork this repository and clone it to your local machine.
-Create a new branch with your GitHub username (git checkout -b username).
-Complete each task within the provided HTML file (index.html) and CSS file (styles.css).
-Commit your changes and push them to your forked repository.
-Submit a pull request to the main repository for review.
-
-
-Happy hacking! 🚀
+The purpose of this HTML file is to create an engaging and informative landing page for the Data Mastery Bootcamp. It aims to attract potential participants, provide them with essential information about the bootcamp, and prompt them to take action by registering for the program.
