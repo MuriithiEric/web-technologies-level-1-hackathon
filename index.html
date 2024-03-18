@@ -22,3 +22,78 @@
 -->
 
 <!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+    <div class="container" id="Menu">
+        <div class="image">
+            <img src="Image/PLPlogo.png" alt="Logo Image">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#image-section">Image</a></li>
+                <li><a href="#form-section">Form</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+    <section id="image-section">
+<div class="left-side">
+  <div class="image-container">
+    <img src="Image/onemilliondevs.webp" alt="One Million Developer">
+  </div>
+</div>
+<div class="right-side">
+  <h2>#1MillionDevs4Africa</h2>
+  <p align="justify">Our Mission to train one million developers for Africa with quality, affordable and accessible training 
+  supporting youths by providing world-class tech training to grow their tech skills and set them apart. 
+  This allows them to become more adaptable and ready for changes in the future.</p>
+  <p>I kindly invite you to <a href="https://powerlearnproject.org/applications" target="_blank"> <b>REGISTER</b></a>  form the coming Cohort </p>
+</div>
+    </section>
+    <section id="form-section">
+      <div class="inner-form-section">
+        <h4>Registration Form </h4>
+<form>
+  <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name"><br>
+    <label for="email">Email Address:</label><br>
+    <input type="email" id="email" name="email"><br>
+    <label for="phone">Phone Number:</label><br>
+    <input type="tel" id="phone" name="phone"><br>
+    <label for="age">Age:</label><br>
+    <input type="number" id="age" name="age"><br>
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password"><br>
+    <fieldset>
+      <legend>Gender:</legend>
+      <label><input type="radio" name="gender" value="male"> Male</label><br>
+      <label><input type="radio" name="gender" value="female"> Female</label><br>
+      <label><input type="radio" name="gender" value="other"> Other</label><br>
+    </fieldset><br>
+    <label for="subjects">Subjects:</label><br>
+    <select id="subjects" name="subjects" multiple>
+      <option value="english">English</option>
+      <option value="math">Math</option>
+      <option value="science">Science</option>
+      <option value="art">Art and Craft</option>
+      <option value="agriculture">Agriculture</option>
+      <option value="geography">Geography</option>
+      <option value="history">History</option>
+    </select><br>
+    <input type="hidden" name="sessionId" value="12345">
+    <input type="reset" value="Cancel">
+    <input type="submit" value="Register"><br><br>
+</form>
+          </div>
+    </section>
+</main>
+</body>
+</html>
