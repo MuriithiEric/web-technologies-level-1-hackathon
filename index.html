@@ -1,6 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Web Hackathon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 1. Blue heading and red paragraph -->
+    <header>
+        <h1 class="blue-heading">Lorem Ipsum</h1>
+    </header>
+    <main>
+        <p class="red-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Facilis, enim. Accusantium ipsa asperiores nostrum quae molestiae aut,
+           labore repellendus voluptatem officiis amet neque adipisci assumenda veniam at laudantium, itaque eum?</p>
+
+        <!-- 2. Link to an external resource opening in a new tab -->
+        <a href="https://poki.com/" target="_blank">Free games website</a>
+
+        <!-- 3. Section with an image and green border -->
+        <section class="image-section">
+            <img src="loremipsum.jpg" alt="Lorem ipsum">
+        </section>
+
+        <!-- 4. Form with various input fields -->
+        <section>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required><br>
+
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required><br>
+
+                <fieldset>
+                    <legend>Gender:</legend>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label><br>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label><br>
+                </fieldset>
+
+                <label for="subjects">Subjects:</label>
+                <select id="subjects" name="subjects" multiple>
+                    <option value="english">English</option>
+                    <option value="math">Math</option>
+                    <option value="science">Science</option>
+                    <option value="art_craft">Art and Craft</option>
+                    <option value="agriculture">Agriculture</option>
+                    <option value="geography">Geography</option>
+                    <option value="history">History</option>
+                </select><br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br>
+
+                <input type="hidden" id="sessionId" name="sessionId" value="123456">
+
+                <button type="reset">Cancel</button>
+                <button type="submit">Register</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
+
 <!-- 1. create the basic html structure. your structure should include a blue heading and a red paragragh with font size 15px -->
-
-
 <!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
 
 
