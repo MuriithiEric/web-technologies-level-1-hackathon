@@ -1,1 +1,151 @@
+body {
+    position: relative;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
+nav {
+    color: #fff;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/*section {
+    padding: 20px;
+    
+}*/
+.container {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #003445D9;
+    height: 50px;
+    width: 100%;
+}
+
+#image-section,
+#form-section {
+    background-color: whitesmoke;
+    height: 100dvh;
+    padding-bottom: 150px;
+}
+
+#image-section {
+    display: flex;
+    margin-top: 54px;
+}
+
+#form-section {
+    padding-top: 54;
+    align-self: center;
+    width: 60%;
+}
+
+.inner-form-section {
+    padding-top: 54px;
+}
+
+.image img {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+}
+
+.image {
+    margin: 3px 0px 3px 20px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+main {
+    display: flex;
+    height: 100%;
+    width: 80%;
+    flex-direction: column;
+    margin: auto;
+    background-color: whitesmoke;
+}
+
+p {
+    font-size: medium;
+    line-height: 1.5;
+    margin: 0 20px 10px 16px;
+}
+
+section li {
+    margin: 10px 0;
+}
+
+.left-side {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 2px solid #ccc;
+}
+
+.right-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.image-container img {
+    width: 500px;
+    height: 500px;
+    border: 5px solid green;
+}
+
+.inner-form-section input[type="text"],
+.inner-form-section input[type="tel"],
+.inner-form-section input[type="email"],
+.inner-form-section input[type="number"],
+.inner-form-section select,
+.inner-form-section input[type="password"] {
+    width: 94%;
+    padding: 10px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+    margin-top: 4px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.inner-form-section input[type="submit"]:hover,
+.inner-form-section input[type="reset"]:hover {
+    background-color: #0056b3;
+}
+
+.inner-form-section input[type="submit"],
+.inner-form-section input[type="reset"] {
+    width: 45%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+select {
+    height: 140px;
+}
