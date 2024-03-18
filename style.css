@@ -1,1 +1,28 @@
-
+body{
+    background-color: rgb(255, 255, 255);
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    font-size: 14px;
+    margin: 2%;
+    padding: 2%;
+}
+h1{
+    color: blue;
+}
+p{
+    color: red;
+    font-size: 15px;
+}
+img{
+    border-color: green;
+    border-style: solid;
+    border-width: 5px;
+    width: 500px;
+    height: 500px;
+}
+body{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    
+}
