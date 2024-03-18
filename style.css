@@ -1,1 +1,164 @@
+body{
+    border: 0px;
+    padding: 0px;
+}
+#heading>h1{
+    color: blue;
+    text-align: center;
 
+}
+#body_text>p{
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    color: red;
+    margin-left: 60px;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #900C3F;
+    height: 90px;
+    align-items: center;
+    padding: 10px;
+}
+#user_prof{
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+}
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-size: 20px;
+    width: 300px;
+    justify-content: space-around;
+    font-family: 'Times New Roman', Times, serif;
+}
+ul>li{
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 30px;
+}
+ul>li>a{
+    text-decoration: none;
+    color: white;
+}
+ul>li:hover{
+    border-right: 1px solid rgb(210, 229, 171);
+    background-color: hsl(0, 0%, 100%, 0.4);
+}
+#form_det{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#text_fields{
+    margin-top: 20px;
+}
+#text_fields>label{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(31, 109, 172);
+}
+#text_fields>input{
+    width: 220px;
+    height: 30px;
+    border-radius: 5px;
+}
+#text_fields>input:active {
+    width: 220px;
+    height: 30px;
+    border: none;
+}
+#drop_downs{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+    border: 1px dashed rgb(184, 206, 221);
+    margin-bottom: 10px;
+    height: 120px;
+    width: 89%;
+    padding: 10px;
+}
+fieldset{
+    border: none;
+}
+#subjects_div {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gray;
+    width: 40%;
+    padding: 10px;
+}
+#gender_div{
+    border: 1px solid gray;
+    flex-basis: 40%;
+    height: 100px;
+    margin-left: -20px;
+    padding: 10px;
+}
+#subjects{
+    width: 150px;
+    height: 140px;
+}
+#password_sec{
+    width: 92%;
+    height: 80px;
+    padding: 10px;
+}
+#subject_label{
+    font-size: 28px;
+    font-weight: bold;
+}
+#pers_det{
+    align-self: flex-start;
+    margin-left: 60px;
+    font-size: 28px;
+    font-weight: bold;
+}
+#password_label{
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+#password_sec>input{
+    width: 220px;
+    height: 30px;
+    border-radius: 5px;
+}
+#btns{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+#submit{
+    background-color: green;
+    border: none;
+    border-radius: 10px;
+    width: 150px;
+    height: 30px;
+    color: white;
+    font-weight: bold;
+}
+#clearbtn{
+    background-color: rgb(128, 51, 0);
+    border: none;
+    border-radius: 10px;
+    width: 150px;
+    height: 30px;
+    color: white;
+    font-weight: bold;
+    margin-left: 10px;
+}
