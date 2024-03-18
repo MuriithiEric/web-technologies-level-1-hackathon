@@ -1,1 +1,88 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
 
+header{
+    background-color: darkcyan;
+    padding: 1px;
+    text-align: center;
+    color: white;
+    font-size: small;
+}
+
+h2{
+    color: blue;
+}
+
+#red_paragragh{
+    color: red;
+    font-size: 15px;
+}
+
+section{
+    margin-top: 20px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+}
+
+img{
+    border: 2px solid green;
+    height: 500px;
+    width: 500px;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    margin-bottom: 20px;
+} 
+
+label {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: rgb(59, 59, 59);
+}
+
+input,
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+fieldset {
+    border: 0.5px solid grey;
+    display: flex;
+    flex-direction: initial;
+}
+input[type="radio"] {
+    transform: scale(0.5);     
+}
+
+#buttons {
+    width: auto; 
+    padding: 10px;  
+    display: flex; 
+    justify-content:space-between;
+}
+
+input[type="reset"] {
+    order: 2;
+    margin-left: 150px;
+}
+
+footer{
+    background-color: darkcyan;
+    padding: 5px;
+    color: #fff;
+    text-align: center;
+}
