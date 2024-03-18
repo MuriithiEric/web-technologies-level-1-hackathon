@@ -66,7 +66,7 @@ body {
   font-size: 0.7cm;
   margin-right: 900px;
   letter-spacing: 1px;
-  border: 3px solid rgb(27, 35, 35);
+  border: 3px solid rgb(88, 215, 215);
   border-radius: 10px;
   width: 260px;
   padding: 3px;
@@ -185,7 +185,7 @@ body {
 
 /* Navbar styles */
 .navbar {
-  background-color: rgb(4, 3, 3);
+  background-color: rgba(56, 160, 144, 0.49);
   padding: 30px 0;
   border-radius: 1px;
 }
@@ -211,49 +211,53 @@ body {
   text-decoration: none;
   font-weight: bold;
   padding: 5px 10px;
+  letter-spacing: 1px;
   border-radius: 5px;
   background-color: #0d0e0e;
   transition: background-color 0.3s ease;
 }
 
 .navbar-menu li a:hover {
-  background-color: rgba(125, 4, 4, 0.726);
+  background-color: rgba(4, 125, 113, 0.726);
+  color: #060606;
+  background-color: #0bf4f0;
 }
 
 /* Section styles */
 section {
   margin-top: 60px;
   padding: 20px;
-  margin-bottom: 20px;
-  background-color: #1456b3;
-  border-radius: 3px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: rgba(56, 160, 144, 0.49);
 }
 
 section h2 {
-  color: #f00f0f;
+  color: #0bf4f0;
   margin-top: 40px;
   margin-bottom: 60px;
-  font-size: 0.8cm;
+  margin-left: 150px;
+  font-size: 0.9cm;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 /* Styling for image container */
 .image-container {
   display: flex;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 /* Styling for image in section */
 .image-container img {
   width: 500px;
   height: 500px;
-  border-radius: 6px;
+  border-radius: 100px;
   border: 2px solid rgb(36, 241, 8);
   margin-left: 20px;
 }
+
 .image-container img:hover {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  transform: scale(1) translateY(-2px);
+  transform: scale(1.01) translateY(-2px);
+  border-color: #d94e4e;
 }
 
 /* Styling for text description */
@@ -269,21 +273,21 @@ section h2 {
   padding: 20px;
   width: 800px;
   font-size: 0.5cm;
-  border-radius: 20px;
+  border-radius: 5px;
   letter-spacing: 1px;
   word-spacing: 2px;
-  margin-top: 200px;
+  margin-top: 150px;
   margin-left: 100px;
 }
 /* Form styles */
 form {
   max-width: 500px;
-  margin: auto;
+  margin: 50px;
 }
 
 form label {
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 7px;
 }
 
 form input,
@@ -297,19 +301,23 @@ form select {
 }
 
 form button {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
+  padding: 10px 80px;
+  margin-left: 12px;
+  font-size: 0.4cm;
+  background-color: #0bf4f0;
+  color: #040404;
+  letter-spacing: 2px;
   border: #0d0e0e 2px solid;
-
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 form button:hover {
-  background-color: #0056b3;
-} /* Styling for radio buttons */
+  background-color: #f5f0f0;
+  color: #ed1616;
+}
+
 .gender {
   display: flex;
   align-items: center;
@@ -323,7 +331,7 @@ form button:hover {
 }
 /* Styling for radio button labels */
 .gender label[for="male"],
-.gender label[for="male"],
+.gender label[for="female"],
 .gender label[for="not_say"] {
   margin-right: 70px;
 }
@@ -339,9 +347,37 @@ form button:hover {
 
 #subjects option {
   padding: 5px;
+  border-bottom: 1px solid #040404;
 }
-/* Styling for image description */
+
+#subjects option:hover {
+  background-color: #0bf4f0;
+} /* Styling for image description */
 .image-description {
   display: flex;
   margin-bottom: 30px;
+}
+
+/* Style for the registration section */
+#registration {
+  overflow: auto; /* Clear any floats */
+}
+
+/* Style for the form */
+form {
+  float: left;
+  width: 50%;
+}
+
+/* Style for the image */
+.pic2 {
+  float: right;
+  margin-right: 60px;
+  margin-top: 50px;
+  border-radius: 10px;
+  width: 700px;
+  height: 700px;
+}
+.pic2:hover {
+  transform: scale(1.1) translateY(-2px);
 }
