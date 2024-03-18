@@ -1,1 +1,12 @@
-
+h1 {
+    color: blue;
+}
+p {
+    color: red;
+    font-size: 15px;
+}
+img {
+    border: 5px solid green;
+    width: 500px;
+    height: 500px;
+}
