@@ -1,32 +1,27 @@
-# web-technologies-level-1-hackathon
+<!-- 1. create the basic html structure. your structure should include a blue heading and a red paragragh with font size 15px -->
 
-This event is designed to test your skills in HTML elements, including HTML structure, paragraphs, links, images, forms, and CSS. 
-Whether you're a total beginner or looking to brush up on your skills, this hackathon will provide you with an opportunity to practice and showcase your abilities.
 
-Activities
-# 1. HTML Structure
+<!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
 
-Objective: Create the basic structure of an HTML document.
 
-# 2. Paragraphs & Headings
+<!-- 3. create a section and add an image, using css; place a green border on the image, the image should be 500px wide and 500px high -->
 
-Objective: Understand how to structure and format text using paragraph tags.
 
-# 3. Links
+<!-- 4. create another section add a form that takes in the following input:
+  a. name
+  b. email address
+  c. phone number
+  d. age
+  e. radio checkbox for gender (use fieldset to group the gender input)
+  f. dropdown for multi-selection of subjects: English, Math, Science, Art and Craft, Agriculture, Geography and History
+  g. password
+  h. a hidden field to capture sessionId
+  i. cancel button that clears form inputs
+  j. submit button with text register
+  make sure to incorporate relevant labels in your form elements using the necessary and relevant input types and element attributes
+-->
 
-Objective: Learn how to create hyperlinks to navigate between pages.
-
-# 4. Images
-
-Objective: Incorporate images into your web page.
-
-# 5. Forms
-
-Objective: Understand how to create forms for user input.
-
-# 6. CSS Styling
-
-Objective: Apply styles to your HTML elements using CSS.
+<!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
 
 # Submission Guidelines
 
