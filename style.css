@@ -1,1 +1,53 @@
+*{
+    margin: 0;
+    padding: 0px 10px;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: dimgray;
+}
+.container{
+    width: 540px;
+    margin: 0 auto;
+    background-color: white;
+}
+.title{
+    font-size: 15px;
+    padding-top: 20px;
+}
+.page-img{
+    margin: 20px 0;
+}
+.page-img img{
+    width: 500px;
+    height: 500px;
+    border: 1px solid green;
+}
+.gender{
+    width: 400pxpx;
+}
+label{
+    font-weight: 700;
+}
+.btn{
+    background-color: darkgreen;
+    padding: 5px;
+    border-radius: 10px;
+    height: 30px;
+    width: 100px;
+    border: none;
+    outline: none;
+    color: white;
+    font-weight: 700;
+   margin-bottom: 20px; 
+
+}
+.btn:hover{
+    cursor: pointer;
+}
+h6{
+    text-align: center;
+}
+
 

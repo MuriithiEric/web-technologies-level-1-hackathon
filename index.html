@@ -1,11 +1,25 @@
 <!-- 1. create the basic html structure. your structure should include a blue heading and a red paragragh with font size 15px -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2024 Web technologies Hackathon</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+  <h1 class="title">WEB TECHNOLOGIES HACKATHON 2024</h1>
+  <p class="into-text">Elevate your web application development with the web technologies hackathon
+     <br>where success is based on determination, consistency and displine</p>
 
+     <!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
+    <a href="https://www.w3schools.com/html/" target="_blank">earn HTML</a>
 
-<!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
-
-
-<!-- 3. create a section and add an image, using css; place a green border on the image, the image should be 500px wide and 500px high -->
-
+    <!-- 3. create a section and add an image, using css; place a green border on the image, the image should be 500px wide and 500px high -->
+<section class="page-img">
+  <img src="./images/dolphin.jpg" alt="dolphin image">
+</section>
 
 <!-- 4. create another section add a form that takes in the following input:
   a. name
@@ -20,5 +34,54 @@
   j. submit button with text register
   make sure to incorporate relevant labels in your form elements using the necessary and relevant input types and element attributes
 -->
+<section class="form">
+  <h3>Hackathon Form</h3><br>
+  <form>
+  <label for="name">Name</label><br>
+  <input type="text" name="name" placeholder="Enter your Name"><br>
+  <label for="email">Email</label><br>
+  <input type="email" name="email" placeholder="Enter your Email"><br>
+  <label for="tel">Tel No</label><br>
+  <input type="tel" name="tel" placeholder="Enter your Number"><br>
+  <label for="age">Age</label><br>
+  <input type="date" name="age"><br>
+  <fieldset class="gender">
+    <legend>Gender:</legend>
+    <input type="radio" id="male" name="gender" value="M">
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender" value="F">
+    <label for="female">Female</label><br>
+    <input type="radio" id="other" name="gender" value="O">
+    <label for="other">Other</label>
+  
+</fieldset>
+<label for="subjects">Choose Subjects</label><br>
+<select name="subjects[]" id="subjects" multiple>
+    <option value="English">English</option>
+    <option value="Math">Math</option>
+    <option value="Science">Science</option>
+    <option value="Art and Craft">Art and Craft</option>
+    <option value="Agriculture">Agriculture</option>
+    <option value="Geography">Geography</option>
+    <option value="History">History</option>
+</select><br><br>
+<label for="password">Password</label><br>
+  <input type="password" name="password" placeholder="Enter your Password"><br>
+  <input type="hidden" id="sessionId" name="sessionId" value="sessionId"><br>
+  <button type="button" class="btn">Cancel</button>
+  <input type="submit" class="btn" value="Submit">
+</form>
+</section>
+<h6>&copy;2024 by brian michira</h6>
+</div>
+<
+</body>
+</html>
+
+
+
+
+
+ 
 
 <!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
