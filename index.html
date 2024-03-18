@@ -28,7 +28,7 @@
     <title>web-dev-hark-1</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="static/css/styles.css">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <header>
@@ -44,7 +44,10 @@
     <main>
       <section id="image-sec">
         <div class="img-div">
-          <img src="static/images/img-1.jpg">
+          <img src="static/images/image-2.jpg" width="500px" height="500px" alt="The Nativity Image">
+        </div>
+        <div class="ext-link-div" >
+          <a href="https://github.com/ipkipkorir/web-technologies-level-1-hackathon" target="_blank" rel="noopener noreferer">Click here to view the work on Github</a>
         </div>
       </section>
       <section id="form-sec">
@@ -54,31 +57,31 @@
             <input type="text" id="fname" placeholder="Enter your name . . .">
             <label for="email">Email:</label>
             <input type="email" id="email" placeholder="Your email ...">
-            <label for="phone-number"></label>
+            <label for="phone-number">Phone: </label>
             <input type="number" id="phone-number" placeholder="+254722334455">
             <label for="age" >Age: </label>
             <input type="number" id="age" placeholder="33">
             <fieldset>
               <legend>Gender</legend>
               <label for="male-gen">Male: </label>
-              <input type="radio" value="Male">
+              <input type="radio" value="Male" name="gender">
               <label for="female-gen">Female: </label>
-              <input type="radio" value="Female">
+              <input type="radio" value="Female" name="gender">
             </fieldset>
             <label for="subject-s">Subjects: </label>
             <select type="multi-selection" id="subject-s">
-              <option value="Math">Math</option>
-              <option value="English">English</option>
-              <option value="Kiswahili">Kiswahili</option>
-              <option value="Art and Craft">Art and Craft</option>
-              <option value="Science">Science</option>
-              <option value="Agriculture">Agriculture</option>
-              <option value="Geography and History">Geography and History</option>
+              <option name="subjects" value="Math">Math</option>
+              <option name="subjects" value="English">English</option>
+              <option value="Kiswahili" name="subjects">Kiswahili</option>
+              <option value="Art and Craft" name="subjects">Art and Craft</option>
+              <option value="Science" name="subjects">Science</option>
+              <option value="Agriculture" name="subjects">Agriculture</option>
+              <option value="Geography and History" name="subjects">Geography and History</option>
             </select>
             <label for="password-1">Password: </label>
             <input type="password" id="password-1" placeholder="***************">
             <input type="hidden" value="sessionId">
-            <div>
+            <div class="form-but">
               <button type="reset">Clear</button>
               <button type="submit">Submit</button>
             </div>
