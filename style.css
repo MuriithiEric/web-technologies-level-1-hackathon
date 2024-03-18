@@ -1,1 +1,13 @@
+    .blue_heading {
+      color: blue;
+    }
+    .red_paragraph {
+      color: red;
+      font-size: 15px;
+    }
+    .green_border {
+      border: 2px solid green;
+      width: 500px;
+      height: 500px;
+    }
 
