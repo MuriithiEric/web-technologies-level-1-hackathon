@@ -3,7 +3,8 @@
     font-family: 'Poppins', sans-serif;
 }
 body{
-    background: linear-gradient(to right, white, lightblue ); 
+    background: linear-gradient(to right, lightpink, lightblue ); 
+    margin: 5px 5px;
 }
 h1{
     color: #1367C6 ; /* picked a diff shade of blue that doesnt hurt the eye */
@@ -26,3 +27,69 @@ img{ /* will adjust the image dimensions for appealing to the eye */
     width: 100%;
     height: 100%;
 }
+
+.part3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+.container-title{
+    text-align:center;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="password"],
+fieldset,
+select{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
+.button-1 button,
+.button-2 button{
+    padding: 10px 20px;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-size: 18px;
+    font-weight: 400;
+    height: 100%;
+    width: calc(100%/2-20px);
+}
+.button-1 button:hover{
+    background: #FF360E;
+}
+
+.button-2 button:hover {
+    background: #0fde0f;
+}
+
+
+

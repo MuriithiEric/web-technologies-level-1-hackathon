@@ -39,7 +39,7 @@
           </div>
           <div class="gender-details">
             <fieldset>
-              <legend>Gender</legend>
+              <legend>Gender:</legend>
               <input type="radio" id="male" name="gender" value="male">
               <label for="male">Male</label>
               
@@ -52,7 +52,7 @@
           </div>
           <div class="course-select">
           <label for="subjects">Select a subject:</label>
-          <select id="subjects" name="subjects[]" multiple>
+          <select id="subjects" name="subjects[ ]" multiple>
 
             <option value="English">English</option>
             <option value="Maths">Maths</option>
@@ -67,6 +67,9 @@
           <div class="input-2">
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" placeholder="Enter your Password" aria-label="Password" aria-describedby="password-help">
+
+            <label for="password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" aria-label="Password" aria-describedby="password-help">
           </div>
           <div id="password-help">
             <p>Your password must be at least 8 characters long.</p>

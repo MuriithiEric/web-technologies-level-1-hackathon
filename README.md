@@ -1,70 +1,41 @@
-# web-technologies-level-1-hackathon
+# HTML and CSS Practice Summary
 
-This event is designed to test your skills in HTML elements, including HTML structure, paragraphs, links, images, forms, and CSS. 
-Whether you're a total beginner or looking to brush up on your skills, this hackathon will provide you with an opportunity to practice and showcase your abilities.
+This project consists of several steps to practice HTML and CSS. Below are the step-wise instructions followed:
 
-Activities
-# 1. HTML Structure
+## Step 1: Create Basic HTML Structure
 
-Objective: Create the basic structure of an HTML document.
+- Created a basic HTML structure.
+- Included a blue heading and a red paragraph with a font size of 15px.
 
-# 2. Paragraphs & Headings
+## Step 2: Add Link to External Resource
 
-Objective: Understand how to structure and format text using paragraph tags.
+- Added a link in the HTML file that opens a new tab to an external resource.
 
-# 3. Links
+## Step 3: Add Section with Image and Apply CSS Styling
 
-Objective: Learn how to create hyperlinks to navigate between pages.
+- Created a section in the HTML file.
+- Added an image to the section.
+- Applied CSS to add a green border to the image.
+- Set the image dimensions to 500px wide and 500px high.
 
-# 4. Images
+## Step 4: Create Form Section with Various Inputs
 
-Objective: Incorporate images into your web page.
+- Created another section in the HTML file.
+- Added a form with the following inputs:
+  - Name
+  - Email address
+  - Phone number
+  - Age
+  - Radio checkbox for gender (grouped using fieldset)
+  - Dropdown for multi-selection of subjects (English, Math, Science, Art and Craft, Agriculture, Geography, History)
+  - Password
+  - Hidden field to capture sessionId
+  - Cancel button to clear form inputs
+  - Submit button with text "Register"
+- Incorporated relevant labels and input types with necessary attributes.
 
-# 5. Forms
+## Step 5: Styling
 
-Objective: Understand how to create forms for user input.
+- All styling was placed in the style.css file.
+- Correctly embedded the external CSS file in the index.html file using the relevant <link> tag.
 
-# 6. CSS Styling
-
-Objective: Apply styles to your HTML elements using CSS.
-
-# Submission Guidelines
-
-Fork this repository and clone it to your local machine.
-Create a new branch with your GitHub username (git checkout -b username).
-Complete each task within the provided HTML file (index.html) and CSS file (styles.css).
-Commit your changes and push them to your forked repository.
-Submit a pull request to the main repository for review.
-
-
-Happy hacking! 🚀
-
-
-
-
-# Guidelines
-<!-- 1. create the basic html structure. your structure should include a blue heading and a red paragragh with font size 15px -->
-
-
-<!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
-
-
-<!-- 3. create a section and add an image, using css; place a green border on the image, the image should be 500px wide and 500px high -->
-
-
-<!-- 4. create another section add a form that takes in the following input:
-  a. name
-  b. email address
-  c. phone number
-  d. age
-
-
-  e. radio checkbox for gender (use fieldset to group the gender input)
-  f. dropdown for multi-selection of subjects: English, Math, Science, Art and Craft, Agriculture, Geography and History
-  g. password
-  h. a hidden field to capture sessionId
-  i. cancel button that clears form inputs
-  j. submit button with text register
-  make sure to incorporate relevant labels in your form elements using the necessary and relevant input types and element attributes
--->
-<!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
