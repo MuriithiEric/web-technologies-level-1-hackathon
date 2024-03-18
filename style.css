@@ -1,1 +1,100 @@
+/* Styling for H1 Heading */
+#hackathonHeading {
+    color: blue;
+  }
+  
+  /* Styling for paragraph */
+  #hackathonDescription {
+    color: red;
+    font-size: 15px;
+  }
+  
+  /* Styling for additional info link */
+  #additionalInfoLink {
+    color: blue;
+    text-decoration: none;
+  }
+  
+  #additionalInfoLink:hover {
+    text-decoration: underline;
+  }
+  
+  /* Styling for image */
+  #imageSection {
+    border: 2px solid green;
+    width: 500px;
+    height: 500px;
+    margin-bottom: 20px;
+  }
+  
+  #hackathonImage {
+    width: 100%;
+    height: 100%;
+  }
 
+  #imageDescription {
+    font-style: italic;
+    color: #666;
+    margin-top: 10px;
+  }
+  
+  
+  /* Styling for form */
+  #registrationForm {
+    margin-top: 20px;
+  }
+  
+  /* Styling for form elements */
+  fieldset {
+    border: 2px solid black;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  fieldset legend {
+    font-weight: bold;
+  }
+  
+  .textInput,
+  .selectInput {
+    width: calc(100% - 22px); /* Account for padding and border */
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+  
+  .radioInput {
+    margin-right: 10px;
+  }
+  
+  .hiddenInput {
+    display: none;
+  }
+  
+  .cancelButton {
+    background-color: gray;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .cancelButton:hover {
+    background-color: darkgray;
+  }
+  
+  .submitButton {
+    background-color: green;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .submitButton:hover {
+    background-color: darkgreen;
+  }
+  
