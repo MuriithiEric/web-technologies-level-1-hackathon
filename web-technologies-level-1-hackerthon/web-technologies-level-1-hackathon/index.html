@@ -1,0 +1,104 @@
+<!-- 1. create the basic html structure. your structure should include a blue heading and a red paragragh with font size 15px -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>web-technologies-level-1-hackathon</title>
+</head>
+<body>
+  <h1 class="heading">Follow your passion</h1>
+  <p>
+    It is good that a person chooses a career path that aligns with his passion, and not take a path chosen to him by society. Accepting the roles placed on you by the society is  daunting. You will never love it as much and hence will never perform your best in it. This will never allow you to reach your full potential. The society give you roles that will benefit them and not you. It'll hardly ever work in your favour. Take charge of your life to escape societal manipulations.
+  </p>
+  <p>To find out more about your passion, you can <a href="https://www.google.com">google</a>.</p>
+  <section class="image_container">
+    <img src="images/20240315173001_IMG_9680.JPG" alt="Passionate photographer.">
+  </section>
+  <section>
+    <h2>Registration Form</h2>
+    <form id="registration-form">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address:</label>
+        <input type="email" name="email" id="email" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number:</label>
+        <input type="tel" name="phone" id="phone" required>
+      </div>
+      <div class="form-group">
+        <label for="age">Age:</label>
+        <input type="number" name="age" id="age" required>
+      </div>
+  
+      <fieldset>
+        <legend>Gender:</legend>
+        <div class="form-group">
+          <input type="radio" name="gender" id="male" value="male" required>
+          <label for="male">Male</label>
+        </div>
+        <div class="form-group">
+          <input type="radio" name="gender" id="female" value="female" required>
+          <label for="female">Female</label>
+        </div>
+        <div class="form-group">
+          <input type="radio" name="gender" id="intersex" value="intersex" required>
+          <label for="intersex">Intersex</label>
+        </div>
+      </fieldset>
+  
+      <div class="form-group">
+        <label for="subjects">Subjects (Multi-Select):</label>
+        <select name="subjects[]" id="subjects" multiple required>
+          <option value="english">English</option>
+          <option value="math">Math</option>
+          <option value="science">Science</option>
+          <option value="art_and_craft">Art and Craft</option>
+          <option value="agriculture">Agriculture</option>
+          <option value="geography">Geography</option>
+          <option value="history">History</option>
+        </select>
+      </div>
+  
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" required>
+      </div>
+  
+      <input type="hidden" name="sessionId" id="sessionId" value="your_session_id">
+  
+      <div class="form-group">
+        <button type="button" id="cancel-btn">Cancel</button>
+        <button type="submit">Register</button>
+      </div>
+    </form>
+  </section>
+</body>
+</html>
+
+<!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
+
+
+<!-- 3. create a section and add an image, using css; place a green border on the image, the image should be 500px wide and 500px high -->
+
+
+<!-- 4. create another section add a form that takes in the following input:
+  a. name
+  b. email address
+  c. phone number
+  d. age
+  e. radio checkbox for gender (use fieldset to group the gender input)
+  f. dropdown for multi-selection of subjects: English, Math, Science, Art and Craft, Agriculture, Geography and History
+  g. password
+  h. a hidden field to capture sessionId
+  i. cancel button that clears form inputs
+  j. submit button with text register
+  make sure to incorporate relevant labels in your form elements using the necessary and relevant input types and element attributes
+-->
+
+<!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
