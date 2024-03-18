@@ -24,6 +24,7 @@ body{
     text-align: center;
     display: flex;
     justify-content: space-between;
+
 }
 
 .into p{
@@ -38,6 +39,33 @@ body{
 .into .reg a{
     color: green;
 }
+img{
+    width: 500px;
+    height: 500px;
+    border-radius: 5px;
+    border: 2px solid green;
+}
+.choos{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #000;
+text-align: center;
+}
+footer{
+    background-color: #221;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+
+}
+
 /* form style */
 form{
     text-align: left;
@@ -48,7 +76,7 @@ form{
     box-shadow: 0 0 10px #000;
     width: 50%;
 }
-#submit{
+.btn{
     padding: 10px;
     background-color: #333;
     color: #fff;
@@ -57,7 +85,7 @@ form{
     cursor: pointer;
     margin: 10px;
 }
-#submit:hover{
+.btn:hover{
     background-color: #442;
     
 }
