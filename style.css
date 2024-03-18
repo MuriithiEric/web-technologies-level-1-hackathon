@@ -1,1 +1,17 @@
+/* CSS for blue heading */
+.blue-heading {
+    color: blue;
+}
 
+/* CSS for red paragraph */
+.red-paragraph {
+    color: red;
+    font-size: 15px;
+}
+
+/* CSS for bordered image */
+.bordered-image {
+    border: 2px solid green;
+    width: 500px;
+    height: 500px;
+}
