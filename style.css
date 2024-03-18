@@ -29,12 +29,12 @@ body{
 
 .into p{
     text-align: left;
-    font-size: 20px;
-    color: rebeccapurple;
+    font-size: 15px;
+    color: red;
     padding: 10px;
 }
 .into h2{
-    color: red;
+    color: blue;
 }
 .into .reg a{
     color: green;
@@ -43,7 +43,7 @@ img{
     width: 500px;
     height: 500px;
     border-radius: 5px;
-    border: 2px solid green;
+    border: 5px solid green;
 }
 .choos{
     display: flex;
