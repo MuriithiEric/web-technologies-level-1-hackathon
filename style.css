@@ -1,1 +1,52 @@
+.blue-heading {
+    color: blue;
+}
+
+.red-paragraph {
+    color: red;
+    font-size: 15px;
+}
+
+.image-section {
+    margin-top: 20px;
+}
+
+.image-section img {
+    width: 500px;
+    height: 500px;
+}
+
+.green-border {
+    border: 2px solid green;
+}
+
+.form-section {
+    margin-top: 20px;
+}
+
+.form-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-section label {
+    margin-bottom: 5px;
+}
+
+.form-section input,
+.form-section select {
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 300px;
+}
+
+.form-section fieldset {
+    margin-bottom: 10px;
+}
+
+.form-section button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    cursor: pointer;
+}
 
