@@ -22,3 +22,97 @@
 -->
 
 <!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module Registration Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to Power Learn Project (PLP)</h1>
+  </header>
+
+  <main>
+    <p class="red-paragraph">
+    At the Power Learn Project (PLP), we believe in the transformative power of education. 
+    Our mission is to empower individuals with the knowledge and skills they need to succeed in today's dynamic world. 
+    Through our diverse range of programs, including Python, Dart, Flutter, HTML, CSS, Database, SQL, Entrepreneurship, Personal Development, and Software Engineering Essentials, 
+    we provide comprehensive learning experiences tailored to meet the needs of learners at every level. 
+    Whether you're a beginner looking to explore new technologies or an experienced professional seeking to enhance your expertise, PLP is here to support your journey. 
+    Join us and unlock your full potential with PLP.
+    </p>
+    <p>Visit Our Official Website <a href="https://powerlearnproject.org/" target="_blank">here</a></p>
+    
+    <section>
+      <img src="onemilliondevs.webp" alt="PLP mission-1 Million Devs 4 Africa" class="sample-image">
+    </section>
+
+    <section>
+      <h2 class="form-heading">Module Registration Form</h2>
+      <form id="registrationForm" action="submit.php" method="post">
+
+        <fieldset class="personal-info">
+          <legend>Personal Information</legend>
+          <label for="name">Name: </label>
+          <input type="text" id="name" name="name" required><br><br>
+
+          <label for="email">Email Address: </label>
+          <input type="email" id="email" name="email" required><br><br>
+
+          <label for="phone">Phone Number: </label>
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br><br>
+          
+          <label for="age">Age: </label>
+          <input type="number" id="age" name="age" min="18" required><br><br>
+        </fieldset>
+
+        <fieldset class="gender-field">
+          <legend>Gender</legend>
+          <label for="male"><input type="radio" id="male" name="gender" value="male">Male</label>          
+          <label for="female"><input type="radio" id="female" name="gender" value="female">Female</label>
+        </fieldset>
+
+        <fieldset class="modules-field">
+          <legend>Modules</legend>
+        <label for="modules" class="modules-label">Select module: </label>
+        <select id="modules" name="modules[]" multiple required>
+          <option value="Python">Python</option>
+          <option value="Dart">Dart</option>
+          <option value="Web">Web Technologies</option>
+          <option value="Database">Database</option>
+          <option value="SE essentials">SE Essentials</option>
+          <option value="EntPd">EntPd Skills</option>
+        </select><br><br>
+        </fieldset>
+
+        <label for="password">Password: </label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <input type="hidden" name="sessionId" value="12345">
+
+        <button type="button" onclick="clearForm()" class="cancel-button">Cancel</button>
+        <button type="submit" class="register-button">Register</button>
+
+      </form>
+    </section>
+  </main>
+
+  <script>
+    function clearForm() {
+      document.getElementById("name").value = "";
+      document.getElementById("email").value = "";
+      document.getElementById("phone").value = "";
+      document.getElementById("age").value = "";
+      var genderInputs = document.querySelectorAll('input[name="gender"]');
+      genderInputs.forEach(function(input) {
+        input.checked = false;
+      });
+      document.getElementById("modules").selectedIndex = -1;
+      document.getElementById("password").value = "";
+    }
+  </script>
+</body>
+</html>
