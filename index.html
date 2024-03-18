@@ -1,12 +1,23 @@
 <!-- 1. create the basic html structure. your structure should include a blue heading and a red paragragh with font size 15px -->
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Web Development Hackathon</h1>
+  <p>This is Power Learn project Web Development Hackathon </p>
 
 <!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
-
+<a href="https://google.com" target="_blank" >External resources</a>
 
 <!-- 3. create a section and add an image, using css; place a green border on the image, the image should be 500px wide and 500px high -->
-
-
+<section>
+  <img src="images/html&css.jpeg" alt="Html&css" class="image">
+</section>
 <!-- 4. create another section add a form that takes in the following input:
   a. name
   b. email address
@@ -20,5 +31,44 @@
   j. submit button with text register
   make sure to incorporate relevant labels in your form elements using the necessary and relevant input types and element attributes
 -->
+   <form>
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required><br><br>
+
+  <label for="email">Email Address: </label>
+  <input type="email" id="email" name="email" required><br><br>
+
+  <label for="Phone">Email Address: </label>
+  <input type="tel" id="phone" name="phone" required><br><br>
+
+  <label for="age">Age: </label>
+  <input type="number" id="age" name="age" required><br><br>
+
+  <fieldset>
+    <legend>Gender</legend>
+    <label><input type="radio" name="gender" value="male">Male</label>
+    <label><input type="radio" name="gender" value="female">Female</label>
+  </fieldset><br>
+
+  <label for="subjects">Subjects:</label>
+  <select>
+     <option value="english">English</option>
+     <option value="math">Math</option>
+     <option value="scienc">Science</option>
+     <option value="art">Art and Craft</option>
+     <option value="agriculture">Agriculture</option>
+     <option value="geography">Geography</option>
+     <option value="history">History</option>
+  </select><br><br>
+
+  <label for="password">Password</label>
+  <input type="password" id="password" name="password" required><br><br>
+
+  <input type="button" value="Cancel" onclick="clearForm()">
+  <input type="submit" value="Register">
+
+   </form>
 
 <!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+</body>
+</html>
