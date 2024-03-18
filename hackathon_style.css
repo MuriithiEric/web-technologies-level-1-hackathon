@@ -1,0 +1,13 @@
+h1{
+    color:blue;
+    background-color: beige;
+    font-size: 15px;
+}
+#P1{
+    color:red;
+}
+ #img{
+    border:3px solid green;
+    height: 500px;
+    width:500px;
+ }
