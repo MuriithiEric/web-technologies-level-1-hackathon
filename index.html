@@ -1,24 +1,76 @@
-<!-- 1. create the basic html structure. your structure should include a blue heading and a red paragragh with font size 15px -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hackathon Challenge 1</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<h1>First Hackathon Challenge</h1>
+<p id="FirstWords">This is first Hackathon challenge at the PLP where the contents to be implemented includes the use of HTML tags, creating links, images and creating the forms. Feel free to navigate through this page and reveal most features that have been employed.
+</p> <!-- End of the first introductory message -->
+
+<p>
+  <a href="https://powerlearnproject.org/" title="Visit PLP Website" target="_blank">Visit PLP Website it is Awesome</a>
+</p> <!-- End of the link part to PLP Website -->
+
+<section id="image">
+  <img  id="hackathon"  src="image/hackathon.jpg" alt="PLP Hackathon" width="500px" height="500px">
+</section> <!-- End of the image section -->
+
+<section id="registration">
+  <h3> Registration Form</h3>
+
+  <label for="name">Name:</label>
+  <input type="text" name="name" id="name" placeholder="Full Name" required=""><br><br>
+
+  <label for="email">Email Address:</label>
+  <input type="email" name="email" id="email" placeholder="Email Address" required=""><br><br>
+
+  <label for="phone_number">Telephone:</label>
+  <input type="tel" name="phone_number" id="phone_number" placeholder="Phone number" required=""><br><br>
 
 
-<!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
+  <label for="number">Age:</label>
+  <input type="number" name="number" id="Age" placeholder="Age in years" min="0" required=""><br><br>
 
+  <label>Gender:</label><br>
+  <input type="radio" name="Gender" id="Male" value="Male" required="">
+  <label for="Male" class="gender">Male</label>  <br>
 
-<!-- 3. create a section and add an image, using css; place a green border on the image, the image should be 500px wide and 500px high -->
+  <input type="radio" name="Gender" id="Female" value="Female" required="">
+  <label for="Female" class="gender">Female</label><br><br>
 
+  <label>Subjects:</label><br>
+  <input type="checkbox" name="english" id="english" value="English">
+  <label for="english" class="subjects">English</label><br>
 
-<!-- 4. create another section add a form that takes in the following input:
-  a. name
-  b. email address
-  c. phone number
-  d. age
-  e. radio checkbox for gender (use fieldset to group the gender input)
-  f. dropdown for multi-selection of subjects: English, Math, Science, Art and Craft, Agriculture, Geography and History
-  g. password
-  h. a hidden field to capture sessionId
-  i. cancel button that clears form inputs
-  j. submit button with text register
-  make sure to incorporate relevant labels in your form elements using the necessary and relevant input types and element attributes
--->
+  <input type="checkbox" name="math" id="math" value="Math">
+  <label for="math" class="subjects">Math</label><br>
 
-<!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+  <input type="checkbox" name="science" id="science" value="Science">
+  <label for="science" class="subjects">Science</label><br>
+
+  <input type="checkbox" name="art" id="art" value="Art and Craft">
+  <label for="art" class="subjects">Art and Craft</label><br>
+
+   <input type="checkbox" name="agriculture" id="agriculture" value="Agriculture">
+  <label for="agriculture" class="subjects">Agriculture</label><br>
+
+   <input type="checkbox" name="geography" id="geography" value="Geography">
+  <label for="geography" class="subjects">Geography</label><br>
+
+   <input type="checkbox" name="history" id="history" value="History">
+  <label for="history" class="subjects">History</label><br><br>
+
+  <label for="password">Password:</label>
+  <input type="password" name="password" id="password" placeholder="Your Password" required=""><br><br>
+
+  <label for="name">SessionId:</label>
+  <input type="name" name="name" id="sessionID" placeholder="SessionId" readonly=""><br><br>
+</section>   <!--  End of Registration Form Section -->
+
+<input type="submit" id="Submit" value="Submit"><br><br>
+<input type="reset" id="Cancel" value="Clear">
+
+</body>
+</html>

@@ -1,1 +1,20 @@
+h1{
+	color: blue;
+}
 
+#FirstWords{
+	color: red;
+	font-size: 15px;
+}
+
+ img{border: 10px solid green;
+	
+}
+
+label{
+	font-weight: bold;
+}
+
+.subjects, .gender{
+	font-weight:normal;
+}
