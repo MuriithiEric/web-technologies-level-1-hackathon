@@ -1,1 +1,80 @@
+.blue-heading {
+    color: blue;
+}
+
+.red-paragraph {
+    color: red;
+    font-size: 15px;
+}
+
+.green-border {
+    border: 2px solid green;
+}
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.blue-heading {
+    color: blue;
+    font-size: 24px; /* Increased font size for better visibility */
+}
+
+.red-paragraph {
+    color: red;
+    font-size: 15px;
+}
+
+a {
+    display: block; /* Ensures the link takes up the full width */
+    margin: 20px 0; /* Adds space between elements */
+}
+
+section {
+    margin: 20px auto; /* Centers the section */
+    text-align: center; /* Aligns content in the center */
+}
+
+img {
+    width: 500px; /* Sets the width of the image */
+    height: 500px; /* Sets the height of the image */
+    border: 2px solid green; /* Adds the green border */
+    display: block; /* Ensures the image is displayed as a block element */
+    margin: 0 auto; /* Centers the image */
+}
+
+form {
+    text-align: left; /* Aligns form elements to the left */
+    max-width: 500px; /* Limits the width of the form */
+    margin: 0 auto; /* Centers the form */
+}
+
+label {
+    display: block; /* Displays labels as block elements */
+    margin-bottom: 5px; /* Adds space between labels */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+select,
+textarea,
+button,
+input[type="submit"] {
+    width: 100%; /* Makes form elements fill the container */
+    padding: 10px; /* Adds padding to form elements */
+    margin-bottom: 10px; /* Adds space between form elements */
+    box-sizing: border-box; /* Ensures padding and border are included in the width */
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    display: inline-block; /* Displays radio buttons and checkboxes inline */
+    margin-right: 10px; /* Adds space between radio buttons and checkboxes */
+}
+
+input[type="hidden"] {
+    display: none; /* Hides the hidden field */
+}
 
