@@ -1,24 +1,68 @@
-<!-- 1. create the basic html structure. your structure should include a blue heading and a red paragragh with font size 15px -->
-
-
-<!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
-
-
-<!-- 3. create a section and add an image, using css; place a green border on the image, the image should be 500px wide and 500px high -->
-
-
-<!-- 4. create another section add a form that takes in the following input:
-  a. name
-  b. email address
-  c. phone number
-  d. age
-  e. radio checkbox for gender (use fieldset to group the gender input)
-  f. dropdown for multi-selection of subjects: English, Math, Science, Art and Craft, Agriculture, Geography and History
-  g. password
-  h. a hidden field to capture sessionId
-  i. cancel button that clears form inputs
-  j. submit button with text register
-  make sure to incorporate relevant labels in your form elements using the necessary and relevant input types and element attributes
--->
-
-<!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WEB  TECHNOLOGY HACKATHON</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+  <h1>Hackathon Submission</h1>
+  <p>This is my first Hackathon and i have loved it.I cant wait for more hackathons </p>
+  <span>This is my web technology submission</span>
+  <br>
+  <a href="https://www.kenya-airways.com/en/?gad_source=1&gclid=CjwKCAjwzN-vBhAkEiwAYiO7oDIzD3cCn-wVzUqud9XikGxl5XuPCaug0dV2pYpEA-0SbVjVOx-VfBoCD-AQAvD_BwE">
+    Visit Kenya Airways</a>
+    <br>
+  <section  class="MyImage">
+      <img src="https://images.unsplash.com/photo-1610642372651-fe6e7bc209ef?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+        alt="Photo of an Airplane">
+  </section>
+  <section>
+    <form action=" " method="post" enctype="multipart/form-data">
+      <fieldset>
+        <legend>Personal Info</legend>
+        <label for="Name">User Name</label>
+        <input type="text" id="Name" name="Name" required>
+        <br>
+        <label for="Email">Email Address</label>
+        <input type="email" id="Email" name="Email" >
+        <br>
+        <label for="PhoneNo">Tel No</label>
+        <input type="tel" id="PhoneNo" name="PhoneNo"  pattern="([0-9]{2}-[0-9]{3}-[0-9]{4})" placeholder="12-345-6789" required>
+        <br>
+        <label for="Age">Age</label>
+        <input type="text" id="Age" name="Age" >
+        <br>
+        <fieldset>
+          <legend>GENDER</legend>
+          <input type="radio" id="IdentifyFemale " name="IdentifyFemale" value="Female">
+          <label for="IdentifyFemale">Female</label>
+          <br>
+          <input type="radio" id="IdentifyMale " name="IdentifyMale" value="Male">
+          <label for="IdentifyMale">Male</label>
+        </fieldset>
+        <select name="Subjects" id="Subjects" multiple>
+          <option value="Select Subject">Subjects</option>
+          <option value=" English">English</option>
+          <option value=" Math">Math</option>
+          <option value=" Science">Science</option>
+          <option value=" Art and Craft">Art and Craft</option>
+          <option value="Agriculture ">Agriculture</option>
+          <option value="Geography ">Geography</option>
+          <option value=" History">History</option>
+        </select>
+          <br>
+          <label for="Password">UserPassword</label>
+          <input type="password" id="Password" name="Password" required placeholder="Password">
+          <br>
+          <label for="Sessionid">Your Session Id</label>
+          <input type="hidden" id="Sessionid" name="Sessionid" value="sessionId">
+          <br>
+          <input type="button" id="Submit" name="Submit" value="Register">
+          <input type="reset" id="Erase" name="Erase " value="Clear Form">
+        </fieldset>
+    </form>
+  </section>
+</body>
+</html>

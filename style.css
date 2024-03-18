@@ -1,1 +1,17 @@
-
+p{
+    color: red;
+    font-size: 15 px;
+}
+h1{
+    color: blue;
+    font-size: 15 px;
+}
+.MyImage img{
+    width: 500px;
+    height: 500px;
+    border: 20px solid green ;  
+    margin: auto;
+}
+body{
+    background-color:plum;
+}
