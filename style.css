@@ -1,1 +1,157 @@
+/*GLOBAL STYLES*/
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+/*root styling*/
+ html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+ }
 
+/*header styling*/
+header {
+    width: 100%;
+    background-color: #dfdfdf;
+}
+header h1 {
+    color: #0000ff;
+    padding: 0.5rem 1.2rem;
+}
+header p {
+    color: #ff0000;
+    padding: 0.5rem 1.2rem;
+    font-size: 15px;
+}
+header nav {
+    background-color: #334455;
+    padding: 8px 0;
+}
+header nav a {
+    text-decoration: none;
+    padding: 0.5rem 1.2rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+header nav a:hover {
+    background-color: #fff;
+    color: #111;
+    cursor: pointer;
+}
+header nav a:active {
+    color: #0d75dd;
+}
+/* external link styles */
+.ext-link-div {
+    margin: 28px auto;
+    display: flex;
+}
+.ext-link-div a {
+    margin: 0 auto;
+    text-decoration: none;
+    font-size: 20px;
+    color: #333;
+    padding: 16px;
+    font-weight: 900;
+    background-color: #898989;
+}
+.ext-link-div a:hover {
+    text-transform: uppercase;
+    background-color: #434343;
+    color: #fff;
+}
+
+/*body styling + footer styling*/
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+footer {
+    margin-top: auto;
+    background-color: #333;
+    width: 100%;
+    padding: 0.5rem 1.2rem;
+    min-height: 15vh;
+    color: #fff;
+    display: flex;
+}
+footer div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+/*main styling*/
+main {
+    width: 85%;
+    margin: 12px auto;
+    background-color: #cfcfcf;
+}
+.img-div {
+    display: flex;
+    flex-direction: column;
+    
+}
+.img-div img {
+    margin: auto;
+    border: #16d416 solid 2px;
+}
+
+/*form styling*/
+form {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 24px auto;
+    background-color: #fff;
+    padding-bottom: 24px;
+    background-color: #334455;
+}
+form * {
+    color: #fff;
+} 
+input {
+    color: #000;
+}
+input:focus {
+    outline: 2px solid #ee0000;
+}
+fieldset {
+    border: #fff solid 1.5px;
+    padding: 12px;
+    margin: 4px 20px;
+    border-radius: 5px;
+}
+input, select, button {
+    padding: 12px;
+    margin: 4px 20px;
+    outline: #111 solid 1px;
+    border-radius: 5px;
+}
+label {
+    padding: 12px 0 4px;
+    margin: 4px 20px;
+}
+input[type='radio'] {
+    outline: none;
+}
+.form-but {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+button {
+    margin-top: 12px;
+    width: 20%;
+    color: #111;
+    font-weight: bold;
+}
+button:hover {
+    cursor: pointer;
+    text-transform: uppercase;
+}
