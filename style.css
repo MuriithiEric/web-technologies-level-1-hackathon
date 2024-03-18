@@ -1,10 +1,10 @@
 /* CSS styles */
 .container {
-    text-align: center; /* Center align its contents horizontally */
+    text-align: center; /* Align its contents horizontally */
 }
 
 .container img {
-    display: block; /* Make sure the image is treated as a block element */
+    display: block; /* treat image as a block element */
     margin: 0 auto; /* Center the image horizontally within its container */
 }
 
