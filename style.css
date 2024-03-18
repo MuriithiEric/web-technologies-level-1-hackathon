@@ -1,1 +1,72 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
+header {
+    background-color: #181517;
+    color: rgb(209, 39, 53);
+    font-size: x-large;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+
+p {
+    line-height: 1.5;
+}
+
+a {
+    color: #16c5d9;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Team section styles */
+section:last-child {
+    margin-bottom: 0;
+}
+
+section img {
+    width: 100px; 
+    margin-right: 10px;
+    border-radius: 50%;
+}
