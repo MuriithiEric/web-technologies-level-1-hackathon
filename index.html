@@ -1,11 +1,8 @@
 <!-- 1. create the basic html structure. your structure should include a blue heading and a red paragragh with font size 15px -->
 
-
 <!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
 
-
 <!-- 3. create a section and add an image, using css; place a green border on the image, the image should be 500px wide and 500px high -->
-
 
 <!-- 4. create another section add a form that takes in the following input:
   a. name
@@ -22,3 +19,120 @@
 -->
 
 <!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hackathon</title>
+    <link rel="stylesheet" href="style.css" type="text/css"
+  </head>
+  <body>
+    <header class="heading">
+      <h1>Welcome to my World</h1>
+    </header>
+    <p class="welcome">You are about to witness something spectacular</p>
+    <a
+      href="https://frontend-34di-6rwk0f9zl-sylvester-bamideles-projects.vercel.app/"
+      target="_blank"
+      class="my_link"
+      >Checkout my first work</a
+    >
+    <div class="sections">
+      <section class="image">
+        <img class="my_image" src="Images/artificial-intelligence.jpg"
+      </section>
+    </div>
+    <form id="myForm">
+      <section class="form">
+        <label for="name">Name</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          required
+          class="input"
+          placeholder="Please enter your name"
+        />
+        <label for="email">Email</label>
+        <input
+          type="text"
+          name="email"
+          id="email"
+          class="input"
+          placeholder="Please enter your email address"
+        />
+        <label for="phone">Phone Number</label>
+        <input
+          class="input"
+          type="number"
+          name="Phone"
+          id="phone"
+          placeholder="Please enter your number"
+        />
+        <label for="age">Age</label>
+        <input
+          type="number"
+          id="age"
+          name="age"
+          class="input"
+          placeholder="Please enter your age"
+        />
+        <label>
+          <input type="radio" name="gender" value="male" class="gender" />Male
+        </label>
+        <label>
+          <input
+            type="radio"
+            name="gender"
+            value="female"
+            class="gender"
+          />Female
+        </label>
+        <label>
+          <input type="radio" name="gender" value="other" class="gender" />Other
+        </label>
+        <label for="subjects">Select subjects:</label>
+        <select id="subjects" name="subjects" class="input">
+          <option value="math">Math</option>
+          <option value="science">Science</option>
+          <option value="history">History</option>
+          <option value="english">English</option>
+          <option value="english">Agriculture</option>
+          <option value="english">Art and Craft</option>
+          <option value="english">Geography</option>
+        </select>
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          class="input"
+          placeholder="Please enter your password"
+        />
+        <input
+          type="hidden"
+          id="sessionId"
+          name="sessionId"
+          value="your_session_ID_here"
+        />
+        <div class="submit_btn">
+        <button type="reset" class="button">Cancel</button>
+        <script>
+          document
+            .getElementById("myForm")
+            .addEventListener("reset", function (event) {
+              // Prevent the form from actually resetting
+              event.preventDefault();
+
+              // Clear the input fields
+              document.getElementById("Name").value = "";
+              document.getElementById("password").value = "";
+            });
+        </script>
+        <button type="submit" class="button">Register</button>
+      </div>
+      </section>
+    </form>
+  </body>
+</html>
