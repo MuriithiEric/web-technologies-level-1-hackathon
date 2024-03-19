@@ -1,23 +1,70 @@
 <!-- 1. create the basic html structure. your structure should include a blue heading and a red paragragh with font size 15px -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic HTML Structure</title>
+    <link rel="stylesheet" href="C:\Users\User\DART-HACKATHON-REPOSITORY\web-technologies-hackathon\style.css">
+</head>
+<body>
+    <h1>This is a Blue Heading</h1>
+    <p>This is a Red Paragraph with font size 15px.<br>
+      I am learning how to do it.<br>
+      Hope it looks great.</p>
+      <p>Check out this <a href="https://www.browserstack.com/guide/build-a-website-using-html-css" target="_blank">External resource</a> that opens in a new tab.</p>
 
+      <section class="image-section">
+        <img src="https://images.tynker.com/blog/wp-content/uploads/20230608134157/Untitled-design-1.png" alt="Building blocks of Web Development">
+    </section>
 
-<!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
+    <section class="form-section">
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
 
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
 
-<!-- 3. create a section and add an image, using css; place a green border on the image, the image should be 500px wide and 500px high -->
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
 
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
 
-<!-- 4. create another section add a form that takes in the following input:
-  a. name
-  b. email address
-  c. phone number
-  d. age
-  e. radio checkbox for gender (use fieldset to group the gender input)
-  f. dropdown for multi-selection of subjects: English, Math, Science, Art and Craft, Agriculture, Geography and History
-  g. password
-  h. a hidden field to capture sessionId
-  i. cancel button that clears form inputs
-  j. submit button with text register
-  make sure to incorporate relevant labels in your form elements using the necessary and relevant input types and element attributes
--->
+            <fieldset>
+                <legend>Gender:</legend>
+                <label><input type="radio" name="gender" value="male"> Male</label>
+                <label><input type="radio" name="gender" value="female"> Female</label>
+                <label><input type="radio" name="gender" value="other"> Other</label>
+            </fieldset>
+
+            <label for="subjects">Subjects:</label>
+            <select id="subjects" name="subjects[]" multiple required>
+                <option value="English">English</option>
+                <option value="Math">Math</option>
+                <option value="Science">Science</option>
+                <option value="Art and Craft">Art and Craft</option>
+                <option value="Agriculture">Agriculture</option>
+                <option value="Geography">Geography</option>
+                <option value="History">History</option>
+            </select>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <input type="hidden" name="sessionId" value="123456789">
+
+            <button type="button" class="cancel" onclick="clearForm()">Cancel</button>
+            <button type="submit">Register</button>
+        </form>
+    </section>
+
+    <script>
+        function clearForm() {
+            document.querySelector("form").reset();
+        }
+    </script>
+</body>
+</html>
 
