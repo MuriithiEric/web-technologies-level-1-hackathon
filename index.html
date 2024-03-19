@@ -22,3 +22,112 @@
 -->
 
 <!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration-page</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arial&display=swap">
+
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <h1>Registration and subjects selection</h1>
+
+        <p>NOTE: The deadline is on 31-March-2024.</p>
+    
+        Click <a href="https://uonbi.ac.ke" target="_blank" >here</a> to view the official fees structure.
+      </div>
+    </div>
+  </div>
+
+  <section class="section-img">
+    <a href="https://uonbi.ac.ke" target="_blank" ><img src="student.jpg" alt="Student doing subjects registrataion" title="Students doing their registraion" ></a>
+  </section>
+
+  <section>
+    <form action="https://formspree.io/f/xeqylkad" method="POST" >
+      <h4>Registration Form: Personal Information and Subject Preferences</h4>
+<br>
+      <label for="name" >Name</label> 
+      <input type="text" id="name" name="name"  placeholder="Enter your name">
+<br>
+      <label for="email">Email address</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email address" >
+<br>
+      <label for="phone_number">Phone number</label>
+      <input type="tel" id="phone_number" name="phone_number" placeholder="Enter your phone number" >
+<br>
+      <label for="age">Age</label>
+      <input type="text" id="age" name="age" placeholder="Enter your age" >
+<br>
+      <fieldset>
+        <legend>Gender</legend>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <br>
+        <input type="radio" id="other" name="gender" value="other" >
+        <label for="other">Other</label>
+
+      </fieldset>
+
+      <fieldset>
+        <legend>Subjects</legend>
+        <input type="checkbox" id="english" name="subjects" value="english">
+        <label for="english">English</label>
+        <br>
+        <input type="checkbox" id="math" name="subjects" value="math">
+        <label for="math">Math</label>
+        <br>
+        <input type="checkbox" id="science" name="subjects" value="science">
+        <label for="science">Science</label>
+        <br>
+        <input type="checkbox" id="art_and_craft" name="subjects" value="art_and_craft">
+        <label for="art_and_craft">Art and Craft</label>
+        <br>
+        <input type="checkbox" id="agriculture" name="subjects" value="agriculture">
+        <label for="agriculture">Agriculture</label>
+        <br>
+        <input type="checkbox" id="geography" name="subjects" value="geography">
+        <label for="geography">Geography</label>
+        <br>
+        <input type="checkbox" id="history" name="subjects" value="history">
+        <label for="history">History</label>
+      </fieldset>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password" >
+<br>
+      <label for="showPasswordCheckbox" ><input type="checkbox" id="showPasswordCheckbox">Show Password</label>
+
+      <input type="hidden" id="sessionId" name="sessionId">
+<br>
+      <div class="div-button">
+        <button type="reset" >Clear form</button>
+        <button type="submit" >Register</button>
+      </div>
+<br>
+    </form>
+<br>
+  </section>
+
+  
+<footer>
+  <div class="footer-info">
+      <p>&copy; 2024 . All rights reserved.</p>
+      <p>Designed by <a href="https>//twitter.com/eli_zaphan" target="_blank">Elizaphan Maina</a></p>
+  </div>
+</footer>
+
+<script src="script.js" ></script>
+</body>
+</html>
