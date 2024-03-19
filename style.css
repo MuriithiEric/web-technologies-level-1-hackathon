@@ -1,1 +1,394 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+/* Body styles */
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: #060505;
+  color: #fff5f5;
+  line-height: 1;
+}
+.big-container {
+  position: absolute;
+  top: 210px;
+  left: 9px;
+}
+/* Positioning for big  and pic */
+.container {
+  display: flex;
+}
+
+.big {
+  flex: 1;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+}
+
+.pic {
+  flex: 1;
+}
+
+.big-words {
+  color: #007bff;
+  font-size: 1cm;
+  margin-left: 40px;
+}
+.bigger-words {
+  color: #007bff;
+  font-size: 1.3cm;
+  margin-top: 80px;
+  margin-left: 200px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.pic {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-left: 1100px;
+  margin-top: 90px;
+  border: 2px solid rgb(242, 245, 245);
+  border-radius: 200px;
+  transition: transform 0.3s ease;
+}
+
+.pic:hover {
+  transform: scale(1.03) translateY(-3px);
+  border-color: #0bf4f0;
+}
+
+/* Styling for blue heading */
+.blue-heading {
+  color: #0bf4f0;
+  font-size: 0.7cm;
+  margin-right: 900px;
+  letter-spacing: 1px;
+  border: 3px solid rgb(88, 215, 215);
+  border-radius: 10px;
+  width: 260px;
+  padding: 3px;
+  background-color: rgb(57, 68, 67);
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 30px;
+  border-radius: 10px;
+  height: 30px;
+}
+
+.blue-word {
+  color: #0bf4f0;
+  background-color: #070707;
+  padding: 4px;
+  border-radius: 10px;
+  border: 1px solid #0bf4f0;
+  transition: background-color 0.5s ease;
+}
+.blue-word:hover {
+  background-color: #0bf4f0;
+  color: #070606;
+  border-color: #070606;
+  transition: background-color 0.5s ease;
+}
+.major {
+  color: #0bf4f0;
+  background-color: #060606;
+  padding: 4px;
+  border-radius: 10px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  transition: background-color 0.5s ease;
+  border: 1px solid #0bf4f0;
+}
+
+.major:hover {
+  background-color: #0bf4f0;
+  color: #070606;
+  border-color: #070606;
+  transition: background-color 0.5s ease;
+}
+.apply_buttons {
+  margin-left: 150px;
+  margin-bottom: 20px;
+  word-spacing: 100px;
+}
+.apply_now {
+  padding: 17px 40px;
+  background-color: #f9fbfe;
+  color: #120f0f;
+  border: #78d1d1 2px solid;
+  font-size: 0.6cm;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-left: 50px;
+  transition: background-color 0.3s ease;
+}
+
+.apply_now:hover {
+  background-color: #57585a;
+  color: #0bf4f0;
+  transform: scale(1.01) translateY(-1px);
+}
+.apply_magic {
+  padding: 17px 40px;
+  background-color: #f0f2f5;
+  color: rgb(245, 72, 41);
+  border: #d94e4e 2px solid;
+  font-size: 0.6cm;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-left: 50px;
+  transition: background-color 0.7s ease;
+}
+
+.apply_magic:hover {
+  background-color: orangered;
+  color: #edeaea;
+  border-color: #0bf4f0;
+  transform: scale(1.01) translateY(-1px);
+}
+/* Styling for red paragraph with font size 15px */
+.red-paragraph {
+  color: red;
+  font-size: 0.5cm;
+  font-weight: 500;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  font-style: oblique;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-left: 25px;
+  margin-top: 60px;
+}
+
+/* Styling for links */
+.rass {
+  color: #58ecec;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  padding: 6px;
+  display: flex;
+  margin-top: 10px;
+  margin-right: 216px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border-radius: 4px;
+  border: 1px solid rgb(93, 233, 233);
+  background-color: #080808;
+  margin-left: 1190px;
+  transition: background-color 0.4s ease;
+}
+
+.rass:hover {
+  color: #f41e0b;
+  background-color: #080b0b;
+  border-color: #f41e0b;
+  transform: scale(1.02);
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: rgba(56, 160, 144, 0.49);
+  padding: 30px 0;
+  border-radius: 1px;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-menu li {
+  display: inline;
+  margin-right: 40px;
+}
+
+.navbar-menu li a {
+  color: rgb(6, 217, 233);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 10px;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  background-color: #0d0e0e;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-menu li a:hover {
+  background-color: rgba(4, 125, 113, 0.726);
+  color: #060606;
+  background-color: #0bf4f0;
+}
+
+/* Section styles */
+section {
+  margin-top: 60px;
+  padding: 20px;
+  background-color: rgba(56, 160, 144, 0.49);
+}
+
+section h2 {
+  color: #0bf4f0;
+  margin-top: 40px;
+  margin-bottom: 60px;
+  margin-left: 150px;
+  font-size: 0.9cm;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+/* Styling for image container */
+.image-container {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+/* Styling for image in section */
+.image-container img {
+  width: 500px;
+  height: 500px;
+  border-radius: 100px;
+  border: 2px solid rgb(36, 241, 8);
+  margin-left: 20px;
+}
+
+.image-container img:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  transform: scale(1.01) translateY(-2px);
+  border-color: #d94e4e;
+}
+
+/* Styling for text description */
+.image-container .text-description {
+  flex: 1;
+  width: 50%;
+}
+
+/* Styling for text in section */
+.image-container .text-description p {
+  background-color: #a5f5f0;
+  color: #0d0e0e;
+  padding: 20px;
+  width: 800px;
+  font-size: 0.5cm;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  margin-top: 150px;
+  margin-left: 100px;
+}
+/* Form styles */
+form {
+  max-width: 500px;
+  margin: 50px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 7px;
+}
+
+form input,
+form select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #070606;
+  border-radius: 5px;
+  margin-left: 4px;
+}
+
+form button {
+  padding: 10px 80px;
+  margin-left: 12px;
+  font-size: 0.4cm;
+  background-color: #0bf4f0;
+  color: #040404;
+  letter-spacing: 2px;
+  border: #0d0e0e 2px solid;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #f5f0f0;
+  color: #ed1616;
+}
+
+.gender {
+  display: flex;
+  align-items: center;
+  border: 2px solid #110707;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  background-color: #edeaea;
+  color: #070606;
+  border-radius: 5px;
+}
+/* Styling for radio button labels */
+.gender label[for="male"],
+.gender label[for="female"],
+.gender label[for="not_say"] {
+  margin-right: 70px;
+}
+
+/* Styling for subjects dropdown */
+#subjects {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #110707;
+  border-radius: 5px;
+}
+
+#subjects option {
+  padding: 5px;
+  border-bottom: 1px solid #040404;
+}
+
+#subjects option:hover {
+  background-color: #0bf4f0;
+} /* Styling for image description */
+.image-description {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+/* Style for the registration section */
+#registration {
+  overflow: auto; /* Clear any floats */
+}
+
+/* Style for the form */
+form {
+  float: left;
+  width: 50%;
+}
+
+/* Style for the image */
+.pic2 {
+  float: right;
+  margin-right: 60px;
+  margin-top: 50px;
+  border-radius: 10px;
+  width: 700px;
+  height: 700px;
+}
+.pic2:hover {
+  transform: scale(1.1) translateY(-2px);
+}
