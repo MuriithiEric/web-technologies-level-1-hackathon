@@ -22,3 +22,84 @@
 -->
 
 <!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Tasks</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Task 1: Basic HTML Structure -->
+  <h1 class="blue-heading">HACKATHON </h1>
+  <p class="red-paragraptent;
+  height: fit-content;h">Hello world this is my first plp web hackathon</p>
+
+  <!-- Task 2: Link to External Resource -->
+  <a href="https://images.unsplash.com/photo-1671726203454-5d7a5370a9f4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" target="_blank">Tech Lady </a>
+
+  <!-- Task 3: Image with Green Border -->
+  <section class="green-bordered-image">
+    <img  class="image" src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8dGVjaG5vbG9neXxlbnwwfHwwfHx8MA%3D%3D" alt="Sample Image" >
+  </section>
+
+  <!-- Task 4: Form Inputs -->
+  <section>
+    <form class="form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required><br><br>
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" required><br><br>
+
+      <fieldset class="radio">
+        <legend>Gender:</legend>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label>
+      </fieldset><br>
+
+      <label for="subjects">Subjects:</label><br><br>
+      <select id="subjecten" name="subjects" multiple required>
+        <option value="english">English</option>
+        <option value="math">Math</option>
+        <option value="science">Science</option>
+        <option value="art">Art and Craft</option>
+        <option value="agriculture">Agriculture</option>
+        <option value="geography">Geography</option>
+        <option value="history">History</option>
+      </select><br><br>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required><br><br>
+
+      <input type="hidden" id="sessionId" name="sessionId" value="123456789"><br><br>
+
+      <button class="btn"   type="button" onclick="clearForm()">Cancel</button>
+      <input type="submit" value="Register">
+    </form>
+  </section>
+
+  <script>
+    function clearForm() {
+      document.getElementById("name").value = "";
+      document.getElementById("email").value = "";
+      document.getElementById("phone").value = "";
+      document.getElementById("age").value = "";
+      document.getElementById("male").checked = false;
+      document.getElementById("female").checked = false;
+      document.getElementById("subjects").selectedIndex = -1;
+      document.getElementById("password").value = "";
+    }
+  </script>
+</body>
+</html>
