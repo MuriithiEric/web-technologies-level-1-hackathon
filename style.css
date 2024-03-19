@@ -1,1 +1,32 @@
 
+.blue-heading{
+    color: blue;
+    padding: 20px;
+}
+.red-paragraph{
+    color: red;
+    padding-bottom: 20px;
+}
+.green-bordered-image{
+    border: 5px solid green;
+    width: 500px;
+    height: 500px;
+    padding: 20px;
+}
+.image{
+    width: 500px;
+    height:500px;
+
+}
+.form{
+    padding: 25px;
+    max-width: 600px;
+    background-color: rgb(231, 227, 227);
+}
+.radio{
+    width: 300px;;
+}
+.btn{
+    color: red;
+    background-color: aqua;
+}
