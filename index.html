@@ -1,12 +1,27 @@
 <!-- 1. create the basic html structure. your structure should include a blue heading and a red paragragh with font size 15px -->
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Structure</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="blue-heading">PLP Hackathon on 16th March 2024 </h1>
+        <p class="red-paragraph">This event is designed to test my skills in HTML elements, including HTML structure, paragraphs, links, images, forms, and CSS. This hackathon will provide me with an opportunity to practice and showcase my abilities.</p>
+    </header>
 
 <!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
-
+<p>To access my online portfolio click here<a href="https://josephmbugua.carrd.co/" target="_blank">Online Portifolio</a>
+</p>
 
 <!-- 3. create a section and add an image, using css; place a green border on the image, the image should be 500px wide and 500px high -->
 
-
+<section class="image-section">
+  <img src="profile-picture.jpg" alt="Your Image">
+</section>
 <!-- 4. create another section add a form that takes in the following input:
   a. name
   b. email address
@@ -20,5 +35,62 @@
   j. submit button with text register
   make sure to incorporate relevant labels in your form elements using the necessary and relevant input types and element attributes
 -->
+<fieldset>
+  <legend style=" text-align: center;">Personal information form</legend>
+  <section class="form-section">
+      <form action="#" method="post" class="black-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required><br>
 
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required><br>
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" placeholder="Enter your phone number"><br>
+
+          <label for="age">Age:</label>
+          <input type="number" id="age" name="age" placeholder="Enter your age" required><br>
+
+          <fieldset>
+              <legend>Gender:</legend>
+              <label for="male">Male</label>
+              <input type="radio" id="male" name="gender" value="male">
+              <label for="female">Female</label>
+              <input type="radio" id="female" name="gender" value="female">
+          </fieldset>
+          <label for="subjects">Subjects (Hold Ctrl/Cmd to select multiple):</label>
+          <select id="subjects" name="subjects[]" multiple>
+              <option value="English">English</option>
+              <option value="Math">Math</option>
+              <option value="Science">Science</option>
+              <option value="Art and Craft">Art and Craft</option>
+              <option value="Agriculture">Agriculture</option>
+              <option value="Geography">Geography</option>
+              <option value="History">History</option>
+          </select><br>
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required><br>
+
+          <input type="hidden" name="sessionId" value="my_session_id">
+
+          <button type="button" onclick="clearForm()">Cancel</button>
+          <button type="submit">Register</button>
+      </form>
+  </section>
+</fieldset>
 <!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+<script>
+  function clearForm() {
+      document.getElementById("name").value = "";
+      document.getElementById("email").value = "";
+      document.getElementById("phone").value = "";
+      document.getElementById("age").value = "";
+      document.getElementById("male").checked = false;
+      document.getElementById("female").checked = false;
+      document.getElementById("subjects").selectedIndex = -1;
+      document.getElementById("password").value = "";
+  }
+</script>
+</body>
+</html>
