@@ -1,5 +1,64 @@
 <!-- 1. create the basic html structure. your structure should include a blue heading and a red paragragh with font size 15px -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Web Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Heading</h1>
+  <p>Hi  there! Welcome to my web page.I am Wangila Russell,a student at Kabarak University.<br>I study computer science and also enrolled at plp programme so as to gain more hands on skills</p>
 
+  <a href="https://www.github.com" target="_blank">Link to External Resource</a>
+
+  <section>
+    <img src="group.jpg">
+  </section>
+
+  <section>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name"><br><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email"><br><br>
+
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone"><br><br>
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age"><br><br>
+
+      <fieldset>
+        <legend>Gender:</legend>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+      </fieldset><br>
+
+      <label for="subjects">Subjects:</label>
+      <select id="subjects" name="subjects" multiple>
+        <option value="english">English</option>
+        <option value="math">Math</option>
+        <option value="science">Science</option>
+        <option value="art">Art and Craft</option>
+        <option value="agriculture">Agriculture</option>
+        <option value="geography">Geography</option>
+        <option value="history">History</option>
+      </select><br><br>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password"><br><br>
+
+      <input type="hidden" id="sessionId" name="sessionId" value="123456789"><br><br>
+
+      <button type="reset">Cancel</button>
+      <button type="submit">Register</button>
+    </form>
+  </section>
+</body>
+</html>
 
 <!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
 
@@ -21,4 +80,8 @@
   make sure to incorporate relevant labels in your form elements using the necessary and relevant input types and element attributes
 -->
 
-<!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+<!-- 5. all styling should be placed in the style.css, make sure .bordered-image {
+  border: 5px solid green;
+  width: 500px;
+  height: 500px;
+}to correctly embed the external css file on the index.html file using the relevant tag  -->
