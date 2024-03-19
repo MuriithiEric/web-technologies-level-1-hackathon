@@ -1,1 +1,55 @@
+body{
+    background-color: rgba(157, 163, 163, 0.61);
+}
+section img{
+    border: solid green;
+    height: 500px;
+    width: 500px;
+}
 
+a{
+    text-decoration: none;
+    color: rgb(0, 255, 255);
+    height: 20px;
+    font-size: 30px;
+}
+
+.formsection{
+    border: solid #333;
+    margin: 20px;
+    background-color: #eb7514a2;
+}
+
+.formsection h2{
+    margin: 10px;
+    font-size: 30px;
+}
+#registrationForm{
+    margin: 20px;
+}
+
+input{
+    width: 50%;
+    height: 30px;
+    min-width: 50px;
+    border-radius: 10px;
+    border: none;
+
+}
+
+button {
+    width: 20vh;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    font-size: 20px;
+}
+
+.Cancel{
+    background-color: #e7eb06;
+    color: rgb(206, 12, 12);
+}
+.register{
+    background-color: green;
+    color: aliceblue;
+}
