@@ -22,3 +22,68 @@
 -->
 
 <!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Structure</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="blue-heading">Blue Heading</h1>
+    <p class="red-paragraph">This is a red paragraph with font size 15px.</p>
+
+    <!-- Link to open an external resource in a new tab -->
+    <a href="https://www.example.com" target="_blank">External Resource</a>
+
+    <!-- Section with an image -->
+    <section class="image-section">
+        <img src="https://www.freepik.com/premium-photo/closeup-headlight-black-sports-car_148339558.htm#query=car&position=11&from_view=keyword&track=sph&uuid=b64465bd-cb79-42f5-881b-ce4adc6fa6dd" alt="Description of the image">
+    </section>
+    
+    <section class="form-section">
+        <form action="submit.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required><br>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required><br>
+
+            <fieldset>
+                <legend>Gender:</legend>
+                <label><input type="radio" name="gender" value="male"> Male</label>
+                <label><input type="radio" name="gender" value="female"> Female</label>
+                <label><input type="radio" name="gender" value="other"> Other</label>
+            </fieldset>
+
+            <label for="subjects">Subjects:</label>
+            <select id="subjects" name="subjects[]" multiple>
+                <option value="English">English</option>
+                <option value="Math">Math</option>
+                <option value="Science">Science</option>
+                <option value="Art and Craft">Art and Craft</option>
+                <option value="Agriculture">Agriculture</option>
+                <option value="Geography">Geography</option>
+                <option value="History">History</option>
+            </select><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br>
+
+            <!-- Hidden field to capture sessionId -->
+            <input type="hidden" id="sessionId" name="sessionId" value="sessionValue">
+
+            <!-- Buttons -->
+            <button type="reset">Cancel</button>
+            <button type="submit">Register</button>
+        </form>
+    </section>
+</body>
+</html>
