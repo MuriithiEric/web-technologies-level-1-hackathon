@@ -92,3 +92,7 @@ input[type=button], input[type=submit], input[type=reset] {
     justify-content: center;
     margin: 0 auto;
 }
+option{
+    background: linear-gradient(to right, #292E49, #536976);
+    color: black;
+}
