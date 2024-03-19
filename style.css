@@ -1,1 +1,109 @@
+.blue_heading {
+    color: blue;
+}
+
+.red_para {
+    color: red;
+    font-size: 15px;
+}
+
+.photo img {
+    width: 500px;
+    height: 500px;
+    border: 4px solid green;
+}
+
+/* Styles for form elements */
+.form-section {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f1f1f1;
+    margin: 20px auto;
+    max-width: 500px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+fieldset {
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Clear button style */
+button[type="button"] {
+    background-color: #ffc107;
+    color: #000;
+}
+
+button[type="button"]:hover {
+    background-color: #ff9800;
+}
+
+/* Responsive form */
+@media screen and (max-width: 600px) {
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="number"],
+    select,
+    textarea {
+        width: calc(100% - 20px);
+    }
+}
+
+/* Additional styles for better presentation */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #007bff;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 
