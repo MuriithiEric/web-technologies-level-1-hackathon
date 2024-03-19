@@ -1,24 +1,97 @@
-<!-- 1. create the basic html structure. your structure should include a blue heading and a red paragragh with font size 15px -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Development</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Start of Header section -->
+  <header>
+    <h1>Coding And Programming</h1>
+  </header>
+  <!-- End of Header section -->
+
+  <!-- Start main section -->
+  <main>
+    <p>The demand for digital skills has drastically increased, leaving individuals and businesses without adequate
+      training struggling to keep up with the pace of change.</p>
+
+    <a href="https://powerlearnproject.org/" target="_blank">Power Learn Academy</a>
+
+    <section>
+      <img src="https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=600"
+        alt="1Million4Devs2024" class="fit-image">
+    </section>
+
+    <!-- Start of the Form section -->
+    <section>
+      <form>
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age" required><br><br>
+
+        <fieldset>
+          <legend>Gender:</legend> <br>
+          <label>Male<input type="radio" name="gender" value="male"></label>
+          <label>Female<input type="radio" name="gender" value="female"></label>
+          <label>Other<input type="radio" name="gender" value="other"></label>
+        </fieldset><br>
+
+        <label for="subjects">Subjects:</label><br>
+        <select name="subjects" id="subjects" multiple required>
+          <option value="English">English</option>
+          <option value="Math">Mathematics</option>
+          <option value="Science">Science</option>
+          <option value="Art and Craft">Art and Craft</option>
+          <option value="Agriculture">Agriculture</option>
+          <option value="Geography">Geography</option>
+          <option value="History">History</option>
+        </select><br><br>
+        <div class="half-width">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required><br><br>
+
+          <!-- <button type="button" onclick="clearForm()">Cancel</button> -->
+        </div>
+
+        <input type="hidden" id="sessionId" name="sessionId" value="123456"><br><br>
+
+        <button type="button" onclick="clearForm()">Cancel</button>
+        <input type="submit" value="Register" style="cursor: pointer;">
+      </form>
+    </section><br><br>
+    <!-- End of the Form section -->
 
 
-<!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
 
+  </main>
+  <!-- End of the Main section -->
 
-<!-- 3. create a section and add an image, using css; place a green border on the image, the image should be 500px wide and 500px high -->
+  <!-- Start of the footer section -->
+  <footer>
+    <p>&copy; 2024 PLP Web Development. All Rights Reserved.</p>
+  </footer>
+  <!-- End of the footer section -->
 
+  <!-- Javascript section -->
+  <script>
+    function clearForm() {
+      document.querySelector("form").reset();
+    }
+  </script>
+</body>
 
-<!-- 4. create another section add a form that takes in the following input:
-  a. name
-  b. email address
-  c. phone number
-  d. age
-  e. radio checkbox for gender (use fieldset to group the gender input)
-  f. dropdown for multi-selection of subjects: English, Math, Science, Art and Craft, Agriculture, Geography and History
-  g. password
-  h. a hidden field to capture sessionId
-  i. cancel button that clears form inputs
-  j. submit button with text register
-  make sure to incorporate relevant labels in your form elements using the necessary and relevant input types and element attributes
--->
-
-<!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+</html>
