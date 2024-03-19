@@ -1,0 +1,13 @@
+.heading{ 
+
+    color:blue;
+}
+.paragraph{
+          color:red;
+          font-size:15px;
+}
+.green-border{
+    border: 2px solid green;
+    width: 500px;
+    height: 500px;
+}
