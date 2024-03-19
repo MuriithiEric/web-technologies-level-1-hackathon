@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML STRUCTURE</title>
+        <link rel="stylesheet" href="./css/styles.css">
+    </head>
+    <body>
+        <!--html paragraph-->
+        <header>
+            <h1 class="blue heading"> Blue Heading</h1>
+            
+            <p class="red paragraph mmesoma"> Red Paragraph with font size 15px</p>
+        </header>
+          <!--html link and images-->
+        <a href="https://www.intel.com" target ="_blank">Go to the link</a>
+            <section class="image-section">
+                 <img src="images/technology.avif" alt="image" class="green-border">
+                </section>
+            <br>
+           <!--html forms-->
+            <section>
+                <h2>Registration Form</h2>
+                <form id="registration form" action="submit_registration.php method=post">                  
+                    <br>
+                    <label for="name">Name:</label>
+                    <input type="text" name="name"id="name">
+                    <br>
+                    <br>
+                    <label for="email_address">Email_address:</label>
+                    <input type="email" name="email_address"id="email_address">
+                    <br>
+                    <br>
+                    <label for="telephone">Telephone:</label>
+                    <input type="telephone" name="telephone"id="telephone">
+                    <br>
+                    <br>
+                    <label for="age">Age:</label>
+                    <input type="number" name="age"id="age">
+                    <br>
+                    <br>
+                    <fieldset> <legend>Gender:</legend>
+                        <input type="radio" id="Male" name="gender" value="Male">
+                        <label for="Male">Male</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label>
+                </fieldset>
+                    <br>
+                    <label for="other">Other</label>
+                    <fieldset></fieldset>
+                    <br>
+                    <label for="subjects">Subjects:</label>
+                    <select id="Subjects" name="subjects[]"multiple required>
+                    <Option value="English">English</Option>
+                    <option value="Math">Math</option>
+                    <option value="Science">Science</option>
+                    <option value="Art and Craft"> Art and Craft</option>
+                    <option value="Agriculture">Agriculture</option>
+                    <option value="Geography">Geography</option>
+                    <option value="History">History</option> </select>
+                    <br>
+                    <br>
+                    <label for="password">Password:</label>
+                    <input type="passsword" id="password" name="password">
+                    <br>
+                    <br>
+                    <input type="hidden" id="sessionId" name="sessionId" value="your_session_id_here">
+                    <button type="button" onclick="clearform()">Cancel</button>
+                    <input type="submit" value="Register">
+                 </form>
+                 </section>
+          </body>
+
+</html>
