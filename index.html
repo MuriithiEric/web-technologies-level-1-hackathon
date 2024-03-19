@@ -3,9 +3,74 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
   <title>Document</title>
 </head>
 <body>
-  <h2>Hello Wolrd</h2>
+  <div class="wrapper">
+    <header>
+      <h1>Who is Kelvin.</h1>
+      <p>Kelvin is a full stack developer. He has twelve years experence in developing software.
+        He has skills in: <br>
+        <ol>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Java Script</li>
+          <li>Python</li>
+          <li>Dart</li>
+        </ol>
+      </p>
+      <p>
+        He has contributed in many open sourse projects which include:
+        <ul>
+          <li>Automated watch by IBM</li>
+          <li>Network bridge detectr by Jham</li>
+          <li>Hospital Financial Management System</li>
+        </ul>
+        For more projects, click <a href="https://github.com/dashboard" target="_blank">here</a> to access kelvin github page.
+      </p>
+      <section class="image">
+        <img src="./my_pic.png" alt="Kelvin image" width="500px" height="500px">
+      </section>
+      <section class="user input">
+        <form>
+          <label for="name">Name</label>
+          <input type="text" placeholder="Write yur name" id="name"><br>
+          <label for="email">Email</label>
+          <input type="email" placeholder="Write your email address" id="email"> <br>
+          <label for="number">Phone number</label>
+          <input type="tel" placeholder="Enter your current phone number" id="number"><br>
+          <label for="age">Age</label>
+          <input type="number" placeholder="your age" id="age"><br>
+          <label for="gender">Choose your gebder </label><br>
+          <label for="gender">Male</label>
+          <input type="radio" name="gender">
+          <label for="gender">Female</label>
+          <input type="radio" name="gender"><br>
+          <label for="subject" id="subject">Choose a subject</label><br>
+          <select name="subject" id="subject">
+            <option value="english">English</option>
+            <option value="math">Math</option>
+            <option value="science">Science</option>
+            <option value="art">Art and Craft</option>
+            <option value="agriculture">Agriculture</option>
+            <option value="agriculture">Geography</option>
+            <option value="agriculture">History</option>
+          </select>
+          <input type="hidden" id="custId" name="custId" value="3487"><br>
+          <input type="submit" value="Submit">
+          <input type="reset" value="Cancel">
+
+
+
+
+        </form>
+      </section>
+    </header>
+    <hr>
+    <form>
+      
+    </form>
+  </div>
 </body>
 </html>
