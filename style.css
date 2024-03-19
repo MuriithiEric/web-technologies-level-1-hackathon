@@ -1,1 +1,59 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background:#EEEDED;
+}
 
+.wrapper{
+    margin: 0 30px;
+    width: 80%;
+    height: 100vh;
+}
+h1{
+    color: #0000ff;
+}
+p{
+    color: red;
+    font-size: 15px;
+}
+a{
+    color: #4C4452;
+    text-decoration: none;
+    text-transform:capitalize;
+    cursor: pointer;
+}
+
+a:hover{
+    color: #B7A4C6;
+}
+
+form input{
+    display: block;
+    padding: 10px;
+    margin-top: 5px;
+}
+.image{
+    border: 1px solid green;
+    width: 500px;
+    border-radius: 10px;
+}
+
+form input[type=radio]{
+    display: inline;
+    padding: 5px;
+}
+
+.btn{
+    margin-top: 10px;
+    border-radius: 15px;
+}
+.btn input{
+    display: inline;
+    border-radius: 15px;
+    margin: 0 8px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}

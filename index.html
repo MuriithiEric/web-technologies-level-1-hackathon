@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style.css">
-  <title>Document</title>
+  <title>Kelvin Portflio</title>
 </head>
 <body>
   <div class="wrapper">
@@ -29,9 +29,11 @@
         </ul>
         For more projects, click <a href="https://github.com/dashboard" target="_blank">here</a> to access kelvin github page.
       </p>
+    </header>
       <section class="image">
         <img src="./my_pic.png" alt="Kelvin image" width="500px" height="500px">
       </section>
+      <hr>
       <section class="user input">
         <form>
           <label for="name">Name</label>
@@ -43,10 +45,11 @@
           <label for="age">Age</label>
           <input type="number" placeholder="your age" id="age"><br>
           <label for="gender">Choose your gebder </label><br>
+          <input type="radio" name="gender">
           <label for="gender">Male</label>
           <input type="radio" name="gender">
           <label for="gender">Female</label>
-          <input type="radio" name="gender"><br>
+          <br><br>
           <label for="subject" id="subject">Choose a subject</label><br>
           <select name="subject" id="subject">
             <option value="english">English</option>
@@ -58,18 +61,13 @@
             <option value="agriculture">History</option>
           </select>
           <input type="hidden" id="custId" name="custId" value="3487"><br>
-          <input type="submit" value="Submit">
-          <input type="reset" value="Cancel">
-
-
-
-
+          <section class="btn">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Cancel">
+          </section>
         </form>
       </section>
-    </header>
-    <hr>
     <form>
-      
     </form>
   </div>
 </body>
