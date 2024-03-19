@@ -1,1 +1,31 @@
-
+h1{
+    color:blue;
+}
+p{
+    color:red;
+    font-size: 15px;
+}
+img{
+    border-color: rgb(8, 230, 8);
+    width: 500px;
+    height: 500px;
+    margin-top: 30px;
+}
+.container{
+    background-color: rgb(135, 93, 173);
+    padding-bottom: 50px;
+    padding-top: 0.5px;
+    padding-left: 20px;
+    width: 700px;
+    height: 800px;
+    margin-left: 0px;
+    margin-right: 100px;
+    box-shadow : 4px 4px 80px  rgba(233, 26, 26, 0.4) ;
+    border-radius: 15px;
+}
+input{
+    height: 18px;
+}
+div{
+    line-height: 50px;
+}
