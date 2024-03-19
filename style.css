@@ -1,1 +1,14 @@
+h1 {
+    color: blue; /* Making headlines blue */
+}
 
+p {
+    color: red; /* Making paragraphs red */
+    font-size: 15px;
+}
+
+.image-section img {
+    width: 500px;
+    height: 500px;
+    border: 5px solid green;
+}
