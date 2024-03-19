@@ -7,6 +7,13 @@ section img{
     width: 500px;
 }
 
+a{
+    text-decoration: none;
+    color: rgb(0, 255, 255);
+    height: 20px;
+    font-size: 30px;
+}
+
 .formsection{
     border: solid #333;
     margin: 20px;
