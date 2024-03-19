@@ -1,24 +1,60 @@
-<!-- 1. create the basic html structure. your structure should include a blue heading and a red paragragh with font size 15px -->
 
-
-<!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
-
-
-<!-- 3. create a section and add an image, using css; place a green border on the image, the image should be 500px wide and 500px high -->
-
-
-<!-- 4. create another section add a form that takes in the following input:
-  a. name
-  b. email address
-  c. phone number
-  d. age
-  e. radio checkbox for gender (use fieldset to group the gender input)
-  f. dropdown for multi-selection of subjects: English, Math, Science, Art and Craft, Agriculture, Geography and History
-  g. password
-  h. a hidden field to capture sessionId
-  i. cancel button that clears form inputs
-  j. submit button with text register
-  make sure to incorporate relevant labels in your form elements using the necessary and relevant input types and element attributes
--->
-
-<!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="/style.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web technologies</title>
+</head>
+<body>
+  <section>
+    <a href="#">A link</a>
+  </section>
+  <section>
+    <img src="img/grayom-Mi1TxpvChss-unsplash.jpg">
+  </section>
+    <section class="formsection">
+      <h2>Registration Form</h2>
+      <form id="registrationForm">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required placeholder="Enter your name"><br><br>
+        
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required placeholder="Enter your email address"><br><br>
+        
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number"><br><br>
+        
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age" required placeholder="Enter your age"><br><br>
+        
+        <fieldset id="gender">
+          <legend>Gender:</legend>
+          <label><input type="radio" name="gender" value="male" required> Male</label>
+          <label><input type="radio" name="gender" value="female"> Female</label>
+          <label><input type="radio" name="gender" value="other"> Other</label>
+        </fieldset><br>
+        
+        <label for="subjects">Subjects:</label><br>
+        <select id="subjects" name="subjects[]" multiple required>
+          <option value="English">English</option>
+          <option value="Math">Math</option>
+          <option value="Science">Science</option>
+          <option value="Art and Craft">Art and Craft</option>
+          <option value="Agriculture">Agriculture</option>
+          <option value="Geography">Geography</option>
+          <option value="History">History</option>
+        </select><br><br>
+        
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required placeholder="Input password"><br><br>
+        
+        <input type="hidden" id="sessionId" name="sessionId" value="YourSessionIDHere">
+        
+        <button class="Cancel" type="button" onclick="form.reset()">Cancel</button>
+        <button class="register" type="submit">Register</button>
+      </form>
+    </section>
+</body>
+</html>
