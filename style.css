@@ -1,1 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    color: blue;
+}
+p {
+    color: red;
+    font-size: 15px;
+}
 
+{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+section {
+    text-align: center;
+    margin-top: 20px;
+}
+img {
+    width: 500px;
+    height: 500px;
+    border: 5px solid green;
+}
+
+{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+section {
+    margin-top: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+form {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="password"],
+select {
+    width: calc(100% - 10px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+fieldset {
+    margin-bottom: 10px;
+    border: none;
+}
+input[type="submit"],
+input[type="reset"] {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #45a049;
+}
