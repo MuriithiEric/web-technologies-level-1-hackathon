@@ -1,24 +1,109 @@
-<!-- 1. create the basic html structure. your structure should include a blue heading and a red paragragh with font size 15px -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>University Website</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css"> <!-- Link to custom CSS file -->
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1 class="blue-heading">Welcome to University</h1>
+    </header>
+    <section>
+      <p class="red-paragraph">Sign up for our prestigious programs and embark on a journey of knowledge and success.</p>
+    </section>
 
+    <!-- Image Section 1 -->
+    <section class="image-container">
+      <img src="images/image4.jpeg" alt="Image 1" class="img-fluid">
+      <div class="image-overlay">
+        <p>Campus Life</p>
+        <a href="#" target="_blank">Explore Now</a>
+      </div>
+    </section>
 
-<!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
+    <!-- Image Section 2 -->
+    <section class="image-container">
+      <img src="images/Image3.jpeg" alt="Image 2" class="img-fluid">
+      <div class="image-overlay">
+        <p>Student Activities</p>
+        <a href="#" target="_blank">See More</a>
+      </div>
+    </section>
 
+    <!-- Image Section 3 -->
+    <section class="image-container">
+      <img src="images/Image2.jpeg" alt="Image 3" class="img-fluid">
+      <div class="image-overlay">
+        <p>Sports Facilities</p>
+        <a href="#" target="_blank">Join Now</a>
+      </div>
+    </section>
 
-<!-- 3. create a section and add an image, using css; place a green border on the image, the image should be 500px wide and 500px high -->
+    <!-- Image Section 4 -->
+    <section class="image-container">
+      <img src="images/image1.jpeg" alt="Image 4" class="img-fluid">
+      <div class="image-overlay">
+        <p>Library Resources</p>
+        <a href="#" target="_blank">Explore Books</a>
+      </div>
+    </section>
 
+    <!-- Form Section -->
+    <section>
+      <form id="registration-form">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" class="form-control" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address:</label>
+          <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number:</label>
+          <input type="tel" class="form-control" id="phone" name="phone" required>
+        </div>
+        <div class="form-group">
+          <label for="age">Age:</label>
+          <input type="number" class="form-control" id="age" name="age" required>
+        </div>
+        <div class="form-group">
+          <fieldset>
+            <legend>Gender:</legend>
+            <label><input type="radio" name="gender" value="male"> Male</label>
+            <label><input type="radio" name="gender" value="female"> Female</label>
+            <label><input type="radio" name="gender" value="other"> Other</label>
+          </fieldset>
+        </div>
+        <div class="form-group">
+          <label for="subjects">Preferred Subjects:</label>
+          <select class="form-control" id="subjects" name="subjects[]" multiple required>
+            <option value="english">English</option>
+            <option value="math">Math</option>
+            <option value="science">Science</option>
+            <option value="art">Art and Craft</option>
+            <option value="agriculture">Agriculture</option>
+            <option value="geography">Geography</option>
+            <option value="history">History</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" class="form-control" id="password" name="password" required>
+        </div>
+        <input type="hidden" name="sessionId" value="your_session_id_here">
+        <button type="button" class="btn btn-secondary" id="cancel-btn">Cancel</button>
+        <button type="submit" class="btn btn-primary">Register</button>
+      </form>
+    </section>
+  </div>
 
-<!-- 4. create another section add a form that takes in the following input:
-  a. name
-  b. email address
-  c. phone number
-  d. age
-  e. radio checkbox for gender (use fieldset to group the gender input)
-  f. dropdown for multi-selection of subjects: English, Math, Science, Art and Craft, Agriculture, Geography and History
-  g. password
-  h. a hidden field to capture sessionId
-  i. cancel button that clears form inputs
-  j. submit button with text register
-  make sure to incorporate relevant labels in your form elements using the necessary and relevant input types and element attributes
--->
-
-<!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
