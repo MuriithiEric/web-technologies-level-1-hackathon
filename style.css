@@ -1,1 +1,22 @@
+body {
+    background-color: gainsboro;
+}
 
+.first {
+    color: blue;
+}
+
+.para1 {
+    color: red;
+    font-size: 15px;
+}
+
+img {
+    width: 500px;
+    height: 500px;
+    border: 5px solid green;
+}
+
+ul {
+    font-weight: bolder;
+}
