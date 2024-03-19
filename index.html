@@ -22,3 +22,80 @@
 -->
 
 <!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" width="device-width, initial-scale = 1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Travcort Hackathon Project</title>
+  </head>
+  <body>
+    <section class="heading">
+      <h1>Web Technologies</h1>
+      <p>Welcome to Power Learn Project, the home of a million Devs</p>
+    </section>
+    <container class="container">
+      <section class="image-section">
+        <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=1738&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Web Development Code">
+        <figcaption>A code snippet of HTML</figcaption>
+      </section>
+      <section>
+        <form class="form-section">
+          <fieldset class="personal-details">
+            <legend>Input Your Personal Details Here</legend>
+            <label class="spacing" for="name">Name:
+              <input id="name" placeholder="Enter your Name Here" type="text" required>
+            </label>
+            <label class="spacing" type="email">E-mail:
+              <input id="email" placeholder="Enter your E-mail Address" type="email" required>
+            </label>
+            <label class="spacing" for="phone">Contact:
+              <input id="phone" placeholder="Enter Your Phone Number" type="number" required>
+            </label>
+            <label class="spacing" for="age">Age:
+              <input id="age" placeholder="How old are You?" type="tel" required>
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>Choose Your Gender</legend>
+            <label for="male">Male:
+              <input name="gender-selection" id="male" type="radio" required>
+            </label>
+            <label for="female">Female:
+              <input name="gender-selection" id="female" type="radio" required>
+            </label>
+            <label for="prefer-not-to-say">Prefer Not To Say:
+              <input name="gender-selection" id="prefer-not-to-say" type="radio" required>
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>Subject Selection</legend>
+            <p>Please select your preferred subject(s). Hold down the Ctrl key (Windows) or Command key (Mac) to choose multiple options.</p>
+            <select name="languages" multiple>
+              <option value="English">English</option>
+              <option value="Kiswahili">Kiswahili</option>
+              <option value="Mathematics">Mathematics</option>
+              <option value="Science">Science</option>
+              <option value="Art and Craft">Art and Craft</option>
+              <option value="Agriculture">Agriculture</option>
+              <option value="Geography">Geography</option>
+              <option value="History">History</option>
+            </select>
+          </fieldset>
+          <fieldset class="password">
+            <legend>Password</legend>
+            <label for="password">Enter your Password:
+              <input type="password" id="password">
+            </label>  
+          </fieldset>
+          <fieldset class="submit-reset">
+            <input type="reset" value="Cancel">
+            <input type="submit" value="Register">
+          </fieldset>
+        </form>
+      </section>
+    </container>
+    
+  </body>
+</html>
