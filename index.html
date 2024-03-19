@@ -1,24 +1,82 @@
-<!-- 1. create the basic html structure. your structure should include a blue heading and a red paragragh with font size 15px -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hackathon</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <h1 class="first">Fun Facts About Animals: &#128010; &#128025; 	&#128030; &#128043;</h1>
+  <a href="https://factanimal.com/animal-facts/" target="_blank">Source</a>
+  <hr>
 
+  <p class="para1">Here are a few facts about our fellow animal kingdom members.</p>
+  <img src="https://www.artensoft.com/sources/artensoft_com/ArtensoftPhotoCollageMaker/gallery/0023/photo-collage-example-0023_preview_600.jpg" alt="collage of a lion and other animals">
+  <ul>
+    <li>Some jellyfish  &#127888; are immortal (I bet you wish you were a jellyfish now <span>&#128514;</span>).</li>
+    <li>Dolphins &#128044; use toxic pufferfish to 'get high'.</li>
+    <li>Otters &#129446; hold hands while sleeping so that they don't float away from each other.</li>
+    <li>Roosters &#128019; prevent themselves from going deaf due to their own loud crowing, by tilting their head backs when they crow, which covers their ear canal completely, serving as a built-in ear-plug.</li>
+    <li></li>
+  </ul>
+  <hr>
 
-<!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
+  <form action="" method="get" enctype="multipart/form-data">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="John Doe">
+    <br>
 
+    <label for="email_address">Email:</label>
+    <input type="email" id="email_address" name="email_address" placeholder="john.doe@xxx.com">
+    <br>
 
-<!-- 3. create a section and add an image, using css; place a green border on the image, the image should be 500px wide and 500px high -->
+    <label for="mobile">Phone:</label>
+    <input type="number" id="mobile" name="mobile" placeholder="+256 768 xxx xxx">
+    <br>
 
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" max="100" min="8">
+    <br>
 
-<!-- 4. create another section add a form that takes in the following input:
-  a. name
-  b. email address
-  c. phone number
-  d. age
-  e. radio checkbox for gender (use fieldset to group the gender input)
-  f. dropdown for multi-selection of subjects: English, Math, Science, Art and Craft, Agriculture, Geography and History
-  g. password
-  h. a hidden field to capture sessionId
-  i. cancel button that clears form inputs
-  j. submit button with text register
-  make sure to incorporate relevant labels in your form elements using the necessary and relevant input types and element attributes
--->
+    <fieldset>
+      <legend>Gender</legend>
+      <input type="radio" id="male" name="gender" value="Male">
+      <label for="male">Male</label>
+      <br>
 
-<!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+      <input type="radio" id="female" name="gender" value="Female">
+      <label for="female">Female</label>
+      <br>
+      
+    </fieldset>
+
+    <label for="subject">Subject:</label>
+    <select id="subject" name="subject">
+      <option value=""></option>
+      <option value="English">English</option>
+      <option value="Math">Math</option>
+      <option value="Science">Science</option>
+      <option value="Art and Craft">Art and Craft</option>
+      <option value="Agriculture">Agriculture</option>
+      <option value="Geography">Geography</option>
+      <option value="History">History</option>
+    </select>
+    <br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password">
+    <br>
+
+    <input type="hidden" id="sessionId" value="sessionId">
+    <br>
+
+    <input type="reset" id="reset" value="Cancel">
+    <br>
+
+    <input type="submit" id="submit" value="Register">
+    <br>
+
+  </form>
+
+</body>
+</html>
