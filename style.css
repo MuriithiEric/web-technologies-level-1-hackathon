@@ -1,1 +1,56 @@
+.header {
+    color: blue;
+    background-color: wheat;
+    width: fit-content;
+}
 
+#par1 {
+    color: red;
+    font-size: 15px;
+    background-color: aqua;
+    width: auto;
+    height: 50px;
+    text-align: center;
+}
+
+img {
+    width: 500px;
+    height: 500px;
+    border: 12px solid green;
+}
+
+fieldset {
+    width: 300px;
+}
+
+a:link {
+    color: black;
+    text-transform: capitalize;
+    background-color: orangered;
+}
+
+form {
+    border: yellowgreen 3px solid;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 400px;
+}
+
+input {
+    border: 2px solid blue;
+}
+
+fieldset {
+    border: 2px solid blue;
+}
+
+.btn1 {
+    color: green;
+    background-color: antiquewhite;
+}
+
+#btn2 {
+    color: red;
+}
