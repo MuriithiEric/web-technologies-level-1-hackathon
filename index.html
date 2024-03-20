@@ -1,24 +1,83 @@
-<!-- 1. create the basic html structure. your structure should include a blue heading and a red paragragh with font size 15px -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Joseph Jacob's Web Development Project</h1>
+    </header>
 
+    <nav>
+        <ul>
+            <li><a href="#paragraphs-headings">Paragraphs & Headings</a></li>
+            <li><a href="#links">Links</a></li>
+            <li><a href="#images">Images</a></li>
+            <li><a href="#forms">Forms</a></li>
+        </ul>
+    </nav>
 
-<!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
+    <section id="paragraphs-headings">
+        <h2>Paragraphs & Headings</h2>
+        <p>Hello, I'm Joseph Jacob Otieno. I am passionate about facilitating digital and personal experiences that are engaging, stunning, and intuitive. I strive to delight clients by supporting the development and sustenance of supportive environments.</p>
+    </section>
 
+    <section id="links">
+        <h2>Links</h2>
+        <p>Visit my LinkedIn profile: <a href="https://www.linkedin.com/in/joseph-jacob-1b6ba7163/">Joseph Jacob Otieno</a></p>
+    </section>
 
-<!-- 3. create a section and add an image, using css; place a green border on the image, the image should be 500px wide and 500px high -->
+    <section id="images">
+        <h2>Images</h2>
+        <img src="Images/profile.jpg" alt="Joseph Jacob Otieno">
+    </section>
 
+    <section id="forms">
+        <h2>Forms</h2>
+        <form action="#">
+            <fieldset>
+                <legend>Registration Form</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone"><br><br>
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age"><br><br>
+                <fieldset>
+                    <legend>Gender:</legend>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                </fieldset><br>
+                <label for="subjects">Subjects:</label>
+                <select id="subjects" name="subjects" multiple>
+                    <option value="english">English</option>
+                    <option value="math">Math</option>
+                    <option value="science">Science</option>
+                    <option value="art">Art and Craft</option>
+                    <option value="agriculture">Agriculture</option>
+                    <option value="geography">Geography</option>
+                    <option value="history">History</option>
+                </select><br><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br><br>
+                <!-- Hidden Field -->
+                <input type="hidden" id="sessionId" name="sessionId" value="your_session_id_here">
+                <!-- Buttons -->
+                <button type="button" onclick="clearForm()">Cancel</button>
+                <input type="submit" value="Register">
+            </fieldset>
+        </form>
+    </section>
 
-<!-- 4. create another section add a form that takes in the following input:
-  a. name
-  b. email address
-  c. phone number
-  d. age
-  e. radio checkbox for gender (use fieldset to group the gender input)
-  f. dropdown for multi-selection of subjects: English, Math, Science, Art and Craft, Agriculture, Geography and History
-  g. password
-  h. a hidden field to capture sessionId
-  i. cancel button that clears form inputs
-  j. submit button with text register
-  make sure to incorporate relevant labels in your form elements using the necessary and relevant input types and element attributes
--->
-
-<!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+    <footer>
+        <p>&copy; 2024 Joseph Jacob Otieno</p>
+    </footer>
+</body>
+</html>
