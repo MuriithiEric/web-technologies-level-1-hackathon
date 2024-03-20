@@ -1,1 +1,124 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
 
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.blue-heading {
+    color: blue;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.red-paragraph {
+    color: red;
+    font-size: 15px;
+}
+
+.external-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #333;
+    background-color: #ffc107;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.external-link:hover {
+    background-color: #ffca28;
+}
+
+/* Image Section */
+.image-section {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.image-section img {
+    max-width: 100%;
+    height: auto;
+    border: 5px solid green;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.image-section img:hover {
+    transform: scale(1.05);
+}
+
+/* Form Section */
+.form-section {
+    margin-top: 30px;
+    text-align: center;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-field {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form select {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+form button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+#cancel {
+    background-color: #dc3545;
+}
+
+#cancel:hover {
+    background-color: #bd2130;
+}
+
+@media screen and (max-width: 768px) {
+    .input-field {
+        width: calc(100% - 10px);
+    }
+}
