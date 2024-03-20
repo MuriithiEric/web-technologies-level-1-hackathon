@@ -1,1 +1,88 @@
+/* Header Styling */
+header {
+    background-color: forestgreen;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: white;
+}
+
+/* Navigation Styling */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: forestgreen;
+}
+
+/* Section Styling */
+section {
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+h2 {
+    color: forestgreen;
+}
+
+p {
+    font-size: 16px;
+}
+
+/* Image Styling */
+img {
+    border: 5px solid mossgreen;
+    width: 500px;
+    height: 500px;
+}
+
+/* Form Styling */
+form {
+    background-color: mossgreen;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid forestgreen;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: forestgreen;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
 
