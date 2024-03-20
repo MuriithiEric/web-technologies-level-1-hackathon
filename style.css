@@ -1,1 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 1em;
+    padding: 1em;
+    background-color: #f0f0f0; /* Creative background color */
+}
 
+header {
+    background-color: #cde0ed; /* Blue background color */
+    padding: 20px;
+    text-align: center;
+    color: blue;
+    border-radius: 1em;
+}
+main {
+    border-radius: 1em;
+}
+
+form {
+    margin: 1em;
+}
+.blue {
+    color: blue; /* Blue heading font color */
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.card_1 
+    {
+        flex: 1;
+        padding: 2em;
+        border-radius: 1em;
+        margin: 1px;
+    }
+
+.card_2 {
+    flex: 1;
+    padding: 2em;
+    border-radius: 1em;
+    margin: 1px;
+}
+
+.card_1 {
+    background-color: #fff; /* Card_1 background color */
+}
+
+.card_2 {
+    background-color: #f9f9f9; /* Card_2 background color */
+}
+
+.red-p {
+    color: #e74c3c; /* Red paragraph font color */
+}
+
+.green-bordered-image {
+    border: 5px solid #2ecc71; /* Green border color */
+}
+
+.card {
+    background-color: #fff; /* Card background color */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Card shadow */
+    padding: 20px;
+    margin: 1px 0 10px 1px;
+}
+
+.card h2 {
+    color: #333; /* Heading font color */
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333; /* Label font color */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="password"],
+input[type="username"],
+select {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc; /* Input border color */
+    border-radius: 5px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    padding: 5px 10px;
+    background-color: #4CAF50; /* Submit and reset button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #04f210; /* Hover background color */
+}
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-container input[type="reset"],
+.button-container input[type="submit"] {
+    flex: 1;
+    margin-right: 1em; /* Adjust as needed */
+}
+
+section 
+{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: teal;
+    -ms-flex-align: center;
+    border-radius: 2em;
+}
+
+section img 
+{
+    margin: 2px;
+    padding: 1em;
+    height: 50px;
+    width: 50px;
+}
+
+.mainpic {
+    border-radius: 1em;
+    border: auto;
+}
+
+.mainpic img {
+    height: 500px;
+    width: 400px
+}

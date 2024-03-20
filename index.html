@@ -1,24 +1,103 @@
-<!-- 1. create the basic html structure. your structure should include a blue heading and a red paragragh with font size 15px -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My HTML Page</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <!-- 1. Blue heading -->
+    <header>
+        <h1 class="blue">Software Development Course</h1>
+    </header>
 
+    <main>
+        <div class="card_1">
+            <!-- 2. Red paragraph -->
+            <p class="red-p">Welcome to <em>WEB School!</em> <br> 
+                Unlock the world of web development with our 
+                comprehensive courses designed to equip you with the skills and knowledge needed to thrive in 
+                today's digital landscape.<br> From HTML and CSS fundamentals to advanced JavaScript frameworks, 
+                our expert-led lessons cater to beginners and seasoned developers alike.<br> Start your journey 
+                towards mastering web development today!.
+            </p>
+            <section>
+                <img src="./images/css.png" alt="html">
+                <img src="./images/program.png" alt="html">
+                <img src="./images/react.png" alt="html">
+                <img src="./images/angular.webp" alt="html">
+                <img src="./images/html-5.png" alt="html">
+              </section>
 
-<!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
+        <!-- 3. Link to an external resource -->
+        <div class="card_2">
+            Our partner training centre is Power Learn Project academy which has variety of courses of interest.
+            You can reach out to them through this link to our
+            <a href="https://plpacademy.powerlearnproject.org/" target="blank"><em>external resources.</em></a>
 
+            <!-- 4. Section with an image -->
+            <section class="mainpic">
+                <img src="https://cdn.pixabay.com/photo/2022/07/08/05/38/freelance-work-7308505_640.png" alt="Software development" class="green-bordered-image" height="500px" width="500px">
+            </section>
+        </div>
+    </main>
 
-<!-- 3. create a section and add an image, using css; place a green border on the image, the image should be 500px wide and 500px high -->
+    <!-- 5. Form -->
+    <section id="form">
+        <div class="card">
+            <h2>Personal Information</h2>
+            <form id="personalInfoForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+        
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required><br>
+        
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required><br>
+        
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required><br>
+        
+                <fieldset>
+                    <legend>Gender:</legend>
+                    <label><input type="radio" name="gender" value="male"> Male</label>
+                    <label><input type="radio" name="gender" value="female"> Female</label>
+                    <label><input type="radio" name="gender" value="other"> Other</label>
+                </fieldset>
+            </form>
+        </div>
 
+        <div class="card">
+            <h2>Courses</h2>
+            <form id="CoursesForm">
+                <label for="courses">Select your preferred Course from the list below</label>
+                <select id="courses">
+                    <option value="html">----choose one----</option>
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="angular">Angular</option>
+                    <option value="React">ReactJS</option>
+                </select>  <br>
+            </form>
+        </div>
 
-<!-- 4. create another section add a form that takes in the following input:
-  a. name
-  b. email address
-  c. phone number
-  d. age
-  e. radio checkbox for gender (use fieldset to group the gender input)
-  f. dropdown for multi-selection of subjects: English, Math, Science, Art and Craft, Agriculture, Geography and History
-  g. password
-  h. a hidden field to capture sessionId
-  i. cancel button that clears form inputs
-  j. submit button with text register
-  make sure to incorporate relevant labels in your form elements using the necessary and relevant input types and element attributes
--->
-
-<!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+        <div class="card">
+            <h2>Registration</h2>
+            <p>Enter your login details below</p>
+            <form id="actionsForm">
+                <label for="username">Username:</label>
+                <input type="username" id="username" name="username" placeholder="Username" required><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Password"required><br>
+                <input type="hidden" id="sessionId" name="sessionId" value="your_session_id">
+                <input type="reset" value="Cancel">
+                <input type="submit" value="Register">
+            </form>
+        </div>
+    </section>
+</body> 
+</html>
