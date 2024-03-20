@@ -1,1 +1,76 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgb(236, 230, 217);
+  color: red;
+}
 
+h1 {
+  color: blue;
+  text-align: center;
+}
+
+p {
+  color: red;
+  font-size: 15px;
+}
+
+a:link {
+  color: purple;
+}
+a:visited {
+  color: black;
+}
+
+#reset {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: red;
+  color: whitesmoke;
+  width: 253px;
+}
+
+#submit {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: green;
+  color: whitesmoke;
+  width: 253px;
+}
+
+.name {
+  width: 450px;
+}
+
+.email {
+  width: 383px;
+}
+
+.number {
+  width: 378px;
+}
+
+.age {
+  width: 465px;
+}
+
+fieldset {
+  width: 473px;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10px;
+}
+
+#subj {
+  width: 435px;
+}
+
+.password {
+  width: 423px;
+}
+
+img {
+  width: 500px;
+  height: 500px;
+  border-style: solid;
+  border-color: green;
+  border-radius: 5px;
+  background-color: green;
+}

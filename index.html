@@ -1,13 +1,42 @@
-<!-- 1. create the basic html structure. your structure should include a blue heading and a red paragragh with font size 15px -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device=width" , initial-scale="1.0" />
+    <title>Index</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
 
+  <body>
+    <!-- 1. create the basic html structure. your structure should include a blue heading and a red paragragh with font size 15px -->
 
-<!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
+    <h1>Hello, Hackathon 2024!</h1>
+    <p>
+      This marks the very first hackathon for the Power Learn Project cohort
+      2024.
+    </p>
 
+    <!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
+    <p>
+      Learn more about the
+      <a
+        href="https://powerlearnproject.org/"
+        target="_blank rel=noreferrer noopener"
+        >Power Learn Project</a
+      >
+      here.
+    </p>
 
-<!-- 3. create a section and add an image, using css; place a green border on the image, the image should be 500px wide and 500px high -->
+    <!-- 3. create a section and add an image, using css; place a green border on the image, the image should be 500px wide and 500px high -->
 
+    <section>
+      <img src="plp_picture.jpeg" alt="Three Power Learn Project students" />
+    </section>
 
-<!-- 4. create another section add a form that takes in the following input:
+    <br />
+    <br />
+
+    <!-- 4. create another section add a form that takes in the following input:
   a. name
   b. email address
   c. phone number
@@ -21,4 +50,73 @@
   make sure to incorporate relevant labels in your form elements using the necessary and relevant input types and element attributes
 -->
 
-<!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+    <section>
+      <form action="/submit_form" method="POST">
+        <input type="hidden" name="sessionId" value="123456789" />
+        <label for="name">Name</label>
+        <input type="text" class="name" name="name" required />
+        <br />
+        <br />
+
+        <label for="email address">Email Address</label>
+        <input
+          type="email"
+          class="email address"
+          name="email address"
+          required
+        />
+        <br />
+        <br />
+
+        <label for="phone number">Phone Number</label>
+        <input
+          type="number"
+          class="phone number"
+          name="phone number"
+          required
+        />
+        <br />
+        <br />
+
+        <label for="age">Age</label>
+        <input type="text" class="age" name="age" required /> <br />
+        <br />
+
+        <label for="gender">Gender</label>
+        <fieldset>
+          <label for="gender">Male</label>
+          <input type="radio" id="male" name="gender" value="Male" />
+          <label for="gender">Female</label>
+          <input type="radio" id="female" name="gender" value="Female" />
+        </fieldset>
+
+        <br />
+
+        <label for="subj">Subject</label>
+        <select name="subjects" id="subj">
+          <option value=""></option>
+          <option value="english">English</option>
+          <option value="Math">Math</option>
+          <option value="science">Science</option>
+          <option value="artandcraft">Art and Craft</option>
+          <option value="agriculture">Agriculture</option>
+          <option value="geographyandhistory">Geography and History</option>
+        </select>
+
+        <br />
+        <br />
+
+        <label for="password">Password</label>
+        <input type="password" class="password" name="password" required />
+      </form>
+
+      <br />
+      <br />
+
+      <input type="reset" id="reset" value="Reset" />
+      <input type="submit" id="submit" value="Submit" />
+    </section>
+
+    <!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+  </body>
+</html>
