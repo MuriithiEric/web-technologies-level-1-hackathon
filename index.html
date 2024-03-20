@@ -1,24 +1,75 @@
-<!-- 1. create the basic html structure. your structure should include a blue heading and a red paragragh with font size 15px -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HACK QUIZ</title>
+  <link rel="stylesheet" href="C:\Web Development Class\web-dev-level-1-hackathon\style.css">
+  
+</head>
+<body>
+  <h1 class="blue_heading">Welcome to My Web Development Learning Journey</h1>
+
+<p class="red_paragraph">Although I can build a website using tools such as WordPress, I'd like to learn how to build my own from scratch.</p>
+
+  <a href="https://yourpennyforthoughts.wordpress.com/" target="_blank">Here is my Wordpress-built website.</a>
+
+<br>
+  
+<section id="website_inspo">
+  <p>This is an example of a webpage I'd like to design.</p>
+  <img class="image" src="C:\Web Development Class\Images\music inspiration.jpg" alt="Website Inspiration">
+</section>
 
 
-<!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
+<section id="data_collection_form">
+  <form id="registrationForm">
+    <label for="name">Name:</label>
+    <input type="text" name="name" id="name" required>
+    <br>
 
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" required>
+    <br>
 
-<!-- 3. create a section and add an image, using css; place a green border on the image, the image should be 500px wide and 500px high -->
+    <label for="phone">Phone number:</label>
+    <input type="tel" id="phone" name="phone" required>
+    <br>
 
+    <label for="age">Age:</label>
+    <input type="number" name="age" id="age" required>
+    <br>
 
-<!-- 4. create another section add a form that takes in the following input:
-  a. name
-  b. email address
-  c. phone number
-  d. age
-  e. radio checkbox for gender (use fieldset to group the gender input)
-  f. dropdown for multi-selection of subjects: English, Math, Science, Art and Craft, Agriculture, Geography and History
-  g. password
-  h. a hidden field to capture sessionId
-  i. cancel button that clears form inputs
-  j. submit button with text register
-  make sure to incorporate relevant labels in your form elements using the necessary and relevant input types and element attributes
--->
+    <fieldset>
+      <legend>Gender</legend>
+      <label><input type="radio" name="gender" value="male"> Male</label>
+      <label><input type="radio" name="gender" value="female"> Female</label>
+      <label><input type="radio" name="gender" value="other"> Other</label>
+    </fieldset>
 
-<!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+    <label for="subjects">Select Subjects:</label>
+    <select id="subjects" name="subjects" multiple>
+      <option value="english">English</option>
+      <option value="math">Math</option>
+      <option value="science">Science</option>
+      <option value="art">Art and Craft</option>
+      <option value="agriculture">Agriculture</option>
+      <option value="geography">Geography</option>
+      <option value="history">History</option>
+    </select>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password">
+
+    <input type="hidden" id="sessionId" name="sessionId">
+    <button type="button" onclick="clearForm()">Cancel</button>
+    <button type="submit">Register</button>
+  </form>
+  
+</section>
+
+<script>
+  function clearForm() {
+    document.getElementById("registrationForm").reset();
+  }
+</script>
+</body>
+</html>
