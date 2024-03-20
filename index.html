@@ -78,20 +78,27 @@
           class="input"
           placeholder="Please enter your age"
         />
-        <label>
-          <input type="radio" name="gender" value="male" class="gender" />Male
-        </label>
-        <label>
-          <input
-            type="radio"
-            name="gender"
-            value="female"
-            class="gender"
-          />Female
-        </label>
-        <label>
-          <input type="radio" name="gender" value="other" class="gender" />Other
-        </label>
+        <div class="gender_div">
+          <label>
+            <input type="radio" name="gender" value="male" class="gender" />Male
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="gender"
+              value="female"
+              class="gender"
+            />Female
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="gender"
+              value="other"
+              class="gender"
+            />Other
+          </label>
+        </div>
         <label for="subjects">Select subjects:</label>
         <select id="subjects" name="subjects" class="input">
           <option value="math">Math</option>
@@ -117,21 +124,21 @@
           value="your_session_ID_here"
         />
         <div class="submit_btn">
-        <button type="reset" class="button">Cancel</button>
-        <script>
-          document
-            .getElementById("myForm")
-            .addEventListener("reset", function (event) {
-              // Prevent the form from actually resetting
-              event.preventDefault();
+          <button type="reset" class="button">Cancel</button>
+          <script>
+            document
+              .getElementById("myForm")
+              .addEventListener("reset", function (event) {
+                // Prevent the form from actually resetting
+                event.preventDefault();
 
-              // Clear the input fields
-              document.getElementById("Name").value = "";
-              document.getElementById("password").value = "";
-            });
-        </script>
-        <button type="submit" class="button">Register</button>
-      </div>
+                // Clear the input fields
+                document.getElementById("Name").value = "";
+                document.getElementById("password").value = "";
+              });
+          </script>
+          <button type="submit" class="button">Register</button>
+        </div>
       </section>
     </form>
   </body>

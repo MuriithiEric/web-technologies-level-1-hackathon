@@ -53,12 +53,14 @@
   margin: 10px 0 10px 0;
 }
 .gender {
-  width: 20px;
-  height: 20px;
-  margin-right: 20px;
-
-  /* display: flex;
-  align-items: left; */
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+.gender_div {
+  display: flex;
+  gap: 60px;
+  margin-bottom: 10px;
 }
 .button {
   width: 200px;
