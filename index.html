@@ -1,24 +1,86 @@
 <!-- 1. create the basic html structure. your structure should include a blue heading and a red paragragh with font size 15px -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2 class="header">HTML HACKATHON WITH PLP</h2>
+    <p id="par1">This is my first hackathon in PLP that is intended to make use of github familiar to me and check on my understanding of concepts that I have learned!</p>
+    <!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
+    <a class="link" href="https://www.menti.com/alk8irra7s1t">Join the game</a>
+    <!-- 3. create a section and add an image, using css; place a green border on the image, the image should be 500px wide and 500px high -->
+    <section>
+        <img src="C:\Users\nasho\Desktop\PLP HTML\web-technologies-level-1-hackathon\1image.jpg" alt="image1">
+
+    </section>
+    <!-- 4. create another section add a form that takes in the following input:
+    a. name
+    b. email address
+    c. phone number
+    d. age
+    e. radio checkbox for gender (use fieldset to group the gender input)
+    f. dropdown for multi-selection of subjects: English, Math, Science, Art and Craft, Agriculture, Geography and History
+    g. password
+    h. a hidden field to capture sessionId
+    i. cancel button that clears form inputs
+    j. submit button with text register
+    make sure to incorporate relevant labels in your form elements using the necessary and relevant input types and element attributes
+  -->
+    <section>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="Enter Your Name"><br>
+            <label for="email">Email Address:</label>
+            <input type="email" name="email" id="email" placeholder="bhxbujnj@gamil.com"><br>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" name="phone" id="phone" placeholder="Enter Your Phone Number"><br>
+            <label for="age">Age:</label>
+            <input type="number" name="age" id="age" placeholder="choose" min="1" max="100">
+            <fieldset>
+                <legend>Gender:</legend>
+                <label for="male">Male:</label>
+                <input type="radio" name="gender" id="male" value="male">
+                <label for="female">Female:</label>
+                <input type="radio" name="gender" id="female" value="female">
+                <label for="others">Others:</label>
+                <input type="radio" name="gender" id="others" value="others">
+            </fieldset>
+            <label for="subjects">Select your subject:</label>
+            <select id="subjects" name="subject">
+              <option value="select">Select one</option>
+              <option value="math">Math</option>
+              <option value="agric">Agriculture</option>
+              <option value="geog">Geography</option>
+              <option value="hist">History</option>
+              <option value="Art">Art and Craft</option>
+              <option value="science">Science</option>
+            </select>
 
 
-<!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
 
 
-<!-- 3. create a section and add an image, using css; place a green border on the image, the image should be 500px wide and 500px high -->
+            </fieldset><br>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" placeholder="Enter Password">
+            <input type="hidden" name="session_id" id="session_id"><br>
+            <button type="submit" class="btn1"> Register</button>
+            <button type="reset" id="btn2">Cancel</button>
 
 
-<!-- 4. create another section add a form that takes in the following input:
-  a. name
-  b. email address
-  c. phone number
-  d. age
-  e. radio checkbox for gender (use fieldset to group the gender input)
-  f. dropdown for multi-selection of subjects: English, Math, Science, Art and Craft, Agriculture, Geography and History
-  g. password
-  h. a hidden field to capture sessionId
-  i. cancel button that clears form inputs
-  j. submit button with text register
-  make sure to incorporate relevant labels in your form elements using the necessary and relevant input types and element attributes
--->
+        </form>
+</body>
+
+</html>
+
+
+
+
+
 
 <!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
