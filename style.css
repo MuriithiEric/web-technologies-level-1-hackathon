@@ -1,1 +1,94 @@
+.main-flex {
+  display: flex;
+  justify-content: center;
+}
+h1 {
+  color: blue;
+}
+p {
+  color: red;
+  font-size: 15px;
+}
+.image-section img {
+  width: 500px;
+  height: 500px;
+  border: 5px solid green;
+}
+.intro-area {
+  text-align: center;
+  margin-bottom: 10px;
+}
+/* General Form Styles */
+form {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
+/* Input Fields */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="password"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 15px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Radio Buttons */
+input[type="radio"] {
+  margin: 0 10px 0 0;
+}
+
+/* Labels */
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Buttons */
+button[type="reset"],
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="reset"] {
+  background-color: #f44336;
+  color: white;
+}
+
+button[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+}
+
+/* Hover Effects */
+button[type="reset"]:hover,
+button[type="submit"]:hover {
+  opacity: 0.8;
+}
+
+/* Focus Effects */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus,
+input[type="password"]:focus,
+select:focus {
+  border-color: #4caf50;
+  outline: none;
+}
