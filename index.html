@@ -1,24 +1,69 @@
-<!-- 1. create the basic html structure. your structure should include a blue heading and a red paragragh with font size 15px -->
+<!DOCTYPE html>
+<head>
+    <title>
+        Web Tech Hack
+    </title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 class= 'heading' >Web Technologies Level 1 hackathon</h1>
+    <h2 class=" heading_2"> The power lean Project </h2>
+    <p class= 'paragraph_main'>
+        The Power Learn Initiative launched the #1Milliondevs4Africa program in April 2022 to 
+        make tech skills accessible and affordable to young Africans.
+     </p><br><br>
+
+    <p class=" pragraph_1"> <a href= https://plpacademy.powerlearnproject.org target="_blank"> 
+        Check this out, to study software development</a></p> <br><br>
+
+<section class=" image section"> 
+     <img class="PLP_logo" src="https://plpacademy.powerlearnproject.org/static/media/logo.879e78bc92c159fe77f0.png" 
+        alt=" plp logo">
+</section><br><br>
 
 
-<!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
+<section> 
+    <form class="simple form" action="#" method="post"> 
+        <label for="name"> Name: </label>
+        <input type="text" id="name" name="name" required> <br><br>
+
+        <label for="email"> Email: </label>
+        <input type="email" id="email" name="email" required> <br><br>
+
+        <label for="phone"> Phone number: </label>
+        <input type="number" id="Phone no." name="phone"> <br><br>
+
+        <label for="age"> Age: </label>
+        <input type="number" id="Age" name="age" required> <br><br>
 
 
-<!-- 3. create a section and add an image, using css; place a green border on the image, the image should be 500px wide and 500px high -->
+    <legend>Gender: </legend>
+    <label><input type="radio" name="Gender" value="Male"> Male</label>
+    <label><input type="radio" name="Gender" value="Female"> Female</label>
+    <label><input type="radio" name="Gender" value="Others"> Others</label>
+    
 
+    <legend>Select your Subject: </legend>
+    <select name="Subject" id="Subject">
+        <option value="English">English</option>
+        <option value="Math">Math</option>
+        <option value="Science"> Science</option>
+        <option value="Art & Caraft"> Art &Craft</option>
+        <option value=" Agriculture"> Agriculture</option>
+        <option value="Geography">Geography</option>
+        <option value=" History"> History</option>
+    </select><br><br>
 
-<!-- 4. create another section add a form that takes in the following input:
-  a. name
-  b. email address
-  c. phone number
-  d. age
-  e. radio checkbox for gender (use fieldset to group the gender input)
-  f. dropdown for multi-selection of subjects: English, Math, Science, Art and Craft, Agriculture, Geography and History
-  g. password
-  h. a hidden field to capture sessionId
-  i. cancel button that clears form inputs
-  j. submit button with text register
-  make sure to incorporate relevant labels in your form elements using the necessary and relevant input types and element attributes
--->
+    <label for="Password"> Password: </label>
+    <input type="Password" name="Password" id="Password" required> <br><br>
+    <input type="hidden" id="Session ID" name="Session ID" value="0001"><br><br>
+    <input type="button" value="register">
+    <input type="button" value="cancel" onclick="clearForm()">
+</form> <br><br>
+</section>
 
-<!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+<script>
+    function clearForm() {document.querySelector("form").reset();}
+</script>
+</body>

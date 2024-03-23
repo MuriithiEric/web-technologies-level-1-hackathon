@@ -1,1 +1,9 @@
-
+.heading{ color:blue; font-family: "Gill Sans";}
+.heading_2{ color: brown; font-family: Verdana; }
+.paragraph_main {color: black; font-family: Tahoma;}
+.paragraph_1{color: red; font-size: 15px ;}
+.PLP_logo { 
+    border: 2px;
+    min-width: 500px;
+    min-height: 500px;
+}
