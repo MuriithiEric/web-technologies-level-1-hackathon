@@ -13,33 +13,62 @@ body {
     color: red;
     font-size: 15px;
 }
+fieldset {
+    border: none;
+}
 .container {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     padding: 10px;
     margin: auto;
-    justify-content: center;
+    justify-content: space-around;
 }
 .image-section, img {
     width: 500px;
     height: 500px;
     border-color: green;
+    opacity: 0;
+    animation: image-appear 2s ease-in-out forwards;
+    padding-bottom: 10px;
+    border-radius: 5px;
+}
+@keyframes image-appear {
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
 .form-section {
     width: 500px;
     background-color: black;
     opacity: .8;
     color: white;
-    /*margin: auto;*/
+    margin: auto;
     padding: auto;
+    font-weight: bolder;
+    animation: form-appear 2s ease-in-out forwards;
+    border-radius: 10px;
 }
-.personal-details {
-    display: flex;
-    flex-direction: column;
+@keyframes form-appear {
+    from {opacity: 0;}
+    to {opacity: .8;}
+}
+.personal-details label{
+    display: block;
+}
+.personal-details input{
+    display: block;
+    margin: auto;
+    width: 100%;
+    border-radius: 5px;
+}
+.gender label {
+    display: block;
 }
 .spacing {
     margin-bottom: 10px;
+}
+#select {
+    border-radius: 5px;
 }
 .submit-reset {
     width: 50%;
@@ -47,4 +76,11 @@ body {
     flex-direction: column;
     margin: auto;
     padding: 10px;
+}
+.submit-reset input {
+    background-color: green;
+    border-radius: 4px;
+}
+.submit-reset input:hover{
+    background-color: rgba(227, 13, 13, 0.911);
 }

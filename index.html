@@ -23,7 +23,7 @@
 
 <!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" width="device-width, initial-scale = 1.0">
@@ -40,39 +40,42 @@
         <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=1738&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Web Development Code">
         <figcaption>A code snippet of HTML</figcaption>
       </section>
-      <section>
-        <form class="form-section">
+      <section class="form-section">
+        <form >
           <fieldset class="personal-details">
-            <legend>Input Your Personal Details Here</legend>
-            <label class="spacing" for="name">Name:
+            <legend>PERSONAL DETAILS</legend>
+            <label class="spacing" for="name">NAME
               <input id="name" placeholder="Enter your Name Here" type="text" required>
             </label>
-            <label class="spacing" type="email">E-mail:
+            <label class="spacing" type="email">E-MAIL
               <input id="email" placeholder="Enter your E-mail Address" type="email" required>
             </label>
-            <label class="spacing" for="phone">Contact:
+            <label class="spacing" for="phone">CONTACT
               <input id="phone" placeholder="Enter Your Phone Number" type="number" required>
             </label>
-            <label class="spacing" for="age">Age:
+            <label class="spacing" for="age">AGE
               <input id="age" placeholder="How old are You?" type="tel" required>
             </label>
           </fieldset>
-          <fieldset>
-            <legend>Choose Your Gender</legend>
-            <label for="male">Male:
+          <hr class="line-1">
+          <fieldset class="gender">
+            <legend>GENDER</legend>
+            <label for="male">
               <input name="gender-selection" id="male" type="radio" required>
-            </label>
-            <label for="female">Female:
+            Male</label>
+            <label for="female">
               <input name="gender-selection" id="female" type="radio" required>
-            </label>
-            <label for="prefer-not-to-say">Prefer Not To Say:
+            Female</label>
+            <label for="prefer-not-to-say">
               <input name="gender-selection" id="prefer-not-to-say" type="radio" required>
-            </label>
+            Prefer Not To Say</label>
           </fieldset>
-          <fieldset>
-            <legend>Subject Selection</legend>
+          <hr class="line-1">
+          <fieldset class="subjects">
+            <legend>SUBJECTS</legend>
             <p>Please select your preferred subject(s). Hold down the Ctrl key (Windows) or Command key (Mac) to choose multiple options.</p>
-            <select name="languages" multiple>
+            <select id="select" name="languages[]" multiple size="3">
+              <option value="">Select Your Subjects</option>
               <option value="English">English</option>
               <option value="Kiswahili">Kiswahili</option>
               <option value="Mathematics">Mathematics</option>
@@ -83,13 +86,16 @@
               <option value="History">History</option>
             </select>
           </fieldset>
+          <hr class="line-1">
           <fieldset class="password">
-            <legend>Password</legend>
+            <legend>PASSWORD</legend>
             <label for="password">Enter your Password:
               <input type="password" id="password">
             </label>  
           </fieldset>
+          <hr class="line-1">
           <fieldset class="submit-reset">
+            <legend></legend>
             <input type="reset" value="Cancel">
             <input type="submit" value="Register">
           </fieldset>
