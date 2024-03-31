@@ -1,1 +1,79 @@
+/* CSS styles */
+.container {
+    text-align: center; /* Align its contents horizontally */
+}
+
+.container img {
+    display: block; /* treat image as a block element */
+    margin: 0 auto; /* Center the image horizontally within its container */
+}
+
+/* image */
+{
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  label {
+    display: block;
+    margin-top: 10px;
+  }
+
+  input, textarea, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+  }
+
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  button[type="button"] {
+    background-color: #f44336;
+  }
+
+  footer {
+    margin-top: 20px;
+    text-align: center;
+    color: #555;
+  }
+h1 {
+    color: blue;
+}
+
+p {
+    color: red;
+    font-size: 15px;
+}
+
+.border-green {
+    border: 2px solid green;
+}
+
+.gender-fieldset legend {
+    font-weight: bold;
+}
+
+.gender-fieldset label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.gender-fieldset input[type="radio"] {
+    margin-right: 5px;
+}
+
 
