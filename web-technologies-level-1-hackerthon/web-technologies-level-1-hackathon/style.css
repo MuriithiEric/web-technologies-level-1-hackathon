@@ -1,0 +1,115 @@
+body {
+    background-color: #c2e18d;
+}
+
+.heading {
+    color: blue;
+}
+
+p {
+    color: red;
+    font-size: 15px;
+}
+
+.image_container {
+    width: 500px;
+    height: 500px;
+    border: 5px solid green;
+}
+
+section {
+    /* Style the section element that holds the form */
+    background: #f2f2f2;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px auto;
+    max-width: 600px; /* Optional: Set a maximum width */
+  }
+  
+  h2 {
+    /* Style the form heading */
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .form-group {
+    /* Style each form group */
+    margin-bottom: 10px;
+  }
+  
+  label {
+    /* Style the labels for form elements */
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="number"],
+  input[type="password"] {
+    /* Style text input fields */
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  select {
+    /* Style the select element */
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  fieldset {
+    /* Style the fieldset for gender selection */
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 3px;
+    margin-bottom: 15px;
+  }
+  
+  legend {
+    /* Style the legend for the fieldset */
+    padding: 0 10px;
+    font-weight: bold;
+  }
+  
+  .form-group input[type="radio"] {
+    /* Style radio buttons */
+    margin-right: 5px;
+  }
+  
+  button[type="button"],
+  button[type="submit"] {
+    /* Style buttons */
+    padding: 8px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  button[type="button"] {
+    /* Style the cancel button */
+    background-color: #ccc;
+  }
+  
+  button[type="submit"] {
+    /* Style the submit button */
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  button[type="button"]:hover,
+  button[type="submit"]:hover {
+    /* Add hover effect to buttons */
+    opacity: 0.8;
+  }
+
+section img {
+    width: 100%; /* ensures img fills the container */
+    height: 100%; /* ensures img fills the container */
+}
