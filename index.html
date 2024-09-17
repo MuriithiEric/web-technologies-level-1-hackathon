@@ -1,24 +1,74 @@
-<!-- 1. create the basic html structure. your structure should include a blue heading and a red paragragh with font size 15px -->
-
-
-<!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
-
-
-<!-- 3. create a section and add an image, using css; place a green border on the image, the image should be 500px wide and 500px high -->
-
-
-<!-- 4. create another section add a form that takes in the following input:
-  a. name
-  b. email address
-  c. phone number
-  d. age
-  e. radio checkbox for gender (use fieldset to group the gender input)
-  f. dropdown for multi-selection of subjects: English, Math, Science, Art and Craft, Agriculture, Geography and History
-  g. password
-  h. a hidden field to capture sessionId
-  i. cancel button that clears form inputs
-  j. submit button with text register
-  make sure to incorporate relevant labels in your form elements using the necessary and relevant input types and element attributes
--->
-
-<!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Kelvin Portflio</title>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <h1>Who is Kelvin.</h1>
+      <p>Kelvin is a full stack developer. He has twelve years experence in developing software.
+        He has skills in: <br>
+        <ol>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Java Script</li>
+          <li>Python</li>
+          <li>Dart</li>
+        </ol>
+      </p>
+      <p>
+        He has contributed in many open sourse projects which include:
+        <ul>
+          <li>Automated watch by IBM</li>
+          <li>Network bridge detectr by Jham</li>
+          <li>Hospital Financial Management System</li>
+        </ul>
+        For more projects, click <a href="https://github.com/dashboard" target="_blank">here</a> to access kelvin github page.
+      </p>
+    </header>
+      <section class="image">
+        <img src="./my_pic.png" alt="Kelvin image" width="500px" height="500px">
+      </section>
+      <hr>
+      <section class="user input">
+        <form>
+          <label for="name">Name</label>
+          <input type="text" placeholder="Write yur name" id="name"><br>
+          <label for="email">Email</label>
+          <input type="email" placeholder="Write your email address" id="email"> <br>
+          <label for="number">Phone number</label>
+          <input type="tel" placeholder="Enter your current phone number" id="number"><br>
+          <label for="age">Age</label>
+          <input type="number" placeholder="your age" id="age"><br>
+          <label for="gender">Choose your gebder </label><br>
+          <input type="radio" name="gender">
+          <label for="gender">Male</label>
+          <input type="radio" name="gender">
+          <label for="gender">Female</label>
+          <br><br>
+          <label for="subject" id="subject">Choose a subject</label><br>
+          <select name="subject" id="subject">
+            <option value="english">English</option>
+            <option value="math">Math</option>
+            <option value="science">Science</option>
+            <option value="art">Art and Craft</option>
+            <option value="agriculture">Agriculture</option>
+            <option value="agriculture">Geography</option>
+            <option value="agriculture">History</option>
+          </select>
+          <input type="hidden" id="custId" name="custId" value="3487"><br>
+          <section class="btn">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Cancel">
+          </section>
+        </form>
+      </section>
+    <form>
+    </form>
+  </div>
+</body>
+</html>
