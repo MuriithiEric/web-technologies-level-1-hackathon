@@ -1,1 +1,78 @@
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica;
+}
+.sections {
+  display: flex;
+  flex-direction: column;
+}
+.heading {
+  color: blue;
+  font-size: 15px;
+  text-align: center;
+}
+.welcome {
+  color: red;
+  font-size: 15px;
+  text-align: center;
+  margin-top: 10px;
+}
+.my_link {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.my_image {
+  border: 3px solid green;
+  width: 500px;
+  height: 500px;
+  margin: 10px 0 10px 0;
+}
+.form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+}
+#myForm {
+  display: flex;
+  justify-content: center;
+}
+.input {
+  border-radius: 6px;
+  width: 500px;
+  height: 30px;
+  padding-left: 10px;
+  margin: 10px 0 10px 0;
+}
+.gender {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+.gender_div {
+  display: flex;
+  gap: 60px;
+  margin-bottom: 10px;
+}
+.button {
+  width: 200px;
+  height: 40px;
+  background-color: aqua;
+  border: none;
+  border-radius: 6px;
+  font-size: 20px;
+  font-family: "Courier New", Courier, monospace;
+}
+.submit_btn {
+  display: flex;
+  gap: 50px;
+  margin-top: 20px;
+}
