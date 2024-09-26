@@ -1,1 +1,60 @@
-
+/* Style the blue heading */
+h1 {
+    color: #007bff; /* Blue color */
+  }
+  
+  /* Style the red paragraph */
+  p {
+    color: rgb(37, 33, 33); /* Red color */
+    font-size: 15px; /* Font size 15px */
+  }
+  
+  body{
+    align-items: center;
+  }
+  /* Style the image */
+  .image img {
+    width: 500px; /* Set width to 500px */
+    height: 500px; /* Set height to 500px */
+    border: 2px solid green; /* Green border */
+  }
+  
+  /* Style the form section */
+  .form {
+    margin-top: 20px;
+  }
+  
+  
+  .form {
+    width: 50%; 
+    margin: 0 auto;
+  }
+  
+  /* Style radio buttons */
+  .form input[type="radio"] {
+    margin-right: 10px;
+  }
+  
+  /* Style buttons */
+  .form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .form button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Cancel button */
+  .form button[type="button"] {
+    background-color: #dc3545;
+  }
+  
+  .form button[type="button"]:hover {
+    background-color: #bd2130;
+  }
+  

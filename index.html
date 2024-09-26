@@ -1,12 +1,23 @@
 <!-- 1. create the basic html structure. your structure should include a blue heading and a red paragragh with font size 15px -->
-
-
-<!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
-
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HACKATHON 1</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="hackathon.png" type="image/x-icon">
+</head>
+<body>
+  <h1>HOME PAGE.</h1>
+  <!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
+  <p>Click the link below to our website:</p>
+<a href="index.html" target="_blank">Website</a>
 <!-- 3. create a section and add an image, using css; place a green border on the image, the image should be 500px wide and 500px high -->
+<section class="image">
+  <img src="flow.avif" alt="flower">
 
-
+</section>
 <!-- 4. create another section add a form that takes in the following input:
   a. name
   b. email address
@@ -20,5 +31,58 @@
   j. submit button with text register
   make sure to incorporate relevant labels in your form elements using the necessary and relevant input types and element attributes
 -->
+<section class="form">
+  <form action="index.html" method="post"></form>
+  <div>
+    <label for="name">Full Name:</label>
+    <input type="email" id="email" name="name">
+  </div>
+  <div>
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email">
+  </div>
+  <div>
+    <label for="number">Phone Number:</label>
+    <input type="number" id="number" name="number">
+  </div>
+  <div>
+    <label for="age" >Age:</label>
+    <input type="number" id="age" name="age">
+    </div>
+  <fieldset>
+    <legend>Gender</legend>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+    <br>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label>
+    <br>
+    <input type="radio" id="other" name="gender" value="other">
+    <label for="other">Other</label>
+  </fieldset>
+  <label for="subjects">Subjects:</label>
+  <select id="subjects" name="subjects[]" multiple>
+    <option value="english">English</option>
+    <option value="math">Math</option>
+    <option value="science">Science</option>
+    <option value="art_and_craft">Art and Craft</option>
+    <option value="agriculture">Agriculture</option>
+    <option value="geography">Geography</option>
+    <option value="history">History</option>
+  </select>
+  <br>
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password">
+  <input type="hidden" id="sessionId" name="sessionId" value="your_session_id_here">
+  <br>
+  <button type="button" onclick="clearForm()">Cancel</button>
+  <button type="submit">Register</button>
+</section>
+
+</body>
+</html>
+
+
+
 
 <!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
