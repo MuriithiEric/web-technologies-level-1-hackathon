@@ -1,1 +1,98 @@
-
+body{
+    background: linear-gradient(to right, #536976, #292E49);
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color: blue;
+    box-shadow: inset;
+}
+h2{
+    color: black;
+}
+p{
+    color: red;
+    font-size: 15px;
+}
+a{
+    text-decoration: none;
+    color: aqua;
+}
+a:hover {
+    text-decoration: underline;
+}
+a:active {
+    text-decoration: underline;
+}
+img{
+    height: 500px;
+    width: 500px;
+    border : 1px solid green;
+    border-width: 5px;
+    border-radius: 5px;
+}
+ul{
+    margin-bottom: 5px;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+ul li{
+    margin-right: 10px;
+}
+input[type=text] , input[type = email], input[type=password], input[type=number], input[type=tel]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    color: whitesmoke;
+    background: linear-gradient(to right, #292E49, #536976);
+}
+label{
+    color: black;
+}
+select {
+    width: 100%;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    background: linear-gradient(to right, #292E49, #536976);
+}
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.clear{
+    color: black;
+    background-color: red;
+    height: 50px;
+    width: 100px;
+    border-radius: 8px;
+}
+.submit{
+    background-color: #04AA6D;
+    height: 50px;
+    width: 100px;
+    border-radius: 8px;
+}
+.code-container{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+option{
+    background: linear-gradient(to right, #292E49, #536976);
+    color: black;
+}
